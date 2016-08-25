@@ -111,7 +111,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+						<a href="/tags/Cocoapods/" style="font-size: 10px;">Cocoapods</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a>
 					</div>
 				</section>
 				
@@ -194,6 +194,68 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-Cocoapods-更新慢的问题" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/25/Cocoapods-更新慢的问题/" class="article-date">
+  	<time datetime="2016-08-25T08:21:28.000Z" itemprop="datePublished">2016-08-25</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/25/Cocoapods-更新慢的问题/">Cocoapods 更新慢的问题</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>自己执行Cocoapods update的时候很大几率卡住直接不动，然后各种查阅终于解决</strong></p>
+<p><strong>原因:当执行以上两个命令的时候会升级CocoaPods的spec仓库，加一个参数可以省略这一步，然后速度就会提升不少。</strong></p>
+<h4 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h4><pre><code>pod install --verbose --no-repo-update 
+
+pod update --verbose --no-repo-update
+</code></pre><p><strong>有人告诉我全局的科学上网好像也可以解决问题😁</strong></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cocoapods/">Cocoapods</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-Hexo-Github搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
   
