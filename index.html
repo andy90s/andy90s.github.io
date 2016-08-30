@@ -111,7 +111,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Cocoapods/" style="font-size: 10px;">Cocoapods</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a>
+						<a href="/tags/Cocoapods/" style="font-size: 10px;">Cocoapods</a> <a href="/tags/UIScrollView/" style="font-size: 10px;">UIScrollView</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a> <a href="/tags/手势/" style="font-size: 10px;">手势</a>
 					</div>
 				</section>
 				
@@ -194,6 +194,64 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-ScrollView上有侧滑功能手势冲突" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/26/ScrollView上有侧滑功能手势冲突/" class="article-date">
+  	<time datetime="2016-08-26T05:53:27.000Z" itemprop="datePublished">2016-08-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/26/ScrollView上有侧滑功能手势冲突/">ScrollView上有侧滑功能手势冲突</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><h5 id="多个UITableView在UIScrollView上，左右滑动可切换页面-TableView-上下可滚动TableView-即类似网易新闻首页。不同的是这里需要侧滑cell编辑-且滚动到最边上那一页-即第一页和最后一页"><a href="#多个UITableView在UIScrollView上，左右滑动可切换页面-TableView-上下可滚动TableView-即类似网易新闻首页。不同的是这里需要侧滑cell编辑-且滚动到最边上那一页-即第一页和最后一页" class="headerlink" title="多个UITableView在UIScrollView上，左右滑动可切换页面(TableView),上下可滚动TableView,即类似网易新闻首页。不同的是这里需要侧滑cell编辑(且滚动到最边上那一页,即第一页和最后一页)"></a>多个UITableView在UIScrollView上，左右滑动可切换页面(TableView),上下可滚动TableView,即类似网易新闻首页。不同的是这里需要侧滑cell编辑(且滚动到最边上那一页,即第一页和最后一页)</h5><h4 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h4><p><img src="ocnzv34w1.bkt.clouddn.com/Home/blogScrollView.gif" alt=""></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="ocnzv34w1.bkt.clouddn.com/Home/blogIMG_0347.jpg" alt=""></h2><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><h5 id="当最下面的Scrollview滚动到最边上的时候，会有一个弹性效果来提醒当前滚动视图已经滚动到边上了。如果这时候侧滑cell，就会有这个弹性效果和侧滑冲突。有可能既侧滑出cell又出现弹性，但是我测试大部分情况是只会有弹性效果。这时就需要将Scrollview的弹性效果关闭。"><a href="#当最下面的Scrollview滚动到最边上的时候，会有一个弹性效果来提醒当前滚动视图已经滚动到边上了。如果这时候侧滑cell，就会有这个弹性效果和侧滑冲突。有可能既侧滑出cell又出现弹性，但是我测试大部分情况是只会有弹性效果。这时就需要将Scrollview的弹性效果关闭。" class="headerlink" title="当最下面的Scrollview滚动到最边上的时候，会有一个弹性效果来提醒当前滚动视图已经滚动到边上了。如果这时候侧滑cell，就会有这个弹性效果和侧滑冲突。有可能既侧滑出cell又出现弹性，但是我测试大部分情况是只会有弹性效果。这时就需要将Scrollview的弹性效果关闭。"></a>当最下面的Scrollview滚动到最边上的时候，会有一个弹性效果来提醒当前滚动视图已经滚动到边上了。如果这时候侧滑cell，就会有这个弹性效果和侧滑冲突。有可能既侧滑出cell又出现弹性，但是我测试大部分情况是只会有弹性效果。这时就需要将Scrollview的弹性效果关闭。</h5><h5 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h5><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">self</span>.myScrollView.bounces = <span class="literal">NO</span>;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UIScrollView/">UIScrollView</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/手势/">手势</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-Cocoapods-更新慢的问题" class="article article-type-post" itemscope itemprop="blogPost">
   
