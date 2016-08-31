@@ -4,14 +4,26 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>梁先华blog</title>
+  <title>ScrollView上TableView有侧滑功能手势冲突 | 梁先华blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="梁先华blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="需求多个UITableView在UIScrollView上，左右滑动可切换页面(TableView),上下可滚动TableView,即类似网易新闻首页。不同的是这里需要侧滑cell编辑(滚动到最边上那一页,即第一页和最后一页,中间的tableview)效果图（这里已最后一页为例）:
+
+解决问题1：当最下面的Scrollview滚动到最边上的时候，会有一个弹性效果来提醒当前滚动视图已经滚动到边上了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ScrollView上TableView有侧滑功能手势冲突">
+<meta property="og:url" content="http://yoursite.com/2016/08/26/ScrollView上有TableView侧滑功能手势冲突/index.html">
 <meta property="og:site_name" content="梁先华blog">
+<meta property="og:description" content="需求多个UITableView在UIScrollView上，左右滑动可切换页面(TableView),上下可滚动TableView,即类似网易新闻首页。不同的是这里需要侧滑cell编辑(滚动到最边上那一页,即第一页和最后一页,中间的tableview)效果图（这里已最后一页为例）:
+
+解决问题1：当最下面的Scrollview滚动到最边上的时候，会有一个弹性效果来提醒当前滚动视图已经滚动到边上了。">
+<meta property="og:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/blogScrollView.gif">
+<meta property="og:updated_time" content="2016-08-31T01:46:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="梁先华blog">
+<meta name="twitter:title" content="ScrollView上TableView有侧滑功能手势冲突">
+<meta name="twitter:description" content="需求多个UITableView在UIScrollView上，左右滑动可切换页面(TableView),上下可滚动TableView,即类似网易新闻首页。不同的是这里需要侧滑cell编辑(滚动到最边上那一页,即第一页和最后一页,中间的tableview)效果图（这里已最后一页为例）:
+
+解决问题1：当最下面的Scrollview滚动到最边上的时候，会有一个弹性效果来提醒当前滚动视图已经滚动到边上了。">
+<meta name="twitter:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/blogScrollView.gif">
   
     <link rel="alternative" href="/atom.xml" title="梁先华blog" type="application/atom+xml">
   
@@ -193,73 +205,7 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
-  
-    <article id="post-Markdown语法简单使用" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/08/31/Markdown语法简单使用/" class="article-date">
-  	<time datetime="2016-08-31T02:19:52.000Z" itemprop="datePublished">2016-08-31</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/31/Markdown语法简单使用/">Markdown语法简单使用</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一些markdown的简单语法记录"><a href="#一些markdown的简单语法记录" class="headerlink" title="一些markdown的简单语法记录"></a>一些markdown的简单语法记录</h3><h5 id="首先推荐下我使用的Markdown编辑软件Mou"><a href="#首先推荐下我使用的Markdown编辑软件Mou" class="headerlink" title="首先推荐下我使用的Markdown编辑软件Mou"></a>首先推荐下我使用的Markdown编辑软件<a href="https://www.macupdate.com/app/mac/40420/mou" target="_blank" rel="external">Mou</a></h5><ul>
-<li><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3></li>
-</ul>
-<h5 id="在-Markdown-中，你只需要在文本前面加上-即可，同理、你还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加-即可，标题字号相应降低。例如"><a href="#在-Markdown-中，你只需要在文本前面加上-即可，同理、你还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加-即可，标题字号相应降低。例如" class="headerlink" title="在 Markdown 中，你只需要在文本前面加上 # 即可，同理、你还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加  # 即可，标题字号相应降低。例如:"></a>在 Markdown 中，你只需要在文本前面加上 # 即可，同理、你还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加  # 即可，标题字号相应降低。例如:</h5><pre><code>\# 一级标题
-\## 二级标题
-\### 三级标题  
-\#### 四级标题   
-\##### 五级标题
-</code></pre>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-ScrollView上有TableView侧滑功能手势冲突" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-ScrollView上有TableView侧滑功能手势冲突" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/08/26/ScrollView上有TableView侧滑功能手势冲突/" class="article-date">
@@ -275,12 +221,23 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/26/ScrollView上有TableView侧滑功能手势冲突/">ScrollView上TableView有侧滑功能手势冲突</a>
+    <h1 class="article-title" itemprop="name">
+      ScrollView上TableView有侧滑功能手势冲突
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UIScrollView/">UIScrollView</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/手势/">手势</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -311,233 +268,77 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UIScrollView/">UIScrollView</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/手势/">手势</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Cocoapods-更新慢的问题" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/08/25/Cocoapods-更新慢的问题/" class="article-date">
-  	<time datetime="2016-08-25T08:21:28.000Z" itemprop="datePublished">2016-08-25</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+<nav id="article-nav">
+  
+    <a href="/2016/08/31/Markdown语法简单使用/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/25/Cocoapods-更新慢的问题/">Cocoapods 更新慢的问题</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>自己执行Cocoapods update的时候很大几率卡住直接不动，然后各种查阅终于解决</strong></p>
-<p><strong>原因:当执行以上两个命令的时候会升级CocoaPods的spec仓库，加一个参数可以省略这一步，然后速度就会提升不少。</strong></p>
-<h4 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h4><pre><code>pod install --verbose --no-repo-update  
-pod update --verbose --no-repo-update
-</code></pre><p><strong>有人告诉我全局的科学上网好像也可以解决问题😁</strong></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cocoapods/">Cocoapods</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Hexo-Github搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/08/24/Hexo-Github搭建博客/" class="article-date">
-  	<time datetime="2016-08-24T09:59:53.000Z" itemprop="datePublished">2016-08-24</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+          Markdown语法简单使用
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/24/Hexo-Github搭建博客/">Hexo+Github搭建博客(Mac)</a>
-    </h1>
   
+    <a href="/2016/08/25/Cocoapods-更新慢的问题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Cocoapods 更新慢的问题</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><ul>
-<li><p><strong>github(Desktop客户端即可)</strong></p>
-</li>
-<li><p><strong>homebrew</strong></p>
-</li>
-<li><p><strong>node.js</strong></p>
-</li>
-<li><p><strong>npm(安装node.js之后就可以了)</strong></p>
-</li>
-<li><p><strong>环境为mac</strong></p>
-</li>
-</ul>
-<h2 id="二、安装node-js"><a href="#二、安装node-js" class="headerlink" title="二、安装node.js"></a>二、安装node.js</h2><h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a></h3><p><strong>两个版本均可，我遇到的一个问题是卡在验证安装包，别急重启就再次点击安装包安装</strong></p>
-<h3 id="验证安装是否成功"><a href="#验证安装是否成功" class="headerlink" title="验证安装是否成功"></a>验证安装是否成功</h3><h5 id="终端指令"><a href="#终端指令" class="headerlink" title="终端指令"></a>终端指令</h5><pre><code>liangxianhuadeiMac:~ liangxianhua$ node -v
-v4.5.0
-liangxianhuadeiMac:~ liangxianhua$ npm -v
-2.15.9
-</code></pre><p><strong>显示出版本号代表安装成功</strong></p>
-<h2 id="三、安装homebrew"><a href="#三、安装homebrew" class="headerlink" title="三、安装homebrew"></a>三、安装homebrew</h2><h5 id="先检测下是否已安装"><a href="#先检测下是否已安装" class="headerlink" title="先检测下是否已安装"></a>先检测下是否已安装</h5><pre><code>liangxianhuadeiMac:~ liangxianhua$ brew -v
-Homebrew 0.9.9 (git revision cb70; last commit 2016-08-23)
-Homebrew/homebrew-core (git revision bcb4a; last commit 2016-08-24)
-</code></pre><p><strong>如果显示版本号代表已经安装过直接看第四步</strong></p>
-<h5 id="打开终端粘贴脚本"><a href="#打开终端粘贴脚本" class="headerlink" title="打开终端粘贴脚本"></a>打开终端粘贴脚本</h5><pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-</code></pre><p><strong>安装完成验证是否成功如果有其他问题看<a href="http://brew.sh/index_zh-cn.html" target="_blank" rel="external">homebrew</a>官网安装方式</strong></p>
-<h2 id="四、安装hexo"><a href="#四、安装hexo" class="headerlink" title="四、安装hexo"></a>四、安装hexo</h2><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><pre><code>npm install -g hexo
-</code></pre><p><strong>过程可能较慢根据网络情况(最好是科学上网😆你懂得)</strong></p>
-<h5 id="出现问题"><a href="#出现问题" class="headerlink" title="出现问题"></a>出现问题</h5><p><strong>安装不成功试试sudo</strong></p>
-<pre><code>sudo npm install -g hexo
-</code></pre><p><strong>到这里我出现的问题终端提示:</strong></p>
-<pre><code>npm ERR! Darwin 14.0.0
-npm ERR! argv &quot;node&quot; &quot;/usr/local/bin/    npm&quot; &quot;install&quot; &quot;-g&quot; &quot;hexo&quot;
-npm ERR! node v0.10.33
-npm ERR! npm v2.1.7
-npm ERR! path /usr/local/lib/            node_modules/hexo/.gitmodules
-npm ERR! code EACCES
-npm ERR! errno 3
-
-npm ERR! Error: EACCES, unlink &apos;/usr/    local/lib/node_modules/    hexo/.gitmodules&apos;
-npm ERR! { [Error: EACCES, unlink &apos;/usr/local/lib/node_modules/    hexo/.gitmodules&apos;]
-npm ERR! errno: 3,
-npm ERR! code: &apos;EACCES&apos;,
-npm ERR! path: &apos;/usr/local/lib/    node_modules/hexo/.gitmodules&apos; }
-npm ERR! 
-npm ERR! Please try running this command again as root/Administrator.
-npm ERR! error rolling back Error: EACCES, unlink &apos;/usr/local/lib/node_modules/hexo/.gitmodules&apos;
-npm ERR! error rolling back { [Error: EACCES, unlink &apos;/usr/local/lib/node_modules/hexo/.gitmodules&apos;]
-npm ERR! error rolling back errno: 3,
-npm ERR! error rolling back code: &apos;EACCES&apos;,
-npm ERR! error rolling back path: &apos;/usr/local/lib/node_modules/hexo/.gitmodules&apos; }
-
-npm ERR! Please include the following file with any support request:
-npm ERR! /Users/xiangwenwen/npm-debug.log
-</code></pre><p><strong>总之一堆error😭都快成功的说卡在这一步~ 经过各种谷歌终于找到一个解决</strong></p>
-<pre><code>sudo npm install -g -unsafe-perm hexo
-</code></pre><p><strong>验证安装,如下表示安装成功</strong></p>
-<pre><code>liangxianhuadeiMac:~ liangxianhua$ hexo -v
-hexo-cli: 1.0.2
-os: Darwin 15.6.0 darwin x64
-http_parser: 2.7.0
-node: 4.5.0
-v8: 4.5.103.37
-uv: 1.9.1
-zlib: 1.2.8
-ares: 1.10.1-DEV
-icu: 56.1
-modules: 46
-openssl: 1.0.2h
-</code></pre><h2 id="五、Github设置"><a href="#五、Github设置" class="headerlink" title="五、Github设置"></a>五、Github设置</h2><p>1.<strong>桌面创建一个文件夹，文件名自定义，打开文件夹新建一个名为hexo文件夹，hexo文件里再新建一个名为public文件夹，此public文件夹作为仓库</strong></p>
-<p>2.<strong>利用客户端新建一个名字叫<em>你的github用户名.github.io</em>的项目，然后推到github网页</strong></p>
-<p>3.<strong>如果你有自己申请的顶级域名，并想链接到你的网页，你还需要在public创建一个没有后缀的名为<em>CANME</em>的文件，用notepad打开，输入你的域名，比如“xhliang.com”</strong></p>
-<h2 id="六、hexo写文章"><a href="#六、hexo写文章" class="headerlink" title="六、hexo写文章"></a>六、hexo写文章</h2><h5 id="终端打开你的hexo文件夹执行"><a href="#终端打开你的hexo文件夹执行" class="headerlink" title="终端打开你的hexo文件夹执行"></a>终端打开你的hexo文件夹执行</h5><pre><code>hexo init
-mpm install
-</code></pre><p><strong>接着hexo会自动生成所需要的所有文件</strong></p>
-<p><strong>等待执行完毕</strong></p>
-<pre><code>hexo s
-</code></pre><p><strong>通过浏览器打开“<a href="http://localhost:4000/”" target="_blank" rel="external">http://localhost:4000/”</a></strong></p>
-<p><strong>假如没有正常显示换Safari浏览器尝试</strong>    </p>
-<h5 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h5><p><strong>比如新建一个名为Hexo的文章</strong></p>
-<pre><code>liangxianhuadeiMac:hexo liangxianhua$ hexo new &quot;Hexo&quot;
-</code></pre><h2 id="七、提交到github"><a href="#七、提交到github" class="headerlink" title="七、提交到github"></a>七、提交到github</h2><p><strong>将public文件里的内容提交到github上</strong></p>
-<p><strong>你的博客地址就是“用户名.github.io”</strong></p>
-<p><strong>切记项目名称必须是上诉地址格式</strong></p>
-<p><strong>最后打开你的博客地址，假如你是购买过域名并且在第五步github设置中输入自己的域名，则可以直接打开你域名地址，域名购买域名解析就需要你自己选择啦😆。这里就推荐个别人给我推荐的:<a href="https://sg.godaddy.com/zh/offers/default.aspx?tmskey=1dom_23&amp;isc=gennlcn13&amp;countrview=1&amp;currencytype=CNY&amp;cvosrc=ppc.google.godaddy&amp;cvo_crid=112229269126&amp;matchtype=e" target="_blank" rel="external">去他爹</a></strong>    </p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
 
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
 
 
 
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="ScrollView上有TableView侧滑功能手势冲突" data-title="ScrollView上TableView有侧滑功能手势冲突" data-url="http://yoursite.com/2016/08/26/ScrollView上有TableView侧滑功能手势冲突/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
-  
-  
+
+
+
 </div>
       <footer id="footer">
   <div class="outer">
@@ -561,8 +362,8 @@ mpm install
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
