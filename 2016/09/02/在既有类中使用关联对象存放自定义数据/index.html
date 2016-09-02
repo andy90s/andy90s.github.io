@@ -4,14 +4,17 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Tag: hexo | 梁先华blog</title>
+  <title>在既有类中使用关联对象存放自定义数据 | 梁先华blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="梁先华blog">
-<meta property="og:url" content="http://yoursite.com/tags/hexo/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="在既有类中使用关联对象存放自定义数据">
+<meta property="og:url" content="http://yoursite.com/2016/09/02/在既有类中使用关联对象存放自定义数据/index.html">
 <meta property="og:site_name" content="梁先华blog">
+<meta property="og:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/005/Gl_Strand_Kanalen-1024x250.jpg">
+<meta property="og:updated_time" content="2016-09-02T08:21:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="梁先华blog">
+<meta name="twitter:title" content="在既有类中使用关联对象存放自定义数据">
+<meta name="twitter:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/005/Gl_Strand_Kanalen-1024x250.jpg">
   
     <link rel="alternative" href="/atom.xml" title="梁先华blog" type="application/atom+xml">
   
@@ -193,53 +196,151 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-在既有类中使用关联对象存放自定义数据" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/08/24/Hexo-Github搭建博客/" class="archive-article-date">
-  	<time datetime="2016-08-24T09:59:53.000Z" itemprop="datePublished">Aug 24</time>
+    <div class="article-meta">
+      <a href="/2016/09/02/在既有类中使用关联对象存放自定义数据/" class="article-date">
+  	<time datetime="2016-09-02T06:27:52.000Z" itemprop="datePublished">2016-09-02</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/24/Hexo-Github搭建博客/">Hexo+Github搭建博客(Mac)</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      在既有类中使用关联对象存放自定义数据
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/runtime/">runtime</a></li></ul>
 	</div>
 
-          
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://ocnzv34w1.bkt.clouddn.com/Home/005/Gl_Strand_Kanalen-1024x250.jpg" alt=""><br><a id="more"></a></p>
+<ul>
+<li><h3 id="首先说明本文基本搬至-lt-lt-Effective-Objective-C-2-0-gt-gt-一书，也是比较推荐的一本书。先附上pdf资源-戳我"><a href="#首先说明本文基本搬至-lt-lt-Effective-Objective-C-2-0-gt-gt-一书，也是比较推荐的一本书。先附上pdf资源-戳我" class="headerlink" title="首先说明本文基本搬至&lt;&lt; Effective Objective-C 2.0&gt;&gt;一书，也是比较推荐的一本书。先附上pdf资源:戳我"></a>首先说明本文基本搬至&lt;&lt; Effective Objective-C 2.0&gt;&gt;一书，也是比较推荐的一本书。先附上pdf资源:<a href="http://download.csdn.net/detail/xinchike/8474505" target="_blank" rel="external">戳我</a></h3><p>有时需要在对象中存放相关信息。这时我们通常会从对象所属的类中继承一个子类，然后改用这个子类对象。然而并非所有的情况下都能这么做，有时候类的实例可能是由某种机制所创建的，而开发者无法令这种机制创建出自己所写的子类实例。OC中有一项强大的特性可以解决此问题，这就是“关联对象”（Associated Object）。</p>
+<p>可以给某对象关联许多其他对象，这些对象通过”键”来区分。存储对象值得时候，可以指明存储策略，用以维护相应的内存管理语义。存储策略由名为objc_AssociationPolicy的枚举所定义，下表列出了该枚举的取值，同时还列出了与之等效的@property属性：假如关联对象成为了属性，那么它就会具备对应的语义。</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>关联类型</th>
+<th>等效的@property属性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OBJC_ASSOCIATION_ASSIGN</td>
+<td>assign</td>
+</tr>
+<tr>
+<td>OBJC_ASSOCIATION_RETAIN_NONATOMIC</td>
+<td>nonatomic,retain</td>
+</tr>
+<tr>
+<td>OBJC_ASSOCIATION_COPY_NONATOMIC</td>
+<td>nonatomic,copy</td>
+</tr>
+<tr>
+<td>OBJC_ASSOCIATION_RETAIN</td>
+<td>retain</td>
+</tr>
+<tr>
+<td>OBJC_ASSOCIATION_COPY</td>
+<td>copy</td>
+</tr>
+</tbody>
+</table>
+<p>下列方法可以管理关联对象：</p>
+<ul>
+<li>void objc_setAssociatedObject(id object,void *key,id value,objc_AssociationPolicy)<br>此方法以给定的键和策略为某对象设置关联对象值</li>
+<li>id objc_getAssociatedObject(id object,void *key)<br>此方法根据给定的键从某对象中获取相应的关联对象值</li>
+<li>void objc_removeAssociatedObjects(id object)<br>此方法移除制定对象的全部关联对象</li>
+</ul>
+<p>我们可以把某对象想象成NSDictionary,把关联到该对象的值理解为字典中的条目，于是，存取关联对象的值就相当于在NSDictionary对象上调用[objec setObject:value forKey:key]与[object objectForKey:key]方法。然而两者之间有重要的区别：设置关联对象时用的键是个不透明的指针。如果在两个键上调用”isEqual：”方法的返回值是YES，那么NSDictionary就认为二者相等;然而在设置关联对象值时，若想两个键匹配到同一个值，则二者必须是完全相同的指针才行。鉴于此，在设置关联对象值时，通常使用静态全局变量做键。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/08/31/Markdown语法简单使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Markdown语法简单使用</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="在既有类中使用关联对象存放自定义数据" data-title="在既有类中使用关联对象存放自定义数据" data-url="http://yoursite.com/2016/09/02/在既有类中使用关联对象存放自定义数据/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 </div>
       <footer id="footer">
@@ -265,9 +366,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: /
