@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Hexo+Github搭建博客(Mac) | 梁先华blog</title>
+  <title>Swift日常 | 梁先华blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo+Github搭建博客(Mac)">
-<meta property="og:url" content="http://yoursite.com/2016/08/24/Hexo-Github搭建博客/index.html">
+<meta property="og:title" content="Swift日常">
+<meta property="og:url" content="http://yoursite.com/2016/09/05/Swift日常/index.html">
 <meta property="og:site_name" content="梁先华blog">
-<meta property="og:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/02-Yu_uY劇照.jpg">
-<meta property="og:updated_time" content="2016-09-01T05:56:12.000Z">
+<meta property="og:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/006/title_swift.png">
+<meta property="og:updated_time" content="2016-09-05T07:40:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo+Github搭建博客(Mac)">
-<meta name="twitter:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/02-Yu_uY劇照.jpg">
+<meta name="twitter:title" content="Swift日常">
+<meta name="twitter:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/006/title_swift.png">
   
     <link rel="alternative" href="/atom.xml" title="梁先华blog" type="application/atom+xml">
   
@@ -196,11 +196,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-Hexo-Github搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Swift日常" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/24/Hexo-Github搭建博客/" class="article-date">
-  	<time datetime="2016-08-24T09:59:53.000Z" itemprop="datePublished">2016-08-24</time>
+      <a href="/2016/09/05/Swift日常/" class="article-date">
+  	<time datetime="2016-09-05T07:39:37.000Z" itemprop="datePublished">2016-09-05</time>
 </a>
     </div>
   
@@ -213,7 +213,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo+Github搭建博客(Mac)
+      Swift日常
     </h1>
   
 
@@ -222,7 +222,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Swift/">Swift</a></li></ul>
 	</div>
 
         
@@ -233,90 +233,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><div align="center"><br><img src="http://ocnzv34w1.bkt.clouddn.com/Home/02-Yu_uY劇照.jpg"><br></div><br><a id="more"></a></p>
-<h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><ul>
-<li><p><strong>github(Desktop客户端即可)</strong></p>
-</li>
-<li><p><strong>homebrew</strong></p>
-</li>
-<li><p><strong>node.js</strong></p>
-</li>
-<li><p><strong>npm(安装node.js之后就可以了)</strong></p>
-</li>
-<li><p><strong>环境为mac</strong></p>
-</li>
+        <p><img src="http://ocnzv34w1.bkt.clouddn.com/Home/006/title_swift.png" alt=""><br><a id="more"></a></p>
+<h3 id="学习Swift-总结与OC的区别。"><a href="#学习Swift-总结与OC的区别。" class="headerlink" title="学习Swift,总结与OC的区别。"></a>学习Swift,总结与OC的区别。</h3><p>1.Swift句尾不需要分号，除非你想在一行中写三行代码就加分号隔开。</p>
+<p>2.Swift不要写<code>main</code>函数，程序默认从上往下执行</p>
+<p>3.Swift不分<code>.h</code>和<code>.m</code>文件，一个类只有<code>.swift</code>一个文件</p>
+<p>4.Swift不在有地址的概念</p>
+<p>5.Swift数据类型都会自动判断， 只区分变量<code>var</code> 和常量<code>let</code></p>
+<p>6.强制转换格式反过来了OC强转：<code>(int)a</code>      Swift强转：<code>int(a)</code></p>
+<p>7.整数的数据类型可以通过.min和.max获得最大和最小值</p>
+<p>8.定义类型的别名语法改变OC：<code>typedef int MyInt</code>      Swift：<code>typealias MyInt = int</code></p>
+<p>9.Swift的模除取余运算符支持小数了。  如 <code>5%1.5 = 0.5</code></p>
+<p>10.关于BOOL类型更加严格，Swift不再是OC的非0就是真，而是<code>true</code>才是真<code>false</code>才是假</p>
+<p>11.与第10点相联系的就是，Swift的赋值运算符没有返回值。防止误用“＝”和“＝＝”</p>
+<p>12.Swift可以多对多赋值。 <code>let(x,y) = (1,2)</code></p>
+<p>13.Swift的循环语句中必须加{}就算只有一行代码也必须要加</p>
+<p>14.Swift的<code>switch</code>语句后面以前只能跟整数，现在可以跟各种数据类型了，如浮点字符串都行，并且里面不用写<code>break</code>，</p>
+<p>15.OC中没有异常捕捉机制, 而这也是Swift相对OC独有的。</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul>
+<li><a href="http://www.jianshu.com/p/ed1209b3be5b" target="_blank" rel="external">http://www.jianshu.com/p/ed1209b3be5b</a></li>
 </ul>
-<h2 id="二、安装node-js"><a href="#二、安装node-js" class="headerlink" title="二、安装node.js"></a>二、安装node.js</h2><h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a></h3><p><strong>两个版本均可，我遇到的一个问题是卡在验证安装包，别急重启就再次点击安装包安装</strong></p>
-<h3 id="验证安装是否成功"><a href="#验证安装是否成功" class="headerlink" title="验证安装是否成功"></a>验证安装是否成功</h3><h5 id="终端指令"><a href="#终端指令" class="headerlink" title="终端指令"></a>终端指令</h5><pre><code>liangxianhuadeiMac:~ liangxianhua$ node -v
-v4.5.0
-liangxianhuadeiMac:~ liangxianhua$ npm -v
-2.15.9
-</code></pre><p><strong>显示出版本号代表安装成功</strong></p>
-<h2 id="三、安装homebrew"><a href="#三、安装homebrew" class="headerlink" title="三、安装homebrew"></a>三、安装homebrew</h2><h5 id="先检测下是否已安装"><a href="#先检测下是否已安装" class="headerlink" title="先检测下是否已安装"></a>先检测下是否已安装</h5><pre><code>liangxianhuadeiMac:~ liangxianhua$ brew -v
-Homebrew 0.9.9 (git revision cb70; last commit 2016-08-23)
-Homebrew/homebrew-core (git revision bcb4a; last commit 2016-08-24)
-</code></pre><p><strong>如果显示版本号代表已经安装过直接看第四步</strong></p>
-<h5 id="打开终端粘贴脚本"><a href="#打开终端粘贴脚本" class="headerlink" title="打开终端粘贴脚本"></a>打开终端粘贴脚本</h5><pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-</code></pre><p><strong>安装完成验证是否成功如果有其他问题看<a href="http://brew.sh/index_zh-cn.html" target="_blank" rel="external">homebrew</a>官网安装方式</strong></p>
-<h2 id="四、安装hexo"><a href="#四、安装hexo" class="headerlink" title="四、安装hexo"></a>四、安装hexo</h2><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><pre><code>npm install -g hexo
-</code></pre><p><strong>过程可能较慢根据网络情况(最好是科学上网😆你懂得)</strong></p>
-<h5 id="出现问题"><a href="#出现问题" class="headerlink" title="出现问题"></a>出现问题</h5><p><strong>安装不成功试试sudo</strong></p>
-<pre><code>sudo npm install -g hexo
-</code></pre><p><strong>到这里我出现的问题终端提示:</strong></p>
-<pre><code>npm ERR! Darwin 14.0.0
-npm ERR! argv &quot;node&quot; &quot;/usr/local/bin/    npm&quot; &quot;install&quot; &quot;-g&quot; &quot;hexo&quot;
-npm ERR! node v0.10.33
-npm ERR! npm v2.1.7
-npm ERR! path /usr/local/lib/            node_modules/hexo/.gitmodules
-npm ERR! code EACCES
-npm ERR! errno 3
-
-npm ERR! Error: EACCES, unlink &apos;/usr/    local/lib/node_modules/    hexo/.gitmodules&apos;
-npm ERR! { [Error: EACCES, unlink &apos;/usr/local/lib/node_modules/    hexo/.gitmodules&apos;]
-npm ERR! errno: 3,
-npm ERR! code: &apos;EACCES&apos;,
-npm ERR! path: &apos;/usr/local/lib/    node_modules/hexo/.gitmodules&apos; }
-npm ERR! 
-npm ERR! Please try running this command again as root/Administrator.
-npm ERR! error rolling back Error: EACCES, unlink &apos;/usr/local/lib/node_modules/hexo/.gitmodules&apos;
-npm ERR! error rolling back { [Error: EACCES, unlink &apos;/usr/local/lib/node_modules/hexo/.gitmodules&apos;]
-npm ERR! error rolling back errno: 3,
-npm ERR! error rolling back code: &apos;EACCES&apos;,
-npm ERR! error rolling back path: &apos;/usr/local/lib/node_modules/hexo/.gitmodules&apos; }
-
-npm ERR! Please include the following file with any support request:
-npm ERR! /Users/xiangwenwen/npm-debug.log
-</code></pre><p><strong>总之一堆error😭都快成功的说卡在这一步~ 经过各种谷歌终于找到一个解决</strong></p>
-<pre><code>sudo npm install -g -unsafe-perm hexo
-</code></pre><p><strong>验证安装,如下表示安装成功</strong></p>
-<pre><code>liangxianhuadeiMac:~ liangxianhua$ hexo -v
-hexo-cli: 1.0.2
-os: Darwin 15.6.0 darwin x64
-http_parser: 2.7.0
-node: 4.5.0
-v8: 4.5.103.37
-uv: 1.9.1
-zlib: 1.2.8
-ares: 1.10.1-DEV
-icu: 56.1
-modules: 46
-openssl: 1.0.2h
-</code></pre><h2 id="五、Github设置"><a href="#五、Github设置" class="headerlink" title="五、Github设置"></a>五、Github设置</h2><p>1.<strong>桌面创建一个文件夹，文件名自定义，打开文件夹新建一个名为hexo文件夹，hexo文件里再新建一个名为public文件夹，此public文件夹作为仓库</strong></p>
-<p>2.<strong>利用客户端新建一个名字叫<em>你的github用户名.github.io</em>的项目，然后推到github网页</strong></p>
-<p>3.<strong>如果你有自己申请的顶级域名，并想链接到你的网页，你还需要在public创建一个没有后缀的名为<em>CANME</em>的文件，用notepad打开，输入你的域名，比如“xhliang.com”</strong></p>
-<h2 id="六、hexo写文章"><a href="#六、hexo写文章" class="headerlink" title="六、hexo写文章"></a>六、hexo写文章</h2><h5 id="终端打开你的hexo文件夹执行"><a href="#终端打开你的hexo文件夹执行" class="headerlink" title="终端打开你的hexo文件夹执行"></a>终端打开你的hexo文件夹执行</h5><pre><code>hexo init
-mpm install
-</code></pre><p><strong>接着hexo会自动生成所需要的所有文件</strong></p>
-<p><strong>等待执行完毕</strong></p>
-<pre><code>hexo s
-</code></pre><p><strong>通过浏览器打开“<a href="http://localhost:4000/”" target="_blank" rel="external">http://localhost:4000/”</a></strong></p>
-<p><strong>假如没有正常显示换Safari浏览器尝试</strong>    </p>
-<h5 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h5><p><strong>比如新建一个名为Hexo的文章</strong></p>
-<pre><code>liangxianhuadeiMac:hexo liangxianhua$ hexo new &quot;Hexo&quot;
-</code></pre><h2 id="七、提交到github"><a href="#七、提交到github" class="headerlink" title="七、提交到github"></a>七、提交到github</h2><p><strong>将public文件里的内容提交到github上</strong></p>
-<p><strong>你的博客地址就是“用户名.github.io”</strong></p>
-<p><strong>切记项目名称必须是上诉地址格式</strong></p>
-<p><strong>最后打开你的博客地址，假如你是购买过域名并且在第五步github设置中输入自己的域名，则可以直接打开你域名地址，域名购买域名解析就需要你自己选择啦😆。这里就推荐个别人给我推荐的:<a href="https://sg.godaddy.com/zh/offers/default.aspx?tmskey=1dom_23&amp;isc=gennlcn13&amp;countrview=1&amp;currencytype=CNY&amp;cvosrc=ppc.google.godaddy&amp;cvo_crid=112229269126&amp;matchtype=e" target="_blank" rel="external">去他爹</a></strong>    </p>
 
       
     </div>
@@ -326,15 +261,11 @@ mpm install
     
 <nav id="article-nav">
   
-    <a href="/2016/08/25/Cocoapods-更新慢的问题/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Cocoapods 更新慢的问题
-        
-      </div>
-    </a>
   
+    <a href="/2016/09/02/在既有类中使用关联对象存放自定义数据/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">在既有类中使用关联对象存放自定义数据</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -367,7 +298,7 @@ mpm install
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Hexo-Github搭建博客" data-title="Hexo+Github搭建博客(Mac)" data-url="http://yoursite.com/2016/08/24/Hexo-Github搭建博客/"></div>
+	<div class="ds-thread" data-thread-key="Swift日常" data-title="Swift日常" data-url="http://yoursite.com/2016/09/05/Swift日常/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
