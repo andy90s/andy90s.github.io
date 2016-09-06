@@ -10,11 +10,11 @@
 <meta property="og:title" content="Effective Objective-C 2.0随笔">
 <meta property="og:url" content="http://yoursite.com/2016/09/06/Effective-Objective-C-2-0随笔/index.html">
 <meta property="og:site_name" content="梁先华blog">
-<meta property="og:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/007/下载.jpeg">
-<meta property="og:updated_time" content="2016-09-06T02:55:38.000Z">
+<meta property="og:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/007/aboutLarge-1024x250.jpg">
+<meta property="og:updated_time" content="2016-09-06T02:58:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Effective Objective-C 2.0随笔">
-<meta name="twitter:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/007/下载.jpeg">
+<meta name="twitter:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/007/aboutLarge-1024x250.jpg">
   
     <link rel="alternative" href="/atom.xml" title="梁先华blog" type="application/atom+xml">
   
@@ -77,7 +77,7 @@
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -233,7 +233,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="http://ocnzv34w1.bkt.clouddn.com/Home/007/下载.jpeg" alt=""><br><a id="more"></a></p>
+        <p><img src="http://ocnzv34w1.bkt.clouddn.com/Home/007/aboutLarge-1024x250.jpg" alt=""><br><a id="more"></a></p>
 <h3 id="越来越觉得此书不错，截取部分做个笔记。"><a href="#越来越觉得此书不错，截取部分做个笔记。" class="headerlink" title="越来越觉得此书不错，截取部分做个笔记。"></a>越来越觉得此书不错，截取部分做个笔记。</h3><h4 id="以完整的例子演示动态方法解析"><a href="#以完整的例子演示动态方法解析" class="headerlink" title="以完整的例子演示动态方法解析"></a>以完整的例子演示动态方法解析</h4><p><strong>如何以动态方法解析来实现<code>@dynamic</code>属性</strong><br>假设要编写一个类似于“字典”的对象，它里面可以容纳其他对象，只不过开发者要直接通过属性来存取其中的数据。这个类的设计思路是：由开发者来添加属性定义，并将其声明为<code>@dynamic</code>，而类则会自动处理相关属性值的存放与获取操作。</p>
 <p><code>.h</code></p>
 <pre><code><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#import <span class="meta-string">&lt;Foundation/Foundation.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">EOCAutoDIctionary</span> : <span class="title">NSObject</span></span></div><div class="line"></div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>) <span class="built_in">NSString</span> *string;  </div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>) <span class="built_in">NSNumber</span> *number;  </div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>) <span class="built_in">NSDate</span> *date;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>) <span class="keyword">id</span> opaqueObject;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div></pre></td></tr></table></figure>
