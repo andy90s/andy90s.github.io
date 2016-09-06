@@ -11,7 +11,8 @@
 <meta property="og:url" content="http://yoursite.com/2016/09/06/Effective-Objective-C-2-0随笔/index.html">
 <meta property="og:site_name" content="梁先华blog">
 <meta property="og:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/007/aboutLarge-1024x250.jpg">
-<meta property="og:updated_time" content="2016-09-06T02:58:05.000Z">
+<meta property="og:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/007/4FCB87D4-FC35-4E5E-8044-4B05C6802984.png">
+<meta property="og:updated_time" content="2016-09-06T08:41:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Effective Objective-C 2.0随笔">
 <meta name="twitter:image" content="http://ocnzv34w1.bkt.clouddn.com/Home/007/aboutLarge-1024x250.jpg">
@@ -77,7 +78,7 @@
 						<li>Links</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -234,7 +235,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://ocnzv34w1.bkt.clouddn.com/Home/007/aboutLarge-1024x250.jpg" alt=""><br><a id="more"></a></p>
-<h3 id="越来越觉得此书不错，截取部分做个笔记。"><a href="#越来越觉得此书不错，截取部分做个笔记。" class="headerlink" title="越来越觉得此书不错，截取部分做个笔记。"></a>越来越觉得此书不错，截取部分做个笔记。</h3><h4 id="以完整的例子演示动态方法解析"><a href="#以完整的例子演示动态方法解析" class="headerlink" title="以完整的例子演示动态方法解析"></a>以完整的例子演示动态方法解析</h4><p><strong>如何以动态方法解析来实现<code>@dynamic</code>属性</strong><br>假设要编写一个类似于“字典”的对象，它里面可以容纳其他对象，只不过开发者要直接通过属性来存取其中的数据。这个类的设计思路是：由开发者来添加属性定义，并将其声明为<code>@dynamic</code>，而类则会自动处理相关属性值的存放与获取操作。</p>
+<h3 id="越来越觉得此书不错，截取部分做个笔记。"><a href="#越来越觉得此书不错，截取部分做个笔记。" class="headerlink" title="越来越觉得此书不错，截取部分做个笔记。"></a>越来越觉得此书不错，截取部分做个笔记。</h3><h3 id="一-以完整的例子演示动态方法解析"><a href="#一-以完整的例子演示动态方法解析" class="headerlink" title="(一)以完整的例子演示动态方法解析"></a>(一)以完整的例子演示动态方法解析</h3><p><strong>如何以动态方法解析来实现<code>@dynamic</code>属性</strong><br>假设要编写一个类似于“字典”的对象，它里面可以容纳其他对象，只不过开发者要直接通过属性来存取其中的数据。这个类的设计思路是：由开发者来添加属性定义，并将其声明为<code>@dynamic</code>，而类则会自动处理相关属性值的存放与获取操作。</p>
 <p><code>.h</code></p>
 <pre><code><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#import <span class="meta-string">&lt;Foundation/Foundation.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">EOCAutoDIctionary</span> : <span class="title">NSObject</span></span></div><div class="line"></div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>) <span class="built_in">NSString</span> *string;  </div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>) <span class="built_in">NSNumber</span> *number;  </div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>) <span class="built_in">NSDate</span> *date;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>) <span class="keyword">id</span> opaqueObject;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div></pre></td></tr></table></figure>
 </code></pre><p><code>.m</code></p>
@@ -243,6 +244,22 @@
 <p><code>EOCAutoDictionary</code>的用法也很简单:</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">EOCAutoDIctionary *dict = [EOCAutoDIctionary new];</div><div class="line">    dict.date = [<span class="built_in">NSDate</span> dateWithTimeIntervalSince1970:<span class="number">475372800</span>];</div><div class="line">    <span class="built_in">NSLog</span>(<span class="string">@"dict.date = %@"</span>,dict.date);</div></pre></td></tr></table></figure>
 <p>其他属性的访问方式与<code>date</code>类似，要想添加新属性，只需<code>@property</code>来定义，并将其声明为<code>@dynamic</code>即可。在iOS的<code>CoreAnimation</code>框架中，<code>CAlayer</code>类就用了本例相似的实现方式，这使得<code>CALayer</code>成为”兼容键值编码的”容器类，也就等于说，能够向里面随意添加属性，然后以键值的形式来访问。于是，开发者就可以向其中新增自定义的属性了，这些属性值的存储工作由基类直接负责，我们只需在<code>CALayer</code>的子类中定义新属性就可以了。</p>
+<h3 id="（二）运行时替换原有方法"><a href="#（二）运行时替换原有方法" class="headerlink" title="（二）运行时替换原有方法"></a>（二）运行时替换原有方法</h3><p>为既有的方法增添新功能，比方说，在调用<code>lowercaseString</code>的时候记录某些信息，这时就可以通过交换方法来实现来达到此目标。我们新编写一个方法，在此方法中实现所需的附加功能，并调用原有实现。<br><img src="http://ocnzv34w1.bkt.clouddn.com/Home/007/4FCB87D4-FC35-4E5E-8044-4B05C6802984.png" alt="交换lowercaseString与eoc_lowercaseString的方法实现"><br>IMPa和IMPb表示函数指针<br>新建<code>NSString</code>分类:</p>
+<p><code>.h</code></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#import <span class="meta-string">&lt;Foundation/Foundation.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">NSString</span> (<span class="title">EOCMyAddtions</span>)</span></div><div class="line"></div><div class="line">- (<span class="built_in">NSString</span> *)eoc_myLowercaseString;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div></pre></td></tr></table></figure>
+<p><code>.m</code></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="meta">#import <span class="meta-string">"NSString+EOCMyAddtions.h"</span></span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">NSString</span> (<span class="title">EOCMyAddtions</span>)</span></div><div class="line"></div><div class="line">- (<span class="built_in">NSString</span> *)eoc_myLowercaseString&#123;</div><div class="line">    <span class="comment">//看似会导致死循环,但是在运行期的时候就会把方法交换，此选择子实际上是对要交换的方法的实现</span></div><div class="line">    <span class="built_in">NSString</span> *lowercase = [<span class="keyword">self</span> eoc_myLowercaseString];</div><div class="line">    <span class="built_in">NSLog</span>(<span class="string">@"%@ = &gt; %@"</span>,<span class="keyword">self</span>,lowercase);</div><div class="line">    <span class="keyword">return</span> lowercase;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div></pre></td></tr></table></figure>
+<p>最后通过下面代码实现:    </p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//方法A</span></div><div class="line">   Method originalMethod = class_getInstanceMethod([<span class="built_in">NSString</span> <span class="keyword">class</span>], <span class="keyword">@selector</span>(lowercaseString));</div><div class="line">   <span class="comment">//方法B</span></div><div class="line">   Method swappedMethod = class_getInstanceMethod([<span class="built_in">NSString</span> <span class="keyword">class</span>], <span class="keyword">@selector</span>(eoc_myLowercaseString));</div><div class="line">   <span class="comment">//交换A和B</span></div><div class="line">   method_exchangeImplementations(originalMethod, swappedMethod);</div><div class="line">   </div><div class="line">   <span class="comment">//test</span></div><div class="line">   <span class="built_in">NSString</span> *string = <span class="string">@"ThIs iS tHe StRinG"</span>;</div><div class="line">   <span class="built_in">NSString</span> *lowercaseString = [string lowercaseString];</div><div class="line">   <span class="built_in">NSLog</span>(<span class="string">@"lowercaseString:%@"</span>,lowercaseString);</div></pre></td></tr></table></figure>
+<p>通过此方案，开发者可以为那些”完全不知道如何具体实现的”黑盒方法增加日志记录功能，非常有助于调试。</p>
+<h3 id="三-在类继承体系中查询类型信息"><a href="#三-在类继承体系中查询类型信息" class="headerlink" title="(三)在类继承体系中查询类型信息"></a>(三)在类继承体系中查询类型信息</h3><p>可以用类型信息查询方法来检视类继承体系。<code>isMemberOfClass:</code>能够判断出对象是否某个特定类的实例，<code>isKindOfClass</code>则能够判断出对象是否为某类或其派生类的实例。例如:     </p>
+<pre><code class="objc"><span class="built_in">NSMutableDictionary</span> *dict = [<span class="built_in">NSMutableDictionary</span> new];
+    [dict isMemberOfClass:[<span class="built_in">NSDictionary</span> <span class="keyword">class</span>]];<span class="comment">//-&gt;NO</span>
+    [dict isMemberOfClass:[<span class="built_in">NSMutableDictionary</span> <span class="keyword">class</span>]];<span class="comment">//-&gt;YES</span>
+    [dict isKindOfClass:[<span class="built_in">NSDictionary</span> <span class="keyword">class</span>]];<span class="comment">//-&gt;YES</span>
+    [dict isKindOfClass:[<span class="built_in">NSArray</span> <span class="keyword">class</span>]];<span class="comment">//-&gt;NO</span>
+</code></pre>
+<p>按照<code>==</code>操作符比较出来的结果未必使我们想要的，因为该操作符比较的是两个指针本身，而不是其所指的对象。</p>
 
       
     </div>
