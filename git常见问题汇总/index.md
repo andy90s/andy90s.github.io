@@ -8,6 +8,8 @@ ssh-keygen -t rsa -C "youremail@xxx.com" -f ~/.ssh/github_id_rsa
 {{< admonition >}}
 `github_id_rsa`是文件名,可自己修改,大部分默认名为`id_rsa`
 
+
+
 如果想要多个平台分开不同秘钥,再次执行上面指令,文件名替换其他,例:`gitlab_id_rsa`
 {{< /admonition >}}
 
