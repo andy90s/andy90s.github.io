@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>梁先华个人博客</title>
+        <title>笔记</title>
         <link>https://example.com/en/</link>
         <description>iOS,java,vue,uniapp等开发技术分享</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
