@@ -14,7 +14,7 @@ feat(首页): 添加一个首页
 
 ## 提交类型说明
 
-|type|描述|
+|type|说明|
 |---|---|
 |feat|新增feature|
 |fix|修复bug|
