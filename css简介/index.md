@@ -1,7 +1,8 @@
 # Web学习笔记 - CSS简介
 
 <!--more-->
-```css
+## 简介
+```scss
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,6 +72,48 @@
 
      <p>少小离家老大回,乡音无改鬓毛衰</p>
      <p>今天天气真不错</p>
+</body>
+</html>
+```
+## 语法
+```scss
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+            CSS中的注释,注释中内容会自动被浏览器忽略
+
+            CSS的基本语法:
+                选择器 声明块
+                选择器,通过选择器可以选中页面中的指定元素
+                    比如 p 的作用就是选中页面中所有的 p 元素
+                声明块,通过声明块来指定要为元素设置的样式
+                    声明块由一个一个的声明组成
+                    声明是一个名值对结构
+                        一个样式名对应一个样式值,名和值之间以`:`链接,以`;`结尾
+                        
+        */
+        p{
+            color: red;
+            font-size: 30px;
+        }
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>我是h1</h1>
+    <p>今天天气真不错</p>
+    <p>今天天气真不错</p>
+    <p>今天天气真不错</p>
+    <p>今天天气真不错</p>
 </body>
 </html>
 ```
