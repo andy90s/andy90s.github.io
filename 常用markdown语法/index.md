@@ -1,5 +1,6 @@
-# 常用markdown语法(hugo+loveit主题)
+# 常用markdown语法
 
+<!--more-->
 ## 代码块
 ### TOML
 ```toml

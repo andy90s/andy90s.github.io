@@ -1,6 +1,6 @@
 # 代码提交规范
 
-
+<!--more-->
 ## 代码提交记录示例
 ```toml
 feat(home): add a homepage

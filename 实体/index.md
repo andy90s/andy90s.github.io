@@ -1,6 +1,6 @@
 # Web学习笔记 - 实体
 
-
+<!--more-->
 ## 实体
 ```css
 <!DOCTYPE html>

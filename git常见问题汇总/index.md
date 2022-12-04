@@ -1,5 +1,6 @@
 # Git常见问题汇总
 
+<!--more-->
 ## 生成ssh-key
 ### 1. 利用ssh生成秘钥(这里以github平台为例)
 ```bash

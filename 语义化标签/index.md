@@ -1,6 +1,6 @@
 # Web学习笔记 - 语义化标签
 
-
+<!--more-->
 ```css
 <!DOCTYPE html>
 <html lang="en">
@@ -76,3 +76,69 @@
 </body>
 </html>
 ```
+
+```css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        块元素(block element)
+            - 在网页中一般通过块元素对页面进行布局
+        行内元素(inline element)
+            - 行内元素主要用来包裹文字
+
+            - 一般情况下会在块元素中放行内元素,而不会在行内元素中放块元素
+            - 块元素中基本什么都能放
+            - p元素中不能放任何的块元素
+        
+            浏览器在解析网页时,会自动对网页中不符合规范的内容进行修整
+                比如:
+                    标签写在了根元素的外部
+                    p元素中嵌套了块元素
+                    根元素中出现了除head和body以外的子元素
+     -->
+</body>
+</html>
+```
+
+```css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        header 表示网页的头部
+        main 表示网页的主体部分(一个网页中只会有一个main)
+        footer 表示网页的底部
+        nav 表示网页的导航
+        aside 表示主体相关的其他内容(侧边栏)
+        article 文章
+        section 表示一个独立的区块,上边的标签都不能表示时使用section
+
+        div 没有语义,就是表示一个区块
+        span 行内元素,没有语义,一般用于在网页中选中文字
+    -->
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <nav></nav>
+    <aside></aside>
+    <article></article>
+    <section></section>
+    <div></div>
+    <span></span>
+</body>
+</html>
+```
+

@@ -1,6 +1,6 @@
 # Web学习笔记 - HTML相关简介
 
-
+<!--more-->
 ## 软件
 - 应用软件`C/S`架构;C: Client /S: Server
 - 网页端的软件`B/S`架构; B: Browser 

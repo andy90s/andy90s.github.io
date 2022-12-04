@@ -1,5 +1,6 @@
 # Hugo常见问题
 
+<!--more-->
 
 ## 文章通用配置
 打开`archetypes/default.md`文件进行编辑:
@@ -13,6 +14,25 @@ tags: ["HTML"]
 keywords: ["HTML"]
 ---
 ```
-{{< admonition tip "关键字说明">}}
-`draft`: 是否为草稿,当为`true`的时候,发布到网站是不显示的.
+
+
+## gitalk评论设置
+### 1.`github`生成application auth 
+生成方法:打开github设置 - develop setting - OAuth Apps - 选择新建
+![新建OAuth](https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/271669958429_.pic.jpg "新建OAuth")
+
+### 2.得到秘钥,粘贴到配置中
+```toml
+[params.page.comment.gitalk]
+        enable = true
+        owner = "andy90s"
+        repo = "andy90s.github.io"
+        clientId = "上面拿到的id"
+        clientSecret = "上面生成的秘钥"
+        id = "location.pathname"
+```
+{{< admonition note "注意">}}
+上述配置为(`hugo+loveit主题`),其他配置差别不大,注意`repo`应填写`仓库名`即可     
+`id`按照上述配置,会自动生成`issue`
 {{< /admonition >}}
+

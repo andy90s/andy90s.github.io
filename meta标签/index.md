@@ -1,5 +1,6 @@
 # Web学习笔记 - Meta标签
 
+<!--more-->
 ```css
 <!DOCTYPE html>
 <html lang="en">
