@@ -14,7 +14,11 @@ tags: ["HTML"]
 keywords: ["HTML"]
 ---
 ```
-
+## 常用指令
+```toml
+hugo new posts 文章.md # 发布文章
+hugo # 编译
+```
 
 ## gitalk评论设置
 ### 1.`github`生成application auth 

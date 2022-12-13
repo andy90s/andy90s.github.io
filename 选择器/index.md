@@ -265,3 +265,111 @@
 </body>
 </html>
 ```
+## 伪类选择器
+```scss
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+        /* 
+         伪元素,表示页面中一些特殊的并不真实的存在的元素(特殊的位置)
+            伪元素使用 :: 开头
+            ::first-letter 表示第一个字母
+            ::first-line 表示第一行
+            ::selection 表示选中的内容
+            ::before 表示元素的起始
+            ::after 表示元素的结束
+                -before atfer 必须结合content属性来使用
+        */
+        p::first-letter {
+            font-size: 50px;
+        }
+        p::first-line {
+            background-color: blue;
+        }
+        p::selection {
+            background-color: yellow;
+        }
+        div::before {
+            content: "abc";
+            color: red;
+        }
+        div::after {
+            content: "haha";
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <q>
+        hello
+    </q>
+    <p>
+        这是一个p标签
+    </p>
+
+    <div>hello hello hello</div>
+</body>
+</html>
+```
+## 伪元素选择器
+```scss
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+        /* 
+         伪元素,表示页面中一些特殊的并不真实的存在的元素(特殊的位置)
+            伪元素使用 :: 开头
+            ::first-letter 表示第一个字母
+            ::first-line 表示第一行
+            ::selection 表示选中的内容
+            ::before 表示元素的起始
+            ::after 表示元素的结束
+                -before atfer 必须结合content属性来使用
+        */
+        p::first-letter {
+            font-size: 50px;
+        }
+        p::first-line {
+            background-color: blue;
+        }
+        p::selection {
+            background-color: yellow;
+        }
+        div::before {
+            content: "abc";
+            color: red;
+        }
+        div::after {
+            content: "haha";
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <q>
+        hello
+    </q>
+    <p>
+        这是一个p标签
+    </p>
+
+    <div>hello hello hello</div>
+</body>
+</html>
+```

@@ -4,7 +4,17 @@
         <link>https://example.com/posts/</link>
         <description>所有文章 | 笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Dec 2022 18:43:34 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 05 Dec 2022 21:37:56 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Web学习笔记 - a元素的伪类</title>
+    <link>https://example.com/%E5%85%83%E7%B4%A0%E7%9A%84%E4%BC%AA%E7%B1%BB/</link>
+    <pubDate>Mon, 05 Dec 2022 21:37:56 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/%E5%85%83%E7%B4%A0%E7%9A%84%E4%BC%AA%E7%B1%BB/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>a元素的伪类,link 一般用来表示没有访问过的链接(正常的链接)]]></description>
+</item>
+<item>
     <title>Web学习笔记 - 选择器</title>
     <link>https://example.com/%E9%80%89%E6%8B%A9%E5%99%A8/</link>
     <pubDate>Sun, 04 Dec 2022 18:43:34 &#43;0800</pubDate>
@@ -12,7 +22,7 @@
     <guid>https://example.com/%E9%80%89%E6%8B%A9%E5%99%A8/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian.jpg" referrerpolicy="no-referrer">
-            </div>操作指定元素属性,需要先确定这个元素]]></description>
+            </div>复合选择器,关系选择器,属性选择器,伪类选择器,伪元素选择器]]></description>
 </item>
 <item>
     <title>Web学习笔记 - CSS简介</title>
@@ -93,16 +103,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
             </div>在使用html标签时,应该关注的是标签的语义,而不是样式.]]></description>
-</item>
-<item>
-    <title>Web学习笔记 - Meta标签</title>
-    <link>https://example.com/meta%E6%A0%87%E7%AD%BE/</link>
-    <pubDate>Thu, 01 Dec 2022 14:38:42 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/meta%E6%A0%87%E7%AD%BE/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
-            </div>主要用于设置网页中的一些元数据,元数据不是给用户看]]></description>
 </item>
 </channel>
 </rss>

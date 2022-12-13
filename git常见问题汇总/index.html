@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Git常见问题汇总 - 笔记</title><meta name="Description" content="利用ssh生成秘钥"><meta property="og:title" content="Git常见问题汇总" />
-<meta property="og:description" content="利用ssh生成秘钥" />
+        <title>Git常见问题汇总 - 笔记</title><meta name="Description" content="git github问题记录"><meta property="og:title" content="Git常见问题汇总" />
+<meta property="og:description" content="git github问题记录" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" /><meta property="og:image" content="https://example.com/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-30T18:58:31+08:00" />
@@ -15,7 +15,7 @@
 <meta name="twitter:image" content="https://example.com/logo.png"/>
 
 <meta name="twitter:title" content="Git常见问题汇总"/>
-<meta name="twitter:description" content="利用ssh生成秘钥"/>
+<meta name="twitter:description" content="git github问题记录"/>
 <meta name="application-name" content="梁先华个人博客">
 <meta name="apple-mobile-web-app-title" content="梁先华个人博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -30,13 +30,13 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "git","wordcount":  213 ,
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "git","wordcount":  381 ,
         "url": "https:\/\/example.com\/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB\/","datePublished": "2022-11-30T18:58:31+08:00","dateModified": "2022-11-30T18:58:31+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
                 "@type": "Person",
                 "name": "梁先华"
-            },"description": "利用ssh生成秘钥"
+            },"description": "git github问题记录"
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Git常见问题汇总</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>梁先华</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/git/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Git</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-11-30">2022-11-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 213 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-11-30">2022-11-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 381 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -119,7 +119,7 @@
         data-srcset="/images/fengmian2.jpg, /images/fengmian2.jpg 1.5x, /images/fengmian2.jpg 2x"
         data-sizes="auto"
         alt="/images/fengmian2.jpg"
-        title="利用ssh生成秘钥" /></div><div class="details toc" id="toc-static"  data-kept="">
+        title="git github问题记录" /></div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
@@ -135,6 +135,7 @@
       </ul>
     </li>
     <li><a href="#gitignore忽略文件不生效">gitignore忽略文件不生效</a></li>
+    <li><a href="#github提示账号密码不对">github提示账号密码不对</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="生成ssh-key">生成ssh-key</h2>
@@ -198,7 +199,28 @@
 </span></span><span class="line"><span class="cl">git commit -m <span class="s1">&#39;update gitignore&#39;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div></div><div class="post-footer" id="post-footer">
+</div><h2 id="github提示账号密码不对">github提示账号密码不对</h2>
+<p>仓库是https拉取,终端提示输入账号密码,怎么输入都不对?
+这是因为github不再支持原密码登录,替换为token登录.
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>解决办法<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">打开github设置(settings) -&gt; <code>Developer settings</code> -&gt; <code>Personal access tokens</code> -&gt; <code>Tokens</code>      <br>
+选择新建一个如下图所示,得到一个token字符串,登录的时候密码使用此token替换原来的密码进行登录</div>
+        </div>
+    </div>
+<figure><a class="lightgallery" href="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/281670218139_.pic.jpg" title="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/281670218139_.pic.jpg" data-thumbnail="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/281670218139_.pic.jpg" data-sub-html="<h2>设置github token</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/281670218139_.pic.jpg"
+            data-srcset="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/281670218139_.pic.jpg, https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/281670218139_.pic.jpg 1.5x, https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/281670218139_.pic.jpg 2x"
+            data-sizes="auto"
+            alt="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/281670218139_.pic.jpg" />
+    </a><figcaption class="image-caption">设置github token</figcaption>
+    </figure></p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

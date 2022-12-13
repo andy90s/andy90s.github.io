@@ -32,5 +32,11 @@ git rm -r --cached .
 git add .
 git commit -m 'update gitignore'
 ```
-
-
+## github提示账号密码不对
+仓库是https拉取,终端提示输入账号密码,怎么输入都不对?
+这是因为github不再支持原密码登录,替换为token登录.
+{{< admonition tip "解决办法" >}}
+打开github设置(settings) -> `Developer settings` -> `Personal access tokens` -> `Tokens`         
+选择新建一个如下图所示,得到一个token字符串,登录的时候密码使用此token替换原来的密码进行登录  
+{{< /admonition >}}
+![](https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/281670218139_.pic.jpg "设置github token")
