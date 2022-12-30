@@ -30,7 +30,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "hugo","wordcount":  292 ,
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "hugo","wordcount":  368 ,
         "url": "https:\/\/example.com\/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98\/","datePublished": "2022-12-02T11:48:52+08:00","dateModified": "2022-12-02T11:48:52+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Hugo常见问题</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>梁先华</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/docs/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>docs</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-02">2022-12-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 292 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-02">2022-12-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 368 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -125,18 +125,37 @@
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
+  <ol>
+    <li><a href="#文章目录">文章目录</a></li>
     <li><a href="#文章通用配置">文章通用配置</a></li>
     <li><a href="#常用指令">常用指令</a></li>
+    <li><a href="#loveit主题相关">loveit主题相关</a></li>
     <li><a href="#gitalk评论设置">gitalk评论设置</a>
-      <ul>
-        <li><a href="#1github生成application-auth">1.<code>github</code>生成application auth</a></li>
-        <li><a href="#2得到秘钥粘贴到配置中">2.得到秘钥,粘贴到配置中</a></li>
-      </ul>
+      <ol>
+        <li><a href="#github生成application-auth"><code>github</code>生成application auth</a></li>
+        <li><a href="#得到秘钥粘贴到配置中">得到秘钥,粘贴到配置中</a></li>
+      </ol>
     </li>
-  </ul>
+  </ol>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="文章通用配置">文章通用配置</h2>
+            </div><div class="content" id="content"><h2 id="文章目录">文章目录</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># 目录设置</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">tableOfContents</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">startLevel</span> <span class="p">=</span> <span class="mi">2</span> <span class="c"># 代表从第几级标题开始生成目录</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">endLevel</span> <span class="p">=</span> <span class="mi">6</span> <span class="c"># 代表从第几级标题结束目录</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">ordered</span> <span class="p">=</span> <span class="kc">true</span> <span class="c"># 目录排序</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="文章通用配置">文章通用配置</h2>
 <p>打开<code>archetypes/default.md</code>文件进行编辑:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -165,14 +184,17 @@
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
+</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">hugo</span> <span class="nx">new</span> <span class="nx">posts</span> <span class="err">文章</span><span class="p">.</span><span class="nx">md</span> <span class="c"># 发布文章</span>
 </span></span><span class="line"><span class="cl"><span class="nx">hugo</span> <span class="c"># 编译</span>
+</span></span><span class="line"><span class="cl"><span class="nx">hugo</span> <span class="nx">server</span> <span class="nx">-D</span> <span class="c"># 启动本地服务</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="gitalk评论设置">gitalk评论设置</h2>
-<h3 id="1github生成application-auth">1.<code>github</code>生成application auth</h3>
+</div><h2 id="loveit主题相关">loveit主题相关</h2>
+<h2 id="gitalk评论设置">gitalk评论设置</h2>
+<h3 id="github生成application-auth"><code>github</code>生成application auth</h3>
 <p>生成方法:打开github设置 - develop setting - OAuth Apps - 选择新建
 <figure><a class="lightgallery" href="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/271669958429_.pic.jpg" title="新建OAuth" data-thumbnail="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/271669958429_.pic.jpg" data-sub-html="<h2>新建OAuth</h2><p>新建OAuth</p>">
         <img
@@ -184,7 +206,7 @@
             alt="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/271669958429_.pic.jpg" />
     </a><figcaption class="image-caption">新建OAuth</figcaption>
     </figure></p>
-<h3 id="2得到秘钥粘贴到配置中">2.得到秘钥,粘贴到配置中</h3>
+<h3 id="得到秘钥粘贴到配置中">得到秘钥,粘贴到配置中</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -210,7 +232,7 @@
             <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>注意<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">上述配置为(<code>hugo+loveit主题</code>),其他配置差别不大,注意<code>repo</code>应填写<code>仓库名</code>即可  <br>
+            <div class="admonition-content">上述评论配置为(<code>hugo+loveit主题</code>),其他配置差别不大,注意<code>repo</code>应填写<code>仓库名</code>即可  <br>
 <code>id</code>按照上述配置,会自动生成<code>issue</code></div>
         </div>
     </div></div><div class="post-footer" id="post-footer">
@@ -251,5 +273,7 @@
             </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"gitalk":{"admin":["andy90s"],"clientID":"62923a9afe801911f8c1","clientSecret":"6282277a7df4b041e6d0181342afe037be6f88f9","id":"2022-12-02T11:48:52+08:00","owner":"andy90s","repo":"andy90s.github.io","title":"Hugo常见问题"}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"gitalk":{"admin":["andy90s"],"clientID":"62923a9afe801911f8c1","clientSecret":"6282277a7df4b041e6d0181342afe037be6f88f9","id":"2022-12-02T11:48:52+08:00","owner":"andy90s","repo":"andy90s.github.io","title":"Hugo常见问题"}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script><script type="text/javascript" src="/js/custom.js"></script></body>
 </html>
