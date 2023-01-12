@@ -17,8 +17,20 @@ public enum Style : Int, @unchecked Sendable {
 
 <center>
 {{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202301062145544.png" src_s="/images/fengmian4.jpg" title="insetGrouped"width="50%">}}
-<div style="color:black;"> <b> 图示 </b>  </div>
+<div style="color:black;"> <b> insetGrouped </b>  </div>
 </center>
+
+### UITableView的类型(type)为`grouped`时,头部有间距
+```swift
+if #available(iOS 15.0, *) {
+    tableView.sectionHeaderTopPadding = 0
+}
+```
+```c
+if (@available(iOS 15.0, *)) {
+    _tableView.sectionHeaderTopPadding = 0;
+}
+```
 
 ### UITableView的类型(type)为`grouped`时,组间距问题
 ```swift
