@@ -77,9 +77,9 @@ hugo server -D # 启动本地服务
 {{</* relref "path/to/document.md#锚点" */>}}
 ```
 
-例如跳转到本文的`文章目录`锚点
+例如跳转到本文的`文章目录`锚点:
 ```markdown
-[跳转到文章目录]({{</* relref "hugo常见问题.md#文章目录" */>}})
+[跳转到其他文章锚点]({{</* relref "其他文章.md#文章目录" */>}})
 [跳转到文章目录]({{</* relref "../other/hugo常见问题.md#文章目录" */>}})
 ```
 效果:
@@ -108,5 +108,6 @@ hugo server -D # 启动本地服务
 上述评论配置为(`hugo+loveit主题`),其他配置差别不大,注意`repo`应填写`仓库名`即可     
 `id`按照上述配置,会自动生成`issue`
 {{< /admonition >}}
+
 ## 参考
 [主题文档 - 扩展 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#2-link)

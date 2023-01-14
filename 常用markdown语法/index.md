@@ -44,6 +44,7 @@ admonition note
 {{< admonition tip "admonition tip">}}
 admonition tip
 {{< /admonition >}}
+{{<link href="https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#4-admonition" content="【更多admonition参考】">}}
 ## 版本
 {{< version 0.0.1 >}}       
 {{< version 0.0.2 changed >}}       
@@ -82,14 +83,13 @@ admonition tip
 ### 控制大小和位置(3)
 ```scss
 <center>
-{_{_< image src="/images/fengmian4.jpg" title="停留显示"width="50%">}}
+{{</* image src="/images/fengmian4.jpg" title="停留显示"width="50%" */>}}
 <div style="color:black;"> <b> 图示 </b>  </div>
 </center>
 ```
 {{< admonition tip>}}
-1.此shortcode需`loveit`主题支持     
-2.去除上面代码中的`_`       
-3.这种方式显示的图片配合loveit主题可以点击放大,停留显示文案等
+1.此shortcode需`loveit`主题支持            
+2.这种方式显示的图片配合loveit主题可以点击放大,停留显示文案等
 {{< /admonition >}}
 
 <center>
@@ -99,5 +99,4 @@ admonition tip
 
 {{< admonition bug>}}
 主题应该是有bug, 当设置`caption`图片标题, 会造成`width`属性失效,所以这里加`div`标签达到效果     
-[参考loveit主题shortcode文档](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#image)
 {{< /admonition >}}
