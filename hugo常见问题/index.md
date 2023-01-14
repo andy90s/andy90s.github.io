@@ -35,7 +35,11 @@ hugo server -D # 启动本地服务
 ## gitalk评论设置
 ### `github`生成application auth 
 生成方法:打开github设置 - develop setting - OAuth Apps - 选择新建
-![新建OAuth](https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/271669958429_.pic.jpg "新建OAuth")
+
+<center>
+{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/271669958429_.pic.jpg" title="新建OAuth" width="50%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 新建OAuth </b>  </div>
+</center>
 
 ### 得到秘钥,粘贴到配置中
 ```toml

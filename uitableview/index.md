@@ -20,19 +20,19 @@ public enum Style : Int, @unchecked Sendable {
 <div style="color:black;"> <b> insetGrouped </b>  </div>
 </center>
 
-### UITableView的类型(type)为`grouped`时,头部有间距
+### iOS15系统之后type为`grouped`时,头部有间距
 ```swift
 if #available(iOS 15.0, *) {
     tableView.sectionHeaderTopPadding = 0
 }
 ```
-```c
+```objc
 if (@available(iOS 15.0, *)) {
     _tableView.sectionHeaderTopPadding = 0;
 }
 ```
 
-### UITableView的类型(type)为`grouped`时,组间距问题
+### type为`grouped`时,组间距问题
 ```swift
 func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
     return 0
@@ -42,5 +42,8 @@ func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) ->
     return UIView()
 }
 ```
+
+
+
 
 
