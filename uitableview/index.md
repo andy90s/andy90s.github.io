@@ -1,4 +1,4 @@
-# UITableView使用总结
+# UITableView使用记录
 
 <!--more-->
 ## UITableView的`type`

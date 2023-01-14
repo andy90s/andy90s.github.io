@@ -30,6 +30,43 @@ hugo server -D # 启动本地服务
 ```
 
 ## loveit主题相关
+### 链接
+```markdown
+{{</* link "https://andy90s.github.io/" */>}}
+或者
+{{</* link href="https://andy90s.github.io/" content="https://andy90s.github.io/" */>}}
+
+{{</* link "mailto:contact@qq.com" */>}}
+或者
+{{</* link href="mailto:contact@qq.com" content="mailto:contact@qq.com" */>}}
+
+{{</* link "https://andy90s.github.io/" Andy90s */>}}
+或者
+{{</* link href="https://andy90s.github.io/" content=Andy90s */>}}
+
+<!-- 停留带标题 -->
+{{</* link "https://andy90s.github.io/" Andy90s "Visit Andy90s!" */>}}
+或者
+{{</* link href="https://andy90s.github.io/" content=Andy90s title="Visit Andy90s!" */>}}
+```
+效果如下:
+
+{{< link "https://andy90s.github.io/" >}}   
+    或者    
+{{< link href="https://andy90s.github.io/" content="https://andy90s.github.io/" >}}    
+
+{{< link "mailto:contact@qq.com" >}}   
+    或者    
+{{< link href="mailto:contact@qq.com" content="mailto:contact@qq.com">}}   
+
+{{< link "https://andy90s.github.io/" Andy90s >}}   
+    或者    
+{{< link href="https://andy90s.github.io/" content=Andy90s >}}        
+
+<!-- 停留带标题 -->
+{{< link "https://andy90s.github.io/" Andy90s "Visit Andy90s!" >}}    
+或者    
+{{< link href="https://andy90s.github.io/" content=Andy90s title="Visit Andy90s!" >}}   
 
 
 ## gitalk评论设置
@@ -55,4 +92,5 @@ hugo server -D # 启动本地服务
 上述评论配置为(`hugo+loveit主题`),其他配置差别不大,注意`repo`应填写`仓库名`即可     
 `id`按照上述配置,会自动生成`issue`
 {{< /admonition >}}
-
+## 参考
+[主题文档 - 扩展 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#2-link)
