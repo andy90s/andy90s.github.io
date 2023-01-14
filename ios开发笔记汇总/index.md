@@ -1,4 +1,4 @@
-# IOS开发笔记汇总
+# iOS开发笔记汇总
 
 <!--more-->
 
@@ -7,10 +7,7 @@
 ## UIKit
 ### UITableView
 
-[【UITableView使用记录】]({{< ref "UITableView.md" >}}) 
-
-[【UITableView使用记录】]({{< relref "UITableView.md" >}})
-
+[【UITableView使用记录】]({{<relref "../ios/UIKit/UITableView.md" >}})
 
 ## Foundation
 

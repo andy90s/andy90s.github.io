@@ -31,6 +31,7 @@ hugo server -D # 启动本地服务
 
 ## loveit主题相关
 ### 链接
+#### 链接 - 普通链接
 ```markdown
 {{</* link "https://andy90s.github.io/" */>}}
 或者
@@ -68,6 +69,21 @@ hugo server -D # 启动本地服务
 或者    
 {{< link href="https://andy90s.github.io/" content=Andy90s title="Visit Andy90s!" >}}   
 
+#### 链接 - 内部跳转链接
+
+```markdown
+<!-- ref绝对路径 relref相对路径 -->
+{{</* ref "path/to/document.md#锚点" */>}} 
+{{</* relref "path/to/document.md#锚点" */>}}
+```
+
+例如跳转到本文的`文章目录`锚点
+```markdown
+[跳转到文章目录]({{</* relref "hugo常见问题.md#文章目录" */>}})
+[跳转到文章目录]({{</* relref "../other/hugo常见问题.md#文章目录" */>}})
+```
+效果:
+[跳转到文章目录]({{<relref "../other/hugo常见问题.md#文章目录">}})
 
 ## gitalk评论设置
 ### `github`生成application auth 
