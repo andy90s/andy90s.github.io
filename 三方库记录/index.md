@@ -6,15 +6,15 @@
 平时在开发中遇到需求或是在社区中发现了一些优秀且实用的iOS相关开源库时,我会进行记录.这些库涵盖了开发和完整项目应用两方面,并无特定排名.当发现有用的库时,我会立刻进行记录.   
 
 {{<admonition tip "说明">}}
-无排名,默认在维护,如果停止维护会加上`停止维护`提示,规则:一年及以上没有提交记录会判定为停止维护,时间起始以加入目录时间为准,并且会标注加入时间.
+本文没有排名，默认状态为维护中。如果停止维护，将会在其上面加上`停止维护`的提示。根据规则，如果一年及以上没有提交记录，将会判定为停止维护。时间截止以标注记录时间为准。如果你有优秀的库推荐,欢迎评论!
 {{</admonition>}}    
 
 ## 完整App
 ## 框架
 |名称|简述|语言|记录时间|维护情况|
 |---|---|---|---|---|
-|{{<link href="https://github.com/TextureGroup/Texture" content="【Texture(AsyncDisplayKit)】">}}|图形异步渲染|Swift| 2023年01月14日17:09:31|维护中| 
-|{{<link href="https://github.com/Tencent/QMUI_iOS" content="【QMUIKit】">}}|是一个致力于提高项目 UI 开发效率的解决方案|OC|2023年01月14日17:21:16|维护中|
+|{{<link href="https://github.com/TextureGroup/Texture" content="【Texture(AsyncDisplayKit)】">}}|图形异步渲染|Swift/OC| 2023.01.14|-| 
+|{{<link href="https://github.com/Tencent/QMUI_iOS" content="【QMUIKit】">}}|是一个致力于提高项目UI开发效率的解决方案|OC|2023.01.14|-|
 ## 多线程
 ## 网络
 ## 数据存储
