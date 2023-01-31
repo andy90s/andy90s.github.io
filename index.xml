@@ -27,16 +27,6 @@
             </div>主要记录Xcode使用遇到的一些问题]]></description>
 </item>
 <item>
-    <title>iOS开发笔记汇总</title>
-    <link>https://example.com/ios%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%E6%B1%87%E6%80%BB/</link>
-    <pubDate>Sat, 14 Jan 2023 14:48:36 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/ios%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%E6%B1%87%E6%80%BB/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian1.jpg" referrerpolicy="no-referrer">
-            </div>]]></description>
-</item>
-<item>
     <title>iOS开源三方库汇总记录</title>
     <link>https://example.com/%E4%B8%89%E6%96%B9%E5%BA%93%E8%AE%B0%E5%BD%95/</link>
     <pubDate>Sat, 14 Jan 2023 13:12:34 &#43;0800</pubDate>
@@ -105,6 +95,16 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
             </div>图片标签用于向当前页面中引入一个外部图片]]></description>
+</item>
+<item>
+    <title>Web学习笔记 - 相对路径</title>
+    <link>https://example.com/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</link>
+    <pubDate>Sun, 04 Dec 2022 13:37:57 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian1.jpg" referrerpolicy="no-referrer">
+            </div>当我们需要跳转一个服务器内部的页面时,一般我们都会使用相对路径]]></description>
 </item>
 </channel>
 </rss>

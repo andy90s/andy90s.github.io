@@ -2,7 +2,7 @@
 
 <!--more-->
 ## 前言
-Telegram开源IM应用,虽然服务器代码不开源,但是可以从应用的体验来看非常流畅,故下载编译学习记录.
+Telegram开源IM应用,虽然服务器代码不开源,但是可以从客户端的体验来看非常流畅,故下载编译学习记录.
 
 ## 创建应用(只编译Xcode工程此步骤不需要看)
 1. 打开[官网](https://my.telegram.org/),选择**API development tools**
@@ -83,7 +83,7 @@ brew link bazel@5.3.2
 
 
 
-## 生成Xcode工程
+## 编译Xcode工程
 
 1. **复制配置到电脑根目录**
 ```bash
@@ -111,6 +111,7 @@ python3 build-system/Make/Make.py \
     --disableExtensions \
     --codesigningInformationPath="$HOME/telegram-configuration/provisioning"
 ```
+到此Xcode工程成功生成,稍微吐槽下代码注释几乎没有...
 
 ## 打包
 打开`HOME/telegram-configuration/`路径下的**variables.bzl**(就是上一步复制到电脑根目录的配置文件的路径),原配置如下:
