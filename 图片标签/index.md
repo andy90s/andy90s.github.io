@@ -1,6 +1,9 @@
 # Web学习笔记 - 图片标签
 
 <!--more-->
+
+{{<image src="https://img0.baidu.com/it/u=1590746422,1746295824&fm=253&fmt=auto&app=120&f=JPEG?w=463&h=454" alt="">}}
+
 ```css
 <!DOCTYPE html>
 <html lang="en">

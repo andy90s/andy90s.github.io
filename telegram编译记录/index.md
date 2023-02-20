@@ -111,7 +111,7 @@ python3 build-system/Make/Make.py \
     --disableExtensions \
     --codesigningInformationPath="$HOME/telegram-configuration/provisioning"
 ```
-到此Xcode工程成功生成,稍微吐槽下代码注释几乎没有...
+到此Xcode工程成功生成,友情提示代码注释几乎没有...
 
 ## 打包
 打开`HOME/telegram-configuration/`路径下的**variables.bzl**(就是上一步复制到电脑根目录的配置文件的路径),原配置如下:
