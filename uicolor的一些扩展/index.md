@@ -127,6 +127,24 @@ var lightness: CGFloat {
     }
 }
 ```
+### HEX字符串
+```swift
+var hexString: String {
+    return String(rgb, radix: 16, uppercase: false).rightJustified(width: 6, pad: "0")
+}
+```
+**rightJustified**
+```swift
+extension String {
+    func rightJustified(width: Int, pad: String = " ", truncate: Bool = false) -> String {
+        guard width > count else {
+            return truncate ? String(suffix(width)) : self
+        }
+        return String(repeating: pad, count: width - count) + self
+    }
+}
+```
+
 ## 方法扩展
 ### 改变亮度明度(根据传入系数使亮度明度乘积得到新颜色)
 ```swift
@@ -256,7 +274,6 @@ private func setupViews3() {
     self.view.addSubview(bgView3)
 }
 ```
-
 <center>
 {{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202302161403519.png" title="mixedWith" width="50%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> mixedWith </b>  </div>

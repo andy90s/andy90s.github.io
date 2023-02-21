@@ -4,9 +4,19 @@
         <link>https://example.com/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 15 Feb 2023 09:23:33 &#43;0800</lastBuildDate>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>String的一些扩展</title>
+    <link>https://example.com/string%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95/</link>
+    <pubDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/string%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item>
+<item>
     <title>工具</title>
     <link>https://example.com/%E5%B7%A5%E5%85%B7/</link>
     <pubDate>Wed, 15 Feb 2023 09:23:33 &#43;0800</pubDate>
@@ -93,16 +103,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian.jpg" referrerpolicy="no-referrer">
             </div>复合选择器,关系选择器,属性选择器,伪类选择器,伪元素选择器]]></description>
-</item>
-<item>
-    <title>Web学习笔记 - CSS简介</title>
-    <link>https://example.com/css%E7%AE%80%E4%BB%8B/</link>
-    <pubDate>Sun, 04 Dec 2022 13:51:23 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/css%E7%AE%80%E4%BB%8B/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
-            </div>css用来设置网页中元素的样式]]></description>
 </item>
 </channel>
 </rss>
