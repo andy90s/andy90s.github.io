@@ -4,9 +4,17 @@
         <link>https://example.com/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</lastBuildDate>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 16 Mar 2023 21:13:23 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>MAC工作环境</title>
+    <link>https://example.com/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83/</link>
+    <pubDate>Thu, 16 Mar 2023 21:13:23 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>String的一些扩展</title>
     <link>https://example.com/string%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95/</link>
     <pubDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</pubDate>
@@ -93,16 +101,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>a元素的伪类,link 一般用来表示没有访问过的链接(正常的链接)]]></description>
-</item>
-<item>
-    <title>Web学习笔记 - 选择器</title>
-    <link>https://example.com/%E9%80%89%E6%8B%A9%E5%99%A8/</link>
-    <pubDate>Sun, 04 Dec 2022 18:43:34 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/%E9%80%89%E6%8B%A9%E5%99%A8/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian.jpg" referrerpolicy="no-referrer">
-            </div>复合选择器,关系选择器,属性选择器,伪类选择器,伪元素选择器]]></description>
 </item>
 </channel>
 </rss>

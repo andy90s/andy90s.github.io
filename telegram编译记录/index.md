@@ -111,8 +111,15 @@ python3 build-system/Make/Make.py \
     --disableExtensions \
     --codesigningInformationPath="$HOME/telegram-configuration/provisioning"
 ```
-到此Xcode工程成功生成,友情提示代码注释几乎没有...
+python3 build-system/Make/Make.py \
+    --cacheDir="$HOME/telegram-bazel-cache" \
+    generateProject \
+    --configurationPath="$HOME/telegram-configuration/appstore-configuration.json" \
+    --codesigningInformationPath="$HOME/telegram-configuration/provisioning"
 
+到此Xcode工程成功生成,友情提示代码注释几乎没有...
+## 真机运行问题
+打开app,白屏或者黑屏,原因是app-group 没有添加,在Xcode工程配置上添加自己设置好的即可.
 ## 打包
 打开`HOME/telegram-configuration/`路径下的**variables.bzl**(就是上一步复制到电脑根目录的配置文件的路径),原配置如下:
 ```toml

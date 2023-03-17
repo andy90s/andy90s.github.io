@@ -77,3 +77,6 @@ String(UIColor.black.rgb, radix: 16) // print 0
 ```swift
 String(UIColor.black.rgb, radix: 16, uppercase: false).rightJustified(width: 6,pad: "0") // print 000000
 ```
+
+
+
