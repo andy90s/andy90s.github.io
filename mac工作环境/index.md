@@ -74,3 +74,15 @@ source ~/.zshrc
 {{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/go2shell%E6%BC%94%E7%A4%BA2.gif" title="Go2Shell" width="100%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> Go2Shell </b>  </div>
 </center>
+
+## Xcodes
+{{<link href="https://www.xcodes.app/" content="【Xcodes】">}} 非常方便的管理Xcode的工具,优点: 
+- 不必等苹果商店更新
+- 可安装测试版本
+- 多版本安装
+- 下载快,不会卡99%
+
+<center>
+{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304031139069.png" title="Xcodes" width="100%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> Xcodes </b>  </div>
+</center>
