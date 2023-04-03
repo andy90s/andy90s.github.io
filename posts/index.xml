@@ -10,7 +10,9 @@
     <pubDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</pubDate>
     <author>andy90s</author>
     <guid>https://example.com/xcode%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid>
-    <description><![CDATA[]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
 </item>
 <item>
     <title>MAC工作环境</title>
