@@ -86,3 +86,15 @@ source ~/.zshrc
 {{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304031139069.png" title="Xcodes" width="100%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> Xcodes </b>  </div>
 </center>
+
+## AppCode
+{{<link href="https://www.jetbrains.com/objc/" content="【AppCode】">}}
+
+## MAC自带邮箱增加QQ邮箱
+首先登录网页端QQ邮箱,然后到设置中生成授权码,在mac中添加QQ邮箱时密码填授权码即可.
+<center>
+{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304041500308.png" title="授权码" width="100%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 授权码 </b>  </div>
+</center>
+
+
