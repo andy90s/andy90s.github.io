@@ -88,6 +88,7 @@ source ~/.zshrc
 </center>
 
 ## AppCode
+
 {{<link href="https://www.jetbrains.com/objc/" content="【AppCode】">}}
 
 ## MAC自带邮箱增加QQ邮箱
@@ -97,4 +98,17 @@ source ~/.zshrc
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 授权码 </b>  </div>
 </center>
 
+## 超级右键lite
+<center>
+{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304071450741.png" title="超级右键" width="50%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 超级右键 </b>  </div>
+</center>
 
+## Snipaste
+超好用的截图贴板工具
+{{<link href="https://www.snipaste.com/" content="【Snipaste】">}}
+
+<center>
+{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/snipaste.gif" title="snipaste" width="50%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> snipaste </b>  </div>
+</center>
