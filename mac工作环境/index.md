@@ -100,7 +100,7 @@ source ~/.zshrc
 
 ## 超级右键lite
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304071450741.png" title="超级右键" width="50%">}}
+{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304071450741.png" title="超级右键" width="30%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 超级右键 </b>  </div>
 </center>
 
@@ -111,4 +111,34 @@ source ~/.zshrc
 <center>
 {{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/snipaste.gif" title="snipaste" width="50%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> snipaste </b>  </div>
+</center>
+
+## 抓包工具
+Windows平台有`finder`   
+Mac平台有`Charles`
+都是比较常用的,因为我是mac刚开始用的也是**Charles**,但是因为公司路由器等原因,经常性的无法抓包,这里分享另一个开源工具 {{<link href="https://github.com/avwo/whistle" content="【Whistle】">}}
+
+### 1.安装
+```
+npm install -g whistle
+```
+### 2.启动
+```
+w2 start
+```
+<center>
+{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131941846.png" title="启动" width="80%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 启动 </b>  </div>
+</center>
+
+### 3.手机配置
+- 手机连接电脑,打开wifi,选择电脑的wifi
+- 手机设置代理,代理地址填写电脑的ip地址,端口号填写`8899`
+- 手机用safari打开`http://whistlejs.com/`下载证书,安装证书
+- 到手机的设置中,找到`通用`->`关于本机`->`证书信任设置`,找到刚才安装的证书,打开信任开关
+- 电脑打开`http://localhost:8899/`点击左侧`network`->`enable`开启抓包
+
+<center>
+{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131947012.png" title="开启" width="50%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 抓包 </b>  </div>
 </center>

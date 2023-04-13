@@ -9,7 +9,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-03-16T21:13:23+08:00" />
-<meta property="article:modified_time" content="2023-04-07T17:23:38+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="article:modified_time" content="2023-04-13T19:47:43+08:00" /><meta property="og:site_name" content="My cool site" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MAC工作环境"/>
@@ -28,8 +28,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  880 ,
-        "url": "https:\/\/example.com\/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83\/","datePublished": "2023-03-16T21:13:23+08:00","dateModified": "2023-04-07T17:23:38+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1206 ,
+        "url": "https:\/\/example.com\/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83\/","datePublished": "2023-03-16T21:13:23+08:00","dateModified": "2023-04-13T19:47:43+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
                 "@type": "Person",
@@ -108,8 +108,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">MAC工作环境</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>andy90s</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-16">2023-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 880 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-16">2023-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1206 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -144,6 +144,13 @@
     <li><a href="#mac自带邮箱增加qq邮箱">MAC自带邮箱增加QQ邮箱</a></li>
     <li><a href="#超级右键lite">超级右键lite</a></li>
     <li><a href="#snipaste">Snipaste</a></li>
+    <li><a href="#抓包工具">抓包工具</a>
+      <ol>
+        <li><a href="#1安装">1.安装</a></li>
+        <li><a href="#2启动">2.启动</a></li>
+        <li><a href="#3手机配置">3.手机配置</a></li>
+      </ol>
+    </li>
   </ol>
 </nav></div>
             </div><div class="content" id="content"><h2 id="前言">前言</h2>
@@ -352,7 +359,7 @@
             data-src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304071450741.png"
             data-srcset="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304071450741.png, https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304071450741.png 1.5x, https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304071450741.png 2x"
             data-sizes="auto"
-            alt="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304071450741.png" width="50%" />
+            alt="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304071450741.png" width="30%" />
     </a>
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 超级右键 </b>  </div>
 </center>
@@ -370,11 +377,65 @@
             alt="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/snipaste.gif" width="50%" />
     </a>
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> snipaste </b>  </div>
+</center>
+<h2 id="抓包工具">抓包工具</h2>
+<p>Windows平台有<code>finder</code><br>
+Mac平台有<code>Charles</code>
+都是比较常用的,因为我是mac刚开始用的也是<strong>Charles</strong>,但是因为公司路由器等原因,经常性的无法抓包,这里分享另一个开源工具 <a href="https://github.com/avwo/whistle" target="_blank" rel="noopener noreffer ">【Whistle】</a></p>
+<h3 id="1安装">1.安装</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm install -g whistle
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="2启动">2.启动</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">w2 start
+</span></span></code></pre></td></tr></table>
+</div>
+</div><center>
+<a class="lightgallery" href="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131941846.png" title="启动" data-thumbnail="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131941846.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131941846.png"
+            data-srcset="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131941846.png, https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131941846.png 1.5x, https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131941846.png 2x"
+            data-sizes="auto"
+            alt="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131941846.png" width="80%" />
+    </a>
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 启动 </b>  </div>
+</center>
+<h3 id="3手机配置">3.手机配置</h3>
+<ul>
+<li>手机连接电脑,打开wifi,选择电脑的wifi</li>
+<li>手机设置代理,代理地址填写电脑的ip地址,端口号填写<code>8899</code></li>
+<li>手机用safari打开<code>http://whistlejs.com/</code>下载证书,安装证书</li>
+<li>到手机的设置中,找到<code>通用</code>-&gt;<code>关于本机</code>-&gt;<code>证书信任设置</code>,找到刚才安装的证书,打开信任开关</li>
+<li>电脑打开<code>http://localhost:8899/</code>点击左侧<code>network</code>-&gt;<code>enable</code>开启抓包</li>
+</ul>
+<center>
+<a class="lightgallery" href="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131947012.png" title="开启" data-thumbnail="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131947012.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131947012.png"
+            data-srcset="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131947012.png, https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131947012.png 1.5x, https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131947012.png 2x"
+            data-sizes="auto"
+            alt="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131947012.png" width="50%" />
+    </a>
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 抓包 </b>  </div>
 </center></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-04-07</span>
+                <span>更新于 2023-04-13</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
