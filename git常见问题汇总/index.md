@@ -26,7 +26,8 @@ cat ~/.ssh/os_id_rsa.pub
 ssh -T git@github.com
 ```
 ## gitignore忽略文件不生效
-缓存导致不生效,按如下解决:
+1.准备工作: 删除pods文件,然后提交代码
+2.缓存导致不生效,按如下解决:
 ```bash
 git rm -r --cached .
 git add .

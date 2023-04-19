@@ -4,9 +4,19 @@
         <link>https://example.com/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</lastBuildDate>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 14 Apr 2023 09:26:33 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>AI生产力工具</title>
+    <link>https://example.com/ai%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</link>
+    <pubDate>Fri, 14 Apr 2023 09:26:33 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/ai%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>收集一些AI生产力工具，方便自己和大家使用。]]></description>
+</item>
+<item>
     <title>Xcode14.3问题记录</title>
     <link>https://example.com/xcode%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</link>
     <pubDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</pubDate>
@@ -93,16 +103,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian3.jpg" referrerpolicy="no-referrer">
             </div>平时在开发中遇到需求或是在社区中发现了一些优秀且实用的iOS相关开源库]]></description>
-</item>
-<item>
-    <title>UITableView使用记录</title>
-    <link>https://example.com/uitableview/</link>
-    <pubDate>Fri, 06 Jan 2023 11:20:37 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/uitableview/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
-            </div>UITableView使过程中遇到的一些问题记录]]></description>
 </item>
 </channel>
 </rss>
