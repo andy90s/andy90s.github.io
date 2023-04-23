@@ -2,9 +2,30 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://example.com/ios%E5%BD%95%E9%9F%B3/</loc><lastmod>2023-04-23T09:36:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/posts/</loc><lastmod>2023-04-23T09:36:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/</loc><lastmod>2023-04-23T09:36:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://example.com/tags/avfoundation/</loc><lastmod>2023-04-23T09:43:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/categories/</loc><lastmod>2023-04-23T09:43:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://example.com/en/categories/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://example.com/categories/"
+                    /></url><url>
+            <loc>https://example.com/tags/ios/</loc><lastmod>2023-04-23T09:43:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/categories/ios/</loc><lastmod>2023-04-23T09:43:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/ios%E5%BD%95%E9%9F%B3/</loc><lastmod>2023-04-23T09:43:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/posts/</loc><lastmod>2023-04-23T09:43:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/tags/</loc><lastmod>2023-04-23T09:43:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://example.com/en/tags/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://example.com/tags/"
+                    /></url><url>
+            <loc>https://example.com/</loc><lastmod>2023-04-23T09:43:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://example.com/en/"
@@ -15,26 +36,6 @@
                     /></url><url>
             <loc>https://example.com/tags/ai/</loc><lastmod>2023-04-14T09:33:03&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://example.com/ai%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</loc><lastmod>2023-04-14T09:33:03&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://example.com/tags/</loc><lastmod>2023-04-19T12:58:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://example.com/en/tags/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://example.com/tags/"
-                    /></url><url>
-            <loc>https://example.com/categories/</loc><lastmod>2023-04-19T12:58:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://example.com/en/categories/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://example.com/categories/"
-                    /></url><url>
-            <loc>https://example.com/tags/ios/</loc><lastmod>2023-04-06T11:53:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://example.com/categories/ios/</loc><lastmod>2023-04-06T11:53:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://example.com/tags/xcode14/</loc><lastmod>2023-04-06T11:53:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://example.com/xcode%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</loc><lastmod>2023-04-06T11:53:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://example.com/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83/</loc><lastmod>2023-04-13T19:47:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
