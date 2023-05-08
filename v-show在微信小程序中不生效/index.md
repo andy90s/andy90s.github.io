@@ -11,3 +11,4 @@ view[hidden] {
 /* #endif */
 </style>
 ```
+{{<link href="https://liguoyou.gitee.io/your/2020/08/20/uni-app-display-flex-v-show-invalid/" content="【具体原因】">}}
