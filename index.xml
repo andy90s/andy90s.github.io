@@ -4,9 +4,29 @@
         <link>https://example.com/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</lastBuildDate>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 May 2023 10:23:24 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>v-show在微信小程序中不生效</title>
+    <link>https://example.com/v-show%E5%9C%A8%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%B8%8D%E7%94%9F%E6%95%88/</link>
+    <pubDate>Mon, 08 May 2023 10:23:24 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/v-show%E5%9C%A8%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%B8%8D%E7%94%9F%E6%95%88/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian3.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item>
+<item>
+    <title>Uni开发遇到的一些问题汇总</title>
+    <link>https://example.com/uni%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link>
+    <pubDate>Mon, 08 May 2023 09:58:31 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/uni%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item>
+<item>
     <title>iOS录音功能</title>
     <link>https://example.com/ios%E5%BD%95%E9%9F%B3/</link>
     <pubDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</pubDate>
@@ -83,26 +103,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian.jpg" referrerpolicy="no-referrer">
             </div>Swift中的只读属性,像OC一样隐藏set方法]]></description>
-</item>
-<item>
-    <title>Telegram-iOS编译打包</title>
-    <link>https://example.com/telegram%E7%BC%96%E8%AF%91%E8%AE%B0%E5%BD%95/</link>
-    <pubDate>Sat, 28 Jan 2023 13:24:56 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/telegram%E7%BC%96%E8%AF%91%E8%AE%B0%E5%BD%95/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
-            </div>Telegram开源iOS端代码编译学习记录]]></description>
-</item>
-<item>
-    <title>Xcode相关问题记录</title>
-    <link>https://example.com/xcode%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</link>
-    <pubDate>Tue, 17 Jan 2023 13:41:49 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/xcode%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
-            </div>主要记录Xcode使用遇到的一些问题]]></description>
 </item>
 </channel>
 </rss>
