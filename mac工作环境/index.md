@@ -126,6 +126,7 @@ npm install -g whistle
 ```
 w2 start
 ```
+启动之后可以在浏览器中输入终端提示链接打开抓包工具
 <center>
 {{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131941846.png" title="启动" width="80%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 启动 </b>  </div>
@@ -134,9 +135,14 @@ w2 start
 ### 3.手机配置
 - 手机连接电脑,打开wifi,选择电脑的wifi
 - 手机设置代理,代理地址填写电脑的ip地址,端口号填写`8899`
-- 手机用safari打开`http://whistlejs.com/`下载证书,安装证书
+- 手机用safari输入`rootca.pro`下载证书,安装证书,也可以到网页设置页面扫码安装如下图
 - 到手机的设置中,找到`通用`->`关于本机`->`证书信任设置`,找到刚才安装的证书,打开信任开关
 - 电脑打开`http://localhost:8899/`点击左侧`network`->`enable`开启抓包
+
+<center>
+{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202305161441116.png" title="扫码安装证书" width="100%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 扫码安装证书 </b>  </div>
+</center>
 
 <center>
 {{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131947012.png" title="开启" width="50%">}}
