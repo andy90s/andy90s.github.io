@@ -4,9 +4,17 @@
         <link>https://example.com/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 May 2023 15:43:20 &#43;0800</lastBuildDate>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 May 2023 16:44:37 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Uni Popup等弹出组件滑动穿透问题</title>
+    <link>https://example.com/uni-popup%E7%AD%89%E5%BC%B9%E5%87%BA%E7%BB%84%E4%BB%B6%E6%BB%91%E5%8A%A8%E7%A9%BF%E9%80%8F%E9%97%AE%E9%A2%98/</link>
+    <pubDate>Thu, 18 May 2023 16:44:37 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/uni-popup%E7%AD%89%E5%BC%B9%E5%87%BA%E7%BB%84%E4%BB%B6%E6%BB%91%E5%8A%A8%E7%A9%BF%E9%80%8F%E9%97%AE%E9%A2%98/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Uni Popup组件底部安全区域问题</title>
     <link>https://example.com/uni-popup%E7%BB%84%E4%BB%B6%E5%BA%95%E9%83%A8%E5%AE%89%E5%85%A8%E5%8C%BA%E5%9F%9F%E9%97%AE%E9%A2%98/</link>
     <pubDate>Thu, 18 May 2023 15:43:20 &#43;0800</pubDate>
@@ -88,16 +96,6 @@
     <guid>https://example.com/xcode%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
-            </div>]]></description>
-</item>
-<item>
-    <title>MAC工作环境</title>
-    <link>https://example.com/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83/</link>
-    <pubDate>Thu, 16 Mar 2023 21:13:23 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
 </item>
 </channel>
