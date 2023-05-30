@@ -40,6 +40,9 @@ pod第三方库的支持版本改为11.0以上
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 示例 </b>  </div>
 </center>
 
+更新: 新版本cocoapods已修复此问题, 无需手动修改
+
+
 ### iOS13系统闪退问题
 最新发现, 已退回14.2 , 坑!
 
