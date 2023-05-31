@@ -4,7 +4,17 @@
         <link>https://example.com/posts/</link>
         <description>所有文章 | 笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 May 2023 16:44:37 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 31 May 2023 13:16:40 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Text组件显示链接文本超出组件</title>
+    <link>https://example.com/text%E7%BB%84%E4%BB%B6%E6%98%BE%E7%A4%BA%E9%93%BE%E6%8E%A5%E6%96%87%E6%9C%AC%E8%B6%85%E5%87%BA%E7%BB%84%E4%BB%B6/</link>
+    <pubDate>Wed, 31 May 2023 13:16:40 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/text%E7%BB%84%E4%BB%B6%E6%98%BE%E7%A4%BA%E9%93%BE%E6%8E%A5%E6%96%87%E6%9C%AC%E8%B6%85%E5%87%BA%E7%BB%84%E4%BB%B6/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian1.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item>
+<item>
     <title>Uni Popup等弹出组件滑动穿透问题</title>
     <link>https://example.com/uni-popup%E7%AD%89%E5%BC%B9%E5%87%BA%E7%BB%84%E4%BB%B6%E6%BB%91%E5%8A%A8%E7%A9%BF%E9%80%8F%E9%97%AE%E9%A2%98/</link>
     <pubDate>Thu, 18 May 2023 16:44:37 &#43;0800</pubDate>
@@ -85,16 +95,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>收集一些AI生产力工具，方便自己和大家使用。]]></description>
-</item>
-<item>
-    <title>Xcode14.3问题记录</title>
-    <link>https://example.com/xcode%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</link>
-    <pubDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/xcode%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
-            </div>]]></description>
 </item>
 </channel>
 </rss>
