@@ -4,7 +4,25 @@
         <link>https://example.com/posts/</link>
         <description>所有文章 | 笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 31 May 2023 13:16:40 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Fastlane自动打包</title>
+    <link>https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/</link>
+    <pubDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item>
+<item>
+    <title>Electron</title>
+    <link>https://example.com/electron/</link>
+    <pubDate>Thu, 08 Jun 2023 17:50:05 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/electron/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Text组件显示链接文本超出组件</title>
     <link>https://example.com/text%E7%BB%84%E4%BB%B6%E6%98%BE%E7%A4%BA%E9%93%BE%E6%8E%A5%E6%96%87%E6%9C%AC%E8%B6%85%E5%87%BA%E7%BB%84%E4%BB%B6/</link>
     <pubDate>Wed, 31 May 2023 13:16:40 &#43;0800</pubDate>
@@ -75,26 +93,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
-</item>
-<item>
-    <title>iOS录音功能</title>
-    <link>https://example.com/ios%E5%BD%95%E9%9F%B3/</link>
-    <pubDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/ios%E5%BD%95%E9%9F%B3/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian3.jpg" referrerpolicy="no-referrer">
-            </div>iOS原生API录音功能]]></description>
-</item>
-<item>
-    <title>AI生产力工具</title>
-    <link>https://example.com/ai%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</link>
-    <pubDate>Fri, 14 Apr 2023 09:26:33 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/ai%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
-            </div>收集一些AI生产力工具，方便自己和大家使用。]]></description>
 </item>
 </channel>
 </rss>
