@@ -40,6 +40,15 @@
 - **前一个面板:** Command + [
 - **后一个面板:** Command + ]
 - **切换到上/下/左/右面板:** Option + Command + 上下左右方向键      
+  
+## tree
+```ruby
+brew install tree
+```
+<center>
+{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202307070028887.png" title="tree" width="60%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> tree </b>  </div>
+</center>
 ## oh-my-zsh
 ```ruby
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh

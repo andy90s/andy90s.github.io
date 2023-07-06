@@ -9,7 +9,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-03-16T21:13:23+08:00" />
-<meta property="article:modified_time" content="2023-05-16T14:44:24+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="article:modified_time" content="2023-07-07T00:28:45+08:00" /><meta property="og:site_name" content="My cool site" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MAC工作环境"/>
@@ -28,8 +28,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1244 ,
-        "url": "https:\/\/example.com\/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83\/","datePublished": "2023-03-16T21:13:23+08:00","dateModified": "2023-05-16T14:44:24+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1255 ,
+        "url": "https:\/\/example.com\/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83\/","datePublished": "2023-03-16T21:13:23+08:00","dateModified": "2023-07-07T00:28:45+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
                 "@type": "Person",
@@ -108,7 +108,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">MAC工作环境</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>andy90s</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-16">2023-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1244 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-16">2023-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1255 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -133,11 +133,7 @@
         <li><a href="#面板操作">面板操作</a></li>
       </ol>
     </li>
-    <li><a href="#oh-my-zsh">oh-my-zsh</a>
-      <ol>
-        <li><a href="#新增其他插件比如zsh-syntax-highlighting高亮插件">新增其他插件,比如zsh-syntax-highlighting高亮插件</a></li>
-      </ol>
-    </li>
+    <li><a href="#tree">tree</a></li>
     <li><a href="#go2shell">Go2Shell</a></li>
     <li><a href="#xcodes">Xcodes</a></li>
     <li><a href="#appcode">AppCode</a></li>
@@ -245,48 +241,48 @@
 <li><strong>后一个面板:</strong> Command + ]</li>
 <li><strong>切换到上/下/左/右面板:</strong> Option + Command + 上下左右方向键</li>
 </ul>
-<h2 id="oh-my-zsh">oh-my-zsh</h2>
+<h2 id="tree">tree</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="line"><span class="cl"><span class="n">curl</span> <span class="o">-</span><span class="n">L</span> <span class="ss">https</span><span class="p">:</span><span class="sr">//</span><span class="n">raw</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">robbyrussell</span><span class="o">/</span><span class="n">oh</span><span class="o">-</span><span class="n">my</span><span class="o">-</span><span class="n">zsh</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">install</span><span class="o">.</span><span class="n">sh</span> <span class="o">|</span> <span class="n">sh</span>
+<pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="line"><span class="cl"><span class="n">brew</span> <span class="n">install</span> <span class="n">tree</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>打开 .zshrc文件
-修改插件配置(自带插件)</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">plugins</span><span class="o">=(</span>colored-man-pages pod git git-flow ruby gem python pip node npm bower sublime<span class="o">)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="新增其他插件比如zsh-syntax-highlighting高亮插件">新增其他插件,比如zsh-syntax-highlighting高亮插件</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd ~/.oh-my-zsh/custom/plugins
-</span></span><span class="line"><span class="cl">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>再次修改.zshrc文件插件配置
+</div><center>
+<a class="lightgallery" href="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202307070028887.png" title="tree" data-thumbnail="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202307070028887.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202307070028887.png"
+            data-srcset="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202307070028887.png, https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202307070028887.png 1.5x, https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202307070028887.png 2x"
+            data-sizes="auto"
+            alt="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202307070028887.png" width="60%" />
+    </a>
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> tree </b>  </div>
+</center>
+## oh-my-zsh
+```ruby
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+```
+打开 .zshrc文件
+修改插件配置(自带插件)
+```shell
+plugins=(colored-man-pages pod git git-flow ruby gem python pip node npm bower sublime)
+```
+### 新增其他插件,比如zsh-syntax-highlighting高亮插件
+```
+cd ~/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+```
+再次修改.zshrc文件插件配置
 在sublime后面加上zsh-syntax-highlighting
-然后执行</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">source ~/.zshrc 
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>比如执行 <code>pod install</code></p>
+然后执行
+```
+source ~/.zshrc 
+```
+比如执行 `pod install`
 <center>
 <a class="lightgallery" href="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/Untitled.gif" title="pod install" data-thumbnail="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/Untitled.gif">
         <img
@@ -448,7 +444,7 @@ Mac平台有<code>Charles</code>
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-05-16</span>
+                <span>更新于 2023-07-07</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
