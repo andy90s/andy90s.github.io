@@ -142,6 +142,11 @@ w2 start
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 启动 </b>  </div>
 </center>
 
+### 3.停止
+```
+w2 stop
+```
+
 ### 3.手机配置
 - 手机连接电脑,打开wifi,选择电脑的wifi
 - 手机设置代理,代理地址填写电脑的ip地址,端口号填写`8899`
