@@ -46,7 +46,7 @@
 brew install tree
 ```
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202307070028887.png" title="tree" width="60%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202307070028887.png" title="tree" width="60%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> tree </b>  </div>
 </center>
 
@@ -72,7 +72,7 @@ source ~/.zshrc
 ```
 比如执行 `pod install`
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/Untitled.gif" title="pod install" width="100%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/Untitled.gif" title="pod install" width="100%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> pod install </b>  </div>
 </center>
 
@@ -81,7 +81,7 @@ source ~/.zshrc
 效果如下:
 
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/go2shell%E6%BC%94%E7%A4%BA2.gif" title="Go2Shell" width="100%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/go2shell%E6%BC%94%E7%A4%BA2.gif" title="Go2Shell" width="100%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> Go2Shell </b>  </div>
 </center>
 
@@ -93,7 +93,7 @@ source ~/.zshrc
 - 下载快,不会卡99%
 
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304031139069.png" title="Xcodes" width="100%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202304031139069.png" title="Xcodes" width="100%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> Xcodes </b>  </div>
 </center>
 
@@ -104,13 +104,13 @@ source ~/.zshrc
 ## MAC自带邮箱增加QQ邮箱
 首先登录网页端QQ邮箱,然后到设置中生成授权码,在mac中添加QQ邮箱时密码填授权码即可.
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304041500308.png" title="授权码" width="100%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202304041500308.png" title="授权码" width="100%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 授权码 </b>  </div>
 </center>
 
 ## 超级右键lite
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304071450741.png" title="超级右键" width="30%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202304071450741.png" title="超级右键" width="30%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 超级右键 </b>  </div>
 </center>
 
@@ -119,7 +119,7 @@ source ~/.zshrc
 {{<link href="https://www.snipaste.com/" content="【Snipaste】">}}
 
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/snipaste.gif" title="snipaste" width="50%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/snipaste.gif" title="snipaste" width="50%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> snipaste </b>  </div>
 </center>
 
@@ -138,7 +138,7 @@ w2 start
 ```
 启动之后可以在浏览器中输入终端提示链接打开抓包工具
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131941846.png" title="启动" width="80%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202304131941846.png" title="启动" width="80%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 启动 </b>  </div>
 </center>
 
@@ -155,11 +155,11 @@ w2 stop
 - 电脑打开`http://localhost:8899/`点击左侧`network`->`enable`开启抓包
 
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202305161441116.png" title="扫码安装证书" width="100%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202305161441116.png" title="扫码安装证书" width="100%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 扫码安装证书 </b>  </div>
 </center>
 
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202304131947012.png" title="开启" width="50%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202304131947012.png" title="开启" width="50%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 抓包 </b>  </div>
 </center>

@@ -176,7 +176,7 @@ override func viewDidLoad() {
 }
 ```
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202302072135805.png" title="withMultipliedBrightnessBy" width="50%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202302072135805.png" title="withMultipliedBrightnessBy" width="50%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> withMultipliedBrightnessBy </b>  </div>
 </center>
 
@@ -209,7 +209,7 @@ private func setupViews2() {
 }
 ```
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202302151628332.png" title="withMultiplied" width="50%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202302151628332.png" title="withMultiplied" width="50%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> withMultiplied </b>  </div>
 </center>
 
@@ -275,7 +275,7 @@ private func setupViews3() {
 }
 ```
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202302161403519.png" title="mixedWith" width="50%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202302161403519.png" title="mixedWith" width="50%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> mixedWith </b>  </div>
 </center>
 
@@ -359,7 +359,7 @@ func interpolateTo(_ color: UIColor, fraction: CGFloat) -> UIColor? {
 很多日常使用的“颜色差异”，是直接通过在一个“设备无关”的色彩空间里，进行欧氏距离的计算得到的。给定一个RGB（红绿蓝）的色彩空间，最简单的差异计算方式就是在这个三维空间里求两个点间的距离.      
 有不少人尝试将RGB三值加上权重，希望可以让得到的结果更加符合人类感官。一种做法是使用2、4、3：
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202302201044587.png" title="" width="50%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202302201044587.png" title="" width="50%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b>  </b>  </div>
 </center>       
 

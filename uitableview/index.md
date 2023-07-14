@@ -16,7 +16,7 @@ public enum Style : Int, @unchecked Sendable {
 ```
 
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202301062145544.png" title="insetGrouped"width="50%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202301062145544.png" title="insetGrouped"width="50%">}}
 <div style="color:black;"> <b> insetGrouped </b>  </div>
 </center>
 

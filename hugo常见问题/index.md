@@ -93,7 +93,7 @@ hugo server -D # 启动本地服务
 生成方法:打开github设置 - develop setting - OAuth Apps - 选择新建
 
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/271669958429_.pic.jpg" title="新建OAuth" width="50%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/271669958429_.pic.jpg" title="新建OAuth" width="50%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 新建OAuth </b>  </div>
 </center>
 
@@ -112,5 +112,37 @@ hugo server -D # 启动本地服务
 `id`按照上述配置,会自动生成`issue`
 {{< /admonition >}}
 
+
+## 图片资源
+由于我的图片是直接存放到github仓库中的,所以需要配置下CDN来加速访问,上传我使用的是`picgo`工具,配置如下:
+
+<center>
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/picgo%E8%AE%BE%E7%BD%AEcdn.png" title="picgo设置" width="70%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> picgo设置 </b>  </div>
+</center>
+
+```
+https://cdn.jsdelivr.net/gh/ + 你的github用户名 + 你的仓库名 + 图片路径
+```
+例如:
+```
+https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/271669958429_.pic.jpg
+```
+{{< admonition tip "">}}
+gh = github
+指定master分支:
+```
+https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/271669958429_.pic.jpg
+```
+还可以指定版本号:
+```
+https://cdn.jsdelivr.net/gh/andy90s/blog-image@版本号/blog/images/271669958429_.pic.jpg
+```
+压缩资源:
+```
+https://cdn.jsdelivr.net/gh/andy90s/blog-image@版本号/blog/images/271669958429_.pic?x-oss-process=image/resize,m_lfit,h_100,w_100
+```
+
+{{< /admonition >}}
 ## 参考
 [主题文档 - 扩展 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#2-link)

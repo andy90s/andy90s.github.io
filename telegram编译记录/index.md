@@ -8,19 +8,19 @@ Telegram开源IM应用,虽然服务器代码不开源,但是可以从客户端�
 1. 打开[官网](https://my.telegram.org/),选择**API development tools**
 
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202301281427085.png" title="选择API development tools" width="50%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202301281427085.png" title="选择API development tools" width="50%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> API development tools </b>  </div>
 </center>
 
 2. 填写自己的电报号码登录,验证码为官方TG给你发条验证消息:
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202301281435414.png" title="TG账号登录" width="70%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202301281435414.png" title="TG账号登录" width="70%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> TG账号登录 </b>  </div>
 </center>
 
 3. 选择**API**,**Getting started**下面的**Creating an application**
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202301281451551.png" title="Creating an application" width="60%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202301281451551.png" title="Creating an application" width="60%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> Creating an application </b>  </div>
 </center>
 
@@ -31,7 +31,7 @@ Telegram开源IM应用,虽然服务器代码不开源,但是可以从客户端�
 
 5. 生成的应用示例:
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202301281506469.png" title="示例" width="80%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202301281506469.png" title="示例" width="80%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 示例 </b>  </div>
 </center>
 
@@ -98,7 +98,7 @@ mkdir -p "$HOME/telegram-bazel-cache"
 ```
 最终我的电脑根目录下结构如图所示:
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/202301291639284.png" title="目录结构" width="50%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202301291639284.png" title="目录结构" width="50%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 目录结构 </b>  </div>
 </center>
 

@@ -4,7 +4,7 @@
 
 ## M系列电脑运行`MAC(Designed for iPad)`或者`MAC(Designed for iPhone)`项目报错
 ### 报错信息
-```shell
+```error
 The app's bundle identifier "com.xxx.xxx.xxx" is being used by another running app. 
 macOS does not support running iOS or Mac Catalyst apps concurrently with other apps using the same bundle identifier. 
 Please try again after terminating all other processes using the same bundle identifier or changing the bundle identifier of your app.

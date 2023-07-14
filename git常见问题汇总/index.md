@@ -41,7 +41,7 @@ git commit -m 'update gitignore'
 选择新建一个如下图所示,得到一个token字符串,登录的时候密码使用此token替换原来的密码进行登录  
 {{< /admonition >}}
 <center>
-{{<image src="https://raw.githubusercontent.com/andy90s/blog-image/master/blog/images/281670218139_.pic.jpg" title="设置github token" width="100%">}}
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/281670218139_.pic.jpg" title="设置github token" width="100%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 设置github token </b>  </div>
 </center>
 

@@ -74,7 +74,7 @@ show databases;
 ```shell
 use mysite;
 ```
-## 4.创建表
+### 4.创建表
 ```shell
 CREATE TABLE `app_userinfo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
