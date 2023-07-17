@@ -62,19 +62,23 @@ mysql.server stop #: 停止 MySQL 服务器
 ## 使用(以mysite为例)
 
 执行上面的安装和启动后，就可以使用MySQL了。
-### 1.创建数据库
+### - 登录MySQL
+```shell
+mysql -uroot -p
+```
+### - 创建数据库
 ```shell
 create database mysite DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
 ```
-### 2.查看数据库
+### - 查看数据库
 ```shell
 show databases;
 ```
-### 3.选择数据库
+### - 选择数据库
 ```shell
 use mysite;
 ```
-### 4.创建表
+### - 创建表
 ```shell
 CREATE TABLE `app_userinfo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -90,7 +94,7 @@ CREATE TABLE `app_userinfo` (
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 ```
-### 5.查看表
+### - 查看表
 ```shell
 desc app_userinfo;
 ```
