@@ -13,6 +13,18 @@
 [下载地址](https://developer.apple.com/download/all/?q=for%20Xcode),登录苹果账号进行下载.      
 优点: 弥补了方式1的缺点,并且历史版本也可以下载安装.     
 缺点: 无法自动更新下一个版本.
+### 方式3: 使用`Xcodes`管理
+{{<link href="https://www.xcodes.app/" content="【Xcodes】">}} 非常方便的管理Xcode的工具,优点: 
+- 不必等苹果商店更新
+- 可安装测试版本
+- 多版本安装
+- 下载快,不会卡99%
+
+<center>
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202304031139069.png" title="Xcodes" width="100%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> Xcodes </b>  </div>
+</center>
+
 ## 重装Xcode之后,Cocoapods报错问题
 ### 如下报错:
 ```
