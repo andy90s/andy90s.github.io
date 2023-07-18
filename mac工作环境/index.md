@@ -163,3 +163,7 @@ w2 stop
 {{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202304131947012.png" title="开启" width="50%">}}
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> 抓包 </b>  </div>
 </center>
+
+{{< admonition tip "">}}
+如果证书配置成功,但是抓包不成功,并且网络也正常,但是手机却无法访问网络,这时候可以尝试关闭电脑的wifi,然后再打开,这样手机就可以访问网络了
+{{< /admonition >}}
