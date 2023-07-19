@@ -15,12 +15,14 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Mac安装MySQL</title>
+    <title>Mac安装MySQL及简单使用</title>
     <link>https://example.com/mac%E5%AE%89%E8%A3%85mysql/</link>
     <pubDate>Tue, 11 Jul 2023 17:30:23 &#43;0800</pubDate>
     <author>andy90s</author>
     <guid>https://example.com/mac%E5%AE%89%E8%A3%85mysql/</guid>
-    <description><![CDATA[]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>MySQL是一种流行的关系型数据库管理系统，本文将介绍如何在Mac上安装MySQL并创建数据库和表格。]]></description>
 </item>
 <item>
     <title>Fastlane自动打包</title>

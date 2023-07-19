@@ -1,4 +1,4 @@
-# Mac安装MySQL
+# Mac安装MySQL及简单使用
 
 <!--more-->
 
@@ -78,6 +78,7 @@ show databases;
 ```shell
 use mysite;
 ```
+
 ### - 创建表
 ```shell
 CREATE TABLE `app_userinfo` (
@@ -98,8 +99,6 @@ CREATE TABLE `app_userinfo` (
 ```shell
 desc app_userinfo;
 ```
-
-
 
 ## 参考
 {{<link href="https://www.sjkjc.com/mysql/install-on-macos/" content="【Mac安装MySQL】">}}
