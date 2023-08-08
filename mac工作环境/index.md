@@ -129,13 +129,18 @@ Mac平台有`Charles`
 都是比较常用的,因为我是mac刚开始用的也是**Charles**,但是因为公司路由器等原因,经常性的无法抓包,这里分享另一个开源工具 {{<link href="https://github.com/avwo/whistle" content="【Whistle】">}}
 
 ### 1.安装
-```
+```zsh
 npm install -g whistle
 ```
 ### 2.启动
-```
+```zsh
 w2 start
 ```
+默认是8899端口,如果需要修改端口,可以在启动命令后面加上端口号,比如
+```zsh
+w2 start -p 8888
+```
+
 启动之后可以在浏览器中输入终端提示链接打开抓包工具
 <center>
 {{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/202304131941846.png" title="启动" width="80%">}}
@@ -143,7 +148,7 @@ w2 start
 </center>
 
 ### 3.停止
-```
+```zsh
 w2 stop
 ```
 

@@ -4,7 +4,15 @@
         <link>https://example.com/posts/</link>
         <description>所有文章 | 笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 12 Jul 2023 19:30:20 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 08 Aug 2023 14:09:34 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Mac电脑安装Docker</title>
+    <link>https://example.com/mac%E7%94%B5%E8%84%91%E5%AE%89%E8%A3%85docker/</link>
+    <pubDate>Tue, 08 Aug 2023 14:09:34 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/mac%E7%94%B5%E8%84%91%E5%AE%89%E8%A3%85docker/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Xcode运行项目报错</title>
     <link>https://example.com/xcode%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE%E6%8A%A5%E9%94%99/</link>
     <pubDate>Wed, 12 Jul 2023 19:30:20 &#43;0800</pubDate>
@@ -81,16 +89,6 @@
     <author>andy90s</author>
     <guid>https://example.com/%E5%BC%82%E6%AD%A5%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8this%E6%89%BE%E4%B8%8D%E5%88%B0%E6%96%B9%E6%B3%95/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Uni页面撑满整个view</title>
-    <link>https://example.com/uni%E9%A1%B5%E9%9D%A2%E6%92%91%E6%BB%A1%E6%95%B4%E4%B8%AAview/</link>
-    <pubDate>Mon, 08 May 2023 13:45:46 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/uni%E9%A1%B5%E9%9D%A2%E6%92%91%E6%BB%A1%E6%95%B4%E4%B8%AAview/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian1.jpg" referrerpolicy="no-referrer">
-            </div>]]></description>
 </item>
 </channel>
 </rss>

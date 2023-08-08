@@ -9,7 +9,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-03-16T21:13:23+08:00" />
-<meta property="article:modified_time" content="2023-07-18T18:49:13+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="article:modified_time" content="2023-07-19T11:34:53+08:00" /><meta property="og:site_name" content="My cool site" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MAC工作环境"/>
@@ -28,8 +28,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1331 ,
-        "url": "https:\/\/example.com\/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83\/","datePublished": "2023-03-16T21:13:23+08:00","dateModified": "2023-07-18T18:49:13+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1372 ,
+        "url": "https:\/\/example.com\/mac%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83\/","datePublished": "2023-03-16T21:13:23+08:00","dateModified": "2023-07-19T11:34:53+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
                 "@type": "Person",
@@ -108,7 +108,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">MAC工作环境</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>andy90s</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-16">2023-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1331 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-16">2023-03-16</time>&nbsp;
+                    <i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2023-03-16&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1372 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -411,7 +412,7 @@ Mac平台有<code>Charles</code>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm install -g whistle
+<pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="line"><span class="cl">npm install -g whistle
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2启动">2.启动</h3>
@@ -420,7 +421,16 @@ Mac平台有<code>Charles</code>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">w2 start
+<pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="line"><span class="cl">w2 start
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>默认是8899端口,如果需要修改端口,可以在启动命令后面加上端口号,比如</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="line"><span class="cl">w2 start -p <span class="m">8888</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>启动之后可以在浏览器中输入终端提示链接打开抓包工具</p>
@@ -442,7 +452,7 @@ Mac平台有<code>Charles</code>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">w2 stop
+<pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="line"><span class="cl">w2 stop
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3手机配置">3.手机配置</h3>
@@ -502,7 +512,7 @@ Mac平台有<code>Charles</code>
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-07-18</span>
+                <span>更新于 2023-07-19</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
