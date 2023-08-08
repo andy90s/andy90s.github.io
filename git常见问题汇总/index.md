@@ -3,16 +3,12 @@
 <!--more-->
 ## 生成ssh-key,对应不同平台
 
-{{< admonition tip "注意">}}
-如果只需要一个,则不需要区分平台,直接生成一个即可
-```zsh
-ssh-keygen -t rsa -C "youremail@xxx.com" -f ~/.ssh/id_rsa
-```
-{{< /admonition >}}
 ### 1. 利用ssh生成秘钥(这里以github平台为例)
+
 ```bash
 ssh-keygen -t rsa -C "youremail@xxx.com" -f ~/.ssh/id_rsa
 ```
+
 {{< admonition >}}
 `id_rsa`是文件名,可自己修改,大部分默认名为`id_rsa`      
 如果想要多个平台分开不同秘钥,再次执行上面指令,文件名替换其他,例:`gitlab_id_rsa`
