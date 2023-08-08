@@ -9,7 +9,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-30T18:58:31+08:00" />
-<meta property="article:modified_time" content="2023-07-14T14:23:28+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="article:modified_time" content="2023-08-08T17:47:15+08:00" /><meta property="og:site_name" content="My cool site" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Git常见问题汇总"/>
@@ -28,8 +28,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "git","wordcount":  405 ,
-        "url": "https:\/\/example.com\/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB\/","datePublished": "2022-11-30T18:58:31+08:00","dateModified": "2023-07-14T14:23:28+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "git","wordcount":  451 ,
+        "url": "https:\/\/example.com\/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB\/","datePublished": "2022-11-30T18:58:31+08:00","dateModified": "2023-08-08T17:47:15+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
                 "@type": "Person",
@@ -109,7 +109,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Git常见问题汇总</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>梁先华</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/git/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Git</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-11-30">2022-11-30</time>&nbsp;
-                    <i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2022-11-30&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 405 字&nbsp;
+                    <i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2022-11-30&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 451 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -125,11 +125,11 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ol>
-    <li><a href="#生成ssh-key">生成ssh-key</a>
+    <li><a href="#生成ssh-key对应不同平台">生成ssh-key,对应不同平台</a>
       <ol>
         <li><a href="#1-利用ssh生成秘钥这里以github平台为例">1. 利用ssh生成秘钥(这里以github平台为例)</a></li>
         <li><a href="#2-添加私钥">2. 添加私钥</a></li>
-        <li><a href="#3-查看公钥内容并复制到对应的git平台">3. 查看公钥内容并复制到对应的git平台</a></li>
+        <li><a href="#3-查看公钥内容并复制到对应的git平台的ssh-keys设置中">3. 查看公钥内容并复制到对应的git平台的<code>ssh keys</code>设置中</a></li>
         <li><a href="#4-测试链接">4. 测试链接</a></li>
       </ol>
     </li>
@@ -137,14 +137,31 @@
     <li><a href="#github提示账号密码不对">github提示账号密码不对</a></li>
   </ol>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="生成ssh-key">生成ssh-key</h2>
+            </div><div class="content" id="content"><h2 id="生成ssh-key对应不同平台">生成ssh-key,对应不同平台</h2>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>注意<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>如果只需要一个,则不需要区分平台,直接生成一个即可</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="line"><span class="cl">ssh-keygen -t rsa -C <span class="s2">&#34;youremail@xxx.com&#34;</span> -f ~/.ssh/id_rsa
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
 <h3 id="1-利用ssh生成秘钥这里以github平台为例">1. 利用ssh生成秘钥(这里以github平台为例)</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t rsa -C <span class="s2">&#34;youremail@xxx.com&#34;</span> -f ~/.ssh/github_id_rsa
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t rsa -C <span class="s2">&#34;youremail@xxx.com&#34;</span> -f ~/.ssh/id_rsa
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="details admonition note open">
@@ -152,9 +169,8 @@
             <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>注意<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p><code>github_id_rsa</code>是文件名,可自己修改,大部分默认名为<code>id_rsa</code></p>
-<p>如果想要多个平台分开不同秘钥,再次执行上面指令,文件名替换其他,例:<code>gitlab_id_rsa</code></p>
-</div>
+            <div class="admonition-content"><code>id_rsa</code>是文件名,可自己修改,大部分默认名为<code>id_rsa</code>   <br>
+如果想要多个平台分开不同秘钥,再次执行上面指令,文件名替换其他,例:<code>gitlab_id_rsa</code></div>
         </div>
     </div>
 <h3 id="2-添加私钥">2. 添加私钥</h3>
@@ -163,16 +179,16 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-add ~/.ssh/github_id_rsa
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-add ~/.ssh/id_rsa
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="3-查看公钥内容并复制到对应的git平台">3. 查看公钥内容并复制到对应的git平台</h3>
+</div><h3 id="3-查看公钥内容并复制到对应的git平台的ssh-keys设置中">3. 查看公钥内容并复制到对应的git平台的<code>ssh keys</code>设置中</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat ~/.ssh/os_id_rsa.pub
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat ~/.ssh/id_rsa.pub
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4-测试链接">4. 测试链接</h3>
@@ -240,7 +256,7 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-07-14</span>
+                <span>更新于 2023-08-08</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>

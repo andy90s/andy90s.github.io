@@ -1,25 +1,30 @@
 # Git常见问题汇总
 
 <!--more-->
-## 生成ssh-key
+## 生成ssh-key,对应不同平台
+
+{{< admonition tip "注意">}}
+如果只需要一个,则不需要区分平台,直接生成一个即可
+```zsh
+ssh-keygen -t rsa -C "youremail@xxx.com" -f ~/.ssh/id_rsa
+```
+{{< /admonition >}}
 ### 1. 利用ssh生成秘钥(这里以github平台为例)
 ```bash
-ssh-keygen -t rsa -C "youremail@xxx.com" -f ~/.ssh/github_id_rsa
+ssh-keygen -t rsa -C "youremail@xxx.com" -f ~/.ssh/id_rsa
 ```
 {{< admonition >}}
-`github_id_rsa`是文件名,可自己修改,大部分默认名为`id_rsa`
-
-
+`id_rsa`是文件名,可自己修改,大部分默认名为`id_rsa`      
 如果想要多个平台分开不同秘钥,再次执行上面指令,文件名替换其他,例:`gitlab_id_rsa`
 {{< /admonition >}}
 
 ### 2. 添加私钥
 ```bash
-ssh-add ~/.ssh/github_id_rsa
+ssh-add ~/.ssh/id_rsa
 ```
-### 3. 查看公钥内容并复制到对应的git平台
+### 3. 查看公钥内容并复制到对应的git平台的`ssh keys`设置中
 ```bash
-cat ~/.ssh/os_id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 ```
 ### 4. 测试链接
 ```bash
