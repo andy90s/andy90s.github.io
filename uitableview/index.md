@@ -43,6 +43,20 @@ func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) ->
 }
 ```
 
+### 去除诡异动画
+```objc
+[UIView setAnimationsEnabled:false];
+        [CATransaction begin];
+        [CATransaction setCompletionBlock:^{
+            [UIView setAnimationsEnabled:true];
+        }];
+        [self.tableView beginUpdates];
+        [self.tableView insertRowsAtIndexPaths:addIndexPathes
+                              withRowAnimation:UITableViewRowAnimationNone];
+        [self.tableView endUpdates];
+        [CATransaction commit];
+```
+
 
 
 
