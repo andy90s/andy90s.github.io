@@ -54,4 +54,7 @@ w2 stop
 {{< /admonition >}}
 
 ### MOCK数据
-
+<center>
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/Mock返回的数据.gif" title="mock数据" width="90%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> mock数据 </b>  </div>
+</center>

@@ -2,9 +2,9 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://example.com/posts/</loc><lastmod>2023-10-20T14:02:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/uicollectionview/</loc><lastmod>2023-10-13T14:46:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/</loc><lastmod>2023-10-20T14:02:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://example.com/posts/</loc><lastmod>2023-10-20T14:08:57&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/uicollectionview/</loc><lastmod>2023-10-20T14:03:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/</loc><lastmod>2023-10-20T14:08:57&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://example.com/en/"
@@ -14,7 +14,7 @@
                     href="https://example.com/"
                     /></url><url>
             <loc>https://example.com/django%E9%A1%B9%E7%9B%AE%E4%BA%A4%E4%BA%92%E7%8E%AF%E5%A2%83/</loc><lastmod>2023-09-18T15:52:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>https://example.com/whistle%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/</loc><lastmod>2023-09-14T10:36:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://example.com/whistle%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/</loc><lastmod>2023-10-20T14:08:57&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/mac%E7%94%B5%E8%84%91%E5%AE%89%E8%A3%85docker/</loc><lastmod>2023-08-08T14:46:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/xcode%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE%E6%8A%A5%E9%94%99/</loc><lastmod>2023-07-12T21:16:57&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/categories/</loc><lastmod>2023-09-14T16:37:23&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
