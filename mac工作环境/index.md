@@ -97,9 +97,9 @@ source ~/.zshrc
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> Xcodes </b>  </div>
 </center>
 
-## AppCode
+<!-- ## AppCode
 
-{{<link href="https://www.jetbrains.com/objc/" content="【AppCode】">}}
+{{<link href="https://www.jetbrains.com/objc/" content="【AppCode】">}} -->
 
 ## MAC自带邮箱增加QQ邮箱
 首先登录网页端QQ邮箱,然后到设置中生成授权码,在mac中添加QQ邮箱时密码填授权码即可.
@@ -172,3 +172,17 @@ w2 stop
 {{< admonition tip "">}}
 如果证书配置成功,但是抓包不成功,并且网络也正常,但是手机却无法访问网络,这时候可以尝试关闭电脑的wifi,然后再打开,这样手机就可以访问网络了
 {{< /admonition >}}
+### 4.mock数据
+<center>
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/Mock返回的数据.gif" title="mock数据" width="90%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> mock数据 </b>  </div>
+</center>
+
+## markdown工具
+### Typora
+{{<link href="https://typora.io/" content="【Typora】">}}
+优点:
+- 支持实时预览
+- 支持导出多种格式
+- 图片资源管理,解决了markdown图片资源管理的痛点   
+
