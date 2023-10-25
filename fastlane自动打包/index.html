@@ -4,15 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Fastlane自动打包 - 笔记</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Fastlane自动打包" />
+        <title>Fastlane打包 - 笔记</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Fastlane打包" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-07-04T09:16:24+08:00" />
-<meta property="article:modified_time" content="2023-07-04T09:36:54+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="article:modified_time" content="2023-10-23T15:29:46+08:00" /><meta property="og:site_name" content="My cool site" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Fastlane自动打包"/>
+<meta name="twitter:title" content="Fastlane打包"/>
 <meta name="twitter:description" content=""/>
 <meta name="application-name" content="梁先华个人博客">
 <meta name="apple-mobile-web-app-title" content="梁先华个人博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -23,13 +23,13 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Fastlane自动打包",
+        "headline": "Fastlane打包",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "iOS","wordcount":  512 ,
-        "url": "https:\/\/example.com\/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85\/","datePublished": "2023-07-04T09:16:24+08:00","dateModified": "2023-07-04T09:36:54+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "iOS","wordcount":  1030 ,
+        "url": "https:\/\/example.com\/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85\/","datePublished": "2023-07-04T09:16:24+08:00","dateModified": "2023-10-23T15:29:46+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
                 "@type": "Person",
@@ -106,10 +106,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Fastlane自动打包</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Fastlane打包</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>andy90s</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/ios/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>iOS</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2023-07-04&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 512 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-07-04">2023-07-04</time>&nbsp;<i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2023-10-23&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1030 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -132,6 +132,7 @@
       </ol>
     </li>
     <li><a href="#以下是我自己上传到蒲公英的脚本">以下是我自己上传到蒲公英的脚本</a></li>
+    <li><a href="#二次签名">二次签名</a></li>
   </ol>
 </nav></div>
             </div><div class="content" id="content"><h2 id="fastlane简介">fastlane简介</h2>
@@ -159,6 +160,7 @@
 </div>
 </div><p>然后选择<code>2</code>来初始化<code>fastlane</code>配置文件,这样就会在项目根目录下生成一个<code>fastlane</code>文件夹,里面有一个<code>Fastfile</code>文件,这个文件就是<code>fastlane</code>的配置文件,我们可以在这个文件中配置自动化打包的一些参数,比如<code>bundleId</code>等等,也可以在这个文件中配置自动化上传到<code>App Store</code>或者<code>TestFlight</code>等等,具体的配置可以参考<a href="https://docs.fastlane.tools/" target="_blank" rel="noopener noreffer ">fastlane官方文档</a></p>
 <h2 id="以下是我自己上传到蒲公英的脚本">以下是我自己上传到蒲公英的脚本</h2>
+<p>工程自动签名:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -193,6 +195,57 @@
 </span></span><span class="line"><span class="cl">end
 </span></span></code></pre></td></tr></table>
 </div>
+</div><p>工程手动签名:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ENV[&#34;FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT&#34;] = &#34;120&#34; # 设置超时时间,不然会报超时错误
+</span></span><span class="line"><span class="cl">default_platform(:ios)
+</span></span><span class="line"><span class="cl">platform :ios do
+</span></span><span class="line"><span class="cl">  desc &#34;Description of what the lane does&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  lane :beta do
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	increment_build_number
+</span></span><span class="line"><span class="cl">	gym(
+</span></span><span class="line"><span class="cl">		output_directory: &#34;./fastlane/&#34;, # 打包后的ipa文件存放的路径
+</span></span><span class="line"><span class="cl">		export_method: &#34;ad-hoc&#34;,
+</span></span><span class="line"><span class="cl">		scheme: &#34;XXX&#34;, # 项目的scheme
+</span></span><span class="line"><span class="cl">		export_options: {
+</span></span><span class="line"><span class="cl">			provisioningProfiles: {
+</span></span><span class="line"><span class="cl">				&#34;包名&#34; =&gt; &#34;描述文件名称&#34;
+</span></span><span class="line"><span class="cl">  			}
+</span></span><span class="line"><span class="cl">		},
+</span></span><span class="line"><span class="cl">		configuration: &#34;Release&#34;
+</span></span><span class="line"><span class="cl">	)
+</span></span><span class="line"><span class="cl">	pgyer(api_key: &#34;蒲公英的api_key&#34;)
+</span></span><span class="line"><span class="cl">  end
+</span></span><span class="line"><span class="cl">end
+</span></span></code></pre></td></tr></table>
+</div>
 </div><p>打包的时候到项目根目录执行:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -202,7 +255,17 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">fastlane beta
 </span></span></code></pre></td></tr></table>
 </div>
-</div><div class="post-reward">
+</div><h2 id="二次签名">二次签名</h2>
+<p>准备好需要二次签名的ipa文件,然后执行以下命令:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">fastlane sigh resign --signing_identity &#34;iPhone Distribution: XXXX&#34; --provisioning_profile &#34;描述文件名称.mobileprovision&#34; --ipa &#34;需要二次签名的ipa文件路径&#34; --entitlements &#34;entitlements.plist&#34; --display_name &#34;显示名称&#34; --bundle_id &#34;包名&#34; --output_path &#34;输出路径&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>其中<code>signing_identity</code>是证书的名称,可以在钥匙串中查看,<code>provisioning_profile</code>是描述文件的名称,可以在<code>~/Library/MobileDevice/Provisioning Profiles</code>目录下查看,<code>ipa</code>是需要二次签名的ipa文件路径,<code>entitlements</code>是entitlements文件的路径,<code>display_name</code>是显示名称,<code>bundle_id</code>是包名,<code>output_path</code>是输出路径</p><div class="post-reward">
   <input type="checkbox" name="reward" id="reward" hidden />
   <label class="reward-button" for="reward">赞赏支持</label>
   <div class="qr-code">
@@ -220,12 +283,12 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-07-04</span>
+                <span>更新于 2023-10-23</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" data-title="Fastlane自动打包" data-hashtags="iOS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" data-hashtag="iOS"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" data-title="Fastlane自动打包"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" data-title="Fastlane自动打包"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" data-title="Fastlane自动打包" data-image="/images/fengmian4.jpg" data-ralateuid="xxxx"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" data-title="Fastlane打包" data-hashtags="iOS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" data-hashtag="iOS"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" data-title="Fastlane打包"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" data-title="Fastlane打包"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" data-title="Fastlane打包" data-image="/images/fengmian4.jpg" data-ralateuid="xxxx"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -254,5 +317,5 @@
             </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":500},"comment":{"gitalk":{"admin":["andy90s"],"clientID":"62923a9afe801911f8c1","clientSecret":"6282277a7df4b041e6d0181342afe037be6f88f9","id":"2023-07-04T09:16:24+08:00","owner":"andy90s","repo":"andy90s.github.io","title":"Fastlane自动打包"}},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":500},"comment":{"gitalk":{"admin":["andy90s"],"clientID":"62923a9afe801911f8c1","clientSecret":"6282277a7df4b041e6d0181342afe037be6f88f9","id":"2023-07-04T09:16:24+08:00","owner":"andy90s","repo":"andy90s.github.io","title":"Fastlane打包"}},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

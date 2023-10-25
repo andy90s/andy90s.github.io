@@ -17,7 +17,7 @@
 <meta name="application-name" content="梁先华个人博客">
 <meta name="apple-mobile-web-app-title" content="梁先华个人博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/uicollectionview/" /><link rel="prev" href="https://example.com/django%E9%A1%B9%E7%9B%AE%E4%BA%A4%E4%BA%92%E7%8E%AF%E5%A2%83/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/uicollectionview/" /><link rel="prev" href="https://example.com/django%E9%A1%B9%E7%9B%AE%E4%BA%A4%E4%BA%92%E7%8E%AF%E5%A2%83/" /><link rel="next" href="https://example.com/mac%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%B3%E9%97%AD%E5%B7%A6%E5%8F%B3%E6%BB%91%E5%8A%A8/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -121,9 +121,9 @@
       <ol>
         <li><a href="#方式1">方式1</a></li>
         <li><a href="#方式2">方式2</a></li>
+        <li><a href="#方式3">方式3</a></li>
       </ol>
     </li>
-    <li><a href="#方式3">方式3</a></li>
   </ol>
 </nav></div>
             </div><div class="content" id="content"><h2 id="布局从右到左">布局从右到左</h2>
@@ -196,7 +196,7 @@
 <pre tabindex="0" class="chroma"><code class="language-objc" data-lang="objc"><span class="line"><span class="cl"><span class="n">cell</span><span class="p">.</span><span class="n">transform</span> <span class="o">=</span> <span class="n">CGAffineTransformMakeScale</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="方式3">方式3</h2>
+</div><h3 id="方式3">方式3</h3>
 <p>自定义UICollectionViewFlowLayout,这种方式不会改变数据的排列方向，只是改变了cell的布局方向<br>
 比如一行有4个cell，那么第一个cell的x坐标为0，第二个cell的x坐标为第一个cell的x坐标加上第一个cell的宽度，以此类推，第四个cell的x坐标为第三个cell的x坐标加上第三个cell的宽度，这样就可以实现从右到左的布局<br>
 示例代码如下：</p>
@@ -404,7 +404,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/django%E9%A1%B9%E7%9B%AE%E4%BA%A4%E4%BA%92%E7%8E%AF%E5%A2%83/" class="prev" rel="prev" title="Django项目交互环境"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Django项目交互环境</a></div>
+    <div class="post-nav"><a href="/django%E9%A1%B9%E7%9B%AE%E4%BA%A4%E4%BA%92%E7%8E%AF%E5%A2%83/" class="prev" rel="prev" title="Django项目交互环境"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Django项目交互环境</a>
+            <a href="/mac%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%B3%E9%97%AD%E5%B7%A6%E5%8F%B3%E6%BB%91%E5%8A%A8/" class="next" rel="next" title="Mac版Chrome浏览器关闭左右滑动">Mac版Chrome浏览器关闭左右滑动<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="gitalk" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.

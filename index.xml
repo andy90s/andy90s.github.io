@@ -4,9 +4,17 @@
         <link>https://example.com/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 13 Oct 2023 14:42:52 &#43;0800</lastBuildDate>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Mac版Chrome浏览器关闭左右滑动</title>
+    <link>https://example.com/mac%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%B3%E9%97%AD%E5%B7%A6%E5%8F%B3%E6%BB%91%E5%8A%A8/</link>
+    <pubDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/mac%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%B3%E9%97%AD%E5%B7%A6%E5%8F%B3%E6%BB%91%E5%8A%A8/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>UICollectionView</title>
     <link>https://example.com/uicollectionview/</link>
     <pubDate>Fri, 13 Oct 2023 14:42:52 &#43;0800</pubDate>
@@ -57,7 +65,7 @@
             </div>MySQL是一种流行的关系型数据库管理系统，本文将介绍如何在Mac上安装MySQL并创建数据库和表格。]]></description>
 </item>
 <item>
-    <title>Fastlane自动打包</title>
+    <title>Fastlane打包</title>
     <link>https://example.com/fastlane%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/</link>
     <pubDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</pubDate>
     <author>andy90s</author>
@@ -83,14 +91,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian1.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
-</item>
-<item>
-    <title>Uni Popup等弹出组件滑动穿透问题</title>
-    <link>https://example.com/uni-popup%E7%AD%89%E5%BC%B9%E5%87%BA%E7%BB%84%E4%BB%B6%E6%BB%91%E5%8A%A8%E7%A9%BF%E9%80%8F%E9%97%AE%E9%A2%98/</link>
-    <pubDate>Thu, 18 May 2023 16:44:37 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/uni-popup%E7%AD%89%E5%BC%B9%E5%87%BA%E7%BB%84%E4%BB%B6%E6%BB%91%E5%8A%A8%E7%A9%BF%E9%80%8F%E9%97%AE%E9%A2%98/</guid>
-    <description><![CDATA[]]></description>
 </item>
 </channel>
 </rss>

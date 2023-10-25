@@ -33,7 +33,7 @@ cell.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
 ```objc
 cell.transform = CGAffineTransformMakeScale(-1.0, 1.0);
 ```
-## 方式3
+### 方式3
 自定义UICollectionViewFlowLayout,这种方式不会改变数据的排列方向，只是改变了cell的布局方向   
 比如一行有4个cell，那么第一个cell的x坐标为0，第二个cell的x坐标为第一个cell的x坐标加上第一个cell的宽度，以此类推，第四个cell的x坐标为第三个cell的x坐标加上第三个cell的宽度，这样就可以实现从右到左的布局   
 示例代码如下：
