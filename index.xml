@@ -4,9 +4,17 @@
         <link>https://example.com/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</lastBuildDate>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>底部弹框简单实现</title>
+    <link>https://example.com/%E5%BA%95%E9%83%A8%E5%BC%B9%E6%A1%86%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/</link>
+    <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/%E5%BA%95%E9%83%A8%E5%BC%B9%E6%A1%86%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Mac版Chrome浏览器关闭左右滑动</title>
     <link>https://example.com/mac%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%B3%E9%97%AD%E5%B7%A6%E5%8F%B3%E6%BB%91%E5%8A%A8/</link>
     <pubDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</pubDate>
@@ -81,16 +89,6 @@
     <author>andy90s</author>
     <guid>https://example.com/electron/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Text组件显示链接文本超出组件</title>
-    <link>https://example.com/text%E7%BB%84%E4%BB%B6%E6%98%BE%E7%A4%BA%E9%93%BE%E6%8E%A5%E6%96%87%E6%9C%AC%E8%B6%85%E5%87%BA%E7%BB%84%E4%BB%B6/</link>
-    <pubDate>Wed, 31 May 2023 13:16:40 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/text%E7%BB%84%E4%BB%B6%E6%98%BE%E7%A4%BA%E9%93%BE%E6%8E%A5%E6%96%87%E6%9C%AC%E8%B6%85%E5%87%BA%E7%BB%84%E4%BB%B6/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian1.jpg" referrerpolicy="no-referrer">
-            </div>]]></description>
 </item>
 </channel>
 </rss>
