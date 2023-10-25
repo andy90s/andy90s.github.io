@@ -1,10 +1,88 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on My New Hugo Site</title>
-    <link>http://example.org/tags/</link>
-    <description>Recent content in Tags on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - 标签 - 笔记</title>
+        <link>https://example.com/tags/</link>
+        <description>Tags - 标签 - 笔记</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Chrome</title>
+    <link>https://example.com/tags/chrome/</link>
+    <pubDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/chrome/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>mysql</title>
+    <link>https://example.com/tags/mysql/</link>
+    <pubDate>Tue, 11 Jul 2023 17:30:23 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/mysql/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>iOS</title>
+    <link>https://example.com/tags/ios/</link>
+    <pubDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/ios/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>uniapp</title>
+    <link>https://example.com/tags/uniapp/</link>
+    <pubDate>Wed, 31 May 2023 13:16:40 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/uniapp/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>vue</title>
+    <link>https://example.com/tags/vue/</link>
+    <pubDate>Wed, 31 May 2023 13:16:40 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/vue/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>AVFoundation</title>
+    <link>https://example.com/tags/avfoundation/</link>
+    <pubDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/avfoundation/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>AI</title>
+    <link>https://example.com/tags/ai/</link>
+    <pubDate>Fri, 14 Apr 2023 09:26:33 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/ai/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Xcode14</title>
+    <link>https://example.com/tags/xcode14/</link>
+    <pubDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/xcode14/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>String</title>
+    <link>https://example.com/tags/string/</link>
+    <pubDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/string/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>UIColor</title>
+    <link>https://example.com/tags/uicolor/</link>
+    <pubDate>Thu, 02 Feb 2023 09:28:52 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/uicolor/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

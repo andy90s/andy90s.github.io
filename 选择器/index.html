@@ -10,7 +10,6 @@
 <meta property="og:url" content="https://example.com/%E9%80%89%E6%8B%A9%E5%99%A8/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-12-04T18:43:34+08:00" />
 <meta property="article:modified_time" content="2023-10-25T11:12:12+08:00" /><meta property="og:site_name" content="My cool site" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Web学习笔记 - 选择器"/>
 <meta name="twitter:description" content="复合选择器,关系选择器,属性选择器,伪类选择器,伪元素选择器"/>
@@ -226,12 +225,12 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> 
-</span></span><span class="line"><span class="cl">            <span class="err">将所有的段落设置为红色</span><span class="o">(</span><span class="err">字体</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">将所有的段落设置为红色</span><span class="o">(</span><span class="nt">字体</span><span class="o">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">            <span class="err">元素选择器</span>
-</span></span><span class="line"><span class="cl">                <span class="err">作用</span><span class="o">,</span><span class="err">根据标签名来选中指定的元素</span>
-</span></span><span class="line"><span class="cl">                <span class="err">语法</span><span class="nd">:</span><span class="err">标签名</span><span class="p">{}</span>
-</span></span><span class="line"><span class="cl">                <span class="err">例子</span><span class="nd">:p</span><span class="p">{}</span> <span class="nt">h1</span><span class="p">{}</span> <span class="nt">dic</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">元素选择器</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">作用</span><span class="o">,</span><span class="nt">根据标签名来选中指定的元素</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">语法</span><span class="nd">:标签名</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">例子</span><span class="nd">:p</span><span class="p">{}</span> <span class="nt">h1</span><span class="p">{}</span> <span class="nt">dic</span><span class="p">{}</span>
 </span></span><span class="line"><span class="cl">        <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> <span class="nt">p</span><span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="na">color</span><span class="o">:</span> <span class="no">red</span><span class="p">;</span>
@@ -242,24 +241,24 @@
 </span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> 
-</span></span><span class="line"><span class="cl">            <span class="err">将`儿童乡间不相识`设置红色</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">将</span><span class="err">`</span><span class="nt">儿童乡间不相识</span><span class="err">`</span><span class="nt">设置红色</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">            <span class="nt">id</span><span class="err">选择器</span>
-</span></span><span class="line"><span class="cl">                <span class="err">作用</span><span class="nd">:</span><span class="err">根据元素的</span><span class="nt">id</span><span class="err">属性值选中一个元素</span>
-</span></span><span class="line"><span class="cl">                <span class="err">语法</span><span class="nd">:</span><span class="nn">#id</span><span class="err">属性值</span><span class="p">{}</span>
-</span></span><span class="line"><span class="cl">                <span class="err">例子</span><span class="nd">:</span><span class="nn">#box</span><span class="p">{}</span> <span class="nn">#red</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">id选择器</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">作用</span><span class="nd">:根据元素的id属性值选中一个元素</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">语法</span><span class="nd">:</span><span class="nn">#id属性值</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">例子</span><span class="nd">:</span><span class="nn">#box</span><span class="p">{}</span> <span class="nn">#red</span><span class="p">{}</span>
 </span></span><span class="line"><span class="cl">        <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> <span class="nn">#red</span><span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="na">color</span><span class="o">:</span> <span class="no">red</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> 
-</span></span><span class="line"><span class="cl">            <span class="err">将`秋水共长天一色`和`落霞与孤鹜齐飞`</span> <span class="err">设置为红色</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">将</span><span class="err">`</span><span class="nt">秋水共长天一色</span><span class="err">`</span><span class="nt">和</span><span class="err">`</span><span class="nt">落霞与孤鹜齐飞</span><span class="err">`</span> <span class="nt">设置为红色</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">            <span class="err">类选择器</span>
-</span></span><span class="line"><span class="cl">                <span class="err">作用</span><span class="nd">:</span><span class="err">根据元素的</span><span class="nt">class</span><span class="err">属性值选中一组元素</span>
-</span></span><span class="line"><span class="cl">                <span class="err">语法</span><span class="nd">:</span> <span class="nc">.class</span><span class="err">属性值</span>
-</span></span><span class="line"><span class="cl">                <span class="err">例子</span><span class="nd">:</span> <span class="nc">.bule</span> <span class="nc">.red</span> <span class="nc">.abc</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">类选择器</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">作用</span><span class="nd">:根据元素的class属性值选中一组元素</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">语法</span><span class="nd">:</span> <span class="nc">.class属性值</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">例子</span><span class="nd">:</span> <span class="nc">.bule</span> <span class="nc">.red</span> <span class="nc">.abc</span>
 </span></span><span class="line"><span class="cl">        <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> <span class="nc">.red</span><span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="na">color</span><span class="o">:</span> <span class="no">red</span><span class="p">;</span>
@@ -269,9 +268,9 @@
 </span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> 
-</span></span><span class="line"><span class="cl">            <span class="err">通配选择器</span>
-</span></span><span class="line"><span class="cl">                <span class="err">作用</span><span class="nd">:</span><span class="err">选中页面中的所有元素</span>
-</span></span><span class="line"><span class="cl">                <span class="err">语法</span><span class="nd">:</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">通配选择器</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">作用</span><span class="nd">:选中页面中的所有元素</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">语法</span><span class="nd">:</span> <span class="o">*</span>
 </span></span><span class="line"><span class="cl">        <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">        <span class="o">*</span><span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="na">color</span><span class="o">:</span> <span class="no">red</span><span class="p">;</span>
@@ -280,20 +279,20 @@
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">head</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">body</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">h1</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;red&#34;</span><span class="o">&gt;</span><span class="err">我是标题</span><span class="o">&lt;/</span><span class="nt">h1</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="err">少小离家老大回</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="err">乡音无改鬓毛衰</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">h1</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;red&#34;</span><span class="o">&gt;</span><span class="nt">我是标题</span><span class="o">&lt;/</span><span class="nt">h1</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">少小离家老大回</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">乡音无改鬓毛衰</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;!--</span> 
-</span></span><span class="line"><span class="cl">        <span class="err">多个类选择时使用空格隔开</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">多个类选择时使用空格隔开</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">     <span class="o">--&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;red abc&#34;</span><span class="o">&gt;</span><span class="err">儿童相见不相识</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="err">笑问客从何处来</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;red abc&#34;</span><span class="o">&gt;</span><span class="nt">儿童相见不相识</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">笑问客从何处来</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;!--</span> 
-</span></span><span class="line"><span class="cl">        <span class="nt">class</span> <span class="err">是一个标签的属性</span><span class="o">,</span><span class="err">它和</span><span class="nt">id</span><span class="err">类似</span><span class="o">,</span><span class="err">不同的是</span><span class="nt">class</span><span class="err">可以重复使用</span>
-</span></span><span class="line"><span class="cl">            <span class="err">可以通过</span><span class="nt">class</span><span class="err">属性来为元素分组</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">class</span> <span class="nt">是一个标签的属性</span><span class="o">,</span><span class="nt">它和id类似</span><span class="o">,</span><span class="nt">不同的是class可以重复使用</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">可以通过class属性来为元素分组</span>
 </span></span><span class="line"><span class="cl">     <span class="o">--&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;red&#34;</span><span class="o">&gt;</span><span class="err">秋水共长天一色</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="err">落霞与孤鹜齐飞</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;red&#34;</span><span class="o">&gt;</span><span class="nt">秋水共长天一色</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">落霞与孤鹜齐飞</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">body</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">html</span><span class="o">&gt;</span>
 </span></span></code></pre></td></tr></table>
@@ -359,7 +358,7 @@
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">title</span><span class="o">&gt;</span><span class="nt">Document</span><span class="o">&lt;/</span><span class="nt">title</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="o">/*</span> <span class="err">将</span><span class="nt">class</span><span class="err">为</span><span class="nt">red</span><span class="err">的元素设置为红色</span><span class="o">(</span><span class="err">字体</span><span class="o">)</span> <span class="o">*/</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/*</span> <span class="nt">将class为red的元素设置为红色</span><span class="o">(</span><span class="nt">字体</span><span class="o">)</span> <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">        <span class="nc">.red</span><span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="na">color</span><span class="o">:</span> <span class="no">red</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
@@ -392,10 +391,10 @@
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">head</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">body</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;red&#34;</span><span class="o">&gt;</span><span class="err">我的</span><span class="nt">div</span><span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;red&#34;</span><span class="o">&gt;</span><span class="err">我是</span><span class="nt">p</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">h1</span> <span class="o">&gt;</span><span class="err">标题</span><span class="o">&lt;/</span><span class="nt">h1</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">span</span> <span class="o">&gt;</span><span class="err">哈哈</span><span class="o">&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;red&#34;</span><span class="o">&gt;</span><span class="nt">我的div</span><span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;red&#34;</span><span class="o">&gt;</span><span class="nt">我是p</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">h1</span> <span class="o">&gt;</span><span class="nt">标题</span><span class="o">&lt;/</span><span class="nt">h1</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">span</span> <span class="o">&gt;</span><span class="nt">哈哈</span><span class="o">&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">body</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">html</span><span class="o">&gt;</span>
 </span></span></code></pre></td></tr></table>
@@ -498,21 +497,21 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> 
-</span></span><span class="line"><span class="cl">            <span class="err">为</span><span class="nt">div</span><span class="err">的子元素</span><span class="nt">span</span><span class="err">设置一个字体颜色红色</span>
-</span></span><span class="line"><span class="cl">            <span class="o">(</span><span class="err">为</span><span class="nt">div</span><span class="err">直接包含的</span><span class="nt">span</span><span class="err">设置一个字体颜色</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">为div的子元素span设置一个字体颜色红色</span>
+</span></span><span class="line"><span class="cl">            <span class="o">(</span><span class="nt">为div直接包含的span设置一个字体颜色</span><span class="o">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">            <span class="err">子元素选择器</span>
-</span></span><span class="line"><span class="cl">                <span class="err">作用</span><span class="nd">:</span> <span class="err">选中指定父元素的指定子元素</span>
-</span></span><span class="line"><span class="cl">                <span class="err">语法</span><span class="nd">:</span> <span class="err">父元素</span> <span class="o">&gt;</span> <span class="err">子元素</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">子元素选择器</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">作用</span><span class="nd">:</span> <span class="nt">选中指定父元素的指定子元素</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">语法</span><span class="nd">:</span> <span class="nt">父元素</span> <span class="o">&gt;</span> <span class="nt">子元素</span>
 </span></span><span class="line"><span class="cl">        <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> <span class="nt">div</span><span class="nc">.box</span> <span class="o">&gt;</span> <span class="nt">span</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="na">color</span><span class="o">:</span> <span class="no">red</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> 
-</span></span><span class="line"><span class="cl">            <span class="err">后代元素选择器</span><span class="nd">:</span>
-</span></span><span class="line"><span class="cl">                <span class="err">作用</span><span class="nd">:</span> <span class="err">选中指定元素内的指定后代元素</span>
-</span></span><span class="line"><span class="cl">                <span class="err">语法</span><span class="nd">:</span> <span class="err">祖先</span> <span class="err">后代</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">后代元素选择器</span><span class="nd">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">作用</span><span class="nd">:</span> <span class="nt">选中指定元素内的指定后代元素</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">语法</span><span class="nd">:</span> <span class="nt">祖先</span> <span class="nt">后代</span>
 </span></span><span class="line"><span class="cl">        <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> <span class="nt">div</span> <span class="nt">span</span> <span class="p">{</span>
@@ -524,10 +523,10 @@
 </span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> 
-</span></span><span class="line"><span class="cl">            <span class="err">选中下一个兄弟</span>
-</span></span><span class="line"><span class="cl">                <span class="err">语法</span><span class="nd">:</span> <span class="err">前一个</span> <span class="o">+</span> <span class="err">后一个</span> <span class="o">(</span><span class="err">要紧挨着</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl">            <span class="err">选中下边所有的兄弟</span>
-</span></span><span class="line"><span class="cl">                <span class="err">语法</span><span class="nd">:</span> <span class="err">兄</span> <span class="o">~</span> <span class="err">弟</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">选中下一个兄弟</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">语法</span><span class="nd">:</span> <span class="nt">前一个</span> <span class="o">+</span> <span class="nt">后一个</span> <span class="o">(</span><span class="nt">要紧挨着</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">选中下边所有的兄弟</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">语法</span><span class="nd">:</span> <span class="nt">兄</span> <span class="o">~</span> <span class="nt">弟</span>
 </span></span><span class="line"><span class="cl">        <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">        <span class="nt">p</span> <span class="o">+</span> <span class="nt">span</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="na">color</span><span class="o">:</span> <span class="no">aqua</span><span class="p">;</span>
@@ -538,36 +537,36 @@
 </span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">body</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">    
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;!--</span> 
-</span></span><span class="line"><span class="cl">        <span class="err">父元素</span>
-</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="err">直接包含子元素的元素叫做父元素</span>
-</span></span><span class="line"><span class="cl">        <span class="err">子元素</span>
-</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="err">直接被父元素包含的元素叫子元素</span>
-</span></span><span class="line"><span class="cl">        <span class="err">祖先元素</span>
-</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="err">直接或间接包含后代元素的元素叫祖先元素</span>
-</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="err">一个元素的父元素也是它的祖先元素</span>
-</span></span><span class="line"><span class="cl">        <span class="err">后代元素</span>
-</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="err">直接或者间接被祖先元素包含的元素叫做后代元素</span>
-</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="err">子元素也是后代元素</span>
-</span></span><span class="line"><span class="cl">        <span class="err">兄弟元素</span>
-</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="err">拥有相同父元素的元素是兄弟元素</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">父元素</span>
+</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="nt">直接包含子元素的元素叫做父元素</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">子元素</span>
+</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="nt">直接被父元素包含的元素叫子元素</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">祖先元素</span>
+</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="nt">直接或间接包含后代元素的元素叫祖先元素</span>
+</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="nt">一个元素的父元素也是它的祖先元素</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">后代元素</span>
+</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="nt">直接或者间接被祖先元素包含的元素叫做后代元素</span>
+</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="nt">子元素也是后代元素</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">兄弟元素</span>
+</span></span><span class="line"><span class="cl">            <span class="o">-</span> <span class="nt">拥有相同父元素的元素是兄弟元素</span>
 </span></span><span class="line"><span class="cl">     <span class="o">--&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;box&#34;</span><span class="o">&gt;</span><span class="err">我是一个</span><span class="nt">div</span>
-</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="err">我的</span><span class="nt">div</span><span class="err">中的</span><span class="nt">p</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;box&#34;</span><span class="o">&gt;</span><span class="nt">我是一个div</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">我的div中的p</span>
 </span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="nt">span</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="err">我是</span><span class="nt">p</span><span class="err">中的</span><span class="nt">span</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">我是p中的span</span>
 </span></span><span class="line"><span class="cl">            <span class="o">&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nt">span</span><span class="o">&gt;</span><span class="err">我的</span><span class="nt">div</span><span class="err">中的</span><span class="nt">span</span><span class="o">&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nt">span</span><span class="o">&gt;</span><span class="nt">我的div中的span</span><span class="o">&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">span</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="err">我是</span><span class="nt">div</span><span class="err">外的</span><span class="nt">span1</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">我是div外的span1</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="err">我是</span><span class="nt">div</span><span class="err">外的</span><span class="nt">p</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">我是div外的p</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">span</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="err">我是</span><span class="nt">div</span><span class="err">外的</span><span class="nt">span2</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">我是div外的span2</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">body</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">html</span><span class="o">&gt;</span>
@@ -629,11 +628,11 @@
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">title</span><span class="o">&gt;</span><span class="nt">Document</span><span class="o">&lt;/</span><span class="nt">title</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> 
-</span></span><span class="line"><span class="cl">            <span class="o">[</span><span class="err">属性名</span><span class="o">]</span> <span class="err">选择含有指定属性的元素</span>
-</span></span><span class="line"><span class="cl">            <span class="o">[</span><span class="err">属性名</span><span class="o">=</span><span class="err">属性值</span><span class="o">]</span> <span class="err">选择含有指定属性和属性值的元素</span>
-</span></span><span class="line"><span class="cl">            <span class="o">[</span><span class="err">属性名</span><span class="o">^=</span><span class="err">属性值</span><span class="o">]</span> <span class="err">选择属性值以指定值开头的元素</span>
-</span></span><span class="line"><span class="cl">            <span class="o">[</span><span class="err">属性名$</span><span class="o">=</span><span class="err">属性值</span><span class="o">]</span> <span class="err">选择属性值以指定值结尾的元素</span>
-</span></span><span class="line"><span class="cl">            <span class="o">[</span><span class="err">属性名</span><span class="o">*=</span><span class="err">属性值</span><span class="o">]</span> <span class="err">选择属性值中含有某值的元素</span>
+</span></span><span class="line"><span class="cl">            <span class="o">[</span><span class="nt">属性名</span><span class="o">]</span> <span class="nt">选择含有指定属性的元素</span>
+</span></span><span class="line"><span class="cl">            <span class="o">[</span><span class="nt">属性名</span><span class="o">=</span><span class="nt">属性值</span><span class="o">]</span> <span class="nt">选择含有指定属性和属性值的元素</span>
+</span></span><span class="line"><span class="cl">            <span class="o">[</span><span class="nt">属性名</span><span class="o">^=</span><span class="nt">属性值</span><span class="o">]</span> <span class="nt">选择属性值以指定值开头的元素</span>
+</span></span><span class="line"><span class="cl">            <span class="o">[</span><span class="nt">属性名</span><span class="err">$</span><span class="o">=</span><span class="nt">属性值</span><span class="o">]</span> <span class="nt">选择属性值以指定值结尾的元素</span>
+</span></span><span class="line"><span class="cl">            <span class="o">[</span><span class="nt">属性名</span><span class="o">*=</span><span class="nt">属性值</span><span class="o">]</span> <span class="nt">选择属性值中含有某值的元素</span>
 </span></span><span class="line"><span class="cl">        <span class="o">*/</span>
 </span></span><span class="line"><span class="cl">        <span class="o">/*</span> <span class="nt">p</span><span class="o">[</span><span class="nt">title</span><span class="o">=</span><span class="nt">abc</span><span class="o">]</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="na">color</span><span class="o">:</span> <span class="no">orange</span><span class="p">;</span>
@@ -654,12 +653,12 @@
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">head</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">body</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">title</span><span class="o">=</span><span class="s2">&#34;abc&#34;</span><span class="o">&gt;</span><span class="err">少小离家老大回</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">title</span><span class="o">=</span><span class="s2">&#34;abcd&#34;</span><span class="o">&gt;</span><span class="err">乡音无改鬓毛衰</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">title</span><span class="o">=</span><span class="s2">&#34;adsiaje&#34;</span><span class="o">&gt;</span><span class="err">儿童相见不相识</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="err">笑问客从何处来</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="err">秋水共长天一色</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="err">落霞与孤鹜齐飞</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">title</span><span class="o">=</span><span class="s2">&#34;abc&#34;</span><span class="o">&gt;</span><span class="nt">少小离家老大回</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">title</span><span class="o">=</span><span class="s2">&#34;abcd&#34;</span><span class="o">&gt;</span><span class="nt">乡音无改鬓毛衰</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">title</span><span class="o">=</span><span class="s2">&#34;adsiaje&#34;</span><span class="o">&gt;</span><span class="nt">儿童相见不相识</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">笑问客从何处来</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">秋水共长天一色</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">落霞与孤鹜齐飞</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">body</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">html</span><span class="o">&gt;</span>
 </span></span></code></pre></td></tr></table>
@@ -765,7 +764,7 @@
 </span></span><span class="line"><span class="cl">        <span class="nt">hello</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="nt">q</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="err">这是一个</span><span class="nt">p</span><span class="err">标签</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">这是一个p标签</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">div</span><span class="o">&gt;</span><span class="nt">hello</span> <span class="nt">hello</span> <span class="nt">hello</span><span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
@@ -874,7 +873,7 @@
 </span></span><span class="line"><span class="cl">        <span class="nt">hello</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="nt">q</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="err">这是一个</span><span class="nt">p</span><span class="err">标签</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">这是一个p标签</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">div</span><span class="o">&gt;</span><span class="nt">hello</span> <span class="nt">hello</span> <span class="nt">hello</span><span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
@@ -924,7 +923,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.107.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.119.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/andy90s" target="_blank">梁先华</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

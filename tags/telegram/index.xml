@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Telegram - 标签 - 笔记</title>
+        <link>https://example.com/tags/telegram/</link>
+        <description>Telegram - 标签 - 笔记</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 28 Jan 2023 13:24:56 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/telegram/" rel="self" type="application/rss+xml" /><item>
+    <title>Telegram-iOS编译打包</title>
+    <link>https://example.com/telegram%E7%BC%96%E8%AF%91%E8%AE%B0%E5%BD%95/</link>
+    <pubDate>Sat, 28 Jan 2023 13:24:56 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/telegram%E7%BC%96%E8%AF%91%E8%AE%B0%E5%BD%95/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>Telegram开源iOS端代码编译学习记录]]></description>
+</item>
+</channel>
+</rss>
