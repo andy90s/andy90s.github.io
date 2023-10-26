@@ -68,6 +68,7 @@ class CustomPresentAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     }
 }
 ```
+
 ### 弹框控制器
 ```swift
 class CommonModalController: UIViewController,UIViewControllerTransitioningDelegate {
@@ -129,6 +130,7 @@ class CommonModalController: UIViewController,UIViewControllerTransitioningDeleg
     }
 }
 ```
+
 ### 使用
 ```swift
 let vc = CommonModalController(contentSize: CGSizeMake(self.view.bounds.size.width, 200))

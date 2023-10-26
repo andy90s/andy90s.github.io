@@ -4,7 +4,15 @@
         <link>https://example.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link>
         <description>移动端 - 分类 - 笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 13 Oct 2023 14:42:52 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+    <title>底部弹框简单实现</title>
+    <link>https://example.com/%E5%BA%95%E9%83%A8%E5%BC%B9%E6%A1%86%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/</link>
+    <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/%E5%BA%95%E9%83%A8%E5%BC%B9%E6%A1%86%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>UICollectionView</title>
     <link>https://example.com/uicollectionview/</link>
     <pubDate>Fri, 13 Oct 2023 14:42:52 &#43;0800</pubDate>
@@ -87,16 +95,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>Telegram开源iOS端代码编译学习记录]]></description>
-</item>
-<item>
-    <title>Xcode相关问题记录</title>
-    <link>https://example.com/xcode%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</link>
-    <pubDate>Tue, 17 Jan 2023 13:41:49 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/xcode%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
-            </div>主要记录Xcode使用遇到的一些问题]]></description>
 </item>
 </channel>
 </rss>
