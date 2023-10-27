@@ -6,10 +6,10 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
             <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/avfoundation/" rel="self" type="application/rss+xml" /><item>
     <title>iOS录音功能</title>
-    <link>https://example.com/ios%E5%BD%95%E9%9F%B3/</link>
+    <link>https://example.com/ios-recorder/</link>
     <pubDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</pubDate>
     <author>andy90s</author>
-    <guid>https://example.com/ios%E5%BD%95%E9%9F%B3/</guid>
+    <guid>https://example.com/ios-recorder/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian3.jpg" referrerpolicy="no-referrer">
             </div>iOS原生API录音功能]]></description>

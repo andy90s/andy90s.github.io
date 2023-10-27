@@ -4,7 +4,23 @@
         <link>https://example.com/tags/</link>
         <description>Tags - 标签 - 笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>ipa</title>
+    <link>https://example.com/tags/ipa/</link>
+    <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/ipa/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>网站</title>
+    <link>https://example.com/tags/%E7%BD%91%E7%AB%99/</link>
+    <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/%E7%BD%91%E7%AB%99/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>iOS</title>
     <link>https://example.com/tags/ios/</link>
     <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate>
@@ -66,22 +82,6 @@
     <pubDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</pubDate>
     <author>梁先华</author>
     <guid>https://example.com/tags/xcode14/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>String</title>
-    <link>https://example.com/tags/string/</link>
-    <pubDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/string/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>UIColor</title>
-    <link>https://example.com/tags/uicolor/</link>
-    <pubDate>Thu, 02 Feb 2023 09:28:52 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/uicolor/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

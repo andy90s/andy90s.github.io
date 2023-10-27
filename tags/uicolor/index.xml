@@ -6,10 +6,10 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
             <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 02 Feb 2023 09:28:52 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/uicolor/" rel="self" type="application/rss+xml" /><item>
     <title>UIColor的一些扩展</title>
-    <link>https://example.com/uicolor%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95/</link>
+    <link>https://example.com/uicolor-extension/</link>
     <pubDate>Thu, 02 Feb 2023 09:28:52 &#43;0800</pubDate>
     <author>andy90s</author>
-    <guid>https://example.com/uicolor%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95/</guid>
+    <guid>https://example.com/uicolor-extension/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>UIColor的一些功能扩展,获取属性值以及初始化等方法]]></description>

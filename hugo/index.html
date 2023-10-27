@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Hugo常见问题 - 笔记</title><meta name="Description" content="Hugo 文章通用配置,gitalk评论设置"><meta property="og:title" content="Hugo常见问题" />
+<meta property="og:description" content="Hugo 文章通用配置,gitalk评论设置" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/hugo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-02T11:48:52+08:00" />
+<meta property="article:modified_time" content="2023-10-27T14:03:08+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo常见问题"/>
+<meta name="twitter:description" content="Hugo 文章通用配置,gitalk评论设置"/>
+<meta name="application-name" content="梁先华个人博客">
+<meta name="apple-mobile-web-app-title" content="梁先华个人博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/hugo/" /><link rel="prev" href="https://example.com/%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE/" /><link rel="next" href="https://example.com/%E5%88%97%E8%A1%A8/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Hugo常见问题",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/example.com\/hugo\/"
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "hugo","wordcount":  1067 ,
+        "url": "https:\/\/example.com\/hugo\/","datePublished": "2022-12-02T11:48:52+08:00","dateModified": "2023-10-27T14:03:08+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
+                "@type": "Person",
+                "name": "梁先华"
+            },"description": "Hugo 文章通用配置,gitalk评论设置"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="笔记"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>笔记</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/andy90s" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/hugo/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="笔记"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>笔记</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/andy90s" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/hugo/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Hugo常见问题</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>梁先华</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%96%87%E6%A1%A3/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>文档</a></span>&nbsp;&nbsp;<i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/hugo/">hugo</a></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-02">2022-12-02</time>&nbsp;<i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2023-10-27&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1067 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/fengmian4.jpg"
+        data-srcset="/images/fengmian4.jpg, /images/fengmian4.jpg 1.5x, /images/fengmian4.jpg 2x"
+        data-sizes="auto"
+        alt="/images/fengmian4.jpg"
+        title="Hugo 文章通用配置,gitalk评论设置" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ol>
+    <li><a href="#文章目录">文章目录</a></li>
+    <li><a href="#文章通用配置">文章通用配置</a></li>
+    <li><a href="#常用指令">常用指令</a></li>
+    <li><a href="#loveit主题相关">loveit主题相关</a>
+      <ol>
+        <li><a href="#链接">链接</a>
+          <ol>
+            <li><a href="#链接---普通链接">链接 - 普通链接</a></li>
+            <li><a href="#链接---内部跳转链接">链接 - 内部跳转链接</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#gitalk评论设置">gitalk评论设置</a>
+      <ol>
+        <li><a href="#github生成application-auth"><code>github</code>生成application auth</a></li>
+        <li><a href="#得到秘钥粘贴到配置中">得到秘钥,粘贴到配置中</a></li>
+      </ol>
+    </li>
+    <li><a href="#图片资源">图片资源</a></li>
+    <li><a href="#参考">参考</a></li>
+  </ol>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="文章目录">文章目录</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># 目录设置</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">tableOfContents</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">startLevel</span> <span class="p">=</span> <span class="mi">2</span> <span class="c"># 代表从第几级标题开始生成目录</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">endLevel</span> <span class="p">=</span> <span class="mi">6</span> <span class="c"># 代表从第几级标题结束目录</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">ordered</span> <span class="p">=</span> <span class="kc">true</span> <span class="c"># 目录排序</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="文章通用配置">文章通用配置</h2>
+<p>打开<code>archetypes/default.md</code>文件进行编辑:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">---</span>
+</span></span><span class="line"><span class="cl"><span class="nx">title</span><span class="err">:</span> <span class="s2">&#34;{{ replace .Name &#34;</span><span class="nx">-</span><span class="s2">&#34; &#34;</span> <span class="s2">&#34; | title }}&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">date</span><span class="err">:</span> <span class="p">{{</span> <span class="p">.</span><span class="nx">Date</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">draft</span><span class="err">:</span> <span class="kc">false</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">categories</span><span class="err">:</span> <span class="p">[</span><span class="s2">&#34;Web&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">tags</span><span class="err">:</span> <span class="p">[</span><span class="s2">&#34;HTML&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">keywords</span><span class="err">:</span> <span class="p">[</span><span class="s2">&#34;HTML&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">---</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="常用指令">常用指令</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">hugo</span> <span class="nx">new</span> <span class="nx">posts</span> <span class="err">文章</span><span class="p">.</span><span class="nx">md</span> <span class="c"># 发布文章</span>
+</span></span><span class="line"><span class="cl"><span class="nx">hugo</span> <span class="c"># 编译</span>
+</span></span><span class="line"><span class="cl"><span class="nx">hugo</span> <span class="nx">server</span> <span class="nx">-D</span> <span class="c"># 启动本地服务</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="loveit主题相关">loveit主题相关</h2>
+<p>代码块识别语言高亮,配置文件路径:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/themes/LoveIt/assets/css/_variables.scss
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="链接">链接</h3>
+<h4 id="链接---普通链接">链接 - 普通链接</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">link</span> <span class="err">&#34;</span><span class="na">https:</span><span class="err">//</span><span class="na">andy90s</span><span class="err">.</span><span class="na">github</span><span class="err">.</span><span class="na">io</span><span class="err">/&#34;</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">或者
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://andy90s.github.io/&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;https://andy90s.github.io/&#34;</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">link</span> <span class="err">&#34;</span><span class="na">mailto:contact</span><span class="err">@</span><span class="na">qq</span><span class="err">.</span><span class="na">com</span><span class="err">&#34;</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">或者
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;mailto:contact@qq.com&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;mailto:contact@qq.com&#34;</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">link</span> <span class="err">&#34;</span><span class="na">https:</span><span class="err">//</span><span class="na">andy90s</span><span class="err">.</span><span class="na">github</span><span class="err">.</span><span class="na">io</span><span class="err">/&#34;</span> <span class="na">Andy90s</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">或者
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://andy90s.github.io/&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">Andy90s</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- 停留带标题 --&gt;</span>
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">link</span> <span class="err">&#34;</span><span class="na">https:</span><span class="err">//</span><span class="na">andy90s</span><span class="err">.</span><span class="na">github</span><span class="err">.</span><span class="na">io</span><span class="err">/&#34;</span> <span class="na">Andy90s</span> <span class="err">&#34;</span><span class="na">Visit</span> <span class="na">Andy90s</span><span class="err">!&#34;</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">或者
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://andy90s.github.io/&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">Andy90s</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Visit Andy90s!&#34;</span> <span class="p">&gt;</span>}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>效果如下:</p>
+<p><a href="https://andy90s.github.io/" target="_blank" rel="noopener noreffer ">https://andy90s.github.io/</a><br>
+或者 <br>
+<a href="https://andy90s.github.io/" target="_blank" rel="noopener noreffer ">https://andy90s.github.io/</a></p>
+<p><a href="mailto:contact@qq.com" rel="">mailto:contact@qq.com</a><br>
+或者 <br>
+<a href="mailto:contact@qq.com" rel="">mailto:contact@qq.com</a></p>
+<p><a href="https://andy90s.github.io/" target="_blank" rel="noopener noreffer ">Andy90s</a><br>
+或者 <br>
+<a href="https://andy90s.github.io/" target="_blank" rel="noopener noreffer ">Andy90s</a></p>
+<!-- 停留带标题 -->
+<p><a href="https://andy90s.github.io/" title="Visit Andy90s!" target="_blank" rel="noopener noreffer ">Andy90s</a> <br>
+或者 <br>
+<a href="https://andy90s.github.io/" title="Visit Andy90s!" target="_blank" rel="noopener noreffer ">Andy90s</a></p>
+<h4 id="链接---内部跳转链接">链接 - 内部跳转链接</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="c">&lt;!-- ref绝对路径 relref相对路径 --&gt;</span>
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">ref</span> <span class="err">&#34;</span><span class="na">path</span><span class="err">/</span><span class="na">to</span><span class="err">/</span><span class="na">document</span><span class="err">.</span><span class="na">md</span><span class="err">#</span><span class="na">锚点</span><span class="err">&#34;</span> <span class="p">&gt;</span>}} 
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">relref</span> <span class="err">&#34;</span><span class="na">path</span><span class="err">/</span><span class="na">to</span><span class="err">/</span><span class="na">document</span><span class="err">.</span><span class="na">md</span><span class="err">#</span><span class="na">锚点</span><span class="err">&#34;</span> <span class="p">&gt;</span>}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>例如跳转到本文的<code>文章目录</code>锚点:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">[<span class="nt">跳转到其他文章锚点</span>](<span class="na">{{&lt; relref &#34;其他文章.md#文章目录&#34; &gt;}}</span>)
+</span></span><span class="line"><span class="cl">[<span class="nt">跳转到文章目录</span>](<span class="na">{{&lt; relref &#34;../other/hugo常见问题.md#文章目录&#34; &gt;}}</span>)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>效果:
+<a href="/hugo/#文章目录" rel="">跳转到文章目录</a></p>
+<h2 id="gitalk评论设置">gitalk评论设置</h2>
+<h3 id="github生成application-auth"><code>github</code>生成application auth</h3>
+<p>生成方法:打开github设置 - develop setting - OAuth Apps - 选择新建</p>
+<center>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/271669958429_.pic.jpg" title="新建OAuth" data-thumbnail="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/271669958429_.pic.jpg">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/271669958429_.pic.jpg"
+            data-srcset="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/271669958429_.pic.jpg, https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/271669958429_.pic.jpg 1.5x, https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/271669958429_.pic.jpg 2x"
+            data-sizes="auto"
+            alt="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/271669958429_.pic.jpg" width="50%" />
+    </a>
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 新建OAuth </b>  </div>
+</center>
+<h3 id="得到秘钥粘贴到配置中">得到秘钥,粘贴到配置中</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">comment</span><span class="p">.</span><span class="nx">gitalk</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">enable</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">owner</span> <span class="p">=</span> <span class="s2">&#34;andy90s&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">repo</span> <span class="p">=</span> <span class="s2">&#34;andy90s.github.io&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">clientId</span> <span class="p">=</span> <span class="s2">&#34;上面拿到的id&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">clientSecret</span> <span class="p">=</span> <span class="s2">&#34;上面生成的秘钥&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">id</span> <span class="p">=</span> <span class="s2">&#34;location.pathname&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>注意<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">上述评论配置为(<code>hugo+loveit主题</code>),其他配置差别不大,注意<code>repo</code>应填写<code>仓库名</code>即可  <br>
+<code>id</code>按照上述配置,会自动生成<code>issue</code></div>
+        </div>
+    </div>
+<h2 id="图片资源">图片资源</h2>
+<p>由于我的图片是直接存放到github仓库中的,所以需要配置下CDN来加速访问,上传我使用的是<code>picgo</code>工具,配置如下:</p>
+<center>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/picgo%E8%AE%BE%E7%BD%AEcdn.png" title="picgo设置" data-thumbnail="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/picgo%E8%AE%BE%E7%BD%AEcdn.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/picgo%E8%AE%BE%E7%BD%AEcdn.png"
+            data-srcset="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/picgo%E8%AE%BE%E7%BD%AEcdn.png, https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/picgo%E8%AE%BE%E7%BD%AEcdn.png 1.5x, https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/picgo%E8%AE%BE%E7%BD%AEcdn.png 2x"
+            data-sizes="auto"
+            alt="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/picgo%E8%AE%BE%E7%BD%AEcdn.png" width="70%" />
+    </a>
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> picgo设置 </b>  </div>
+</center>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://cdn.jsdelivr.net/gh/ + 你的github用户名 + 你的仓库名 + 图片路径
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>例如:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/271669958429_.pic.jpg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>技巧<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>gh = github
+指定master分支:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/271669958429_.pic.jpg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>还可以指定版本号:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://cdn.jsdelivr.net/gh/andy90s/blog-image@版本号/blog/images/271669958429_.pic.jpg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>压缩资源:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://cdn.jsdelivr.net/gh/andy90s/blog-image@版本号/blog/images/271669958429_.pic?x-oss-process=image/resize,m_lfit,h_100,w_100
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<h2 id="参考">参考</h2>
+<p><a href="https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#2-link" target="_blank" rel="noopener noreffer ">主题文档 - 扩展 Shortcodes</a></p><div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/images/wechat.jpeg">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/images/alipay.jpeg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-10-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://example.com/hugo/" data-title="Hugo常见问题" data-hashtags="hugo"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://example.com/hugo/" data-hashtag="hugo"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://example.com/hugo/" data-title="Hugo常见问题"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://example.com/hugo/" data-title="Hugo常见问题"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://example.com/hugo/" data-title="Hugo常见问题" data-image="/images/fengmian4.jpg" data-ralateuid="xxxx"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/hugo/">hugo</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE/" class="prev" rel="prev" title="Web学习笔记 - 语义化标签"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Web学习笔记 - 语义化标签</a>
+            <a href="/%E5%88%97%E8%A1%A8/" class="next" rel="next" title="Web学习笔记 - 列表">Web学习笔记 - 列表<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.119.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/andy90s" target="_blank">梁先华</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":500},"comment":{"gitalk":{"admin":["andy90s"],"clientID":"62923a9afe801911f8c1","clientSecret":"6282277a7df4b041e6d0181342afe037be6f88f9","id":"2022-12-02T11:48:52+08:00","owner":"andy90s","repo":"andy90s.github.io","title":"Hugo常见问题"}},"lightgallery":true,"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -6,10 +6,10 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
             <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/string/" rel="self" type="application/rss+xml" /><item>
     <title>String的一些扩展</title>
-    <link>https://example.com/string%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95/</link>
+    <link>https://example.com/string-extension/</link>
     <pubDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</pubDate>
     <author>andy90s</author>
-    <guid>https://example.com/string%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95/</guid>
+    <guid>https://example.com/string-extension/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
