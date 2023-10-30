@@ -23,6 +23,9 @@ UIApplication.shared.connectedScenes
     .first?.windows
     .filter {$0.isKeyWindow}.first
 ```
+{{< admonition tip "">}}
+获取逻辑: 多个场景 -> 筛选出前台激活的场景 -> 转换为`UIWindowScene` -> 去除nil -> 取第一个场景 -> 获取场景中的窗口 -> 筛选出keywindow -> 取第一个窗口
+{{< /admonition >}}
 ### 适配所有版本
 由于新的api已经兼容到了13.0,所以只需要兼容到13.0就可以了,这里使用`#available`来判断版本,如果版本大于13.0,则使用新的api,否则使用旧的api
 ```swift

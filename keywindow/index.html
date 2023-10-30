@@ -9,7 +9,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/keywindow/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-10-30T11:28:57+08:00" />
-<meta property="article:modified_time" content="2023-10-30T15:32:43+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="article:modified_time" content="2023-10-30T15:39:41+08:00" /><meta property="og:site_name" content="My cool site" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="keyWindow"/>
 <meta name="twitter:description" content=""/>
@@ -27,8 +27,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/keywindow\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "iOS","wordcount":  718 ,
-        "url": "https:\/\/example.com\/keywindow\/","datePublished": "2023-10-30T11:28:57+08:00","dateModified": "2023-10-30T15:32:43+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "iOS","wordcount":  799 ,
+        "url": "https:\/\/example.com\/keywindow\/","datePublished": "2023-10-30T11:28:57+08:00","dateModified": "2023-10-30T15:39:41+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
                 "@type": "Person",
@@ -107,7 +107,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">keyWindow</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>andy90s</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>移动端</a></span>&nbsp;&nbsp;<i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ios/">iOS</a></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-10-30">2023-10-30</time>&nbsp;<i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2023-10-30&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 718 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-10-30">2023-10-30</time>&nbsp;<i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2023-10-30&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 799 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -168,7 +168,15 @@ iOS系统的不断迭代,导致获取keywindow的方法也在不断变化,这里
 </span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="bp">filter</span> <span class="p">{</span><span class="nv">$0</span><span class="p">.</span><span class="n">isKeyWindow</span><span class="p">}.</span><span class="bp">first</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="适配所有版本">适配所有版本</h3>
+</div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>技巧<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">获取逻辑: 多个场景 -&gt; 筛选出前台激活的场景 -&gt; 转换为<code>UIWindowScene</code> -&gt; 去除nil -&gt; 取第一个场景 -&gt; 获取场景中的窗口 -&gt; 筛选出keywindow -&gt; 取第一个窗口</div>
+        </div>
+    </div>
+<h3 id="适配所有版本">适配所有版本</h3>
 <p>由于新的api已经兼容到了13.0,所以只需要兼容到13.0就可以了,这里使用<code>#available</code>来判断版本,如果版本大于13.0,则使用新的api,否则使用旧的api</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -245,7 +253,8 @@ iOS系统的不断迭代,导致获取keywindow的方法也在不断变化,这里
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-10-30</span>
+                <span>更新于 2023-10-30&nbsp;<a class="git-hash" href="https://github.com/andy90s/andy90s.github.io.git/commit/1128e973aea2a3639e956411c4203c275033a543" target="_blank" title="commit by 梁先华(909901234@qq.com) 1128e973aea2a3639e956411c4203c275033a543: add">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>1128e97</a></span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
