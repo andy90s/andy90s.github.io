@@ -4,7 +4,15 @@
         <link>https://example.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link>
         <description>移动端 - 分类 - 笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+    <title>UIDevice</title>
+    <link>https://example.com/uidevice/</link>
+    <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/uidevice/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>keyWindow</title>
     <link>https://example.com/keywindow/</link>
     <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate>
@@ -81,16 +89,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
-</item>
-<item>
-    <title>UIColor的一些扩展</title>
-    <link>https://example.com/uicolor-extension/</link>
-    <pubDate>Thu, 02 Feb 2023 09:28:52 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/uicolor-extension/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
-            </div>UIColor的一些功能扩展,获取属性值以及初始化等方法]]></description>
 </item>
 </channel>
 </rss>
