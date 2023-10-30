@@ -4,7 +4,15 @@
         <link>https://example.com/posts/</link>
         <description>所有文章 | 笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>UIDevice</title>
+    <link>https://example.com/uidevice/</link>
+    <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/uidevice/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>keyWindow</title>
     <link>https://example.com/keywindow/</link>
     <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate>
@@ -74,14 +82,6 @@
     <pubDate>Tue, 08 Aug 2023 14:09:34 &#43;0800</pubDate>
     <author>andy90s</author>
     <guid>https://example.com/install-docker/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Xcode运行项目报错</title>
-    <link>https://example.com/xcode-error/</link>
-    <pubDate>Wed, 12 Jul 2023 19:30:20 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/xcode-error/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

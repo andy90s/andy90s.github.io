@@ -19,6 +19,7 @@
 |名称|简述|语言|记录时间|维护情况|
 |---|---|---|---|---|
 |{{<link href="https://github.com/CoderMJLee/MJRefresh" content="【MJRefresh】">}}|下拉/上拉刷新控件|OC| 2023.01.17|-| 
+|{{<link href="https://github.com/devicekit/DeviceKit" content="【DeviceKit】">}}|获取设备信息|Swift|2023.10.30|-|
 ## 多线程
 ## 网络
 ## 数据存储
@@ -27,5 +28,7 @@
 ## 图像
 ## 安全
 ## 工具
+|名称|简述|语言|记录时间|维护情况|
+|---|---|---|---|---|
 ## 测试调试
 ## 数据结构/算法
