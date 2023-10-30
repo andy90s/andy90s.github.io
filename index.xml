@@ -4,9 +4,25 @@
         <link>https://example.com/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</lastBuildDate>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>keyWindow</title>
+    <link>https://example.com/keywindow/</link>
+    <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/keywindow/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>获取当前显示的ViewController</title>
+    <link>https://example.com/top-viewcontroller/</link>
+    <pubDate>Mon, 30 Oct 2023 10:58:12 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/top-viewcontroller/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>下载ipa</title>
     <link>https://example.com/download-ipa/</link>
     <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate>
@@ -69,26 +85,6 @@
     <author>andy90s</author>
     <guid>https://example.com/xcode-error/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Mac安装MySQL及简单使用</title>
-    <link>https://example.com/install-mysql/</link>
-    <pubDate>Tue, 11 Jul 2023 17:30:23 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/install-mysql/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
-            </div>MySQL是一种流行的关系型数据库管理系统，本文将介绍如何在Mac上安装MySQL并创建数据库和表格。]]></description>
-</item>
-<item>
-    <title>Fastlane打包</title>
-    <link>https://example.com/fastlane-package/</link>
-    <pubDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/fastlane-package/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
-            </div>]]></description>
 </item>
 </channel>
 </rss>

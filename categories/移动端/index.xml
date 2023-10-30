@@ -4,7 +4,23 @@
         <link>https://example.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link>
         <description>移动端 - 分类 - 笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+    <title>keyWindow</title>
+    <link>https://example.com/keywindow/</link>
+    <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/keywindow/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>获取当前显示的ViewController</title>
+    <link>https://example.com/top-viewcontroller/</link>
+    <pubDate>Mon, 30 Oct 2023 10:58:12 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/top-viewcontroller/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>底部弹框简单实现</title>
     <link>https://example.com/popup-slide/</link>
     <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate>
@@ -75,26 +91,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>UIColor的一些功能扩展,获取属性值以及初始化等方法]]></description>
-</item>
-<item>
-    <title>iOS中的只读属性</title>
-    <link>https://example.com/swift-readonly/</link>
-    <pubDate>Wed, 01 Feb 2023 09:21:27 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/swift-readonly/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian.jpg" referrerpolicy="no-referrer">
-            </div>Swift中的只读属性,像OC一样隐藏set方法]]></description>
-</item>
-<item>
-    <title>Telegram-iOS编译打包</title>
-    <link>https://example.com/telegram/</link>
-    <pubDate>Sat, 28 Jan 2023 13:24:56 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/telegram/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
-            </div>Telegram开源iOS端代码编译学习记录]]></description>
 </item>
 </channel>
 </rss>
