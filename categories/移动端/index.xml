@@ -4,7 +4,15 @@
         <link>https://example.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link>
         <description>移动端 - 分类 - 笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 31 Oct 2023 10:12:39 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+    <title>Flutter运行问题</title>
+    <link>https://example.com/flutter-running-error/</link>
+    <pubDate>Tue, 31 Oct 2023 10:12:39 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/flutter-running-error/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>UIDevice</title>
     <link>https://example.com/uidevice/</link>
     <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate>
@@ -78,16 +86,6 @@
     <guid>https://example.com/xocde14.3-error/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
-            </div>]]></description>
-</item>
-<item>
-    <title>String的一些扩展</title>
-    <link>https://example.com/string-extension/</link>
-    <pubDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/string-extension/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
 </item>
 </channel>
