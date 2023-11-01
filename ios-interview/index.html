@@ -9,7 +9,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/ios-interview/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-11-01T09:55:35+08:00" />
-<meta property="article:modified_time" content="2023-11-01T13:40:55+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="article:modified_time" content="2023-11-01T13:41:42+08:00" /><meta property="og:site_name" content="My cool site" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Ios Interview"/>
 <meta name="twitter:description" content=""/>
@@ -27,8 +27,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/ios-interview\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1811 ,
-        "url": "https:\/\/example.com\/ios-interview\/","datePublished": "2023-11-01T09:55:35+08:00","dateModified": "2023-11-01T13:40:55+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1951 ,
+        "url": "https:\/\/example.com\/ios-interview\/","datePublished": "2023-11-01T09:55:35+08:00","dateModified": "2023-11-01T13:41:42+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
                 "@type": "Person",
@@ -107,7 +107,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Ios Interview</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>andy90s</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-01">2023-11-01</time>&nbsp;<i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2023-11-01&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1811 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-01">2023-11-01</time>&nbsp;<i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2023-11-01&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1951 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -129,174 +129,157 @@
 <p>整理一些ios面试题，方便复习</p>
 <h2 id="基础">基础</h2>
 <h3 id="1-说一下oc的内存管理">1. 说一下OC的内存管理</h3>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>哈哈哈哈<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><details>
+<summary>参考答案</summary>
+<p style="background-color: #F4F6F6;padding: 10px;">OC的内存管理有两种方式，分别是引用计数和ARC。</p>
+</details>
+</div>
+        </div>
+    </div>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>什么是引用计数<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><details>
+<summary>参考答案</summary>
+<div><p style="background-color: #F4F6F6;padding: 10px;">
+引用计数是一种内存管理方式，当一个对象被创建时，它的引用计数为1，当有一个对象引用它时，它的引用计数就会加1，当引用它的对象被销毁时，它的引用计数就会减1，当它的引用计数为0时，它就会被销毁。
+</p></div></details>
+</div>
+        </div>
+    </div>
 <ul>
 <li>1.1. 什么是引用计数</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 引用计数是一种内存管理方式，当一个对象被创建时，它的引用计数为1，当有一个对象引用它时，它的引用计数就会加1，当引用它的对象被销毁时，它的引用计数就会减1，当它的引用计数为0时，它就会被销毁。
-
-</p>
-</details>
+</p></div></details>
 <ul>
 <li>1.2. 说一下引用计数的优缺点</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 优点：引用计数是一种轻量级的内存管理方式，它的实现简单，效率高，不会产生内存碎片。<br>
 缺点：引用计数无法解决循环引用的问题，当两个对象相互引用时，它们的引用计数都不会为0，所以它们都无法被销毁，这就会导致内存泄漏。
-
-</p>
-</details>
+</p></div></details>
 <ul>
 <li>1.3. 都有哪些方法会使引用计数加1</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 - alloc/new/copy/mutableCopy方法创建的对象，它们的引用计数都为1<br>
 - 通过retain方法使对象的引用计数加1<br>
 - 当一个对象作为另一个对象的属性时，它的引用计数会加1<br>
 - 当一个对象被添加到集合中时，它的引用计数会加1<br>
 - 当一个对象被添加到自动释放池中时，它的引用计数会加1<br>
 - 当一个对象被赋值给__strong修饰的变量时，它的引用计数会加1
-
-</p>
-</details>
+</p></div></details>
 <ul>
 <li>1.4. 都有哪些方法会使引用计数减1</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 - 通过release方法使对象的引用计数减1<br>
 - 当一个对象从集合中移除时，它的引用计数会减1<br>
 - 当一个对象从自动释放池中移除时，它的引用计数会减1<br>
 - 当一个对象的__strong修饰的变量被赋值为nil时，它的引用计数会减1
-
-</p>
-</details>
+</p></div></details>
 <ul>
 <li>1.5. 说一下自动释放池</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 自动释放池是一种内存管理方式，它可以将一些对象添加到自动释放池中，当自动释放池被销毁时，它会向池中的每个对象发送一条release消息，从而使这些对象的引用计数减1，当这些对象的引用计数为0时，它们就会被销毁。
-
-</p>
-</details>
+</p></div></details>
 <ul>
 <li>1.6. 说一下自动释放池的实现原理</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 自动释放池是一个栈结构，当一个对象被添加到自动释放池中时，它会被添加到栈顶，当自动释放池被销毁时，它会向栈中的每个对象发送一条release消息，从而使这些对象的引用计数减1，当这些对象的引用计数为0时，它们就会被销毁。
-
-</p>
-</details>
+</p></div></details>
 <ul>
 <li>1.7. 说一下ARC</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 ARC是一种内存管理方式，它可以自动在合适的地方插入retain/release/autorelease方法，从而使对象的引用计数正确，从而避免内存泄漏。
-
-</p>
-</details>
+</p></div></details>
 <ul>
 <li>1.8. 说一下全局区、栈区、堆区</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 全局区：存储全局变量、静态变量、常量字符串等，它的内存是在程序运行时就分配好的，当程序结束时，它才会被销毁。<br>
 栈区：存储局部变量、函数参数等，它的内存是在函数调用时分配的，当函数调用完毕时，它就会被销毁。<br>
 堆区：存储OC对象、C结构体等，它的内存是在程序运行时分配的，当它被赋值给__strong修饰的变量时，它的引用计数会加1，当它的引用计数为0时，它就会被销毁。
-
-</p>
-</details>
+</p></div></details>
 <h3 id="2-说一下block">2. 说一下Block</h3>
 <ul>
 <li>2.1. 什么是Block</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 Block是一种数据类型，它可以用来封装一段代码，它可以作为参数传递，也可以作为返回值返回。
-
-</p>
-</details>
+</p></div></details>
 <ul>
 <li>2.2. 说一下Block的实现原理</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 Block是一个结构体，它的内部有三个成员，分别是isa指针、flags、invoke指针，其中isa指针指向Block的类，flags用来记录Block的一些信息，invoke指针指向Block的实现代码。
-
-</p>
-</details>
+</p></div></details>
 <ul>
 <li>2.3. 说一下Block的类型</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 Block有三种类型，分别是全局Block、栈Block、堆Block。
-
-</p>
-</details>
+</p></div></details>
 <ul>
 <li>2.4. 说一下这三种Block的区别</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 全局Block：它的内存是存储在全局区的，它的生命周期和程序的生命周期一样长，当程序结束时，它才会被销毁。<br>
 栈Block：它的内存是存储在栈区的，它的生命周期和它所在的函数一样长，当函数执行完毕时，它就会被销毁。<br>
 堆Block：它的内存是存储在堆区的，它的生命周期和它所在的函数不一样长，当它被赋值给__strong修饰的变量时，它的引用计数会加1，当它的引用计数为0时，它就会被销毁。
-
-</p>
-</details>
+</p></div></details>
 <ul>
 <li>2.5. 那我们平时使用的Block是什么类型的</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 我们平时使用的Block是堆Block，因为它可以在多个函数中使用，如果是栈Block，那么它只能在它所在的函数中使用。
-
-</p>
-</details>
+</p></div></details>
 <ul>
 <li>2.6. 说一下Block的循环引用</li>
 </ul>
 <details>
 <summary>参考答案</summary>
-<p style="background-color: #F4F6F6;">
-
+<div><p style="background-color: #F4F6F6;padding: 10px;">
 当Block内部使用了外部的局部变量时，Block会对这个局部变量进行强引用，当Block被赋值给__strong修饰的变量时，这个局部变量的引用计数会加1，当这个局部变量被赋值为nil时，它的引用计数会减1，但是Block对这个局部变量的引用计数不会减1，所以这就会导致循环引用。
-
-</p>
-</details><div class="post-reward">
+</p></div></details><div class="post-reward">
   <input type="checkbox" name="reward" id="reward" hidden />
   <label class="reward-button" for="reward">赞赏支持</label>
   <div class="qr-code">
@@ -314,7 +297,8 @@ Block有三种类型，分别是全局Block、栈Block、堆Block。
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-11-01</span>
+                <span>更新于 2023-11-01&nbsp;<a class="git-hash" href="https://github.com/andy90s/andy90s.github.io.git/commit/b285512329ebbae13fd2ea9a5cc078b67f5f55e1" target="_blank" title="commit by 梁先华(909901234@qq.com) b285512329ebbae13fd2ea9a5cc078b67f5f55e1: add">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>b285512</a></span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>

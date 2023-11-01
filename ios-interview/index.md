@@ -5,6 +5,21 @@
 整理一些ios面试题，方便复习
 ## 基础
 ### 1. 说一下OC的内存管理
+{{< admonition tip "哈哈哈哈">}}
+<details>
+<summary>参考答案</summary>
+<p style="background-color: #F4F6F6;padding: 10px;">OC的内存管理有两种方式，分别是引用计数和ARC。</p>
+
+</details>
+{{< /admonition >}}
+
+{{< admonition tip "什么是引用计数">}}
+
+{{< details summary="参考答案">}}
+引用计数是一种内存管理方式，当一个对象被创建时，它的引用计数为1，当有一个对象引用它时，它的引用计数就会加1，当引用它的对象被销毁时，它的引用计数就会减1，当它的引用计数为0时，它就会被销毁。
+{{< /details >}}
+
+{{< /admonition >}}
 - 1.1. 什么是引用计数
 
 {{< details summary="参考答案">}}
