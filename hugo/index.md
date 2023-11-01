@@ -142,7 +142,32 @@ https://cdn.jsdelivr.net/gh/andy90s/blog-image@版本号/blog/images/27166995842
 ```
 https://cdn.jsdelivr.net/gh/andy90s/blog-image@版本号/blog/images/271669958429_.pic?x-oss-process=image/resize,m_lfit,h_100,w_100
 ```
-
 {{< /admonition >}}
+
+## 自定义shortcode
+
+比如我要将这段HTML代码转换为shortcode:
+```html
+<details>
+<summary>标题</summary> 
+<p style="background-color: #F4F6F6;"> 内容 </p> 
+</details>
+```
+### 1. 在`layouts/shortcodes`目录下新建`details.html`文件
+```html
+<details>
+<summary>{{ .Get "summary" }}</summary>
+<p style="background-color: #F4F6F6;">
+{{ .Inner }}
+</p>
+</details>
+```
+### 2. 在文章中使用
+```markdown
+{{</* details summary="标题" */>}}
+内容
+{{</* /details */>}}
+```
+
 ## 参考
 [主题文档 - 扩展 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#2-link)

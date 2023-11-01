@@ -19,3 +19,4 @@ sudo xattr -d com.apple.quarantine /Users/xxx/flutter/bin/cache/artifacts/usbmux
 其中`/Users/xxx/flutter/bin` 替换自己的flutter安装目录 <br>
 终端输入```which flutter```查看目录
 {{< /admonition >}}
+
