@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/wangzhu/gpm/github.com/andy90s/blog/liangxianhua",
+	"sourceRoot": "/Users/liangxianhua/projects/blog/liangxianhua",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/lib/normalize/normalize.css",

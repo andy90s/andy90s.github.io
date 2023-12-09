@@ -10,8 +10,8 @@
 <meta property="og:url" content="https://example.com/fastlane-package/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-07-04T09:16:24+08:00" />
 <meta property="article:modified_time" content="2023-10-27T14:22:22+08:00" /><meta property="og:site_name" content="My cool site" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Fastlane打包"/>
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Fastlane打包"/>
 <meta name="twitter:description" content=""/>
 <meta name="application-name" content="梁先华个人博客">
 <meta name="apple-mobile-web-app-title" content="梁先华个人博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -178,20 +178,20 @@
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ENV[&#34;FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT&#34;] = &#34;120&#34; # 设置超时时间,不然会报超时错误 
-</span></span><span class="line"><span class="cl">default_platform(:ios)
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">ENV</span><span class="p">[</span><span class="s2">&#34;FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;120&#34;</span> <span class="c1"># 设置超时时间,不然会报超时错误 </span>
+</span></span><span class="line"><span class="cl"><span class="n">default_platform</span><span class="p">(:</span><span class="n">ios</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">platform :ios do
-</span></span><span class="line"><span class="cl">  desc &#34;Description of what the lane does&#34;
-</span></span><span class="line"><span class="cl">  lane :beta do
-</span></span><span class="line"><span class="cl">	gym(
-</span></span><span class="line"><span class="cl">	 export_method: &#34;ad-hoc&#34;,
-</span></span><span class="line"><span class="cl">	 scheme: &#34;XXX&#34;, # 项目的scheme
-</span></span><span class="line"><span class="cl">		configuration: &#34;Release&#34;
-</span></span><span class="line"><span class="cl">	)
-</span></span><span class="line"><span class="cl">	pgyer(api_key: &#34;xxx&#34;) # 蒲公英的api_key,可到蒲公英网站查看
-</span></span><span class="line"><span class="cl">  end
-</span></span><span class="line"><span class="cl">end
+</span></span><span class="line"><span class="cl"><span class="n">platform</span> <span class="p">:</span><span class="n">ios</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">  <span class="n">desc</span> <span class="s2">&#34;Description of what the lane does&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lane</span> <span class="p">:</span><span class="n">beta</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">	<span class="n">gym</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">	 <span class="n">export_method</span><span class="p">:</span> <span class="s2">&#34;ad-hoc&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	 <span class="n">scheme</span><span class="p">:</span> <span class="s2">&#34;XXX&#34;</span><span class="p">,</span> <span class="c1"># 项目的scheme</span>
+</span></span><span class="line"><span class="cl">		<span class="n">configuration</span><span class="p">:</span> <span class="s2">&#34;Release&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="n">pgyer</span><span class="p">(</span><span class="n">api_key</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">)</span> <span class="c1"># 蒲公英的api_key,可到蒲公英网站查看</span>
+</span></span><span class="line"><span class="cl">  <span class="n">end</span>
+</span></span><span class="line"><span class="cl"><span class="n">end</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>工程手动签名:</p>
@@ -221,28 +221,28 @@
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ENV[&#34;FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT&#34;] = &#34;120&#34; # 设置超时时间,不然会报超时错误
-</span></span><span class="line"><span class="cl">default_platform(:ios)
-</span></span><span class="line"><span class="cl">platform :ios do
-</span></span><span class="line"><span class="cl">  desc &#34;Description of what the lane does&#34;
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">ENV</span><span class="p">[</span><span class="s2">&#34;FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;120&#34;</span> <span class="c1"># 设置超时时间,不然会报超时错误</span>
+</span></span><span class="line"><span class="cl"><span class="n">default_platform</span><span class="p">(:</span><span class="n">ios</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">platform</span> <span class="p">:</span><span class="n">ios</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">  <span class="n">desc</span> <span class="s2">&#34;Description of what the lane does&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  lane :beta do
+</span></span><span class="line"><span class="cl">  <span class="n">lane</span> <span class="p">:</span><span class="n">beta</span> <span class="k">do</span>
 </span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	increment_build_number
-</span></span><span class="line"><span class="cl">	gym(
-</span></span><span class="line"><span class="cl">		output_directory: &#34;./fastlane/&#34;, # 打包后的ipa文件存放的路径
-</span></span><span class="line"><span class="cl">		export_method: &#34;ad-hoc&#34;,
-</span></span><span class="line"><span class="cl">		scheme: &#34;XXX&#34;, # 项目的scheme
-</span></span><span class="line"><span class="cl">		export_options: {
-</span></span><span class="line"><span class="cl">			provisioningProfiles: {
-</span></span><span class="line"><span class="cl">				&#34;包名&#34; =&gt; &#34;描述文件名称&#34;
-</span></span><span class="line"><span class="cl">  			}
-</span></span><span class="line"><span class="cl">		},
-</span></span><span class="line"><span class="cl">		configuration: &#34;Release&#34;
-</span></span><span class="line"><span class="cl">	)
-</span></span><span class="line"><span class="cl">	pgyer(api_key: &#34;蒲公英的api_key&#34;)
-</span></span><span class="line"><span class="cl">  end
-</span></span><span class="line"><span class="cl">end
+</span></span><span class="line"><span class="cl">	<span class="n">increment_build_number</span>
+</span></span><span class="line"><span class="cl">	<span class="n">gym</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">		<span class="n">output_directory</span><span class="p">:</span> <span class="s2">&#34;./fastlane/&#34;</span><span class="p">,</span> <span class="c1"># 打包后的ipa文件存放的路径</span>
+</span></span><span class="line"><span class="cl">		<span class="n">export_method</span><span class="p">:</span> <span class="s2">&#34;ad-hoc&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">		<span class="n">scheme</span><span class="p">:</span> <span class="s2">&#34;XXX&#34;</span><span class="p">,</span> <span class="c1"># 项目的scheme</span>
+</span></span><span class="line"><span class="cl">		<span class="n">export_options</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="n">provisioningProfiles</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="s2">&#34;包名&#34;</span> <span class="o">=&gt;</span> <span class="s2">&#34;描述文件名称&#34;</span>
+</span></span><span class="line"><span class="cl">  			<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="p">},</span>
+</span></span><span class="line"><span class="cl">		<span class="n">configuration</span><span class="p">:</span> <span class="s2">&#34;Release&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="n">pgyer</span><span class="p">(</span><span class="n">api_key</span><span class="p">:</span> <span class="s2">&#34;蒲公英的api_key&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">end</span>
+</span></span><span class="line"><span class="cl"><span class="n">end</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>打包的时候到项目根目录执行:</p>
@@ -307,7 +307,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.119.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.121.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/andy90s" target="_blank">梁先华</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
