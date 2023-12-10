@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/ios-interview\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ios","wordcount":  30 ,
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ios","wordcount":  1537 ,
         "url": "https:\/\/example.com\/ios-interview\/","datePublished": "2023-11-01T09:55:35+08:00","dateModified": "2023-12-09T21:41:06+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
@@ -107,8 +107,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">iOS面试题</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>andy90s</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>移动端</a></span>&nbsp;&nbsp;<i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ios/">iOS</a></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-01">2023-11-01</time>&nbsp;<i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2023-12-09&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 30 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-01">2023-11-01</time>&nbsp;<i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2023-12-09&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1537 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -117,17 +117,166 @@
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ol>
     <li><a href="#前言">前言</a></li>
-    <li><a href="#基础">基础</a>
+    <li><a href="#oc">OC</a>
       <ol>
-        <li><a href="#1-说一下oc的内存管理">1. 说一下OC的内存管理</a></li>
+        <li><a href="#oc对象">OC对象</a></li>
+        <li><a href="#oc分类">OC分类</a></li>
       </ol>
     </li>
   </ol>
 </nav></div>
             </div><div class="content" id="content"><h2 id="前言">前言</h2>
 <p>整理一些ios面试题，方便复习</p>
-<h2 id="基础">基础</h2>
-<h3 id="1-说一下oc的内存管理">1. 说一下OC的内存管理</h3><div class="post-reward">
+<h2 id="oc">OC</h2>
+<h3 id="oc对象">OC对象</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是内存对齐，内存对齐规则是什么样的？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>内存对齐说白了就是为了提高CPU寻址操作性能的一种规则。就像砖块一样,如果砖块有大有小毫无规律的摆放在一起,那么我们想要找到某一块砖块就会很麻烦,但是如果我们把砖块按照一定的规则整齐摆放,那么我们就可以很快的找到某一块砖块了,这就是内存对齐的原理。<br>
+<br>
+<strong>内存对齐规则:</strong><br>
+1.结构体的成员相对于结构体首地址的偏移量必须是成员大小的倍数，即后续数据成员的起始位置是该数据成员所占内存大小的整数倍；<br>
+2.结构体的大小必须是最大成员大小的倍数<br></p>
+<p><strong>各数据类型所占字节大小如下(64位):</strong><br></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">大小</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">char</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">short</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">long</td>
+<td style="text-align:center">8</td>
+</tr>
+<tr>
+<td style="text-align:center">long long</td>
+<td style="text-align:center">8</td>
+</tr>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">8</td>
+</tr>
+<tr>
+<td style="text-align:center">long double</td>
+<td style="text-align:center">16</td>
+</tr>
+<tr>
+<td style="text-align:center">指针(void *)</td>
+<td style="text-align:center">8</td>
+</tr>
+</tbody>
+</table>
+<p><strong>OC 对象的结构体中的数据成员的顺序：</strong><br></p>
+<ol>
+<li>首先是父类对象的结构体<br></li>
+<li>然后是自己本身的数据成员,按照所占内存大小从小到大排列<br>
+所以OC对象对应的结构体第一个数据成员始终是isa指针。<br></li>
+</ol>
+<p><strong>相关函数:</strong><br></p>
+<ol>
+<li>class_getInstanceSize表示成员变量的所占的内存大小<br></li>
+<li>malloc_size表示实际分配的内存大小<br></li>
+<li>sizeof表示变量或者类型的大小，传入结构体，返回的则是结构的大小，传入指针（这里的指针表示C指针，OC的引用）即传入值，则返回传入值的类型大小<br></li>
+</ol>
+<p><strong>分析一个结构体例子:</strong><br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-objc" data-lang="objc"><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">Struct1</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">a</span><span class="p">;</span> <span class="c1">// 占用8字节,从偏移量0开始
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">char</span> <span class="n">b</span><span class="p">;</span> <span class="c1">// 运用规则1,占用1字节,从偏移量8开始
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">c</span><span class="p">;</span> <span class="c1">// 运用规则1,占用4字节,因为当前偏移量9不是4的倍数,所以从偏移量12开始
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">short</span> <span class="n">d</span><span class="p">;</span> <span class="c1">// 运用规则1,占用2字节,因为当前偏移量16是2的倍数,所以从偏移量16开始
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">struct</span> <span class="n">Struct2</span> <span class="p">{</span> <span class="c1">// 规则2,结构体的大小必须是最大成员大小的倍数,当前偏移量18不是8的倍数,所以从偏移量24开始
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">double</span> <span class="n">a</span><span class="p">;</span> <span class="c1">// 运用规则1,占用8字节,从偏移量24开始
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">b</span><span class="p">;</span> <span class="c1">// 运用规则1,占用4字节,因为当前偏移量32是4的倍数,所以从偏移量32开始
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">char</span> <span class="n">c</span><span class="p">;</span> <span class="c1">// 运用规则1,占用1字节,因为整体系数是8,33补齐到8的,则整体占用40字节
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span><span class="n">str2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span><span class="n">str1</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>sizeof(str1)</code>的结果是40<br></p>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>instance对象，class对象，mate-class对象的区别与关系? 在内存中各自存储哪些信息<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>instance对象</strong><br>
+instance对象就是通过类alloc出来的对象，每次调用alloc都会产生新的instance对象<br>
+内存中存储着:isa指针，其他成员变量<br></p>
+<p><strong>class对象</strong><br>
+class对象是类对象，每个类在内存中都有唯一的一个class对象，class对象是一个结构体，里面存储着类的一些信息，比如类的成员变量、属性、方法、遵守的协议等等<br></p>
+<p><strong>meta-class对象</strong><br>
+meta-class对象是元类对象，每个类在内存中都有唯一的一个meta-class对象，meta-class对象也是一个结构体，里面存储着类方法、遵守的协议等等<br></p>
+<p><strong>关系</strong><br>
+instance对象的isa指针指向class对象，class对象的isa指针指向meta-class对象，meta-class对象的isa指针指向基类的meta-class对象，基类的meta-class对象的isa指针指向自己，形成一个闭环<br></p>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>怎么判断一个Class对象是否为meta-class？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">通过class_isMetaClass函数判断<br></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>isKindOfClass 和 isMemberOfClass的区别<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><strong>isKindOfClass:</strong> 判断是否为当前类或者子类的实例<br>
+<strong>isMemberOfClass:</strong> 判断是否为当前类的实例<br>
+<a href="https://juejin.cn/post/6873793240655462413" target="_blank" rel="noopener noreffer ">【图解isKindOfClass和isMemberOfClass方法】</a></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>new与alloc/init的区别？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><strong>new:</strong> new方法是一个类方法，内部会调用alloc方法和init方法，返回一个实例对象<br>
+<strong>alloc:</strong> alloc方法是一个类方法，内部会开辟一块内存空间，返回一个实例对象<br>
+<strong>init:</strong> init方法是一个实例方法，初始化对象，返回一个实例对象<br></div>
+        </div>
+    </div>
+<h3 id="oc分类">OC分类</h3><div class="post-reward">
   <input type="checkbox" name="reward" id="reward" hidden />
   <label class="reward-button" for="reward">赞赏支持</label>
   <div class="qr-code">
