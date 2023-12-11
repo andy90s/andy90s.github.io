@@ -86,6 +86,109 @@ instance对象的isa指针指向class对象，class对象的isa指针指向meta-
 
 ### OC分类
 
+{{< admonition open=false type=question title="Category底层结构是怎么样的❓">}}
+引用MJ课件中的一张图<br>
+<center>
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/category_t.png" title="Category" width="100%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> Category </b>  </div>
+</center>
+
+**clang编译文件得到的:**<br>
+```cpp
+struct _category_t {
+    const char *name;
+    struct _class_t *cls;
+    const struct _method_list_t *instance_methods; // Instance对象方法
+    const struct _method_list_t *class_methods;// 类方法
+    const struct _protocol_list_t *protocols;// 协议
+    const struct _prop_list_t *properties; // 属性
+};
+```
+**编译时:**<br>
+
+- 每一个Category都会生成一个category_t结构体对象，记录着所有的属性、方法和协议信息
+- 将所有的category_t对象放在一个category_list数组中
+
+**运行时:**<br>
+
+- 通过Runtime加载某个类的所有Category数据
+- 把所有Category的对象方法、类方法、属性、协议数据，分别合并到一个二维数组中，并且后面参与编译的Category数据，会在数组的前面
+- 将合并后的Category数据（方法、属性、协议），插入到类原来数据的前面
+
+**调用顺序:**<br>
+
+后编译的Category -> 先编译的Category -> 原类(本质原因是它们在方法栈中的顺序不同,优先级不同) -> 父类<br>
+
+**详解参考:**<br>
+{{<link href="https://juejin.cn/post/7096480684847415303" content="【Category底层结构】">}}
+{{<link href="https://juejin.cn/post/6963889820363915300" content="【Objective-C之Category的底层实现原理】">}}
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="为什么说不能添加属性？">}}
+在iOS中，分类（Category）是一种将方法添加到现有类中的方式，而不是通过子类化来创建新的类。在Objective-C中，分类可以为现有的类添加方法，但不能添加实例变量或属性。<br>
+
+这是因为Objective-C的运行时系统在类加载时分配内存空间，并将实例变量和属性的偏移量计算到类的内部数据结构中。由于分类是在编译时定义的，它们不能更改类的内部数据结构，因此不能直接添加实例变量或属性。<br>
+
+不过，在Objective-C 2.0中，可以使用关联对象（Associated Object）来向分类中添加属性。关联对象允许将属性与现有的对象相关联，而不是将其存储在对象本身中。这样可以在运行时动态地向现有对象添加属性。关联对象是通过Objective-C运行时API实现的。<br>
+
+其实本质原因是底层结构中没有`ivars`成员列表，所以不能添加属性<br>
+
+**对比原类结构:**<br>
+
+<center>
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/struct_objc_class%E7%BB%93%E6%9E%84.png" title="原类结构" width="100%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 原类结构 </b>  </div>
+</center>
+
+<br>
+
+<center>
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image@master/blog/images/category_t.png" title="Category" width="100%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> Category </b>  </div>
+</center>
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="load、initialize的区别">}}
+**+load**<br>
+当类或者分类被添加到Objective-C runtime时，就会调用+load方法。每个类、分类的+load方法在程序运行过程中只会调用一次，无论这个类有没有被用到，即使这个类没有被用到，也会调用这个类的+load方法，而且是在main函数之前调用。<br>
+
+**+load调用顺序:**<br>
+- 先调用类的+load方法，再调用分类的+load方法<br>
+- 调用顺序是根据编译顺序决定的，先编译，先调用<br>
+- 调用子类的+load方法之前，会先调用父类的+load方法<br>
+
+**+initialize**<br>
++initialize方法会在类第一次接收到消息时调用
+
+**+initialize调用顺序:**<br>
+先调用父类的+initialize方法，再调用子类的+initialize方法<br>
+
+**+initialize和+load的很大区别是，+initialize是通过objc_msgSend进行调用的，Load是根据方法地址直接调用的，并不是经过objc_msgSend函数调用，所以有以下特点:**<br>
+- 如果子类没有实现+initialize方法，会调用父类的+initialize方法，所以父类的+initialize方法可能会被调用多次<br>
+- 如果分类实现了+initialize方法，就会覆盖类本身的+initialize方法，因为分类的方法优先级高于类本身的方法<br>
+{{< admonition tip "覆盖说明">}}
+参考上面 `Category底层结构是怎么样的`中的调用顺序,可知分类的方法优先级高于类本身的方法,方法查找顺序是先查找分类,再查找类本身,一旦找到就结束查找,所以这里说分类的`+initialize`方法会覆盖类本身的方法
+{{< /admonition >}}
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="分类(类别)和扩展的区别是什么？">}}
+- 类别中原则上只能增加方法（能添加属性的的原因只是通过runtime解决无setter/getter的问题而已）。
+- 类扩展不仅可以增加方法，还可以增加实例变量（或者属性），只是该实例变量默认是@private类型的（用范围只能在自身类，而不是子类或其他地方）。
+- 类扩展中声明的方法没被实现，编译器会报警，但是类别中的方法没被实现编译器是不会有任何警告的。这是因为类扩展是在编译阶段被添加到类中，而类别是在运行时添加到类中。
+- 类扩展不能像类别那样拥有独立的实现部分（@implementation部分），也就是说，类扩展所声明的方法必须依托对应类的实现部分来实现。
+- 定义在 .m 文件中的类扩展方法为私有的，定义在 .h 文件（头文件）中的类扩展方法为公有的。类扩展是在 .m 文件中声明私有方法的非常好的方式。
+{{< /admonition >}}
+
+
+
+
+
+
+
+
+
+
 
 
 
