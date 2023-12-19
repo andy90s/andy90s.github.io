@@ -180,6 +180,161 @@ struct _category_t {
 - 定义在 .m 文件中的类扩展方法为私有的，定义在 .h 文件（头文件）中的类扩展方法为公有的。类扩展是在 .m 文件中声明私有方法的非常好的方式。
 {{< /admonition >}}
 
+### block
+
+{{< admonition open=false type=question title="block是什么?">}}
+block本质上是一个对象(它内部也有个isa指针)，封装了函数调用以及函数调用环境的OC对象。<br>
+
+**block的底层结构如下图所示:**<br>
+
+<center>
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_layout.png" title="block" width="70%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> block </b>  </div>
+</center>
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="block的类型有哪些?">}}
+**全局Block:**<br>
+没有访问auto变量的block，编译器会将这种block优化为全局block，存储在程序的数据区域<br>
+
+**栈Block:**<br>
+访问了auto变量的block，编译器会将这种block优化为栈block，存储在栈中<br>
+
+**堆Block:**<br>
+对栈block调用了copy方法，编译器会将这种block优化为堆block，存储在堆中<br>
+
+<center>
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block%E7%B1%BB%E5%9E%8B.png" title="block的类型" width="70%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> block的类型 </b>  </div>
+</center>
+
+{{< admonition tip "说明">}}
+auto变量是指在函数内部定义的变量(局部变量)，不包括static修饰的变量
+{{<link href="https://zh.wikipedia.org/wiki/%E8%87%AA%E5%8A%A8%E5%8F%98%E9%87%8F" content="【Wiki】">}}
+{{< /admonition >}}
+
+{{< /admonition >}}
+
+
+{{< admonition open=false type=question title="block变量捕获有哪些情况？">}}
+**auto变量的捕获**<br>
+
+<center>
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_capture.png" title="变量的捕获" width="95%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 变量的捕获 </b>  </div>
+</center>
+
+<!-- <center>
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_clang.png" title="auto变量的捕获" width="100%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> auto变量的捕获 </b>  </div>
+</center> -->
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="ARC环境下，哪些情况编译器会根据情况自动将栈上的block复制到堆上">}}
+- block作为函数返回值时 `return ^{ return 10; };`
+- block作为Cocoa API中方法名含有usingBlock的方法参数时 `@[@1,@2,@3].enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {}`
+- block作为GCD API的方法参数时 `dispatch_async(dispatch_get_global_queue(0, 0), ^{ NSLog(@"hello world"); });`
+- block作为OC方法中的强引用的循环引用时 `self.block = ^{ NSLog(@"hello world"); };`
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="block内部为什么不能修改局部变量，__block为什么能？">}}
+**block内部为什么不能修改局部变量:**<br>
+block内部不能修改局部变量，是因为block内部会对局部变量进行copy操作，而copy操作是将局部变量的值拷贝到block结构体中，而不是引用，所以block内部修改的是block结构体中的值，而不是局部变量的值<br>
+
+**__block为什么能:**<br>
+__block修饰的变量是一个结构体，结构体中有一个isa指针，指向一个对象，这个对象中有一个变量，这个变量的值就是局部变量的值，所以block内部修改的是这个对象中的变量，而不是局部变量的值<br>
+
+```objc
+struct __Block_byref_i_0 {
+    void *__isa;
+    __Block_byref_i_0 *__forwarding;
+    int __flags;
+    int __size;
+    int val; //变量名
+};
+```
+{{< /admonition >}}
+
+### 内存管理
+
+{{< admonition open=false type=question title="OC中内存分区从高到低是怎么样的？">}}
+**OC中内存分区从高到低:**<br>
+
+**1. 栈区(stack)**<br>
+
+栈是用于存放本地变量，内部临时变量以及有关上下文的内存区域。程序在调用函数时，操作系统会自动通过压栈和弹栈完成保存函数现场等操作，不需要程序员手动干预。<br>
+
+栈是一块连续的内存区域，栈顶的地址和栈的最大容量是系统预先规定好的。能从栈获得的空间较小。如果申请的空间超过栈的剩余空间时，例如递归深度过深，将提示stackoverflow。<br>
+
+栈是机器系统提供的数据结构，计算机会在底层对栈提供支持：分配专门的{{<link href="https://www.jianshu.com/p/6d7a57794122" content="寄存器">}}存放栈的地址，压栈出栈都有专门的指令执行，这就决定了栈的效率比较高。<br>
+
+**2. 堆区(heap)**<br>
+
+堆是用于存放除了栈里的东西之外所有其他东西的内存区域，当使用malloc和free时就是在操作堆中的内存。对于堆来说，释放工作由程序员控制，容易产生memory leak。<br>
+
+堆是向高地址扩展的数据结构，是不连续的内存区域。这是由于系统是用链表来存储的空闲内存地址的，自然是不连续的，而链表的遍历方向是由低地址向高地址。堆的大小受限于计算机系统中有效的虚拟内存。由此可见，堆获得的空间比较灵活，也比较大。<br>
+
+对于堆来讲，频繁的new/delete势必会造成内存空间的不连续，从而造成大量的碎片，使程序效率降低。对于栈来讲，则不会存在这个问题，因为栈是先进后出的队列，永远都不可能有一个内存块从栈中间弹出。<br>
+
+堆都是动态分配的，没有静态分配的堆。栈有2种分配方式：静态分配和动态分配。静态分配是编译器完成的，比如局部变量的分配。动态分配由alloca函数进行分配，但是栈的动态分配和堆是不同的，他的动态分配是由编译器进行释放，无需我们手工实现。<br>
+
+计算机底层并没有对堆的支持，堆则是C/C++函数库提供的，同时由于上面提到的碎片问题，都会导致堆的效率比栈要低。<br>
+
+**3. 全局区(静态区)**<br>
+
+全局区又分为`.bss`段和`.data`段，内存地址一般由0x1开头：
+- `.bss`段：`block started by symbol`,未初始化的全局变量和静态变量，程序执行前会自动清0
+- `.data`段：`data`,已初始化的全局变量和静态变量
+
+**4. 常量区(.rodata)**<br>
+
+`.rodata`: `read only data`(只读),常量字符串就是放在这里的，程序执行前会自动加载到内存中，程序结束后由系统释放<br>
+
+常量区的内存在编译时就已经确定，主要存放已经使用过的，且没有指向的字符串常量(因为字符串常量可能在程序中多次被使用，所以在程序运行之前就会提前分配内存)。常量区的常量在程序结束后，由系统释放<br>
+
+**5. 代码区(.text)**<br>
+
+存储程序代码，在编译时加载到内存中，代码会被编译成二进制的形式进行存储
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="内存管理的原则是什么？">}}
+**内存管理的原则:**<br>
+- 谁持有,谁释放
+- 谁创建,谁释放
+- 自己生成的对象,自己持有
+- 非自己生成的对象,自己也能持有
+- 在不需要使用某个对象时,及时释放
+- 非自己持有的对象,无权释放
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="讲下自动释放池">}}
+Autorelease Pool 提供了一种可以允许你向一个对象延迟发送release消息的机制,当你想要释放一个对象时,只需要将这个对象放入到Autorelease Pool中,系统会在Autorelease Pool被销毁时,向池中所有的对象发送release消息。<br>
+
+所谓的延迟发送release消息指的是，当我们把一个对象标记为autorelease时:<br>
+```objc
+NSString* str = [[[NSString alloc] initWithString:@"hello"] autorelease];
+```
+这个对象的 retainCount 会 +1,但是并不会立即release,而是当这段语句所处的autoreleasepool被销毁时,所有标记了autorelease的对象才会被release。<br>
+
+**Autorelease Pool的用处:**
+在ARC下,我们并不需要去手动调用autorelease相关方法,甚至可以完全不知道autorelease的存在,就可以正确的管理好内存.因为Cocoa Touch 的Runloop中,每个runloop circle 中系统都自动加入了Autorelease Pool的创建和释放.<br>
+当我们需要创建和销毁大量的对象时,使用手动创建的Autorelease Pool可以减少内存峰值,提高程序的性能。因为如果不手动创建的话,外层系统创建的pool会在整个runloop circle结束时才进行drain,而手动创建的pool可以在我们需要的时候进行drain,这样就可以减少内存峰值,提高程序的性能。<br>
+```objc
+for (int i = 0; i < 100000000; i++)
+{
+    @autoreleasepool
+    {
+        NSString* string = @"abc";
+        NSArray* array = [string componentsSeparatedByString:string];
+    }
+}
+```
+如果不使用autoreleasepool,需要再循环结束之后释放100000000个字符串,如果使用的话,则会在每次循环结束时释放字符串,这样就可以减少内存峰值,提高程序的性能。<br>
+{{< /admonition >}}
+
 
 
 

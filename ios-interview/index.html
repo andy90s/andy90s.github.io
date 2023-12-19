@@ -9,7 +9,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/ios-interview/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-11-01T09:55:35+08:00" />
-<meta property="article:modified_time" content="2023-12-10T21:09:41+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="article:modified_time" content="2023-12-11T22:08:02+08:00" /><meta property="og:site_name" content="My cool site" />
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="iOS面试题"/>
 <meta name="twitter:description" content=""/>
@@ -27,8 +27,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/ios-interview\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ios","wordcount":  3371 ,
-        "url": "https:\/\/example.com\/ios-interview\/","datePublished": "2023-11-01T09:55:35+08:00","dateModified": "2023-12-10T21:09:41+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ios","wordcount":  5983 ,
+        "url": "https:\/\/example.com\/ios-interview\/","datePublished": "2023-11-01T09:55:35+08:00","dateModified": "2023-12-11T22:08:02+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
                 "@type": "Person",
@@ -107,8 +107,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">iOS面试题</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>andy90s</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>移动端</a></span>&nbsp;&nbsp;<i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ios/">iOS</a></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-01">2023-11-01</time>&nbsp;<i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2023-12-10&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 3371 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 7 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-01">2023-11-01</time>&nbsp;<i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2023-12-11&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 5983 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 12 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -121,6 +121,8 @@
       <ol>
         <li><a href="#oc对象">OC对象</a></li>
         <li><a href="#oc分类">OC分类</a></li>
+        <li><a href="#block">block</a></li>
+        <li><a href="#内存管理">内存管理</a></li>
       </ol>
     </li>
   </ol>
@@ -422,6 +424,234 @@ instance对象的isa指针指向class对象，class对象的isa指针指向meta-
 </ul>
 </div>
         </div>
+    </div>
+<h3 id="block">block</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>block是什么?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>block本质上是一个对象(它内部也有个isa指针)，封装了函数调用以及函数调用环境的OC对象。<br></p>
+<p><strong>block的底层结构如下图所示:</strong><br></p>
+<center>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_layout.png" title="block" data-thumbnail="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_layout.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_layout.png"
+            data-srcset="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_layout.png, https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_layout.png 1.5x, https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_layout.png 2x"
+            data-sizes="auto"
+            alt="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_layout.png" width="70%" />
+    </a>
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> block </b>  </div>
+</center>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>block的类型有哪些?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>全局Block:</strong><br>
+没有访问auto变量的block，编译器会将这种block优化为全局block，存储在程序的数据区域<br></p>
+<p><strong>栈Block:</strong><br>
+访问了auto变量的block，编译器会将这种block优化为栈block，存储在栈中<br></p>
+<p><strong>堆Block:</strong><br>
+对栈block调用了copy方法，编译器会将这种block优化为堆block，存储在堆中<br></p>
+<center>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block%E7%B1%BB%E5%9E%8B.png" title="block的类型" data-thumbnail="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block%E7%B1%BB%E5%9E%8B.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block%E7%B1%BB%E5%9E%8B.png"
+            data-srcset="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block%E7%B1%BB%E5%9E%8B.png, https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block%E7%B1%BB%E5%9E%8B.png 1.5x, https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block%E7%B1%BB%E5%9E%8B.png 2x"
+            data-sizes="auto"
+            alt="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block%E7%B1%BB%E5%9E%8B.png" width="70%" />
+    </a>
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> block的类型 </b>  </div>
+</center>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>说明<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">auto变量是指在函数内部定义的变量(局部变量)，不包括static修饰的变量
+<a href="https://zh.wikipedia.org/wiki/%E8%87%AA%E5%8A%A8%E5%8F%98%E9%87%8F" target="_blank" rel="noopener noreffer ">【Wiki】</a></div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>block变量捕获有哪些情况？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>auto变量的捕获</strong><br></p>
+<center>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_capture.png" title="变量的捕获" data-thumbnail="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_capture.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_capture.png"
+            data-srcset="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_capture.png, https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_capture.png 1.5x, https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_capture.png 2x"
+            data-sizes="auto"
+            alt="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_capture.png" width="95%" />
+    </a>
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 变量的捕获 </b>  </div>
+</center>
+<!-- <center>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_clang.png" title="auto变量的捕获" data-thumbnail="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_clang.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_clang.png"
+            data-srcset="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_clang.png, https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_clang.png 1.5x, https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_clang.png 2x"
+            data-sizes="auto"
+            alt="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/block_clang.png" width="100%" />
+    </a>
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> auto变量的捕获 </b>  </div>
+</center> --></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>ARC环境下，哪些情况编译器会根据情况自动将栈上的block复制到堆上<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>block作为函数返回值时 <code>return ^{ return 10; };</code></li>
+<li>block作为Cocoa API中方法名含有usingBlock的方法参数时 <code>@[@1,@2,@3].enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {}</code></li>
+<li>block作为GCD API的方法参数时 <code>dispatch_async(dispatch_get_global_queue(0, 0), ^{ NSLog(@&quot;hello world&quot;); });</code></li>
+<li>block作为OC方法中的强引用的循环引用时 <code>self.block = ^{ NSLog(@&quot;hello world&quot;); };</code></li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>block内部为什么不能修改局部变量，__block为什么能？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>block内部为什么不能修改局部变量:</strong><br>
+block内部不能修改局部变量，是因为block内部会对局部变量进行copy操作，而copy操作是将局部变量的值拷贝到block结构体中，而不是引用，所以block内部修改的是block结构体中的值，而不是局部变量的值<br></p>
+<p><strong>__block为什么能:</strong><br>
+__block修饰的变量是一个结构体，结构体中有一个isa指针，指向一个对象，这个对象中有一个变量，这个变量的值就是局部变量的值，所以block内部修改的是这个对象中的变量，而不是局部变量的值<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-objc" data-lang="objc"><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">__Block_byref_i_0</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="o">*</span><span class="n">__isa</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">__Block_byref_i_0</span> <span class="o">*</span><span class="n">__forwarding</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">__flags</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">__size</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">val</span><span class="p">;</span> <span class="c1">//变量名
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<h3 id="内存管理">内存管理</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>OC中内存分区从高到低是怎么样的？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>OC中内存分区从高到低:</strong><br></p>
+<p><strong>1. 栈区(stack)</strong><br></p>
+<p>栈是用于存放本地变量，内部临时变量以及有关上下文的内存区域。程序在调用函数时，操作系统会自动通过压栈和弹栈完成保存函数现场等操作，不需要程序员手动干预。<br></p>
+<p>栈是一块连续的内存区域，栈顶的地址和栈的最大容量是系统预先规定好的。能从栈获得的空间较小。如果申请的空间超过栈的剩余空间时，例如递归深度过深，将提示stackoverflow。<br></p>
+<p>栈是机器系统提供的数据结构，计算机会在底层对栈提供支持：分配专门的<a href="https://www.jianshu.com/p/6d7a57794122" target="_blank" rel="noopener noreffer ">寄存器</a>存放栈的地址，压栈出栈都有专门的指令执行，这就决定了栈的效率比较高。<br></p>
+<p><strong>2. 堆区(heap)</strong><br></p>
+<p>堆是用于存放除了栈里的东西之外所有其他东西的内存区域，当使用malloc和free时就是在操作堆中的内存。对于堆来说，释放工作由程序员控制，容易产生memory leak。<br></p>
+<p>堆是向高地址扩展的数据结构，是不连续的内存区域。这是由于系统是用链表来存储的空闲内存地址的，自然是不连续的，而链表的遍历方向是由低地址向高地址。堆的大小受限于计算机系统中有效的虚拟内存。由此可见，堆获得的空间比较灵活，也比较大。<br></p>
+<p>对于堆来讲，频繁的new/delete势必会造成内存空间的不连续，从而造成大量的碎片，使程序效率降低。对于栈来讲，则不会存在这个问题，因为栈是先进后出的队列，永远都不可能有一个内存块从栈中间弹出。<br></p>
+<p>堆都是动态分配的，没有静态分配的堆。栈有2种分配方式：静态分配和动态分配。静态分配是编译器完成的，比如局部变量的分配。动态分配由alloca函数进行分配，但是栈的动态分配和堆是不同的，他的动态分配是由编译器进行释放，无需我们手工实现。<br></p>
+<p>计算机底层并没有对堆的支持，堆则是C/C++函数库提供的，同时由于上面提到的碎片问题，都会导致堆的效率比栈要低。<br></p>
+<p><strong>3. 全局区(静态区)</strong><br></p>
+<p>全局区又分为<code>.bss</code>段和<code>.data</code>段，内存地址一般由0x1开头：</p>
+<ul>
+<li><code>.bss</code>段：<code>block started by symbol</code>,未初始化的全局变量和静态变量，程序执行前会自动清0</li>
+<li><code>.data</code>段：<code>data</code>,已初始化的全局变量和静态变量</li>
+</ul>
+<p><strong>4. 常量区(.rodata)</strong><br></p>
+<p><code>.rodata</code>: <code>read only data</code>(只读),常量字符串就是放在这里的，程序执行前会自动加载到内存中，程序结束后由系统释放<br></p>
+<p>常量区的内存在编译时就已经确定，主要存放已经使用过的，且没有指向的字符串常量(因为字符串常量可能在程序中多次被使用，所以在程序运行之前就会提前分配内存)。常量区的常量在程序结束后，由系统释放<br></p>
+<p><strong>5. 代码区(.text)</strong><br></p>
+<p>存储程序代码，在编译时加载到内存中，代码会被编译成二进制的形式进行存储</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>内存管理的原则是什么？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>内存管理的原则:</strong><br></p>
+<ul>
+<li>谁持有,谁释放</li>
+<li>谁创建,谁释放</li>
+<li>自己生成的对象,自己持有</li>
+<li>非自己生成的对象,自己也能持有</li>
+<li>在不需要使用某个对象时,及时释放</li>
+<li>非自己持有的对象,无权释放</li>
+</ul></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>讲下自动释放池<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Autorelease Pool 提供了一种可以允许你向一个对象延迟发送release消息的机制,当你想要释放一个对象时,只需要将这个对象放入到Autorelease Pool中,系统会在Autorelease Pool被销毁时,向池中所有的对象发送release消息。<br></p>
+<p>所谓的延迟发送release消息指的是，当我们把一个对象标记为autorelease时:<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-objc" data-lang="objc"><span class="line"><span class="cl"><span class="n">NSString</span><span class="o">*</span> <span class="n">str</span> <span class="o">=</span> <span class="p">[[[</span><span class="n">NSString</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithString</span><span class="p">:</span><span class="s">@&#34;hello&#34;</span><span class="p">]</span> <span class="n">autorelease</span><span class="p">];</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个对象的 retainCount 会 +1,但是并不会立即release,而是当这段语句所处的autoreleasepool被销毁时,所有标记了autorelease的对象才会被release。<br></p>
+<p><strong>Autorelease Pool的用处:</strong>
+在ARC下,我们并不需要去手动调用autorelease相关方法,甚至可以完全不知道autorelease的存在,就可以正确的管理好内存.因为Cocoa Touch 的Runloop中,每个runloop circle 中系统都自动加入了Autorelease Pool的创建和释放.<br>
+当我们需要创建和销毁大量的对象时,使用手动创建的Autorelease Pool可以减少内存峰值,提高程序的性能。因为如果不手动创建的话,外层系统创建的pool会在整个runloop circle结束时才进行drain,而手动创建的pool可以在我们需要的时候进行drain,这样就可以减少内存峰值,提高程序的性能。<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-objc" data-lang="objc"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100000000</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">@autoreleasepool</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">NSString</span><span class="o">*</span> <span class="n">string</span> <span class="o">=</span> <span class="s">@&#34;abc&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">NSArray</span><span class="o">*</span> <span class="n">array</span> <span class="o">=</span> <span class="p">[</span><span class="n">string</span> <span class="nl">componentsSeparatedByString</span><span class="p">:</span><span class="n">string</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果不使用autoreleasepool,需要再循环结束之后释放100000000个字符串,如果使用的话,则会在每次循环结束时释放字符串,这样就可以减少内存峰值,提高程序的性能。<br></p>
+</div>
+        </div>
     </div><div class="post-reward">
   <input type="checkbox" name="reward" id="reward" hidden />
   <label class="reward-button" for="reward">赞赏支持</label>
@@ -440,8 +670,8 @@ instance对象的isa指针指向class对象，class对象的isa指针指向meta-
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-12-10&nbsp;<a class="git-hash" href="https://github.com/andy90s/andy90s.github.io.git/commit/96b874d7ee34de3e379ff924e3340225f482ccb7" target="_blank" title="commit by andy90s(909901234@qq.com) 96b874d7ee34de3e379ff924e3340225f482ccb7: add">
-                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>96b874d</a></span>
+                <span>更新于 2023-12-11&nbsp;<a class="git-hash" href="https://github.com/andy90s/andy90s.github.io.git/commit/c8e444dbddacdeab6201f37ea599caab65505c40" target="_blank" title="commit by andy90s(909901234@qq.com) c8e444dbddacdeab6201f37ea599caab65505c40: add">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>c8e444d</a></span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
