@@ -259,7 +259,7 @@ struct __Block_byref_i_0 {
 
 ### 内存管理
 
-{{< admonition open=false type=question title="OC中内存分区从高到低是怎么样的？">}}
+{{< admonition open=false type=question title="OC中内存分区？">}}
 **OC中内存分区从高到低:**<br>
 
 **1. 栈区(stack)**<br>
@@ -300,14 +300,71 @@ struct __Block_byref_i_0 {
 
 {{< /admonition >}}
 
-{{< admonition open=false type=question title="内存管理的原则是什么？">}}
-**内存管理的原则:**<br>
-- 谁持有,谁释放
-- 谁创建,谁释放
-- 自己生成的对象,自己持有
-- 非自己生成的对象,自己也能持有
-- 在不需要使用某个对象时,及时释放
-- 非自己持有的对象,无权释放
+{{< admonition open=false type=question title="OC中的内存管理机制?">}}
+在 Objective-C 中，对象通常是使用 alloc 方法在堆上创建的。 `[NSObject alloc]` 方法会在对堆上分配一块内存，按照NSObject的内部结构填充这块儿内存区域。<br>
+
+一旦对象创建完成，就不可能再移动它了。因为很可能有很多指针都指向这个对象，这些指针并没有被追踪。因此没有办法在移动对象的位置之后更新全部的这些指针。<br>
+
+**MRC和ARC**<br>
+
+Objective-C中提供了两种内存管理机制：MRC（MannulReference Counting）和 ARC(Automatic Reference Counting)，分别提供对内存的手动和自动管理，来满足不同的需求。现在苹果推荐使用 ARC 来进行内存管理。<br>
+
+**MRC**<br>
+
+|对象操作|OC中对应的方法|对应的 retainCount 变化|
+| :---: | :---: | :---: |
+|创建对象|alloc/new/copy/mutableCopy|+1|
+|对象引用|retain|+1|
+|对象释放|release|-1|
+|对象释放后置空指针|dealloc|0|
+
+**四个法则:**<br>
+
+- 自己生成的对象，自己持有
+- 非自己生成的对象，自己也能持有
+- 不再需要自己持有的对象时释放
+- 非自己持有的对象无法释放
+
+如下是四个黄金法则对应的代码示例：<br>
+
+```objc
+// 自己生成的对象，自己持有
+NSString *string1 = [[NSString alloc] init];
+// 非自己生成的对象，自己也能持有
+NSString *string2 = [NSString stringWithFormat:@"hello"];
+// 不再需要自己持有的对象时释放
+[string1 release];
+// 非自己持有的对象无法释放
+[string2 release]; // crash
+```
+
+autorelease 使得对象在超出生命周期后能正确的被释放(通过调用release方法)。在调用 release 后，对象会被立即释放，而调用 autorelease 后，对象不会被立即释放，而是注册到 autoreleasepool 中，经过一段时间后 pool结束，此时调用release方法，对象被释放。<br>
+
+在MRC的内存管理模式下，与对变量的管理相关的方法有：retain, release 和 autorelease。retain 和 release 方法操作的是引用记数，当引用记数为零时，便自动释放内存。并且可以用 NSAutoreleasePool 对象，对加入自动释放池（autorelease 调用）的变量进行管理，当 drain 时回收内存。<br>
+
+**ARC**<br>
+
+ARC 是编译器特性，编译器会在编译时自动在合适的地方插入 retain/release/autorelease 代码，以此来管理内存。ARC 会在编译时根据代码的上下文来判断应该插入哪些内存管理代码，这样就不需要程序员手动管理内存了。<br>
+
+**变量标识符**<br>
+
+|标识符|说明|
+| :---: | :---: |
+|__strong|默认的标识符，表示强引用|
+|__weak|表示弱引用，不会改变引用计数，当对象被释放后，会自动将指针置为nil|
+|__unsafe_unretained|表示弱引用，不会改变引用计数，当对象被释放后，不会自动将指针置为nil|
+|__autoreleasing|表示自动释放，一般用于传递参数，表示传递的参数是一个autorelease对象,在函数返回时会被自动释放掉|
+
+**属性标识符**<br>
+
+|标识符|说明|
+| :---: | :---: |
+|strong|表明属性定义一个拥有者关系。当给属性设定一个新值的时候，首先这个值进行 retain ，旧值进行 release ，然后进行赋值操作|
+|weak|表明属性定义了一个非拥有者关系。当给属性设定一个新值的时候，这个值不会进行 retain，旧值也不会进行 release， 而是进行类似 assign 的操作。不过当属性指向的对象被销毁时，该属性会被置为nil。|
+|copy|类似于 strong，不过在赋值时进行 copy 操作而不是 retain 操作。通常在需要保留某个不可变对象（NSString最常见），并且防止它被意外改变时使用。|
+|assign|表明 setter 仅仅是一个简单的赋值操作，通常用于基本的数值类型，例如CGFloat和NSInteger。|
+|unsafe_unretained|语义和 assign 类似，不过是用于对象类型的，表示一个非拥有(unretained)的，同时也不会在对象被销毁时置为nil的(unsafe)关系。|
+
 {{< /admonition >}}
 
 {{< admonition open=false type=question title="讲下自动释放池">}}
@@ -319,9 +376,32 @@ NSString* str = [[[NSString alloc] initWithString:@"hello"] autorelease];
 ```
 这个对象的 retainCount 会 +1,但是并不会立即release,而是当这段语句所处的autoreleasepool被销毁时,所有标记了autorelease的对象才会被release。<br>
 
+**Autorelease Pool的实现原理**<br>
+
+Autorelease Pool的本质上是一个双向链表。双向链表中每一页为一个AutoreleasePoolPage，AutoreleasePoolPage最大为4096B，每当AutoreleasePoolPage中因为存储变量总大小超过4096B之后，就会分配一个新的AutoreleasePoolPage<br>
+
+objc_autoreleasePoolPush()<br>
+
+每个 AutoreleasePoolPage 对象会开启 4096字节（4kb）内存，除了自身实例变量所占空间，剩下的空间全部拿来存储 autorelease 对象的地址。<br>
+
+每当进行一次 objc_autoreleasePoolPush 调用时，runtime 都会向当前的 AutoreleasePoolPage 中添加一个哨兵对象，值为 nil，添加完哨兵对象后，将 next 指针指向下一个添加 Autorelease 对象的位置。当当前 AutoreleasePoolPage 满了，开启一个新的 AutoreleasePoolPage，并更新 child 和 parent 指针，以组成双向链表。<br>
+
+objc_autoreleasePoolPop()<br>
+
+objc_autoreleasePoolPush 会有个返回值，这个返回值正是前面提到的哨兵对象。<br>
+objc_autoreleasePoolPop() 调用时会把哨兵对象作为入参。之后根据传入的哨兵对象地址找到哨兵对象对应的 AutoreleasePoolPage；在当前 page 中，对所有晚于哨兵对象插入的 Autorelease 对象发送 release 消息，到哨兵对象后，销毁当前 page；再根据 parent         向前继续进行 pop，直到第一个哨兵对象所在 page 释放完成。<br>
+
 **Autorelease Pool的用处:**
+
+- 编写不基于UI框架的程序，如命令行工具
+- 编写一个创建许多临时对象的循环
+- 生成辅助线程（必须在线程开始执行后立即创建Pool，否则将泄露对象。非Cocoa程序创建线程时才需要）
+- 长时间在后台运行的任务。
+
 在ARC下,我们并不需要去手动调用autorelease相关方法,甚至可以完全不知道autorelease的存在,就可以正确的管理好内存.因为Cocoa Touch 的Runloop中,每个runloop circle 中系统都自动加入了Autorelease Pool的创建和释放.<br>
+
 当我们需要创建和销毁大量的对象时,使用手动创建的Autorelease Pool可以减少内存峰值,提高程序的性能。因为如果不手动创建的话,外层系统创建的pool会在整个runloop circle结束时才进行drain,而手动创建的pool可以在我们需要的时候进行drain,这样就可以减少内存峰值,提高程序的性能。<br>
+
 ```objc
 for (int i = 0; i < 100000000; i++)
 {
@@ -333,12 +413,504 @@ for (int i = 0; i < 100000000; i++)
 }
 ```
 如果不使用autoreleasepool,需要再循环结束之后释放100000000个字符串,如果使用的话,则会在每次循环结束时释放字符串,这样就可以减少内存峰值,提高程序的性能。<br>
+
 {{< /admonition >}}
 
+{{< admonition open=false type=question title="delloc方法会进行哪些操作？">}}
 
+- 删除这个对象所有关联对象
+- c++析构函数
+- 删除引用计数表中obj对应的引用计数
+- 将弱引用表中的弱引用指针置为nil
 
+{{< /admonition >}}
 
+### runtime
 
+{{< admonition open=false type=question title="什么是Runtime，有什么作用？常用在什么地方">}}
+定义：RunTime实际上是一个库，这个库使我们可以在程序运行时动态的创建对象、检查对象，修改类和对象的方法。他的作用其实就是在程序运行时做一些事情。<br>
+
+**方法交换**<br>
+
+```objc
+Person *person = [[Person alloc] init];
+Method m1 = class_getInstanceMethod(person.class, @selector(eat));
+Method m2 = class_getInstanceMethod(person.class, @selector(run));
+method_exchangeImplementations(m1, m2);
+```
+
+特别是交换系统自带的方法，可以在不改变原有代码的基础上，给系统自带的方法添加一些功能，比如给`ViewController`添加一个`swiviewDidLoad:`方法，替换系统方法并且不影响原系统方法<br>
+
+```objc
+#import <objc/runtime.h>
+
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    NSLog(@"原方法");
+}
+
+@end
+
+@implementation UIViewController (SwizzleViewDidLoad)
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        SEL originalSelector = @selector(viewDidLoad);
+        SEL swizzledSelector = @selector(swiviewDidLoad);
+        
+        Method originalMethod = class_getInstanceMethod(class, originalSelector);
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+        
+        BOOL didAddMethod = class_addMethod(class, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+        
+        if (didAddMethod) {
+            class_replaceMethod(class, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+        } else {
+            method_exchangeImplementations(originalMethod, swizzledMethod);
+        }
+    });
+}
+
+- (void)swiviewDidLoad {
+    NSLog(@"替换的方法,%@",[self class]);
+    [self swiviewDidLoad];
+}
+
+@end
+```
+
+**动态添加方法**<br>
+
+```objc
+- (void)eat {
+    NSLog(@"eat");
+}
+
+// 这里利用动态方法解析，给Person类添加一个run方法
++ (BOOL)resolveInstanceMethod:(SEL)sel {
+    if (sel == @selector(eat)) {
+        class_addMethod(self, sel, class_getMethodImplementation(self, @selector(run)), "v@:");
+    }
+    return [super resolveInstanceMethod:sel];
+}
+
+- (void)run {
+    NSLog(@"run");
+}
+```
+
+**动态添加属性**<br>
+
+```objc
+// 这里利用关联对象，给类添加一个name属性
+- (void)setName:(NSString *)name {
+    objc_setAssociatedObject(self, @selector(name), name, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (NSString *)name {
+    return objc_getAssociatedObject(self, _cmd);
+}
+```
+
+**字典转模型**<br>
+
+```objc
++ (instancetype)modelWithDict:(NSDictionary *)dict {
+    id objc = [[self alloc] init];
+    unsigned int count = 0;
+    Ivar *ivarList = class_copyIvarList(self, &count);
+    for (int i = 0; i < count; i++) {
+        Ivar ivar = ivarList[i];
+        NSString *ivarName = [NSString stringWithUTF8String:ivar_getName(ivar)];
+        NSString *key = [ivarName substringFromIndex:1];
+        id value = dict[key];
+        if (value) {
+            [objc setValue:value forKey:key];
+        }
+    }
+    return objc;
+}
+```
+
+**常用的方法**<br>
+
+|方法|说明|
+| :---: | :---: |
+|objc_msgSend|向一个对象发送消息|
+|class_getName|获取类名|
+|class_getSuperclass|获取父类|
+|class_getInstanceSize|获取实例大小|
+|class_getInstanceVariable|获取实例变量|
+|class_getClassVariable|获取类变量|
+|class_getInstanceMethod|获取实例方法|
+|class_getClassMethod|获取类方法|
+|class_addMethod|添加方法|
+|class_copyMethodList|获取方法列表|
+|class_replaceMethod|替换方法|
+|class_getMethodImplementation|获取方法实现|
+|class_respondsToSelector|判断类是否实现了某个方法|
+|objc_getAssociatedObject|获取关联对象|
+|objc_setAssociatedObject|设置关联对象|
+|objc_removeAssociatedObjects|移除关联对象|
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="OC消息机制?">}}
+
+消息机制分为两个部分：**消息传递** 和 **消息转发**<br>
+
+**消息传递:**<br>
+
+首先了解下OC中对象等的底层结构：<br>
+
+```c++
+//对象
+struct objc_object {
+    Class isa  OBJC_ISA_AVAILABILITY;
+};
+//类
+struct objc_class {
+    Class isa  OBJC_ISA_AVAILABILITY;
+#if !__OBJC2__
+    Class super_class                                        OBJC2_UNAVAILABLE;
+    const char *name                                         OBJC2_UNAVAILABLE;
+    long version                                             OBJC2_UNAVAILABLE;
+    long info                                                OBJC2_UNAVAILABLE;
+    long instance_size                                       OBJC2_UNAVAILABLE;
+    struct objc_ivar_list *ivars                             OBJC2_UNAVAILABLE;
+    struct objc_method_list **methodLists                    OBJC2_UNAVAILABLE;
+    struct objc_cache *cache                                 OBJC2_UNAVAILABLE;
+    struct objc_protocol_list *protocols                     OBJC2_UNAVAILABLE;
+#endif
+} OBJC2_UNAVAILABLE;
+//方法列表
+struct objc_method_list {
+    struct objc_method_list *obsolete                        OBJC2_UNAVAILABLE;
+    int method_count                                         OBJC2_UNAVAILABLE;
+#ifdef __LP64__
+    int space                                                OBJC2_UNAVAILABLE;
+#endif
+    /* variable length structure */
+    struct objc_method method_list[1]                        OBJC2_UNAVAILABLE;
+}                                                            OBJC2_UNAVAILABLE;
+//方法
+struct objc_method {
+    SEL method_name                                          OBJC2_UNAVAILABLE;
+    char *method_types                                       OBJC2_UNAVAILABLE;
+    IMP method_imp                                           OBJC2_UNAVAILABLE;
+}
+```
+
+OC中的方法调用其实都是转换成了objc_msgSend函数的调用，objc_msgSend函数的定义如下：<br>
+
+```objc
+id objc_msgSend(id self, SEL op, ...)
+```
+
+objc_msgSend函数的作用是向一个对象发送消息，它会根据对象的isa指针找到对象对应的类，查找会先从缓存中查找，如果缓存中没有，然后在类中的方法列表中查找方法，如果找到就调用，如果没有找到就从父类中查找，一直找到NSObject类，如果还是没有找到，就会调用`doesNotRecognizeSelector:`抛出异常。<br>
+
+**消息转发:**<br>
+
+消息转发是指当一个对象无法响应某个消息时，会把这个消息转发给另一个对象来处理。消息转发一般分为三个步骤：<br>
+
+- 动态方法解析:<br>
+
+当一个对象无法响应某个消息时，首先会调用`+resolveInstanceMethod:`或者`+resolveClassMethod:`方法，让我们有机会提供一个函数实现。如果能添加函数，就调用`objc_msgSend`重新发送消息，如果还是没添加成功，就会进入下一步，备用接收者。<br>
+
+- 备用接收者:<br>
+
+当一个对象无法响应某个消息时，会调用`- (id)forwardingTargetForSelector:(SEL)aSelector`方法，让我们指定一个备用对象来响应这个消息，如果返回的不是nil或者self，就会调用`objc_msgSend`重新发送消息，如果还是没响应，就会进入下一步，完整转发。<br>
+
+- 完整转发:<br>
+
+当一个对象无法响应某个消息时，会调用`- (void)forwardInvocation:(NSInvocation *)anInvocation`方法，让我们把这个消息转发给其他对象处理，如果我们不处理，就会调用`doesNotRecognizeSelector:`抛出异常。<br>
+
+<center>
+{{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/message_forward.png" title="消息转发" width="95%">}}
+<div style="color:#717171;font-size:14px;font-weight:normal"> <b> 消息转发 </b>  </div>
+</center>
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="synthesize和dynamic分别有什么作用？">}}
+
+**synthesize:**<br>
+
+@synthesize是编译器指令，告诉编译器自动生成getter和setter方法的实现，如果没有指定实例变量的名字，编译器会自动生成一个名为`_变量名`的实例变量。<br>
+
+**dynamic:**<br>
+
+@dynamic是编译器指令，告诉编译器不自动生成getter和setter方法的实现，而是由用户自己实现，如果没有指定实例变量的名字，编译器不会自动生成实例变量。<br>
+
+**区别:**<br>
+
+假如一个属性被声明为 @dynamic var，然后你没有提供 @setter方法和 @getter 方法，编译的时候没问题，但是当程序运行到 instance.var = someVar，由于缺 setter 方法会导致程序崩溃；或者当运行到 someVar = var 时，由于缺 getter 方法同样会导致崩溃.<br>
+
+动态绑定:编译时没有问题，运行时才执行相应的方法。<br>
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="在有了自动合成属性实例变量之后，@synthesize还有哪些使用场景？">}}
+回答这个问题前，我们要搞清楚一个问题，什么情况下不会autosynthesis（自动合成）？<br>
+
+- 同时重写了setter和getter方法
+- 重写了只读属性的getter方法
+- 使用了@dynamic
+- 在protocol中定义的所有属性
+- 编译器不会为带有`__attribute__((NSObject))`属性的属性合成实例变量
+- 在category中定义的所有属性
+- 重载的属性
+
+```objc
+@interface ViewController ()
+
+@property (nonatomic, copy) NSString *name;
+
+@end
+
+@implementation ViewController {
+    NSString *_name; // 这里创建了一个实例变量
+}
+
+@synthesize name = _name; // 这里手动绑定了实例变量
+
+- (void)setName:(NSString *)name {
+    _name = name;
+}
+
+- (NSString *)name {
+    return _name;
+}
+
+@end
+```
+这里同时重写了setter 和 getter 方法, 需要手动绑定ivar 或者 自己创建ivar<br>
+
+{{< /admonition >}}
+
+### runloop
+
+{{< admonition open=false type=question title="什么是runloop？">}}
+
+**定义:**<br>
+
+Runloop是一个对象，这个对象管理了其需要处理的事件和消息，并提供了一个入口函数来执行Event Loop的逻辑。线程执行了这个函数后，就会一直处于这个函数内部 “接受消息->等待->处理” 的循环中，直到这个循环结束（比如传入quit的消息），函数返回。<br>
+
+EventLoop<br>
+
+没有消息需要被处理时, 系统会将当前线程所有权转化为内核态, 当有消息需要处理时, 系统会将当前线程的状态切换回用户态.<br>
+
+所以RunLoop的循环并不是一个单纯的死循环, 而是通过状态切换, 达到没有消息时休眠, 有消息时唤醒的这样一个事件循环机制.<br>
+
+**作用:**<br>
+
+保持程序的持续运行，处理App中的各种事件（比如触摸事件、定时器事件、Selector事件、Source事件），同时也负责调用开发者提供的代码。<br>
+
+**结构:**<br>
+
+在 OC 中实际提供了两个 RunLoop 的。<br>
+一个是 NSRunLoop，一个是 CFRunLoop。<br>
+NSRunLoop 是对 CFRunLoop 的封装，提供了一些面向对象的 API。<br>
+NSRunLoop 是位于 Foundation 当中的，CFRunLoop 位于 CoreFoundation 当中的。<br>
+
+runloop的数据结构主要有三个:<br>
+
+- CFRunLoop
+- CFRunLoopMode
+- Source/Timer/Observer
+
+`CFRunLoop:`<br>
+
+```c++
+//源码
+struct __CFRunLoop {
+  pthread_t _pthread;            // runloop所在线程,一一对应(RunLoop和线程的关系)
+  CFMutableSetRef _commonModes;     // 存放的是NSRunLoopCommonModes表示的mode,我们也可以添加自定义mode到这个set里面
+  CFMutableSetRef _commonModeItems; // 存放的是添加到NSRunLoopCommonModes表示的mode里面的item(source/timer/observer)
+  CFRunLoopModeRef _currentMode;    // Current Runloop Mode
+  CFMutableSetRef _modes;           // 改runloop包含的mode
+  ...
+};
+```
+
+由此可以看出，CFRunLoop是一个结构体，里面含有很多属性。看一下这个结构体里面我们需要关注的几个参数。每一个RunLoop都有自己的模式（Mode），而且不止一个模式。模式（Mode）里面存储的是RunLoop要处理的事件源，事件源有三种，Source、Timer、Observer这三种，下面会有详细介绍。RunLoop有很多模式，但是某一个时刻只能有一个确定的Mode，就是_currentMode，下面第二条讲述的就是RunLoop 的Mode，在RunLoop结构体里面几个与模式（Mode）相关的参数 ：<br>
+
+_currentMode,，表示该RunLoop当前所处的模式；<br>
+_modes表示该RunLoop中所有的模式；<br>
+另外RunLoop里面有一个Mode是NSRunLoopCommonModes，这个Mode并没有什么含义，它只是对几个模式（Mode）进行标记的一个集合；<br>
+_commonModes表示NSRunLoopCommonModes这个模式下保存的Mode，我们也可以将自定义的Mode添加到这个set里面；<br>
+_commonModeItem表示添加到NSRunLoopCommonModes里面的Source/Timer等；<br>
+
+`CFRunLoopMode:`<br>
+
+```c++
+struct __CFRunLoopMode {
+    CFStringRef _name;            // Mode Name, 例如 @"kCFRunLoopDefaultMode"
+    CFMutableSetRef _sources0;    // Set  
+    CFMutableSetRef _sources1;    // Set 
+    CFMutableArrayRef _observers; // Array
+    CFMutableArrayRef _timers;    // Array
+    ...
+};
+```
+
+`Source/Timer/Observer:`<br>
+
+CFRunLoopSource<br>
+
+在 CF 框架当中官方名称叫 CFRunLoopSource ，有两种 source0 和 source1<br>
+唤醒线程就是从内核态切换到用户态<br>
+
+- Source0:非基于Port的，用于用户主动唤醒RunLoop，例如：performSelector:onThread:方法就是通过向对应线程的RunLoop的Source0发送消息来唤醒对应线程的RunLoop的。只包含了一个回调（函数指针），它并不能主动触发事件。使用时，你需要先调用 CFRunLoopSourceSignal(source)，将这个 Source 标记为待处理，然后手动调用 CFRunLoopWakeUp(runloop) 来唤醒 RunLoop，让其处理这个事件。
+- Source1:基于Port的，用于系统内核事件的接收，例如：点击事件、触摸事件、Selector事件、Source事件等。包含了一个 mach_port和一个回调（函数指针），被用于通过内核和其他线程相互发送消息。这种 Source 能主动唤醒 RunLoop 的线程
+
+CFRunLoopTimer<br>
+
+CFRunLoopTimer 是基于时间的触发器，它和 NSTimer 是toll-free bridged 的，可以混用。其包含了一个时间长度和一个回调（函数指针），当其加入到 RunLoop 时，RunLoop会注册对应的时间点，当时间点到时，RunLoop会被唤醒以执行那个回调。<br>
+
+CFRunLoopObserver<br>
+
+观察者，能够监听RunLoop的状态改变，比如即将进入Loop、即将处理 Timer、即将处理 Source0、即将处理 Source1、即将休眠等。<br>
+
+runloop在运行过程中有以下几种状态：<br>
+
+```c++
+typedef CF_OPTIONS(CFOptionFlags, CFRunLoopActivity) {
+    kCFRunLoopEntry = (1UL << 0), // 即将进入Loop：1
+    kCFRunLoopBeforeTimers = (1UL << 1), // 即将处理 Timer：2
+    kCFRunLoopBeforeSources = (1UL << 2), // 即将处理 Source：4
+    kCFRunLoopBeforeWaiting = (1UL << 5), // 即将进入休眠：32
+    kCFRunLoopAfterWaiting = (1UL << 6), // 刚从休眠中唤醒：64
+    kCFRunLoopExit = (1UL << 7), // 即将退出Loop：128
+    kCFRunLoopAllActivities = 0x0FFFFFFFU // 监听全部状态改变
+};
+```
+可以给一个RunLoop添加观察。通过监测RunLoop的状态判断是否出现卡顿。创建一个Observer观察者，将创建好的观察者添加到主线程RunLoop的CommonMode模式下观察，创建一个持续的子线程专门用来监控主线程的RunLoop状态，一旦发现进入睡眠前的KCFRunLoopBeforeSource状态，或者唤醒后的状态KCFRunLoopAfterWaiting，在设置的时间阈值内一直没有变化，即可判断为卡顿，dump出堆栈的信息，从而进一步分析出具体是哪个方法的执行时间长。
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="runLoop中的Mode">}}
+
+- kCFRunLoopDefaultMode:App的默认Mode，通常主线程是在这个Mode下运行的。
+- UITrackingRunLoopMode:界面跟踪Mode，用于ScrollView追踪触摸滑动，保证界面滑动时不受其他Mode影响。
+- UIInitializationRunLoopMode:在刚启动App时第进入的第一个Mode，启动完成后就不再使用。
+- GSEventReceiveRunLoopMode:接受系统事件的内部Mode，通常用不到。
+- kCFRunLoopCommonModes:这是一个占位的Mode，没有实际作用。
+
+RunLoop启动的时候只能选择其中一个Mode，作为currentMode，如果需要切换Mode，只能退出当前Mode，再重新选择一个Mode进入。<br>
+到这里，基于以上CFRunLoop和CFRunLoopMode的理解，RunLoop中保存的是RunLoopMode，而RunLoopMode中保存的才是实际执行的任务。<br>
+
+{{< /admonition >}}
+
+### 多线程
+
+{{< admonition open=false type=question title="iOS中常见的多线程方案?">}}
+
+|方案|简介|语言|线程生命周期|使用频率|
+| :---: | :---: | :---: | :---: | :---: |
+|pthread|一套通用的多线程api,适用Unix\Linux\Windows等系统,跨平台,可移植,但是使用难度大|C|需要自己管理|低|
+|NSThread|面向对象的多线程api|OC|需要自己管理|低|
+|GCD|基于C语言的一套多线程api,替代NSThread等线程技术,充分利用系统的多核|C|自动管理|高|
+|NSOperation|基于GCD的面向对象的多线程api|OC|自动管理|高|
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="GCD并行 串行, 同步 异步?">}}
+
+**并行和串行:任务的执行方式**<br>
+
+并发:多个任务同时执行<br>
+串行:一个任务执行完毕后,再执行下一个任务<br>
+
+**同步和异步的主要区别:能不能开启新的线程**<br>
+
+同步:在当前线程中执行任务,不具备开启新线程的能力<br>
+异步:在新的线程中执行任务,具备开启新线程的能力<br>
+
+各种队列的执行情况:<br>
+
+||并发队列|串行队列|主队列|
+| :---: | :---: | :---: | :---: |
+|同步(sync)|没有开启新线程,串行执行任务|没有开启新线程,串行执行任务|主线程调用:死锁卡住不执行,其他线程调用:没有开启新线程,串行执行任务|
+|异步(async)|有开启新线程,并发执行任务|有开启新线程,串行执行任务|没有开启新线程,串行执行任务|
+
+使用sync函数往**当前串行队列**中添加任务,会卡住当前的串行队列,导致后面的任务无法执行,造成死锁.<br>
+
+主队列是GCD自带的一种特殊的串行队列,放在主队列中的任务,都会放到主线程中执行.<br>
+
+```objc
+// 主队列使用sync函数添加任务,会卡住主线程,导致后面的任务无法执行,造成死锁
+dispatch_sync(dispatch_get_main_queue(), ^{
+    NSLog(@"同步执行任务");
+});
+// 主队列比较特殊实用async函数添加任务,不会开启新线程,任务串行执行
+dispatch_async(dispatch_get_main_queue(), ^{
+    NSLog(@"异步执行任务");
+});
+```
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="异步并发执行任务1、任务2，等任务1、任务2都执行完毕后，再回到主线程执行任务3怎么实现？">}}
+```objc
+// 创建一个队列组
+dispatch_group_t group = dispatch_group_create();
+// 创建一个并发队列
+dispatch_queue_t queue = dispatch_queue_create("com.andy90s", DISPATCH_QUEUE_CONCURRENT);
+// 将任务1添加到队列组中
+dispatch_group_async(group, queue, ^{
+    NSLog(@"任务1");
+});
+// 将任务2添加到队列组中
+dispatch_group_async(group, queue, ^{
+    NSLog(@"任务2");
+});
+// 将队列组中的任务都执行完毕后,回到主线程执行任务3
+dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+    NSLog(@"任务3");
+});
+```
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="自旋锁和互斥锁的区别？递归锁，条件锁是什么？">}}
+**自旋锁:**<br>
+
+自旋锁是指当一个线程尝试获取某个锁时，如果该锁已被其他线程占用，就一直循环检测锁是否被释放，而不是进入线程挂起或睡眠状态,也就是忙等。因为不会引起调用者睡眠,所以效率高于互斥锁。<br>
+
+**互斥锁:**<br>
+
+互斥锁是一种常用的线程同步机制，它保证了在任何时刻，只有一个线程访问某个特定的数据。互斥锁是一种“悲观锁”，它假设最坏的情况，即每次访问数据时都会发生冲突。因此，它每次都会进行加锁和解锁操作，这样就会带来一些额外的开销。<br>
+
+**递归锁:**<br>
+
+递归锁是一种特殊的互斥锁，它可以被同一个线程多次获取。如果使用普通的互斥锁，当一个线程试图对一个已经由它自己持有的互斥锁加锁时，这种情况称为死锁。而递归锁则允许线程对由它自己持有的互斥锁再次加锁，这种情况下，会将该锁的计数器加1。只有所有的加锁操作全部完成后，才能进行解锁。<br>
+
+**条件锁:**<br>
+
+条件锁是一种特殊的互斥锁，它允许线程在满足特定条件时才进行加锁。条件锁需要和条件变量配合使用。条件变量是一种线程间的通信机制，它可以使线程在满足特定条件时才进行加锁。条件变量可以和互斥锁配合使用，也可以单独使用。<br>
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="iOS中的锁有哪些?">}}
+
+- @synchronized
+- NSLock
+- NSRecursiveLock
+- NSCondition
+- NSConditionLock
+- pthread_mutex
+- dispatch_semaphore
+- OSSpinLock(iOS10后已废弃)
+- os_unfair_lock
+
+{{< /admonition >}}
 
 
 

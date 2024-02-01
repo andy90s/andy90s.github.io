@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>iOS面试题-Swift - 笔记</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="iOS面试题-Swift" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/ios-interview-swift/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-25T11:50:21+08:00" />
+<meta property="article:modified_time" content="2024-02-01T12:47:58+08:00" /><meta property="og:site_name" content="My cool site" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="iOS面试题-Swift"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="梁先华个人博客">
+<meta name="apple-mobile-web-app-title" content="梁先华个人博客"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/ios-interview-swift/" /><link rel="prev" href="https://example.com/vscode-snippets/" /><link rel="next" href="https://example.com/terminal-443/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "iOS面试题-Swift",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/example.com\/ios-interview-swift\/"
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  8864 ,
+        "url": "https:\/\/example.com\/ios-interview-swift\/","datePublished": "2023-12-25T11:50:21+08:00","dateModified": "2024-02-01T12:47:58+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.jpeg"},"author": {
+                "@type": "Person",
+                "name": "andy90s"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="笔记"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>笔记</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/andy90s" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ios-interview-swift/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="笔记"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>笔记</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/andy90s" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ios-interview-swift/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">iOS面试题-Swift</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/andy90s" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>andy90s</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-12-25">2023-12-25</time>&nbsp;<i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;更新于 2024-02-01&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 8864 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 18 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#swift数据类型常量变量元组">Swift数据类型，常量、变量、元组</a></li>
+        <li><a href="#swift流程控制">Swift流程控制</a></li>
+        <li><a href="#swift结构体类枚举">Swift结构体，类，枚举</a></li>
+        <li><a href="#swift函数闭包">Swift函数,闭包</a></li>
+        <li><a href="#swift属性单例">Swift属性,单例</a></li>
+        <li><a href="#swift泛型">Swift泛型</a></li>
+        <li><a href="#swift-运算符">swift 运算符</a></li>
+        <li><a href="#swift-初始化器">swift 初始化器</a></li>
+        <li><a href="#swift-内存管理">swift 内存管理</a></li>
+        <li><a href="#swift-扩展">Swift 扩展</a></li>
+        <li><a href="#swift继承">Swift继承</a></li>
+        <li><a href="#swift模式匹配">Swift模式匹配</a></li>
+        <li><a href="#swift-协议">Swift 协议</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="swift数据类型常量变量元组">Swift数据类型，常量、变量、元组</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>值类型和引用类型区别，swift中值类型有哪些，引用类型有哪些。和OC相比有什么区别<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>定义值类型和引用类型</strong><br></p>
+<ul>
+<li><strong>值类型</strong> 存储在栈区。 每个值类型变量都有其自己的数据副本，并且对一个变量的操作不会影响另一个变量。值类型包括：struct，enum，tuple。</li>
+<li><strong>引用类型</strong> 存储在其他位置（堆区），我们在内存中有一个指向该位置的引用。 引用类型的变量可以指向相同类型的数据。 因此，对一个变量进行的操作会影响另一变量所指向的数据。引用类型包括：class，closure，function。</li>
+</ul>
+<p><strong>和OC相比有什么区别</strong><br></p>
+<ul>
+<li>OC 中仅有基本数据类型、基础 struct 是值类型。</li>
+<li>Swift 中的 struct、enum、tuple 都是值类型。(Array、Dictionary、String 都是struct)</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Optional可选类型属于引用类型还是值类型？如何实现的?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Optional 是枚举类型，它有两个值：None 和 Some(T)。None 表示没有值，Some(T) 表示包含一个 T 类型的值。Optional 是值类型，它的本质是一个枚举类型，它的值是枚举类型的一个 case，所以它是值类型。</p>
+<p><strong>Optional 的本质</strong><br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">enum</span> <span class="nc">Optional</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="kr">none</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="n">some</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>可选类型解包方式有哪些?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><strong>强制解包</strong>：在变量名后面加一个感叹号，强制解包，如果可选类型为 nil，强制解包会导致运行时错误。</li>
+<li><strong>可选绑定</strong>：使用 if let 或者 guard let 语句进行可选绑定，判断可选类型是否包含值，如果包含就把值赋给一个临时的常量或者变量，用于后续语句中使用。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift中的元组有什么特点？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>元组是一种数据结构，可以用于存储多个值，可以是不同类型的值。</li>
+<li>元组中的值可以是任意类型，不要求是相同类型。</li>
+<li>元组中的值可以通过名字或者数字索引来获取。</li>
+<li>元组中的值可以是可选类型，也可以是非可选类型。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是字面量，字面量协议可以做什么？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>**字面量类型(Literal Type)**就是支持通过字面量进行实例初始化的数据类型,比如整型字面量、浮点型字面量、布尔型字面量、字符串字面量、数组字面量、字典字面量、空字面量等。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">a</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">b</span> <span class="p">=</span> <span class="s">&#34;hello&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">c</span> <span class="p">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>以上代码中, 10、&ldquo;hello&rdquo;、[1, 2, 3] 就是字面量,用于表达源代码中一个固定值的表示法（notation）。<br></p>
+<p>**字面量协议(Literal Protocol)**就是用来约束字面量类型的协议,Swift 包含一系列ExpressibleByLiteral协议，用于使用匹配的文字初始化自定义类型.</p>
+<p>可以利用字面量协议来实现自定义类型的字面量初始化,比如自定义一个结构体,实现字面量协议,就可以使用字面量来初始化该结构体.<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">struct</span> <span class="nc">MyStruct</span><span class="p">:</span> <span class="n">ExpressibleByIntegerLiteral</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">value</span><span class="p">:</span> <span class="nb">Int</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">init</span><span class="p">(</span><span class="n">integerLiteral</span> <span class="n">value</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="n">value</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">a</span><span class="p">:</span> <span class="n">MyStruct</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<h3 id="swift流程控制">Swift流程控制</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift中有哪些流程控制语句？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><strong>if 语句</strong>：用于基于特定条件选择性执行代码。</li>
+<li><strong>guard 语句</strong>：用于基于特定条件选择性执行代码，guard 语句总是有一个 else 分句，如果条件不满足则执行 else 分句中的代码。</li>
+<li><strong>switch 语句</strong>：用于基于多个条件选择性执行代码。</li>
+<li><strong>for-in 语句</strong>：用于重复执行一系列代码。</li>
+<li><strong>while 语句</strong>：用于重复执行一系列代码直到条件不满足时停止执行。</li>
+<li><strong>repeat-while 语句</strong>：用于重复执行一系列代码直到条件不满足时停止执行，和 while 语句的区别是 repeat-while 语句会先执行一次代码块。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>for in 在Swift上有什么特点？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>for in 循环遍历一个区间范围内的值，比如数字范围、字符串中的字符、数组中的元素等。</li>
+<li>for in 循环遍历一个集合中的值，比如数组、字典、集合等。</li>
+<li>for in 循环遍历一个序列中的值，比如数组、字典、集合等。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是区间类型？跨间隔的区间怎么实现？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>**区间类型(Range Type)**就是用来表示一个范围的类型,Swift 中的区间类型包括:闭区间、半开区间、单侧区间、单侧半开区间等.<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="c1">// 闭区间</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">closedRange</span> <span class="p">=</span> <span class="mf">0.</span><span class="p">..</span><span class="mi">5</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 半开区间</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">halfOpenRange</span> <span class="p">=</span> <span class="mf">0.</span><span class="p">.&lt;</span><span class="mi">5</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 单侧区间</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">singleSideRange</span> <span class="p">=</span> <span class="mf">0.</span><span class="p">..</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 单侧半开区间</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">singleSideHalfOpenRange</span> <span class="p">=</span> <span class="p">..&lt;</span><span class="mi">5</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>跨间隔的区间</strong><br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="c1">// 利用stride, stride(from:to:by:) 从起始值到结束值,每次增加固定的值,直到结束值,但不包括结束值</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">strideRange</span> <span class="p">=</span> <span class="bp">stride</span><span class="p">(</span><span class="n">from</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">to</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">by</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift中switch怎么实现贯穿效果？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Swift 中的 switch 语句默认不会贯穿，如果需要贯穿，需要在 case 分支中使用 fallthrough 关键字。</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>switch与元组结合有什么效果？元祖与where结合呢？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>switch 与元组结合</strong><br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">point</span> <span class="p">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">switch</span> <span class="n">point</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;原点&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="p">(</span><span class="kc">_</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;x轴&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="kc">_</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;y轴&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="p">(</span><span class="o">-</span><span class="mf">2.</span><span class="p">..</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.</span><span class="p">..</span><span class="mi">2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;在矩形内&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">default</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;在矩形外&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>元组与 where 结合</strong><br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">point</span> <span class="p">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">switch</span> <span class="n">point</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="kd">let</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">where</span> <span class="n">x</span> <span class="p">==</span> <span class="n">y</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;x == y&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="kd">let</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">where</span> <span class="n">x</span> <span class="p">==</span> <span class="o">-</span><span class="n">y</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;x == -y&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="kd">let</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;(</span><span class="si">\(</span><span class="n">x</span><span class="si">)</span><span class="s">, </span><span class="si">\(</span><span class="n">y</span><span class="si">)</span><span class="s">)&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>switch区间匹配？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">score</span> <span class="p">=</span> <span class="mi">90</span>
+</span></span><span class="line"><span class="cl"><span class="k">switch</span> <span class="n">score</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="mf">0.</span><span class="p">.&lt;</span><span class="mi">60</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;不及格&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="mf">60.</span><span class="p">.&lt;</span><span class="mi">80</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;及格&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="mf">80.</span><span class="p">.&lt;</span><span class="mi">90</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;良好&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="mf">90.</span><span class="p">..</span><span class="mi">100</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;优秀&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">default</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;成绩有误&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>guard..else与do..while有什么区别<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>guard..else 语句是用来检查条件是否成立，如果不成立就执行 else 分支中的代码，else 分支中的代码必须包含控制转移语句，比如 return、break、continue、throw 等，用来退出当前代码块。</li>
+<li>do..while 语句是用来重复执行一系列代码，直到条件不满足时停止执行，do..while 语句会先执行一次代码块，然后判断条件是否成立，如果成立就继续执行，否则就停止执行。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="swift结构体类枚举">Swift结构体，类，枚举</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>枚举是否可以递归？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">枚举是可以递归的，但是不能直接递归，需要在枚举名前面加上 indirect 关键字，表示这个枚举是可以递归的。</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>枚举值原始值和附加值分别是什么？内存占用怎么计算？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>枚举值原始值</strong><br></p>
+<p>枚举值原始值是指在定义枚举时指定的值，原始值可以是整型、浮点型、字符串型，原始值可以是隐式的，也可以是显式的。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">enum</span> <span class="nc">Direction</span><span class="p">:</span> <span class="nb">Int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="n">north</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="n">south</span> <span class="p">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="n">east</span> <span class="p">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="n">west</span> <span class="p">=</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>枚举值附加值(关联值)</strong><br></p>
+<p>枚举值附加值是指在使用枚举值时指定的值，附加值可以是任意类型，附加值可以是隐式的，也可以是显式的。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">enum</span> <span class="nc">Score</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="n">point</span><span class="p">(</span><span class="nb">Int</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="n">grade</span><span class="p">(</span><span class="nb">Character</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>内存占用</strong><br></p>
+<p>枚举类型变量的内存占用可以解释为1个字节存储成员值(标明是哪个成员)，加上占用字节数最大的<strong>关联值</strong>的字节数。比如上面原始值类型占用1字节, 关联值类型占用 1 + 16 = 9 字节, 由于内存对齐, 所以占用 24 字节.</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>结构体自定义初始化方法和自动生成的初始化方法有什么关系？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>没有区别:<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">struct</span> <span class="nc">Point</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">x</span><span class="p">:</span> <span class="nb">Int</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">y</span><span class="p">:</span> <span class="nb">Int</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">init</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">x</span> <span class="p">=</span> <span class="n">x</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">y</span> <span class="p">=</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">struct</span> <span class="nc">Point</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">x</span><span class="p">:</span> <span class="nb">Int</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">y</span><span class="p">:</span> <span class="nb">Int</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>结构体能否继承？如果改变property，需要怎么做？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>结构体不能继承，结构体是值类型，类是引用类型，结构体是通过复制来传递的，类是通过引用来传递的。<br></p>
+<p>如果需要改变结构体中的属性，需要在方法前面加上 mutating 关键字，表示该方法可以修改结构体中的属性。</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>类自动生成的初始化方法与结构体自动初始化方法有何区别？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>类的定义和结构体类似，但是编译器并没有为类自动生成可以传入成员值的初始化器。会生成一个无参的初始化器，
+类中有初始值的话无参初始化器才会有用。<br></p>
+<p>所有结构体都有一个编译器自动生成的初始化器。</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>struct 与 class有什么区别？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>结构体是值类型，类是引用类型。</li>
+<li>结构体不能继承，类可以继承。</li>
+<li>结构体在传递的时候是复制，类在传递的时候是引用。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="swift函数闭包">Swift函数,闭包</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>实例方法和类型方法有什么区别？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>实例方法是通过实例调用的方法，类型方法是通过类型调用的方法。</li>
+<li>实例方法是可以访问实例属性和类型属性的，类型方法是可以访问类型属性和类型方法的。</li>
+</ul>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>技巧<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">有点类似OC中的实例方法和类方法</div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是闭包？闭包表达式是怎么样的？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>闭包</strong>是自包含的函数代码块，可以在代码中被传递和使用。Swift 中的闭包与 C 和 Objective-C 中的代码块（blocks）以及其他一些编程语言中的 lambdas 函数比较相似。<br></p>
+<p><strong>闭包表达式</strong>是一种构建内联闭包的方式，它的语法简洁。在保证不丢失语境的情况下，可以通过引用已经存在的变量或者函数来创建闭包表达式。<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="c1">// 闭包表达式语法</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span> <span class="p">(</span><span class="n">parameters</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">returnType</span> <span class="k">in</span>
+</span></span><span class="line"><span class="cl">    <span class="n">statements</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>autoclosure 是什么? 怎么用<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>autoclosure</strong> 是一种自动创建闭包的技术，可以将一句表达式自动封装成一个闭包，然后将这个闭包作为参数传递给函数，这样就省去了写闭包的大量代码，提高了代码的简洁性。<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">logIfTrue</span><span class="p">(</span><span class="kc">_</span> <span class="n">predicate</span><span class="p">:</span> <span class="p">()</span> <span class="p">-&gt;</span> <span class="nb">Bool</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">predicate</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;True&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">logIfTrue</span><span class="p">({</span> <span class="k">return</span> <span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 使用 autoclosure</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">logIfTrue</span><span class="p">(</span><span class="kc">_</span> <span class="n">predicate</span><span class="p">:</span> <span class="kr">@autoclosure</span> <span class="p">()</span> <span class="p">-&gt;</span> <span class="nb">Bool</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">predicate</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;True&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">logIfTrue</span><span class="p">(</span><span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是逃逸闭包和非逃逸闭包?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>逃逸闭包</strong>是指在函数返回之后才执行的闭包，逃逸闭包需要在闭包前面加上 <code>@escaping</code> 关键字。<br></p>
+<p><strong>非逃逸闭包</strong>是指在函数返回之前就执行的闭包，非逃逸闭包需要在闭包前面加上 <code>@noescape</code> 关键字，Swift 3.0 之后默认就是非逃逸闭包，所以 <code>@noescape</code> 关键字已经被废弃了。</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift中的函数参数有哪些？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><strong>默认参数</strong>：在定义函数时可以给某个参数指定一个默认值，调用函数时如果没有传入该参数，则使用默认值。</li>
+<li><strong>可变参数</strong>：一个函数最多只能有一个可变参数，可变参数需要在参数类型后面加上 <code>...</code>，可变参数在函数内部是一个数组。</li>
+<li><strong>输入输出参数</strong>：函数参数默认是常量，如果想要在函数中修改参数的值，并且想要修改函数外部传入的参数的值，可以将参数定义为输入输出参数，在参数类型前面加上 <code>inout</code> 关键字，输入输出参数不能有默认值，可变参数不能标记为输入输出参数。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="swift属性单例">Swift属性,单例</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是计算属性，什么是存储属性？只读计算属性，延迟存储属性呢？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>计算属性</strong>是通过某种方式计算得到的属性，计算属性可以用于类、结构体和枚举中，计算属性不直接存储值，而是提供一个 getter 和一个可选的 setter，来间接获取和设置其他的属性和值。<br></p>
+<p><strong>存储属性</strong>是存储在特定类或结构体的实例里的一个常量或变量，存储属性可以是变量存储属性，也可以是常量存储属性，存储属性只能用于类和结构体中。<br></p>
+<p><strong>只读计算属性</strong>只有 getter 没有 setter 的计算属性就是只读计算属性，只读计算属性只能用于类、结构体和枚举中。<br></p>
+<p><strong>延迟存储属性</strong>是指当第一次被调用的时候才会计算其初始值的属性，延迟存储属性必须声明成变量（使用 var 关键字），因为属性的初始值可能在实例构造完成之后才会得到，而常量属性在构造过程完成之前必须要有初始值，因此不能声明成延迟存储属性。</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift中的属性观察器有哪些？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><strong>willSet</strong>：在设置新的值之前调用。</li>
+<li><strong>didSet</strong>：在新的值被设置之后立即调用。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>枚举的原始值属于计算属性还是存储属性？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">计算属性, 因为枚举的原始值是通过计算得到的, 而不是存储的.</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>实例属性和类型属性有什么区别？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>实例属性是属于某个类、结构体或者枚举类型实例的属性，每次创建一个新的实例，实例都拥有一套属于自己的属性值，实例之间的属性相互独立。</li>
+<li>类型属性是属于类型本身的属性，不属于某个实例，每个类型只有一份类型属性，不管创建多少个该类型的实例，这些实例都共享同一个类型属性。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift中的单例怎么实现？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Singleton</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">static</span> <span class="kd">let</span> <span class="nv">shared</span> <span class="p">=</span> <span class="n">Singleton</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">init</span><span class="p">()</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>存储类型属性有什么特点? 在什么时候初始化？多个线程同时访问呢？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>存储类型属性</strong>是指在类型的作用域内定义的属性，用 <code>static</code> 关键字修饰的属性就是存储类型属性，存储类型属性可以是变量存储属性，也可以是常量存储属性，存储类型属性只能用于类和结构体中。<br></p>
+<p><strong>存储类型属性的特点</strong><br></p>
+<ul>
+<li>存储类型属性是延迟初始化的，只有在第一次被访问的时候才会初始化。</li>
+<li>存储类型属性会被多个线程同时访问的时候，保证只会初始化一次，并且不需要使用 lazy 关键字。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift中的类型属性有哪些？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><strong>存储类型属性</strong>：用 <code>static</code> 关键字修饰的属性就是存储类型属性，存储类型属性可以是变量存储属性，也可以是常量存储属性，存储类型属性只能用于类和结构体中。</li>
+<li><strong>计算类型属性</strong>：用 <code>class</code> 关键字修饰的属性就是计算类型属性，计算类型属性只能用于类中。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="swift泛型">Swift泛型</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是泛型？泛型有什么作用？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><strong>泛型</strong>是指在定义函数、结构体、类、枚举、方法时，不需要指定具体的类型，使用的时候再指定具体的类型，泛型可以提高代码的复用性，减少代码的重复编写。(类型参数化)</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift中的泛型有哪些？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><strong>泛型函数</strong>：在函数名后面使用尖括号定义泛型类型，泛型类型可以是多个，多个泛型类型之间用逗号分隔。</li>
+<li><strong>泛型类型</strong>：在类型名后面使用尖括号定义泛型类型，泛型类型可以是多个，多个泛型类型之间用逗号分隔。</li>
+<li><strong>泛型下标</strong>：在下标后面使用尖括号定义泛型类型，泛型类型可以是多个，多个泛型类型之间用逗号分隔。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是关联类型？有什么作用？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>关联类型</strong>是指在协议中定义的一个占位符名称，用于指定协议中的某个类型，关联类型通过 associatedtype 关键字来指定。<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">protocol</span> <span class="nc">Container</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">associatedtype</span> <span class="n">ItemType</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">mutating</span> <span class="kd">func</span> <span class="nf">append</span><span class="p">(</span><span class="kc">_</span> <span class="n">item</span><span class="p">:</span> <span class="n">ItemType</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">count</span><span class="p">:</span> <span class="nb">Int</span> <span class="p">{</span> <span class="kr">get</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">subscript</span><span class="p">(</span><span class="n">i</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">ItemType</span> <span class="p">{</span> <span class="kr">get</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>关联类型的作用</strong><br></p>
+<ul>
+<li>作为协议的一部分，为某个类型提供一个占位名（或者说别名），其实际类型在协议被实现时才会被指定。</li>
+<li>关联类型可以在协议中被指定为类型的占位符，而不是一个具体的类型。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是协议类型，协议类型能否作为函数返回值？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>协议类型</strong>是指遵循了某个协议的类型，协议类型可以作为函数、方法或构造器中的参数类型或返回值类型，或者作为常量、变量或属性的类型，协议类型可以在类型后面加上 <code>&amp;</code> 符号组合在一起。<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">protocol</span> <span class="nc">Runnable</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">run</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Person</span><span class="p">:</span> <span class="n">Runnable</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">run</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;Person run&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Car</span><span class="p">:</span> <span class="n">Runnable</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">run</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;Car run&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">get</span><span class="p">(</span><span class="kc">_</span> <span class="n">type</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">Runnable</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">type</span> <span class="p">==</span> <span class="mi">0</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">Person</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">Car</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">runnable</span> <span class="p">=</span> <span class="kr">get</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">runnable</span><span class="p">.</span><span class="n">run</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>泛型类型如何约束？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><strong>类型约束</strong>：在定义泛型的时候，可以对泛型进行类型约束，只有满足约束的类型才能使用这个泛型。</li>
+<li><strong>关联类型约束</strong>：在协议中使用关联类型，可以给关联类型添加类型约束，只有满足约束的类型才能实现这个协议。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="o">//</span> <span class="err">类型约束</span><span class="p">,</span> <span class="n">T</span> <span class="err">必须是</span> <span class="n">Equatable</span> <span class="err">类型</span>
+</span></span><span class="line"><span class="cl"><span class="k">func</span> <span class="n">swapTwoValues</span><span class="o">&lt;</span><span class="n">T</span><span class="p">:</span> <span class="n">Equatable</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="n">a</span><span class="p">:</span> <span class="n">inout</span> <span class="n">T</span><span class="p">,</span> <span class="n">_</span> <span class="n">b</span><span class="p">:</span> <span class="n">inout</span> <span class="n">T</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是不透明类型？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>不透明类型</strong>是指在函数、方法或者构造器中，返回值的类型可以是协议类型，但是不能是泛型类型，也不能是关联类型，只能是具体的类型。<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">get</span><span class="p">()</span> <span class="p">-&gt;</span> <span class="n">some</span> <span class="n">Runnable</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">Person</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<h3 id="swift-运算符">swift 运算符</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是溢出运算符？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><strong>溢出运算符</strong>是为那些会产生溢出的运算提供额外的操作符，Swift 提供了三个溢出运算符：溢出加法运算符（&amp;+）、溢出减法运算符（&amp;-）和溢出乘法运算符（&amp;*）。</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是运算符重载？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><strong>运算符重载</strong>是指在自定义的类、结构体、枚举中，可以对已有的运算符进行重新定义，赋予它们更加特殊的功能，以适应自定义类型的需求。</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Equatable协议与==运算符有什么关系？Swift为哪些类型提供默认的 Equatable 实现？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><strong>Equatable</strong>协议是用来判断两个对象是否相等的协议，Swift 为以下类型提供默认的 Equatable 实现：比较两个整数或浮点数是否相等，比较两个字符串是否相等，比较两个布尔值是否相等，比较两个枚举值是否相等，比较两个元组是否相等。</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>如何自定义新的运算符？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>自定义运算符</strong>可以对已有的运算符进行重新定义，赋予它们更加特殊的功能，以适应自定义类型的需求，自定义运算符可以使用 <code>operator</code> 关键字在全局作用域内进行定义，也可以使用 <code>infix</code>、<code>prefix</code>、<code>postfix</code> 关键字在局部作用域内进行定义。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="c1">// 定义全局运算符</span>
+</span></span><span class="line"><span class="cl"><span class="kr">prefix</span> <span class="kd">operator</span> <span class="o">+++</span>
+</span></span><span class="line"><span class="cl"><span class="kr">prefix</span> <span class="kd">func</span> <span class="o">+++</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">value</span> <span class="o">+</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 定义局部运算符</span>
+</span></span><span class="line"><span class="cl"><span class="kd">struct</span> <span class="nc">Point</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">x</span><span class="p">:</span> <span class="nb">Int</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">y</span><span class="p">:</span> <span class="nb">Int</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">extension</span> <span class="nc">Point</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">static</span> <span class="kr">prefix</span> <span class="kd">func</span> <span class="o">-</span><span class="p">(</span><span class="n">point</span><span class="p">:</span> <span class="n">Point</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">Point</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="o">-</span><span class="n">point</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="o">-</span><span class="n">point</span><span class="p">.</span><span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">point</span> <span class="p">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">newPoint</span> <span class="p">=</span> <span class="o">-</span><span class="n">point</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">newPoint</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<h3 id="swift-初始化器">swift 初始化器</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>指定初始化器和便捷初始化器有什么区别<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><strong>指定初始化器</strong>是类中最主要的初始化器，一个类至少有一个指定初始化器，指定初始化器必须调用其直接父类的指定初始化器。</li>
+<li><strong>便捷初始化器</strong>是类中比较次要的初始化器，可以定义便捷初始化器来调用同一个类中的指定初始化器，并为其参数提供默认值，也可以定义便捷初始化器来调用同一个类中的便捷初始化器。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>重写父类指定初始化器和便捷初始化器有何区别？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Person</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">age</span><span class="p">:</span> <span class="nb">Int</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">init</span><span class="p">(</span><span class="n">age</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">age</span> <span class="p">=</span> <span class="n">age</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">convenience</span> <span class="kd">init</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="kd">init</span><span class="p">(</span><span class="n">age</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Student</span><span class="p">:</span> <span class="n">Person</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">score</span><span class="p">:</span> <span class="nb">Int</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">init</span><span class="p">(</span><span class="n">age</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">score</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">score</span> <span class="p">=</span> <span class="n">score</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">super</span><span class="p">.</span><span class="kd">init</span><span class="p">(</span><span class="n">age</span><span class="p">:</span> <span class="n">age</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">override</span> <span class="kr">convenience</span> <span class="kd">init</span><span class="p">(</span><span class="n">age</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="kd">init</span><span class="p">(</span><span class="n">age</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span> <span class="n">score</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>重写父类指定初始化器</strong>：子类可以通过重写父类的指定初始化器来实现父类的初始化器，子类的指定初始化器必须调用父类的指定初始化器。</li>
+<li><strong>重写父类便捷初始化器</strong>：子类可以通过重写父类的便捷初始化器来实现父类的初始化器，子类的便捷初始化器必须调用同一个类中的指定初始化器或者便捷初始化器。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>初始化器中赋值会触发属性观察器么？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">初始化器中赋值不会触发属性观察器，属性观察器只有在给属性赋值的时候才会触发。</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>什么是反初始化器？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">deinit</div>
+        </div>
+    </div>
+<h3 id="swift-内存管理">swift 内存管理</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>swift 中内存管理方案？ARC引用类型有几种？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><strong>ARC</strong>：ARC 是 Swift 中的内存管理方案，ARC 是 Automatic Reference Counting 的缩写，表示自动引用计数，ARC 会在类的实例不再被使用时自动释放其占用的内存。</li>
+<li><strong>引用类型</strong>：Swift 中的引用类型有 class、closure、function。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift闭包循环引用如何产生，怎么解决？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>闭包循环引用</strong>是指闭包和闭包捕获的值相互引用，造成内存泄漏，解决闭包循环引用可以使用闭包捕获列表，闭包捕获列表会在闭包和捕获的值之间创建一个弱引用或无主引用，从而打破循环引用。</p>
+<p>weak 弱引用<br>
+unowned 无主引用<br></p>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>能否在定义闭包属性的同时引用self<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">可以, 但是需要在闭包前面加上 <code>lazy</code> 关键字, 因为闭包在初始化器之前被调用, 而此时 self 还没有初始化完成.</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>如果lazy属性是闭包调用的结果，是否需要考虑循环引用问题？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">不需要, 因为闭包调用完毕后, 闭包会被释放, 闭包中的 self 也会被释放.</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>逃逸闭包能否捕获inout参数？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">不能, 因为逃逸闭包的调用时机不确定, 有可能在函数返回之后才调用, 这时候 inout 参数已经被释放了.</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift中指针类型有哪几种？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><strong>UnsafePointer<Pointee></strong>：指向内存中某个类型的指针，不允许修改内存中的值。</li>
+<li><strong>UnsafeMutablePointer<Pointee></strong>：指向内存中某个类型的指针，允许修改内存中的值。</li>
+<li><strong>UnsafeRawPointer</strong>：指向内存中某个类型的指针，不允许修改内存中的值，不允许进行内存的访问。</li>
+<li><strong>UnsafeMutableRawPointer</strong>：指向内存中某个类型的指针，允许修改内存中的值，不允许进行内存的访问。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="swift-扩展">Swift 扩展</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift中扩展与OC中分类有什么区别？能添加什么，不能添加什么？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">类别只能扩充方法，不能扩展属性和成员变量（如果包含成员变量会直接报错）；<br>
+如果分类中声明了一个属性，那么分类只会生成这个属性的set、get方法声明，也就是不会有实现<br>
+分类中的方法会覆盖原来类中的方法，但是不会覆盖原来类中的属性<br>
+扩展只能扩充计算属性，不能扩展存储属性，也不能扩展成员变量<br>
+扩展有时候也称为匿名分类，因为扩展是没有名字的<br>
+扩展不能添加指定构造器，但是可以添加便利构造器<br>
+扩展不能添加属性观察器<br>
+扩展不能添加父类<br>
+扩展也不能添加反初始化器<br>
+扩展可以给协议提供默认实现，也间接实现可选协议的效果<br></div>
+        </div>
+    </div>
+<h3 id="swift继承">Swift继承</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>如何限制不能被重写，或者不能被继承？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><strong>final</strong>：可以修饰类、属性、方法、下标、协议，表示不允许对类、属性、方法、下标、协议进行继承、重写或者修改。</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>是否可以重写存储属性？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">不可以, 因为存储属性是直接存储在实例中的, 重写的话会破坏继承链. 但是可以重写计算属性.</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>let修饰的属性能否重写？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">不能, 因为 let 修饰的属性是常量, 不能被修改.</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>static与class修饰的属性的异同?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>不同点</strong><br></p>
+<p>class 修饰的计算属性可以被重写，static 修饰的不能被重写。<br></p>
+<p>static 可以修饰存储属性，static 修饰的存储属性称为静态变量(常量)。<br></p>
+<p>static 修饰的静态方法不能被重写，class 修饰的类方法可以被重写。<br></p>
+<p>class 修饰的类方法被重写时，可以使用static 让方法变为静态方法。<br></p>
+<p>class 修饰的计算属性被重写时，可以使用static 让其变为静态属性，但它的子类就不能被重写了。<br></p>
+<p><strong>相同点</strong><br></p>
+<p>可以修饰方法，static 修饰的方法叫做静态方法，class 修饰的叫做类方法。<br></p>
+<p>都可以修饰计算属性。</p>
+</div>
+        </div>
+    </div>
+<h3 id="swift模式匹配">Swift模式匹配</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift中什么是模式匹配？有哪些?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>模式匹配</strong>是指检查一个值是否满足某种模式的过程，Swift 中的模式匹配可以用在 switch 语句中，也可以用在 if、guard、for-in、while、do-while 语句中。</p>
+<ul>
+<li><strong>通配符模式</strong>：用下划线（_）表示，可以匹配任意类型的值，但是并不将匹配的值绑定到临时的常量或变量。</li>
+<li><strong>标识符模式</strong>：用于匹配任意值，如果匹配成功，会将匹配的值赋值给指定的标识符。</li>
+<li><strong>值绑定模式</strong>：用于将匹配的值绑定到一个临时的常量或变量，以便在模式的执行体中使用。</li>
+<li><strong>元组模式</strong>：用于匹配元组，如果匹配成功，会将元组中的值分解成单独的常量或变量，以便在模式的执行体中使用。</li>
+<li><strong>可选模式</strong>：用于匹配可选值，如果匹配成功，会将可选值中的值分解成单独的常量或变量，以便在模式的执行体中使用。</li>
+<li><strong>枚举模式</strong>：用于匹配枚举值，如果匹配成功，会将枚举值分解成单独的常量或变量，以便在模式的执行体中使用。</li>
+<li><strong>表达式模式</strong>：用于匹配表达式，如果匹配成功，会将表达式的值分解成单独的常量或变量，以便在模式的执行体中使用。</li>
+<li><strong>类型转换模式</strong>：用于匹配指定类型的值，如果匹配成功，会将值转换成指定类型，并赋值给指定的常量或变量。</li>
+</ul></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>通配符匹配中_和_?有什么区别？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><strong>_</strong>：表示匹配任意类型的值。</li>
+<li><strong>_?</strong>：非空任意值。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>枚举Case模式中if case语句是什么？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>if case</strong> 语句是用来判断某个可选类型是否有值，如果有值，可以将值绑定到一个临时的常量或变量，以便在语句体中使用。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">enum</span> <span class="nc">Score</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="n">point</span><span class="p">(</span><span class="nb">Int</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="n">grade</span><span class="p">(</span><span class="nb">Character</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">score</span> <span class="p">=</span> <span class="n">Score</span><span class="p">.</span><span class="n">point</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="k">case</span> <span class="kd">let</span> <span class="nv">Score</span><span class="p">.</span><span class="n">point</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">score</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<h3 id="swift-协议">Swift 协议</h3>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Swift中什么是协议？协议能添加什么？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>协议规定了用来实现某一特定功能所必需的方法和属性。</p>
+<ul>
+<li><strong>协议中可以定义方法、属性、下标、初始化器的声明，协议中的方法、属性、下标、初始化器不需要写访问级别修饰符，因为协议中声明的都是抽象的内容，具体实现的时候才需要指定访问级别修饰符。</strong></li>
+<li><strong>协议中可以定义类型方法和类型属性，用 static 关键字来修饰。</strong></li>
+<li><strong>协议中可以定义 mutating 方法，用 mutating 关键字来修饰。</strong></li>
+<li><strong>协议中可以定义初始化器，但是不能定义析构器。</strong></li>
+<li><strong>协议中可以定义下标，但是不能定义存储属性和计算属性。</strong></li>
+<li><strong>协议中可以定义关联类型，关联类型通过 associatedtype 关键字来指定。</strong></li>
+</ul></div>
+        </div>
+    </div>
+<div class="details admonition question">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>swift协议中定义的内容是否必须全部都实现？如果想要实现可选协议呢？<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>一般来讲是需要全部实现, 如果向要可选,可以使用<code>extension</code> 来实现. (或者利用OC的<code>@optional</code>)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">protocol</span> <span class="nc">Runnable</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">run</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">run1</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">extension</span> <span class="nc">Runnable</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">run1</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;run1&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div><div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/images/wechat.jpeg">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/images/alipay.jpeg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-02-01</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://example.com/ios-interview-swift/" data-title="iOS面试题-Swift"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://example.com/ios-interview-swift/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://example.com/ios-interview-swift/" data-title="iOS面试题-Swift"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://example.com/ios-interview-swift/" data-title="iOS面试题-Swift"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://example.com/ios-interview-swift/" data-title="iOS面试题-Swift" data-ralateuid="xxxx"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/vscode-snippets/" class="prev" rel="prev" title="vscode snippets对于markdown不生效"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>vscode snippets对于markdown不生效</a>
+            <a href="/terminal-443/" class="next" rel="next" title="MAC Terminal 443">MAC Terminal 443<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.121.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/andy90s" target="_blank">梁先华</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":500},"comment":{"gitalk":{"admin":["andy90s"],"clientID":"62923a9afe801911f8c1","clientSecret":"6282277a7df4b041e6d0181342afe037be6f88f9","id":"2023-12-25T11:50:21+08:00","owner":"andy90s","repo":"andy90s.github.io","title":"iOS面试题-Swift"}},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
