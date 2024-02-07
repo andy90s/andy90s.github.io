@@ -770,7 +770,7 @@ if case let Score.point(i) = score {
 
 {{< admonition open=false type=question title="swift协议中定义的内容是否必须全部都实现？如果想要实现可选协议呢？">}}
 
-一般来讲是需要全部实现, 如果向要可选,可以使用`extension` 来实现. (或者利用OC的`@optional`)
+一般来讲是需要全部实现, 如果向要可选,可以使用`extension` 来实现. (或者利用OC的`@optional`,但是需要加上 @objc 关键字)
 ```swift
 protocol Runnable {
     func run()
