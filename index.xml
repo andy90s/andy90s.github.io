@@ -4,9 +4,17 @@
         <link>https://example.com/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 31 Jan 2024 17:23:53 &#43;0800</lastBuildDate>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 31 Mar 2024 15:47:35 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Interview Algorithm</title>
+    <link>https://example.com/interview-algorithm/</link>
+    <pubDate>Sun, 31 Mar 2024 15:47:35 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/interview-algorithm/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>MAC Terminal 443</title>
     <link>https://example.com/terminal-443/</link>
     <pubDate>Wed, 31 Jan 2024 17:23:53 &#43;0800</pubDate>
@@ -31,7 +39,7 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>iOS面试题</title>
+    <title>iOS面试题-OC</title>
     <link>https://example.com/ios-interview/</link>
     <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate>
     <author>andy90s</author>
@@ -76,14 +84,6 @@
     <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate>
     <author>andy90s</author>
     <guid>https://example.com/download-ipa/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>底部弹框简单实现</title>
-    <link>https://example.com/popup-slide/</link>
-    <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/popup-slide/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

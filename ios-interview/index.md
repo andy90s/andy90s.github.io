@@ -1,4 +1,4 @@
-# iOS面试题
+# iOS面试题-OC
 
 <!--more-->
 ## 前言
@@ -879,6 +879,8 @@ dispatch_group_notify(group, dispatch_get_main_queue(), ^{
 ```
 {{< /admonition >}}
 
+
+
 {{< admonition open=false type=question title="自旋锁和互斥锁的区别？递归锁，条件锁是什么？">}}
 **自旋锁:**<br>
 
@@ -911,6 +913,233 @@ dispatch_group_notify(group, dispatch_get_main_queue(), ^{
 - os_unfair_lock
 
 {{< /admonition >}}
+
+### UI
+
+{{< admonition open=false type=question title="事件响应链是如何传递的?如何扩大按钮响应范围?">}}
+
+**事件传递的过程:**<br>
+
+- 当用户触摸屏幕时，系统会将触摸事件加入到UIApplication管理的事件队列中。
+- UIApplication会从事件队列中取出事件，然后通过UIWindow的hitTest:withEvent:方法找到最合适的view。
+- 然后通过view的pointInside:withEvent:方法判断触摸点是否在view上。
+- 如果在view上，就会调用view的touchesBegan:withEvent:方法。
+- 如果不在view上，就会调用view的hitTest:withEvent:方法找到最合适的子view，然后重复上面的步骤。
+- 如果没有找到合适的view，事件就会被丢弃。
+
+**扩大按钮响应范围:**<br>
+
+重写UIButton的 `pointInside:withEvent:` 方法，扩大按钮的响应范围。<br>
+
+```objc
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    CGRect bounds = self.bounds;
+    bounds = CGRectInset(bounds, -20, -20);
+    return CGRectContainsPoint(bounds, point);
+}
+```
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="什么是异步渲染?">}}
+
+异步渲染是指在子线程中进行绘制，然后将绘制好的内容显示到屏幕上。异步渲染可以提高界面的流畅度，避免主线程阻塞。<br>
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="离屏渲染是什么？怎么避免离屏渲染？">}}
+
+**离屏渲染:**<br>
+
+离屏渲染是指在当前屏幕之外新开辟一个缓冲区进行绘制，然后再将绘制好的内容显示到屏幕上。离屏渲染会消耗更多的内存和CPU资源，所以要尽量避免。<br>
+
+**避免离屏渲染:**<br>
+
+- shadow 
+如果需要阴影效果,使用shadowPath属性
+- 圆角
+cornerRadius+clipsToBounds, 避免同时使用backgroundColor和layer的content层
+- group opacity
+透明度是由父视图和子视图的透明度共同决定的,如果父视图和子视图的透明度都小于1,就会触发离屏渲染
+- mask
+和group opacity类似
+
+{{<link href="https://zhuanlan.zhihu.com/p/72653360" content="【关于iOS离屏渲染的深入研究】">}}
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="layoutSubviews是在什么时机调用的?">}}
+
+- init初始化不会触发layoutSubviews
+- addSubView会触发layoutSubviews
+- 设置view的frame会触发layoutSubviews
+- 滚动一个UIScrollView会触发layoutSubviews
+- 旋转Screen会触发父UIView上的layoutSubviews事件
+- 改变一个UIView大小的时候也会触发父UIView上的layoutSubviews事件
+
+改变子视图的大小，会触发父视图的layoutSubviews方法，改变父视图的大小，也会触发父视图的layoutSubviews方法。<br>
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="从磁盘一张图片的展示经历了哪些步骤?">}}
+
+**1.加载图片**
+
+- 从磁盘中加载一张图片
+- 然后将生成的UIImage对象赋值给UIImageView的image属性
+- 接着一个隐式的CATransaction会被创建，然后在下一个runloop周期中，这个CATransaction会被提交，从而触发一次图层树的重新布局和显示
+- 分配内存缓冲区用于管理文件IO和解压缩操作,将文件数据读取到内存中
+
+**2.解码图片**
+
+- 将压缩的图片数据解码成位图数据,这是一个非常耗时操作默认是在主线程中进行的
+
+**3.图片渲染**
+
+- Core Animation 会将解压后的位图数据转换成GPU纹理,然后将纹理上传到GPU中进行渲染
+
+{{<link href="https://juejin.cn/post/6844904115995148295" content="【iOS开发图片格式选择】">}}
+
+{{< /admonition >}}
+
+### 性能优化
+
+{{< admonition open=false type=question title="对tableview进行性能优化的方式有哪些?">}}
+
+- cell的重用
+- cell的高度缓存
+- 异步绘制
+- 避免动态添加图层 善用hidden
+- 避免离屏渲染
+- 预加载
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="Xcode的Instruments都有哪些常用调试工具?">}}
+
+- Allocations:检测内存泄漏
+- Leaks:检测内存泄漏
+- Time Profiler:检测CPU使用情况
+- Zombies:检测野指针
+- File Activity:检测文件读写情况
+- Network:检测网络请求情况
+- Core Animation:检测界面渲染情况
+- Energy Log:检测电量消耗情况
+- Metal System Trace:检测GPU使用情况
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="造成卡顿的原因❓如何检测卡顿,都有哪些方法❓">}}
+
+**造成卡顿的原因:**<br>
+
+- 复杂的UI 图文混排的制作量过大
+- 大量离屏渲染
+- 主线程上大量IO操作
+- 主线程上大量计算操作
+- 死锁和主线程抢锁 优先级反转
+
+**线下解决方案?:**<br>
+- 利用CADisplayLink检测帧率
+- 利用RunLoop监控主线程卡顿
+- 线下使用instrument的Time Profiler检测CPU使用情况
+
+**线上如何用runloop监控?**
+
+监听主线程的runloop的状态来判别是否会出现卡顿,大概思路如下:<br>
+
+- 创建一个子线程,在子线程中创建一个runloop,并且添加一个CFRunLoopObserverContext观察者
+- 每隔1秒检查主线程runloop中的状态,如果发现主线程runloop的状态在kCFRunLoopBeforeSources和kCFRunLoopBeforeWaiting之间停留超过一定时间,就认为主线程卡顿
+- 获取堆栈信息,然后在主线程runloop睡眠的时候,添加上报任务
+
+```swift
+class RunloopChecker {
+    static let shared = RunloopChecker()
+    private var runloopThread: Thread?
+    private var isMonitoring = false
+    private var timeoutCount = 0
+    private var runloopObserver: CFRunLoopObserver?
+    
+    private init() {
+        
+    }
+    
+    func start() {
+        if isMonitoring {
+            return
+        }
+        isMonitoring = true
+        runloopThread = Thread(target: self, selector: #selector(runloopThreadEntryPoint), object: nil)
+        runloopThread?.start()
+    }
+    
+    func stop() {
+        if !isMonitoring {
+            return
+        }
+        isMonitoring = false
+        runloopThread?.cancel()
+        runloopThread = nil
+    }
+    
+    @objc private func runloopThreadEntryPoint() {
+        autoreleasepool {
+            let runloop = CFRunLoopGetCurrent()
+            let observer = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, CFRunLoopActivity.allActivities.rawValue, true, 0, { (observer, activity) in
+                switch activity {
+                case CFRunLoopActivity.entry:
+                    break
+                case CFRunLoopActivity.beforeTimers:
+                    break
+                case CFRunLoopActivity.beforeSources:
+                    self.timeoutCount = 0
+                case CFRunLoopActivity.beforeWaiting:
+                    break
+                case CFRunLoopActivity.afterWaiting:
+                    break
+                case CFRunLoopActivity.exit:
+                    break
+                default:
+                    break
+                }
+            })
+            CFRunLoopAddObserver(RunLoop.main.getCFRunLoop(), observer, .commonModes)
+            
+            let timer = Timer(timeInterval: 1, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
+            RunLoop.current.add(timer, forMode: .common)
+            RunLoop.current.run()
+        }
+    }
+    
+    @objc private func timerFired() {
+        if timeoutCount > 3 {
+            print("主线程卡顿")
+        }
+        timeoutCount += 1
+    }
+}
+
+```
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="iOS启动优化的二进制重排的核心依据是什么">}}
+
+app启动时候,会调用各种函数,由于这些函数分布在各个TEXT段且不连续,此时需要`page fault`创建分页,导致启动时间变长,二进制重排的核心依据是将这些函数按照调用顺序进行重排,使得这些函数在内存中连续存放,减少`page fault`的发生,从而提高启动速度.
+
+{{< /admonition >}}
+
+{{< admonition open=false type=question title="你是如何排查内存泄漏问题的?">}}
+
+借助三方工具MLLeaksFinder,FBRetainCycleDetector,Instruments等工具,检测内存泄漏
+
+{{< /admonition >}}
+
+
+
+
+
+
 
 
 
