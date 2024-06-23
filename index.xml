@@ -4,9 +4,17 @@
         <link>https://example.com/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 31 Mar 2024 15:47:35 &#43;0800</lastBuildDate>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>AndroidStudio 代理设置提示报错 You have JVM property https.proxyHost set to &#39;127.0.0.1&#39;</title>
+    <link>https://example.com/androidstudio/</link>
+    <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate>
+    <author>andy90s</author>
+    <guid>https://example.com/androidstudio/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Interview Algorithm</title>
     <link>https://example.com/interview-algorithm/</link>
     <pubDate>Sun, 31 Mar 2024 15:47:35 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
     <pubDate>Mon, 30 Oct 2023 10:58:12 &#43;0800</pubDate>
     <author>andy90s</author>
     <guid>https://example.com/top-viewcontroller/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>下载ipa</title>
-    <link>https://example.com/download-ipa/</link>
-    <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/download-ipa/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

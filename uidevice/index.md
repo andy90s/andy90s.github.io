@@ -25,3 +25,16 @@ if device.isPhone {
 }
 ```
 
+iOS14前，iPhone状态栏高度只有两种，刘海屏44pt，非刘海屏20pt。
+
+iOS14后，刘海屏的状态栏高度不再是固定的44pt。
+
+手机机型	状态栏高度	顶部安全区域
+iPhone 15 Pro Max/15 Pro/15 Plus/15/14 Pro Max/14 Pro	54	59
+iPhone 14/13 Pro/13/12 Pro/12	47	47
+iPhone 13 mini/12 mini	50	50
+iPhone 11/XR	48	48
+其他刘海屏	44	44
+非刘海屏	20	20
+
+

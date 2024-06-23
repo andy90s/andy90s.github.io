@@ -787,32 +787,63 @@ extension Runnable {
 {{< /admonition >}}
 
 
+### 蓝牙
 
+{{< admonition open=false type=question title="iOS 蓝牙开发的框架是什么？">}}
 
+CoreBluetooth
 
+{{< /admonition >}}
 
+{{< admonition open=false type=question title="CoreBluetooth中的CBCentralManager和CBPeripheralManager有什么区别？">}}
 
+- **CBCentralManager**：中心设备管理器，用于扫描、连接、发现服务和特征。
+- **CBPeripheralManager**：外围设备管理器，用于广播、接收连接、提供服务和特征。
 
+{{< /admonition >}}
 
+{{< admonition open=false type=question title="CoreBluetooth中的CBPeripheral和CBPeripheralManager有什么区别？">}}
+{{< /admonition >}}
 
+{{< admonition open=false type=question title="如何扫描周围的蓝牙设备？">}}
 
+```swift
+import CoreBluetooth
 
+class ViewController: UIViewController, CBCentralManagerDelegate {
+    var centralManager: CBCentralManager!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        centralManager = CBCentralManager(delegate: self, queue: nil)
+    }
 
+    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+        if central.state == .poweredOn {
+            centralManager.scanForPeripherals(withServices: nil, options: nil)
+        }
+    }
 
+    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        print(peripheral)
+    }
+}
+```
 
+{{< /admonition >}}
 
+{{< admonition open=false type=question title="如何使用蓝牙进行后台数据传输？">}}
 
+- **后台数据传输**：在 Info.plist 文件中添加 `Required background modes` 键，值为 `App communicates using CoreBluetooth`，表示 App 需要使用 CoreBluetooth 进行后台数据传输。
 
+{{< /admonition >}}
 
+{{< admonition open=false type=question title="如何使用蓝牙实现多点连接？">}}
 
+- **多点连接**：在 CoreBluetooth 中，一个 CBCentralManager 实例只能连接一个 CBPeripheral 实例，如果需要连接多个 CBPeripheral 实例，需要创建多个 CBCentralManager 实例。
 
+{{< /admonition >}}
 
-
-
-
-
-
-
-
+{{< admonition open=false type=question title="如何使用蓝牙实现数据传输？">}}
+{{< /admonition >}}
 

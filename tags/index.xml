@@ -4,7 +4,23 @@
         <link>https://example.com/tags/</link>
         <description>Tags - 标签 - 笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Android</title>
+    <link>https://example.com/tags/android/</link>
+    <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/android/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>AndroidStudio</title>
+    <link>https://example.com/tags/androidstudio/</link>
+    <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate>
+    <author>梁先华</author>
+    <guid>https://example.com/tags/androidstudio/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>markdown</title>
     <link>https://example.com/tags/markdown/</link>
     <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate>
@@ -66,22 +82,6 @@
     <pubDate>Tue, 11 Jul 2023 17:30:23 &#43;0800</pubDate>
     <author>梁先华</author>
     <guid>https://example.com/tags/mysql/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>uniapp</title>
-    <link>https://example.com/tags/uniapp/</link>
-    <pubDate>Wed, 31 May 2023 13:16:40 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/uniapp/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>vue</title>
-    <link>https://example.com/tags/vue/</link>
-    <pubDate>Wed, 31 May 2023 13:16:40 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/vue/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
