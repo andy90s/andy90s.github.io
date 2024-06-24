@@ -1,16 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>vscode - 标签 - 笔记</title>
-        <link>https://example.com/tags/vscode/</link>
-        <description>vscode - 标签 - 笔记</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/vscode/" rel="self" type="application/rss+xml" /><item>
+        <title>Vscode - 标签 - 刻舟求鉴</title>
+        <link>http://example.org/tags/vscode/</link>
+        <description>Vscode - 标签 - 刻舟求鉴</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/vscode/" rel="self" type="application/rss+xml" /><item>
     <title>vscode snippets对于markdown不生效</title>
-    <link>https://example.com/vscode-snippets/</link>
-    <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/vscode-snippets/</guid>
+    <link>http://example.org/vscode-snippets/</link>
+    <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/vscode-snippets/</guid>
     <description><![CDATA[]]></description>
-</item>
-</channel>
+</item></channel>
 </rss>

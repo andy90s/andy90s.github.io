@@ -1,94 +1,82 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>iOS - 标签 - 笔记</title>
-        <link>https://example.com/tags/ios/</link>
-        <description>iOS - 标签 - 笔记</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/ios/" rel="self" type="application/rss+xml" /><item>
+        <title>IOS - 标签 - 刻舟求鉴</title>
+        <link>http://example.org/tags/ios/</link>
+        <description>IOS - 标签 - 刻舟求鉴</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/ios/" rel="self" type="application/rss+xml" /><item>
     <title>iOS面试题-OC</title>
-    <link>https://example.com/ios-interview/</link>
-    <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/ios-interview/</guid>
+    <link>http://example.org/ios-interview/</link>
+    <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/ios-interview/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>UIDevice</title>
-    <link>https://example.com/uidevice/</link>
-    <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/uidevice/</guid>
+    <link>http://example.org/uidevice/</link>
+    <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/uidevice/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>keyWindow</title>
-    <link>https://example.com/keywindow/</link>
-    <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/keywindow/</guid>
+    <link>http://example.org/keywindow/</link>
+    <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/keywindow/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>获取当前显示的ViewController</title>
-    <link>https://example.com/top-viewcontroller/</link>
-    <pubDate>Mon, 30 Oct 2023 10:58:12 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/top-viewcontroller/</guid>
+    <link>http://example.org/top-viewcontroller/</link>
+    <pubDate>Mon, 30 Oct 2023 10:58:12 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/top-viewcontroller/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>底部弹框简单实现</title>
-    <link>https://example.com/popup-slide/</link>
-    <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/popup-slide/</guid>
+    <link>http://example.org/popup-slide/</link>
+    <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/popup-slide/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>UICollectionView</title>
-    <link>https://example.com/uicollectionview/</link>
-    <pubDate>Fri, 13 Oct 2023 14:42:52 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/uicollectionview/</guid>
+    <link>http://example.org/uicollectionview/</link>
+    <pubDate>Fri, 13 Oct 2023 14:42:52 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/uicollectionview/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>Fastlane打包</title>
-    <link>https://example.com/fastlane-package/</link>
-    <pubDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/fastlane-package/</guid>
+    <link>http://example.org/fastlane-package/</link>
+    <pubDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/fastlane-package/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
-</item>
-<item>
+</item><item>
     <title>退到后台通知引起的崩溃</title>
-    <link>https://example.com/background-crash/</link>
-    <pubDate>Wed, 17 May 2023 21:40:52 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/background-crash/</guid>
+    <link>http://example.org/background-crash/</link>
+    <pubDate>Wed, 17 May 2023 21:40:52 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/background-crash/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>iOS录音功能</title>
-    <link>https://example.com/ios-recorder/</link>
-    <pubDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/ios-recorder/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian3.jpg" referrerpolicy="no-referrer">
-            </div>iOS原生API录音功能]]></description>
-</item>
-<item>
+    <link>http://example.org/ios-recorder/</link>
+    <pubDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/ios-recorder/</guid>
+    <description><![CDATA[iOS原生API录音功能]]></description>
+</item><item>
     <title>Xcode14.3问题记录</title>
-    <link>https://example.com/xocde14.3-error/</link>
-    <pubDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/xocde14.3-error/</guid>
+    <link>http://example.org/xocde14.3-error/</link>
+    <pubDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/xocde14.3-error/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
-</item>
-</channel>
+</item></channel>
 </rss>

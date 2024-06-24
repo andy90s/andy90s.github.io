@@ -1,88 +1,79 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>工具 - 分类 - 笔记</title>
-        <link>https://example.com/categories/%E5%B7%A5%E5%85%B7/</link>
-        <description>工具 - 分类 - 笔记</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/%E5%B7%A5%E5%85%B7/" rel="self" type="application/rss+xml" /><item>
+        <title>工具 - 分类 - 刻舟求鉴</title>
+        <link>http://example.org/categories/%E5%B7%A5%E5%85%B7/</link>
+        <description>工具 - 分类 - 刻舟求鉴</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/%E5%B7%A5%E5%85%B7/" rel="self" type="application/rss+xml" /><item>
     <title>vscode snippets对于markdown不生效</title>
-    <link>https://example.com/vscode-snippets/</link>
-    <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/vscode-snippets/</guid>
+    <link>http://example.org/vscode-snippets/</link>
+    <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/vscode-snippets/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>下载ipa</title>
-    <link>https://example.com/download-ipa/</link>
-    <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/download-ipa/</guid>
+    <link>http://example.org/download-ipa/</link>
+    <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/download-ipa/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>Mac版Chrome浏览器关闭左右滑动</title>
-    <link>https://example.com/chrome-overscoll/</link>
-    <pubDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/chrome-overscoll/</guid>
+    <link>http://example.org/chrome-overscoll/</link>
+    <pubDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/chrome-overscoll/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>Whistle抓包工具</title>
-    <link>https://example.com/whistle/</link>
-    <pubDate>Thu, 14 Sep 2023 10:31:22 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/whistle/</guid>
+    <link>http://example.org/whistle/</link>
+    <pubDate>Thu, 14 Sep 2023 10:31:22 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/whistle/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>Mac电脑安装Docker</title>
-    <link>https://example.com/install-docker/</link>
-    <pubDate>Tue, 08 Aug 2023 14:09:34 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/install-docker/</guid>
+    <link>http://example.org/install-docker/</link>
+    <pubDate>Tue, 08 Aug 2023 14:09:34 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/install-docker/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>Mac安装MySQL及简单使用</title>
-    <link>https://example.com/install-mysql/</link>
-    <pubDate>Tue, 11 Jul 2023 17:30:23 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/install-mysql/</guid>
+    <link>http://example.org/install-mysql/</link>
+    <pubDate>Tue, 11 Jul 2023 17:30:23 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/install-mysql/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>MySQL是一种流行的关系型数据库管理系统，本文将介绍如何在Mac上安装MySQL并创建数据库和表格。]]></description>
-</item>
-<item>
+</item><item>
     <title>Fastlane打包</title>
-    <link>https://example.com/fastlane-package/</link>
-    <pubDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/fastlane-package/</guid>
+    <link>http://example.org/fastlane-package/</link>
+    <pubDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/fastlane-package/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
-</item>
-<item>
+</item><item>
     <title>AI生产力工具</title>
-    <link>https://example.com/ai/</link>
-    <pubDate>Fri, 14 Apr 2023 09:26:33 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/ai/</guid>
+    <link>http://example.org/ai/</link>
+    <pubDate>Fri, 14 Apr 2023 09:26:33 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/ai/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>收集一些AI生产力工具，方便自己和大家使用。]]></description>
-</item>
-<item>
+</item><item>
     <title>MAC工作环境</title>
-    <link>https://example.com/mac-environment/</link>
-    <pubDate>Thu, 16 Mar 2023 21:13:23 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/mac-environment/</guid>
+    <link>http://example.org/mac-environment/</link>
+    <pubDate>Thu, 16 Mar 2023 21:13:23 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/mac-environment/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
-</item>
-</channel>
+</item></channel>
 </rss>

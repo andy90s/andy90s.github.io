@@ -1,88 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tags - 标签 - 笔记</title>
-        <link>https://example.com/tags/</link>
-        <description>Tags - 标签 - 笔记</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/" rel="self" type="application/rss+xml" /><item>
+        <title>Tags - 标签 - 刻舟求鉴</title>
+        <link>http://example.org/tags/</link>
+        <description>Tags - 标签 - 刻舟求鉴</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Android</title>
-    <link>https://example.com/tags/android/</link>
-    <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/android/</guid>
+    <link>http://example.org/tags/android/</link>
+    <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>http://example.org/tags/android/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>AndroidStudio</title>
-    <link>https://example.com/tags/androidstudio/</link>
-    <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/androidstudio/</guid>
+    <link>http://example.org/tags/androidstudio/</link>
+    <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>http://example.org/tags/androidstudio/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>markdown</title>
-    <link>https://example.com/tags/markdown/</link>
-    <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/markdown/</guid>
+</item><item>
+    <title>Markdown</title>
+    <link>http://example.org/tags/markdown/</link>
+    <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>http://example.org/tags/markdown/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>vscode</title>
-    <link>https://example.com/tags/vscode/</link>
-    <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/vscode/</guid>
+</item><item>
+    <title>Vscode</title>
+    <link>http://example.org/tags/vscode/</link>
+    <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>http://example.org/tags/vscode/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>iOS</title>
-    <link>https://example.com/tags/ios/</link>
-    <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/ios/</guid>
+</item><item>
+    <title>IOS</title>
+    <link>http://example.org/tags/ios/</link>
+    <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>http://example.org/tags/ios/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>flutter</title>
-    <link>https://example.com/tags/flutter/</link>
-    <pubDate>Tue, 31 Oct 2023 10:12:39 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/flutter/</guid>
+</item><item>
+    <title>Flutter</title>
+    <link>http://example.org/tags/flutter/</link>
+    <pubDate>Tue, 31 Oct 2023 10:12:39 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>http://example.org/tags/flutter/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>ipa</title>
-    <link>https://example.com/tags/ipa/</link>
-    <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/ipa/</guid>
+</item><item>
+    <title>Ipa</title>
+    <link>http://example.org/tags/ipa/</link>
+    <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>http://example.org/tags/ipa/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>网站</title>
-    <link>https://example.com/tags/%E7%BD%91%E7%AB%99/</link>
-    <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/%E7%BD%91%E7%AB%99/</guid>
+    <link>http://example.org/tags/%E7%BD%91%E7%AB%99/</link>
+    <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>http://example.org/tags/%E7%BD%91%E7%AB%99/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>Chrome</title>
-    <link>https://example.com/tags/chrome/</link>
-    <pubDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/chrome/</guid>
+    <link>http://example.org/tags/chrome/</link>
+    <pubDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>http://example.org/tags/chrome/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>mysql</title>
-    <link>https://example.com/tags/mysql/</link>
-    <pubDate>Tue, 11 Jul 2023 17:30:23 &#43;0800</pubDate>
-    <author>梁先华</author>
-    <guid>https://example.com/tags/mysql/</guid>
+</item><item>
+    <title>Mysql</title>
+    <link>http://example.org/tags/mysql/</link>
+    <pubDate>Tue, 11 Jul 2023 17:30:23 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>http://example.org/tags/mysql/</guid>
     <description><![CDATA[]]></description>
-</item>
-</channel>
+</item></channel>
 </rss>

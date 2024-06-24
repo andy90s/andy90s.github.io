@@ -1,16 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Chrome - 标签 - 笔记</title>
-        <link>https://example.com/tags/chrome/</link>
-        <description>Chrome - 标签 - 笔记</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/chrome/" rel="self" type="application/rss+xml" /><item>
+        <title>Chrome - 标签 - 刻舟求鉴</title>
+        <link>http://example.org/tags/chrome/</link>
+        <description>Chrome - 标签 - 刻舟求鉴</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/chrome/" rel="self" type="application/rss+xml" /><item>
     <title>Mac版Chrome浏览器关闭左右滑动</title>
-    <link>https://example.com/chrome-overscoll/</link>
-    <pubDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/chrome-overscoll/</guid>
+    <link>http://example.org/chrome-overscoll/</link>
+    <pubDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/chrome-overscoll/</guid>
     <description><![CDATA[]]></description>
-</item>
-</channel>
+</item></channel>
 </rss>

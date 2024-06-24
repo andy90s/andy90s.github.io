@@ -1,18 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>AI - 标签 - 笔记</title>
-        <link>https://example.com/tags/ai/</link>
-        <description>AI - 标签 - 笔记</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (梁先华)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (梁先华)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 14 Apr 2023 09:26:33 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/ai/" rel="self" type="application/rss+xml" /><item>
+        <title>AI - 标签 - 刻舟求鉴</title>
+        <link>http://example.org/tags/ai/</link>
+        <description>AI - 标签 - 刻舟求鉴</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Fri, 14 Apr 2023 09:26:33 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/ai/" rel="self" type="application/rss+xml" /><item>
     <title>AI生产力工具</title>
-    <link>https://example.com/ai/</link>
-    <pubDate>Fri, 14 Apr 2023 09:26:33 &#43;0800</pubDate>
-    <author>andy90s</author>
-    <guid>https://example.com/ai/</guid>
+    <link>http://example.org/ai/</link>
+    <pubDate>Fri, 14 Apr 2023 09:26:33 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://example.org/ai/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>收集一些AI生产力工具，方便自己和大家使用。]]></description>
-</item>
-</channel>
+</item></channel>
 </rss>

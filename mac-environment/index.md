@@ -50,6 +50,19 @@ brew install tree
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> tree </b>  </div>
 </center>
 
+打印tree
+```
+tree
+```
+打印tree的目录级别
+```
+tree -L 2
+```
+只打印目录
+```
+tree -d
+```
+
 ## oh-my-zsh
 ```ruby
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
