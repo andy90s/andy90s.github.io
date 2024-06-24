@@ -1,80 +1,80 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>IOS - 标签 - 刻舟求鉴</title>
-        <link>http://localhost:1313/tags/ios/</link>
+        <link>http://localhost:55752/tags/ios/</link>
         <description>IOS - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/ios/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</lastBuildDate><atom:link href="http://localhost:55752/tags/ios/" rel="self" type="application/rss+xml" /><item>
     <title>iOS面试题-OC</title>
-    <link>http://localhost:1313/ios-interview/</link>
+    <link>http://localhost:55752/ios-interview/</link>
     <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:1313/ios-interview/</guid>
+    </author><guid>http://localhost:55752/ios-interview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>UIDevice</title>
-    <link>http://localhost:1313/uidevice/</link>
+    <link>http://localhost:55752/uidevice/</link>
     <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:1313/uidevice/</guid>
+    </author><guid>http://localhost:55752/uidevice/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>keyWindow</title>
-    <link>http://localhost:1313/keywindow/</link>
+    <link>http://localhost:55752/keywindow/</link>
     <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:1313/keywindow/</guid>
+    </author><guid>http://localhost:55752/keywindow/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>获取当前显示的ViewController</title>
-    <link>http://localhost:1313/top-viewcontroller/</link>
+    <link>http://localhost:55752/top-viewcontroller/</link>
     <pubDate>Mon, 30 Oct 2023 10:58:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:1313/top-viewcontroller/</guid>
+    </author><guid>http://localhost:55752/top-viewcontroller/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>底部弹框简单实现</title>
-    <link>http://localhost:1313/popup-slide/</link>
+    <link>http://localhost:55752/popup-slide/</link>
     <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:1313/popup-slide/</guid>
+    </author><guid>http://localhost:55752/popup-slide/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>UICollectionView</title>
-    <link>http://localhost:1313/uicollectionview/</link>
+    <link>http://localhost:55752/uicollectionview/</link>
     <pubDate>Fri, 13 Oct 2023 14:42:52 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:1313/uicollectionview/</guid>
+    </author><guid>http://localhost:55752/uicollectionview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Fastlane打包</title>
-    <link>http://localhost:1313/fastlane-package/</link>
+    <link>http://localhost:55752/fastlane-package/</link>
     <pubDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:1313/fastlane-package/</guid>
+    </author><guid>http://localhost:55752/fastlane-package/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
 </item><item>
     <title>退到后台通知引起的崩溃</title>
-    <link>http://localhost:1313/background-crash/</link>
+    <link>http://localhost:55752/background-crash/</link>
     <pubDate>Wed, 17 May 2023 21:40:52 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:1313/background-crash/</guid>
+    </author><guid>http://localhost:55752/background-crash/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>iOS录音功能</title>
-    <link>http://localhost:1313/ios-recorder/</link>
+    <link>http://localhost:55752/ios-recorder/</link>
     <pubDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:1313/ios-recorder/</guid>
+    </author><guid>http://localhost:55752/ios-recorder/</guid>
     <description><![CDATA[iOS原生API录音功能]]></description>
 </item><item>
     <title>Xcode14.3问题记录</title>
-    <link>http://localhost:1313/xocde14.3-error/</link>
+    <link>http://localhost:55752/xocde14.3-error/</link>
     <pubDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:1313/xocde14.3-error/</guid>
+    </author><guid>http://localhost:55752/xocde14.3-error/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
