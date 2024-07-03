@@ -1,78 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - 标签 - 刻舟求鉴</title>
-        <link>http://localhost:55752/tags/</link>
+        <link>//localhost:58169/tags/</link>
         <description>Tags - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</lastBuildDate><atom:link href="http://localhost:55752/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</lastBuildDate><atom:link href="//localhost:58169/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Android</title>
-    <link>http://localhost:55752/tags/android/</link>
+    <link>//localhost:58169/tags/android/</link>
     <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>http://localhost:55752/tags/android/</guid>
+    </author><guid>//localhost:58169/tags/android/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>AndroidStudio</title>
-    <link>http://localhost:55752/tags/androidstudio/</link>
+    <link>//localhost:58169/tags/androidstudio/</link>
     <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>http://localhost:55752/tags/androidstudio/</guid>
+    </author><guid>//localhost:58169/tags/androidstudio/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Markdown</title>
-    <link>http://localhost:55752/tags/markdown/</link>
+    <link>//localhost:58169/tags/markdown/</link>
     <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>http://localhost:55752/tags/markdown/</guid>
+    </author><guid>//localhost:58169/tags/markdown/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Vscode</title>
-    <link>http://localhost:55752/tags/vscode/</link>
+    <link>//localhost:58169/tags/vscode/</link>
     <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>http://localhost:55752/tags/vscode/</guid>
+    </author><guid>//localhost:58169/tags/vscode/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>IOS</title>
-    <link>http://localhost:55752/tags/ios/</link>
+    <link>//localhost:58169/tags/ios/</link>
     <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>http://localhost:55752/tags/ios/</guid>
+    </author><guid>//localhost:58169/tags/ios/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Flutter</title>
-    <link>http://localhost:55752/tags/flutter/</link>
+    <link>//localhost:58169/tags/flutter/</link>
     <pubDate>Tue, 31 Oct 2023 10:12:39 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>http://localhost:55752/tags/flutter/</guid>
+    </author><guid>//localhost:58169/tags/flutter/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Ipa</title>
-    <link>http://localhost:55752/tags/ipa/</link>
+    <link>//localhost:58169/tags/ipa/</link>
     <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>http://localhost:55752/tags/ipa/</guid>
+    </author><guid>//localhost:58169/tags/ipa/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>网站</title>
-    <link>http://localhost:55752/tags/%E7%BD%91%E7%AB%99/</link>
+    <link>//localhost:58169/tags/%E7%BD%91%E7%AB%99/</link>
     <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>http://localhost:55752/tags/%E7%BD%91%E7%AB%99/</guid>
+    </author><guid>//localhost:58169/tags/%E7%BD%91%E7%AB%99/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Chrome</title>
-    <link>http://localhost:55752/tags/chrome/</link>
+    <link>//localhost:58169/tags/chrome/</link>
     <pubDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>http://localhost:55752/tags/chrome/</guid>
+    </author><guid>//localhost:58169/tags/chrome/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Mysql</title>
-    <link>http://localhost:55752/tags/mysql/</link>
+    <link>//localhost:58169/tags/mysql/</link>
     <pubDate>Tue, 11 Jul 2023 17:30:23 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>http://localhost:55752/tags/mysql/</guid>
+    </author><guid>//localhost:58169/tags/mysql/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

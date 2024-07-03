@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Android - 标签 - 刻舟求鉴</title>
-        <link>http://localhost:55752/tags/android/</link>
+        <link>//localhost:58169/tags/android/</link>
         <description>Android - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</lastBuildDate><atom:link href="http://localhost:55752/tags/android/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</lastBuildDate><atom:link href="//localhost:58169/tags/android/" rel="self" type="application/rss+xml" /><item>
     <title>AndroidStudio 代理设置提示报错 You have JVM property https.proxyHost set to &#39;127.0.0.1&#39;</title>
-    <link>http://localhost:55752/androidstudio/</link>
+    <link>//localhost:58169/androidstudio/</link>
     <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:55752/androidstudio/</guid>
+    </author><guid>//localhost:58169/androidstudio/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

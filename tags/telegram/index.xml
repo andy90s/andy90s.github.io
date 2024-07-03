@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Telegram - 标签 - 刻舟求鉴</title>
-        <link>http://localhost:55752/tags/telegram/</link>
+        <link>//localhost:58169/tags/telegram/</link>
         <description>Telegram - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sat, 28 Jan 2023 13:24:56 &#43;0800</lastBuildDate><atom:link href="http://localhost:55752/tags/telegram/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sat, 28 Jan 2023 13:24:56 &#43;0800</lastBuildDate><atom:link href="//localhost:58169/tags/telegram/" rel="self" type="application/rss+xml" /><item>
     <title>Telegram-iOS编译打包</title>
-    <link>http://localhost:55752/telegram/</link>
+    <link>//localhost:58169/telegram/</link>
     <pubDate>Sat, 28 Jan 2023 13:24:56 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:55752/telegram/</guid>
+    </author><guid>//localhost:58169/telegram/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>Telegram开源iOS端代码编译学习记录]]></description>
