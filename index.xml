@@ -7,6 +7,13 @@
             <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Clash</title>
+    <link>/clash/</link>
+    <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>/clash/</guid>
+    <description><![CDATA[Clash Clash 不用多说 【Clash】]]></description>
+</item><item>
     <title>AndroidStudio 代理设置提示报错 You have JVM property https.proxyHost set to &#39;127.0.0.1&#39;</title>
     <link>/androidstudio/</link>
     <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
@@ -68,13 +75,6 @@
     <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate><author>
         <name>andy90s</name>
     </author><guid>/keywindow/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>获取当前显示的ViewController</title>
-    <link>/top-viewcontroller/</link>
-    <pubDate>Mon, 30 Oct 2023 10:58:12 &#43;0800</pubDate><author>
-        <name>andy90s</name>
-    </author><guid>/top-viewcontroller/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

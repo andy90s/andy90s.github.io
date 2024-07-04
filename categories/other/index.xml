@@ -4,7 +4,14 @@
         <link>/categories/other/</link>
         <description>Other - 分类 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Wed, 31 Jan 2024 17:23:53 &#43;0800</lastBuildDate><atom:link href="/categories/other/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</lastBuildDate><atom:link href="/categories/other/" rel="self" type="application/rss+xml" /><item>
+    <title>Clash</title>
+    <link>/clash/</link>
+    <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>/clash/</guid>
+    <description><![CDATA[Clash Clash 不用多说 【Clash】]]></description>
+</item><item>
     <title>MAC Terminal 443</title>
     <link>/terminal-443/</link>
     <pubDate>Wed, 31 Jan 2024 17:23:53 &#43;0800</pubDate><author>
@@ -73,14 +80,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>收集一些AI生产力工具，方便自己和大家使用。]]></description>
-</item><item>
-    <title>MAC工作环境</title>
-    <link>/mac-environment/</link>
-    <pubDate>Thu, 16 Mar 2023 21:13:23 &#43;0800</pubDate><author>
-        <name>andy90s</name>
-    </author><guid>/mac-environment/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
-            </div>]]></description>
 </item></channel>
 </rss>

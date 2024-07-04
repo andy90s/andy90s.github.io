@@ -4,5 +4,12 @@
         <link>/authors/</link>
         <description>Authors - 作者 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><atom:link href="/authors/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</lastBuildDate><atom:link href="/authors/" rel="self" type="application/rss+xml" /><item>
+    <title>Andy90s</title>
+    <link>/authors/andy90s/</link>
+    <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>/authors/andy90s/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>
