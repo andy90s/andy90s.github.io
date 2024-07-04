@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>网站 - 标签 - 刻舟求鉴</title>
-        <link>//localhost:58169/tags/%E7%BD%91%E7%AB%99/</link>
+        <link>/tags/%E7%BD%91%E7%AB%99/</link>
         <description>网站 - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</lastBuildDate><atom:link href="//localhost:58169/tags/%E7%BD%91%E7%AB%99/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</lastBuildDate><atom:link href="/tags/%E7%BD%91%E7%AB%99/" rel="self" type="application/rss+xml" /><item>
     <title>下载ipa</title>
-    <link>//localhost:58169/download-ipa/</link>
+    <link>/download-ipa/</link>
     <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:58169/download-ipa/</guid>
+    </author><guid>/download-ipa/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Series - 系列 - 刻舟求鉴</title>
-        <link>//localhost:58169/series/</link>
+        <link>/series/</link>
         <description>Series - 系列 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><atom:link href="//localhost:58169/series/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><atom:link href="/series/" rel="self" type="application/rss+xml" /></channel>
 </rss>

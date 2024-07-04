@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>String - 标签 - 刻舟求鉴</title>
-        <link>//localhost:58169/tags/string/</link>
+        <link>/tags/string/</link>
         <description>String - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</lastBuildDate><atom:link href="//localhost:58169/tags/string/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</lastBuildDate><atom:link href="/tags/string/" rel="self" type="application/rss+xml" /><item>
     <title>String的一些扩展</title>
-    <link>//localhost:58169/string-extension/</link>
+    <link>/string-extension/</link>
     <pubDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:58169/string-extension/</guid>
+    </author><guid>/string-extension/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
