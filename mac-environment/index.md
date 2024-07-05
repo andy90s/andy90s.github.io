@@ -199,8 +199,5 @@ w2 stop
 - 支持导出多种格式
 - 图片资源管理,解决了markdown图片资源管理的痛点  
 
-## clash
 
-这个不用多说了
-{{<link href="https://github.com/clash-verge-rev/clash-verge-rev/releases" content="【clash】">}}
 
