@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>AVFoundation - 标签 - 刻舟求鉴</title>
-        <link>/tags/avfoundation/</link>
+        <link>//localhost:1313/tags/avfoundation/</link>
         <description>AVFoundation - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</lastBuildDate><atom:link href="/tags/avfoundation/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/tags/avfoundation/" rel="self" type="application/rss+xml" /><item>
     <title>iOS录音功能</title>
-    <link>/ios-recorder/</link>
+    <link>//localhost:1313/ios-recorder/</link>
     <pubDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/ios-recorder/</guid>
+    </author><guid>//localhost:1313/ios-recorder/</guid>
     <description><![CDATA[iOS原生API录音功能]]></description>
 </item></channel>
 </rss>
