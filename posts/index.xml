@@ -1,78 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>所有文章 - 刻舟求鉴</title>
-        <link>//localhost:1313/posts/</link>
+        <link>/posts/</link>
         <description>所有文章 | 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Clash</title>
-    <link>//localhost:1313/clash/</link>
+    <link>/clash/</link>
     <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>//localhost:1313/clash/</guid>
+                </author><guid>/clash/</guid>
     <description><![CDATA[Clash Clash 不用多介绍 【Clash】]]></description>
 </item><item>
     <title>AndroidStudio 代理设置提示报错 You have JVM property https.proxyHost set to &#39;127.0.0.1&#39;</title>
-    <link>//localhost:1313/androidstudio/</link>
+    <link>/androidstudio/</link>
     <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/androidstudio/</guid>
+    </author><guid>/androidstudio/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Interview Algorithm</title>
-    <link>//localhost:1313/interview-algorithm/</link>
+    <link>/interview-algorithm/</link>
     <pubDate>Sun, 31 Mar 2024 15:47:35 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/interview-algorithm/</guid>
+    </author><guid>/interview-algorithm/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MAC Terminal 443</title>
-    <link>//localhost:1313/terminal-443/</link>
+    <link>/terminal-443/</link>
     <pubDate>Wed, 31 Jan 2024 17:23:53 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/terminal-443/</guid>
+    </author><guid>/terminal-443/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>iOS面试题-Swift</title>
-    <link>//localhost:1313/ios-interview-swift/</link>
+    <link>/ios-interview-swift/</link>
     <pubDate>Mon, 25 Dec 2023 11:50:21 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/ios-interview-swift/</guid>
+    </author><guid>/ios-interview-swift/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>vscode snippets对于markdown不生效</title>
-    <link>//localhost:1313/vscode-snippets/</link>
+    <link>/vscode-snippets/</link>
     <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/vscode-snippets/</guid>
+    </author><guid>/vscode-snippets/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>iOS面试题-OC</title>
-    <link>//localhost:1313/ios-interview/</link>
+    <link>/ios-interview/</link>
     <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/ios-interview/</guid>
+    </author><guid>/ios-interview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Flutter运行问题</title>
-    <link>//localhost:1313/flutter-running-error/</link>
+    <link>/flutter-running-error/</link>
     <pubDate>Tue, 31 Oct 2023 10:12:39 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/flutter-running-error/</guid>
+    </author><guid>/flutter-running-error/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>UIDevice</title>
-    <link>//localhost:1313/uidevice/</link>
+    <link>/uidevice/</link>
     <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/uidevice/</guid>
+    </author><guid>/uidevice/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>keyWindow</title>
-    <link>//localhost:1313/keywindow/</link>
+    <link>/keywindow/</link>
     <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/keywindow/</guid>
+    </author><guid>/keywindow/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

@@ -23,10 +23,12 @@ keywords: ["HTML"]
 ---
 ```
 ## 常用指令
-```toml
+```bash
 hugo new posts 文章.md # 发布文章
 hugo # 编译
-hugo server -D # 启动本地服务
+hugo server --disableFastRender # 禁用快速渲染
+hugo server -D # 启动本地服务 包含草稿
+hugo server # 启动本地服务 不包含草稿
 ```
 ## loveit主题相关
 代码块识别语言高亮,配置文件路径:
@@ -169,14 +171,7 @@ https://cdn.jsdelivr.net/gh/andy90s/blog-image@版本号/blog/images/27166995842
 {{</* /details */>}}
 ```
 
-## Hugo的常用指令
-```bash
-hugo server --disableFastRender # 禁用快速渲染
-hugo server -D # 启动本地服务 包含草稿
-hugo server # 启动本地服务 不包含草稿
-Hugo new posts/文章.md # 新建文章
-hugo # 编译
-```
+
 
 ## 参考
 [主题文档 - 扩展 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#2-link)

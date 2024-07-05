@@ -1,78 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>移动端 - 分类 - 刻舟求鉴</title>
-        <link>//localhost:1313/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link>
+        <link>/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link>
         <description>移动端 - 分类 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</lastBuildDate><atom:link href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
     <title>AndroidStudio 代理设置提示报错 You have JVM property https.proxyHost set to &#39;127.0.0.1&#39;</title>
-    <link>//localhost:1313/androidstudio/</link>
+    <link>/androidstudio/</link>
     <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/androidstudio/</guid>
+    </author><guid>/androidstudio/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>iOS面试题-OC</title>
-    <link>//localhost:1313/ios-interview/</link>
+    <link>/ios-interview/</link>
     <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/ios-interview/</guid>
+    </author><guid>/ios-interview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Flutter运行问题</title>
-    <link>//localhost:1313/flutter-running-error/</link>
+    <link>/flutter-running-error/</link>
     <pubDate>Tue, 31 Oct 2023 10:12:39 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/flutter-running-error/</guid>
+    </author><guid>/flutter-running-error/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>UIDevice</title>
-    <link>//localhost:1313/uidevice/</link>
+    <link>/uidevice/</link>
     <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/uidevice/</guid>
+    </author><guid>/uidevice/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>keyWindow</title>
-    <link>//localhost:1313/keywindow/</link>
+    <link>/keywindow/</link>
     <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/keywindow/</guid>
+    </author><guid>/keywindow/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>获取当前显示的ViewController</title>
-    <link>//localhost:1313/top-viewcontroller/</link>
+    <link>/top-viewcontroller/</link>
     <pubDate>Mon, 30 Oct 2023 10:58:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/top-viewcontroller/</guid>
+    </author><guid>/top-viewcontroller/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>底部弹框简单实现</title>
-    <link>//localhost:1313/popup-slide/</link>
+    <link>/popup-slide/</link>
     <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/popup-slide/</guid>
+    </author><guid>/popup-slide/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>UICollectionView</title>
-    <link>//localhost:1313/uicollectionview/</link>
+    <link>/uicollectionview/</link>
     <pubDate>Fri, 13 Oct 2023 14:42:52 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/uicollectionview/</guid>
+    </author><guid>/uicollectionview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Xcode运行项目报错</title>
-    <link>//localhost:1313/xcode-error/</link>
+    <link>/xcode-error/</link>
     <pubDate>Wed, 12 Jul 2023 19:30:20 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/xcode-error/</guid>
+    </author><guid>/xcode-error/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>退到后台通知引起的崩溃</title>
-    <link>//localhost:1313/background-crash/</link>
+    <link>/background-crash/</link>
     <pubDate>Wed, 17 May 2023 21:40:52 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/background-crash/</guid>
+    </author><guid>/background-crash/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

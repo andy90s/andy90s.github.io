@@ -1,82 +1,82 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>其他 - 分类 - 刻舟求鉴</title>
-        <link>//localhost:1313/categories/%E5%85%B6%E4%BB%96/</link>
+        <link>/categories/%E5%85%B6%E4%BB%96/</link>
         <description>其他 - 分类 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/categories/%E5%85%B6%E4%BB%96/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</lastBuildDate><atom:link href="/categories/%E5%85%B6%E4%BB%96/" rel="self" type="application/rss+xml" /><item>
     <title>Clash</title>
-    <link>//localhost:1313/clash/</link>
+    <link>/clash/</link>
     <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>//localhost:1313/clash/</guid>
+                </author><guid>/clash/</guid>
     <description><![CDATA[Clash Clash 不用多介绍 【Clash】]]></description>
 </item><item>
     <title>MAC Terminal 443</title>
-    <link>//localhost:1313/terminal-443/</link>
+    <link>/terminal-443/</link>
     <pubDate>Wed, 31 Jan 2024 17:23:53 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/terminal-443/</guid>
+    </author><guid>/terminal-443/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>vscode snippets对于markdown不生效</title>
-    <link>//localhost:1313/vscode-snippets/</link>
+    <link>/vscode-snippets/</link>
     <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/vscode-snippets/</guid>
+    </author><guid>/vscode-snippets/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>下载ipa</title>
-    <link>//localhost:1313/download-ipa/</link>
+    <link>/download-ipa/</link>
     <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/download-ipa/</guid>
+    </author><guid>/download-ipa/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Mac版Chrome浏览器关闭左右滑动</title>
-    <link>//localhost:1313/chrome-overscoll/</link>
+    <link>/chrome-overscoll/</link>
     <pubDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/chrome-overscoll/</guid>
+    </author><guid>/chrome-overscoll/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Whistle抓包工具</title>
-    <link>//localhost:1313/whistle/</link>
+    <link>/whistle/</link>
     <pubDate>Thu, 14 Sep 2023 10:31:22 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/whistle/</guid>
+    </author><guid>/whistle/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Mac电脑安装Docker</title>
-    <link>//localhost:1313/install-docker/</link>
+    <link>/install-docker/</link>
     <pubDate>Tue, 08 Aug 2023 14:09:34 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/install-docker/</guid>
+    </author><guid>/install-docker/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Mac安装MySQL及简单使用</title>
-    <link>//localhost:1313/install-mysql/</link>
+    <link>/install-mysql/</link>
     <pubDate>Tue, 11 Jul 2023 17:30:23 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/install-mysql/</guid>
+    </author><guid>/install-mysql/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>MySQL是一种流行的关系型数据库管理系统，本文将介绍如何在Mac上安装MySQL并创建数据库和表格。]]></description>
 </item><item>
     <title>Fastlane打包</title>
-    <link>//localhost:1313/fastlane-package/</link>
+    <link>/fastlane-package/</link>
     <pubDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/fastlane-package/</guid>
+    </author><guid>/fastlane-package/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
 </item><item>
     <title>AI生产力工具</title>
-    <link>//localhost:1313/ai/</link>
+    <link>/ai/</link>
     <pubDate>Fri, 14 Apr 2023 09:26:33 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/ai/</guid>
+    </author><guid>/ai/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>收集一些AI生产力工具，方便自己和大家使用。]]></description>

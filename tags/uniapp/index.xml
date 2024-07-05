@@ -1,63 +1,63 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Uniapp - 标签 - 刻舟求鉴</title>
-        <link>//localhost:1313/tags/uniapp/</link>
+        <link>/tags/uniapp/</link>
         <description>Uniapp - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Wed, 31 May 2023 13:16:40 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/tags/uniapp/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Wed, 31 May 2023 13:16:40 &#43;0800</lastBuildDate><atom:link href="/tags/uniapp/" rel="self" type="application/rss+xml" /><item>
     <title>Text组件显示链接文本超出组件</title>
-    <link>//localhost:1313/text-word-break/</link>
+    <link>/text-word-break/</link>
     <pubDate>Wed, 31 May 2023 13:16:40 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/text-word-break/</guid>
+    </author><guid>/text-word-break/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian1.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
 </item><item>
     <title>Uni Popup等弹出组件滑动穿透问题</title>
-    <link>//localhost:1313/uni-popup-sliding-penetration/</link>
+    <link>/uni-popup-sliding-penetration/</link>
     <pubDate>Thu, 18 May 2023 16:44:37 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/uni-popup-sliding-penetration/</guid>
+    </author><guid>/uni-popup-sliding-penetration/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Uni Popup组件底部安全区域问题</title>
-    <link>//localhost:1313/uni-popup-safearea/</link>
+    <link>/uni-popup-safearea/</link>
     <pubDate>Thu, 18 May 2023 15:43:20 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/uni-popup-safearea/</guid>
+    </author><guid>/uni-popup-safearea/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>异步函数调用this找不到方法</title>
-    <link>//localhost:1313/uniapp-this/</link>
+    <link>/uniapp-this/</link>
     <pubDate>Wed, 10 May 2023 16:29:56 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/uniapp-this/</guid>
+    </author><guid>/uniapp-this/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Uni页面撑满整个view</title>
-    <link>//localhost:1313/uniapp-full-view/</link>
+    <link>/uniapp-full-view/</link>
     <pubDate>Mon, 08 May 2023 13:45:46 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/uniapp-full-view/</guid>
+    </author><guid>/uniapp-full-view/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian1.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
 </item><item>
     <title>v-show在微信小程序中不生效</title>
-    <link>//localhost:1313/uniapp-v-show/</link>
+    <link>/uniapp-v-show/</link>
     <pubDate>Mon, 08 May 2023 10:23:24 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/uniapp-v-show/</guid>
+    </author><guid>/uniapp-v-show/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian3.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
 </item><item>
     <title>Uni开发遇到的一些问题汇总</title>
-    <link>//localhost:1313/uniapp-question/</link>
+    <link>/uniapp-question/</link>
     <pubDate>Mon, 08 May 2023 09:58:31 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>//localhost:1313/uniapp-question/</guid>
+    </author><guid>/uniapp-question/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
