@@ -4,9 +4,16 @@
         <link>/</link>
         <description>个人笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</lastBuildDate>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Xcode运行真机卡住,Xcode崩溃</title>
+    <link>/xcode_mobile/</link>
+    <pubDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>/xcode_mobile/</guid>
+    <description><![CDATA[环境 当前环境 Xcode Version 15.4 (15F31d) MacOS 14.5 (23F79) iPhone XS iOS 17.5.1 (21F90) 问题 Bug 同一个设备,在Xcode中显示两个,名字相同 点击任意一个运行真机,卡住,然后Xcode崩溃 解决 打开]]></description>
+</item><item>
     <title>Clash</title>
     <link>/clash/</link>
     <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
@@ -68,13 +75,6 @@
     <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate><author>
         <name>andy90s</name>
     </author><guid>/uidevice/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>keyWindow</title>
-    <link>/keywindow/</link>
-    <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate><author>
-        <name>andy90s</name>
-    </author><guid>/keywindow/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
