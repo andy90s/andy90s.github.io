@@ -4,7 +4,21 @@
         <link>/tags/</link>
         <description>Tags - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</lastBuildDate><atom:link href="/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</lastBuildDate><atom:link href="/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Android</title>
+    <link>/tags/android/</link>
+    <pubDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>/tags/android/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>AndroidStudio</title>
+    <link>/tags/androidstudio/</link>
+    <pubDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</pubDate><author>
+        <name>XianHua Liang</name>
+    </author><guid>/tags/androidstudio/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>IOS</title>
     <link>/tags/ios/</link>
     <pubDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</pubDate><author>
@@ -24,20 +38,6 @@
     <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
     </author><guid>/tags/tools/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Android</title>
-    <link>/tags/android/</link>
-    <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
-        <name>XianHua Liang</name>
-    </author><guid>/tags/android/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>AndroidStudio</title>
-    <link>/tags/androidstudio/</link>
-    <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
-        <name>XianHua Liang</name>
-    </author><guid>/tags/androidstudio/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Markdown</title>

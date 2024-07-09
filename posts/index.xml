@@ -4,7 +4,14 @@
         <link>/posts/</link>
         <description>所有文章 | 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Android Studio 快捷键(MAC)</title>
+    <link>/android-studio-shortcut/</link>
+    <pubDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>/android-studio-shortcut/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Xcode运行真机卡住,Xcode崩溃</title>
     <link>/xcode_mobile/</link>
     <pubDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</pubDate><author>
@@ -20,10 +27,10 @@
     <description><![CDATA[Clash Clash 不用多介绍 【Clash】]]></description>
 </item><item>
     <title>AndroidStudio 代理设置提示报错 You have JVM property https.proxyHost set to &#39;127.0.0.1&#39;</title>
-    <link>/androidstudio/</link>
+    <link>/androidstudio-proxy/</link>
     <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/androidstudio/</guid>
+    </author><guid>/androidstudio-proxy/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Interview Algorithm</title>
@@ -66,13 +73,6 @@
     <pubDate>Tue, 31 Oct 2023 10:12:39 &#43;0800</pubDate><author>
         <name>andy90s</name>
     </author><guid>/flutter-running-error/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>UIDevice</title>
-    <link>/uidevice/</link>
-    <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate><author>
-        <name>andy90s</name>
-    </author><guid>/uidevice/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

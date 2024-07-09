@@ -13,10 +13,10 @@
     <description><![CDATA[环境 当前环境 Xcode Version 15.4 (15F31d) MacOS 14.5 (23F79) iPhone XS iOS 17.5.1 (21F90) 问题 Bug 同一个设备,在Xcode中显示两个,名字相同 点击任意一个运行真机,卡住,然后Xcode崩溃 解决 打开]]></description>
 </item><item>
     <title>AndroidStudio 代理设置提示报错 You have JVM property https.proxyHost set to &#39;127.0.0.1&#39;</title>
-    <link>/androidstudio/</link>
+    <link>/androidstudio-proxy/</link>
     <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/androidstudio/</guid>
+    </author><guid>/androidstudio-proxy/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>iOS面试题-OC</title>
