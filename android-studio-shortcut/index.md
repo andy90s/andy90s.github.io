@@ -65,3 +65,7 @@
 |fn + F7 | step into进入代码 |
 |opt + cmd + R | 直接运行 |
 |cmd + fn + F2 | 退出调试 |
+
+
+
+
