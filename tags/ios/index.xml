@@ -1,80 +1,80 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>IOS - 标签 - 刻舟求鉴</title>
-        <link>/tags/ios/</link>
+        <link>http://xhliang.com/tags/ios/</link>
         <description>IOS - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</lastBuildDate><atom:link href="/tags/ios/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</lastBuildDate><atom:link href="http://xhliang.com/tags/ios/" rel="self" type="application/rss+xml" /><item>
     <title>Xcode运行真机卡住,Xcode崩溃</title>
-    <link>/xcode_mobile/</link>
+    <link>http://xhliang.com/xcode_mobile/</link>
     <pubDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>/xcode_mobile/</guid>
+                </author><guid>http://xhliang.com/xcode_mobile/</guid>
     <description><![CDATA[环境 当前环境 Xcode Version 15.4 (15F31d) MacOS 14.5 (23F79) iPhone XS iOS 17.5.1 (21F90) 问题 Bug 同一个设备,在Xcode中显示两个,名字相同 点击任意一个运行真机,卡住,然后Xcode崩溃 解决 打开]]></description>
 </item><item>
     <title>iOS面试题-OC</title>
-    <link>/ios-interview/</link>
+    <link>http://xhliang.com/ios-interview/</link>
     <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/ios-interview/</guid>
+    </author><guid>http://xhliang.com/ios-interview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>UIDevice</title>
-    <link>/uidevice/</link>
+    <link>http://xhliang.com/uidevice/</link>
     <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/uidevice/</guid>
+    </author><guid>http://xhliang.com/uidevice/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>keyWindow</title>
-    <link>/keywindow/</link>
+    <link>http://xhliang.com/keywindow/</link>
     <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/keywindow/</guid>
+    </author><guid>http://xhliang.com/keywindow/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>获取当前显示的ViewController</title>
-    <link>/top-viewcontroller/</link>
+    <link>http://xhliang.com/top-viewcontroller/</link>
     <pubDate>Mon, 30 Oct 2023 10:58:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/top-viewcontroller/</guid>
+    </author><guid>http://xhliang.com/top-viewcontroller/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>底部弹框简单实现</title>
-    <link>/popup-slide/</link>
+    <link>http://xhliang.com/popup-slide/</link>
     <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/popup-slide/</guid>
+    </author><guid>http://xhliang.com/popup-slide/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>UICollectionView</title>
-    <link>/uicollectionview/</link>
+    <link>http://xhliang.com/uicollectionview/</link>
     <pubDate>Fri, 13 Oct 2023 14:42:52 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/uicollectionview/</guid>
+    </author><guid>http://xhliang.com/uicollectionview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Fastlane打包</title>
-    <link>/fastlane-package/</link>
+    <link>http://xhliang.com/fastlane-package/</link>
     <pubDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/fastlane-package/</guid>
+    </author><guid>http://xhliang.com/fastlane-package/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
 </item><item>
     <title>退到后台通知引起的崩溃</title>
-    <link>/background-crash/</link>
+    <link>http://xhliang.com/background-crash/</link>
     <pubDate>Wed, 17 May 2023 21:40:52 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/background-crash/</guid>
+    </author><guid>http://xhliang.com/background-crash/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>iOS录音功能</title>
-    <link>/ios-recorder/</link>
+    <link>http://xhliang.com/ios-recorder/</link>
     <pubDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/ios-recorder/</guid>
+    </author><guid>http://xhliang.com/ios-recorder/</guid>
     <description><![CDATA[iOS原生API录音功能]]></description>
 </item></channel>
 </rss>

@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>后端 - 分类 - 刻舟求鉴</title>
-        <link>/categories/%E5%90%8E%E7%AB%AF/</link>
+        <link>http://xhliang.com/categories/%E5%90%8E%E7%AB%AF/</link>
         <description>后端 - 分类 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Mon, 18 Sep 2023 15:51:34 &#43;0800</lastBuildDate><atom:link href="/categories/%E5%90%8E%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Mon, 18 Sep 2023 15:51:34 &#43;0800</lastBuildDate><atom:link href="http://xhliang.com/categories/%E5%90%8E%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
     <title>Django项目交互环境</title>
-    <link>/django-interactive-environment/</link>
+    <link>http://xhliang.com/django-interactive-environment/</link>
     <pubDate>Mon, 18 Sep 2023 15:51:34 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/django-interactive-environment/</guid>
+    </author><guid>http://xhliang.com/django-interactive-environment/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

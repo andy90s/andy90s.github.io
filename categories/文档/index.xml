@@ -1,45 +1,45 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>文档 - 分类 - 刻舟求鉴</title>
-        <link>/categories/%E6%96%87%E6%A1%A3/</link>
+        <link>http://xhliang.com/categories/%E6%96%87%E6%A1%A3/</link>
         <description>文档 - 分类 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</lastBuildDate><atom:link href="/categories/%E6%96%87%E6%A1%A3/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</lastBuildDate><atom:link href="http://xhliang.com/categories/%E6%96%87%E6%A1%A3/" rel="self" type="application/rss+xml" /><item>
     <title>Android Studio 快捷键(MAC)</title>
-    <link>/android-studio-shortcut/</link>
+    <link>http://xhliang.com/android-studio-shortcut/</link>
     <pubDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>/android-studio-shortcut/</guid>
+                </author><guid>http://xhliang.com/android-studio-shortcut/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Hugo常见问题</title>
-    <link>/hugo/</link>
+    <link>http://xhliang.com/hugo/</link>
     <pubDate>Fri, 02 Dec 2022 11:48:52 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>/hugo/</guid>
+    </author><guid>http://xhliang.com/hugo/</guid>
     <description><![CDATA[Hugo 文章通用配置,gitalk评论设置]]></description>
 </item><item>
     <title>代码提交规范</title>
-    <link>/git-submit/</link>
+    <link>http://xhliang.com/git-submit/</link>
     <pubDate>Thu, 01 Dec 2022 13:28:21 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>/git-submit/</guid>
+    </author><guid>http://xhliang.com/git-submit/</guid>
     <description><![CDATA[提交信息由 `Header`+`Body`+`Footer`组成]]></description>
 </item><item>
     <title>常用markdown语法(hugo)</title>
-    <link>/markdown/</link>
+    <link>http://xhliang.com/markdown/</link>
     <pubDate>Wed, 30 Nov 2022 19:50:01 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>/markdown/</guid>
+    </author><guid>http://xhliang.com/markdown/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>常用markdown语法(hugo+loveit主题)]]></description>
 </item><item>
     <title>Git常见问题汇总</title>
-    <link>/git/</link>
+    <link>http://xhliang.com/git/</link>
     <pubDate>Wed, 30 Nov 2022 18:58:31 &#43;0800</pubDate><author>
         <name>XianHua Liang</name>
-    </author><guid>/git/</guid>
+    </author><guid>http://xhliang.com/git/</guid>
     <description><![CDATA[git github问题记录]]></description>
 </item></channel>
 </rss>

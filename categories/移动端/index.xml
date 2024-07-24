@@ -1,78 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>移动端 - 分类 - 刻舟求鉴</title>
-        <link>/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link>
+        <link>http://xhliang.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link>
         <description>移动端 - 分类 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Fri, 19 Jul 2024 11:50:21 &#43;0800</lastBuildDate><atom:link href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Fri, 19 Jul 2024 11:50:21 &#43;0800</lastBuildDate><atom:link href="http://xhliang.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
     <title>记录一次申请苹果开发者邓白氏</title>
-    <link>/duns/</link>
+    <link>http://xhliang.com/duns/</link>
     <pubDate>Fri, 19 Jul 2024 11:50:21 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>/duns/</guid>
-    <description><![CDATA[准备 苹果账号 资料准备 公司英文名称 公司地址 营业信息 法人信息(需本人签署一个授权函) 技巧 一般都是代办理,需要法人补充个授权函 步骤 1. 登录开发者账号]]></description>
+                </author><guid>http://xhliang.com/duns/</guid>
+    <description><![CDATA[准备 苹果账号 技巧 这里多一嘴,一般一个人只能申请一个开发者账号,如果多个账号验证审核不过,需要人工客服给你过审核 资料准备 公司英文名称 公司地址 营]]></description>
 </item><item>
     <title>Xcode运行真机卡住,Xcode崩溃</title>
-    <link>/xcode_mobile/</link>
+    <link>http://xhliang.com/xcode_mobile/</link>
     <pubDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>/xcode_mobile/</guid>
+                </author><guid>http://xhliang.com/xcode_mobile/</guid>
     <description><![CDATA[环境 当前环境 Xcode Version 15.4 (15F31d) MacOS 14.5 (23F79) iPhone XS iOS 17.5.1 (21F90) 问题 Bug 同一个设备,在Xcode中显示两个,名字相同 点击任意一个运行真机,卡住,然后Xcode崩溃 解决 打开]]></description>
 </item><item>
     <title>AndroidStudio 代理设置提示报错 You have JVM property https.proxyHost set to &#39;127.0.0.1&#39;</title>
-    <link>/androidstudio-proxy/</link>
+    <link>http://xhliang.com/androidstudio-proxy/</link>
     <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/androidstudio-proxy/</guid>
+    </author><guid>http://xhliang.com/androidstudio-proxy/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>iOS面试题-OC</title>
-    <link>/ios-interview/</link>
+    <link>http://xhliang.com/ios-interview/</link>
     <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/ios-interview/</guid>
+    </author><guid>http://xhliang.com/ios-interview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Flutter运行问题</title>
-    <link>/flutter-running-error/</link>
+    <link>http://xhliang.com/flutter-running-error/</link>
     <pubDate>Tue, 31 Oct 2023 10:12:39 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/flutter-running-error/</guid>
+    </author><guid>http://xhliang.com/flutter-running-error/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>UIDevice</title>
-    <link>/uidevice/</link>
+    <link>http://xhliang.com/uidevice/</link>
     <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/uidevice/</guid>
+    </author><guid>http://xhliang.com/uidevice/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>keyWindow</title>
-    <link>/keywindow/</link>
+    <link>http://xhliang.com/keywindow/</link>
     <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/keywindow/</guid>
+    </author><guid>http://xhliang.com/keywindow/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>获取当前显示的ViewController</title>
-    <link>/top-viewcontroller/</link>
+    <link>http://xhliang.com/top-viewcontroller/</link>
     <pubDate>Mon, 30 Oct 2023 10:58:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/top-viewcontroller/</guid>
+    </author><guid>http://xhliang.com/top-viewcontroller/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>底部弹框简单实现</title>
-    <link>/popup-slide/</link>
+    <link>http://xhliang.com/popup-slide/</link>
     <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/popup-slide/</guid>
+    </author><guid>http://xhliang.com/popup-slide/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>UICollectionView</title>
-    <link>/uicollectionview/</link>
+    <link>http://xhliang.com/uicollectionview/</link>
     <pubDate>Fri, 13 Oct 2023 14:42:52 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>/uicollectionview/</guid>
+    </author><guid>http://xhliang.com/uicollectionview/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
