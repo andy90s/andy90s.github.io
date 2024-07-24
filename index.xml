@@ -7,6 +7,13 @@
             <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Wed, 24 Jul 2024 10:24:01 &#43;0800</lastBuildDate>
             <atom:link href="http://xhliang.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Swiftformat</title>
+    <link>http://xhliang.com/swiftformat/</link>
+    <pubDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://xhliang.com/swiftformat/</guid>
+    <description><![CDATA[SwiftFormatSwiftFormat 是一个用于格式化 Swift 代码的工具。它可以帮助开发者自动整理和规范 Swift 代码的格式，使代码更加整洁和一致，从而提高代码的可读性和可维护性。Swift]]></description>
+</item><item>
     <title>项目使用 Swift Package Manager</title>
     <link>http://xhliang.com/spm/</link>
     <pubDate>Mon, 22 Jul 2024 17:57:59 &#43;0800</pubDate><author>
@@ -68,13 +75,6 @@
     <pubDate>Mon, 25 Dec 2023 11:50:21 &#43;0800</pubDate><author>
         <name>andy90s</name>
     </author><guid>http://xhliang.com/ios-interview-swift/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>vscode snippets对于markdown不生效</title>
-    <link>http://xhliang.com/vscode-snippets/</link>
-    <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate><author>
-        <name>andy90s</name>
-    </author><guid>http://xhliang.com/vscode-snippets/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

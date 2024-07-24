@@ -4,7 +4,14 @@
         <link>http://xhliang.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link>
         <description>移动端 - 分类 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Fri, 19 Jul 2024 11:50:21 &#43;0800</lastBuildDate><atom:link href="http://xhliang.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</lastBuildDate><atom:link href="http://xhliang.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+    <title>Swiftformat</title>
+    <link>http://xhliang.com/swiftformat/</link>
+    <pubDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://xhliang.com/swiftformat/</guid>
+    <description><![CDATA[SwiftFormatSwiftFormat 是一个用于格式化 Swift 代码的工具。它可以帮助开发者自动整理和规范 Swift 代码的格式，使代码更加整洁和一致，从而提高代码的可读性和可维护性。Swift]]></description>
+</item><item>
     <title>记录一次申请苹果开发者邓白氏</title>
     <link>http://xhliang.com/duns/</link>
     <pubDate>Fri, 19 Jul 2024 11:50:21 &#43;0800</pubDate><author>
@@ -66,13 +73,6 @@
     <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate><author>
         <name>andy90s</name>
     </author><guid>http://xhliang.com/popup-slide/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>UICollectionView</title>
-    <link>http://xhliang.com/uicollectionview/</link>
-    <pubDate>Fri, 13 Oct 2023 14:42:52 &#43;0800</pubDate><author>
-        <name>andy90s</name>
-    </author><guid>http://xhliang.com/uicollectionview/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
