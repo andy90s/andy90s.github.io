@@ -41,7 +41,6 @@ brew upgrade --cask swiftformat-for-xcode
 swiftformat提供了多种安装方式,我推荐的是全局的扩展插件形式
 {{< /admonition >}}
 
-{{< image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/swiftformat_xcode_short.png" src_l="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/swiftformat_xcode_short.png" caption="Lighthouse (`image`)" width="30%">}}
 
 <center>
 {{<image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/swiftformat.png" title="" width="20%">}}
@@ -66,10 +65,6 @@ swiftformat提供了多种安装方式,我推荐的是全局的扩展插件形�
 <div style="color:#717171;font-size:14px;font-weight:normal"> <b> Setting </b>  </div>
 </center>
 
-分割
-
-
-{{< image src="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/swiftformat_xcode_short.png" src_l="https://cdn.jsdelivr.net/gh/andy90s/blog-image/blog/images/swiftformat_xcode_short.png" caption="Lighthouse (`image`)" width="30%">}}
 
 ### 配置快捷键方式2
 
