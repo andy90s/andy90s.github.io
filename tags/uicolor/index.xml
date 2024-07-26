@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>UIColor - 标签 - 刻舟求鉴</title>
-        <link>https://hugodoit.pages.dev/tags/uicolor/</link>
+        <link>http://localhost:63858/tags/uicolor/</link>
         <description>UIColor - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (andy90s)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 02 Feb 2023 09:28:52 &#43;0800</lastBuildDate><atom:link href="https://hugodoit.pages.dev/tags/uicolor/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 02 Feb 2023 09:28:52 &#43;0800</lastBuildDate><atom:link href="http://localhost:63858/tags/uicolor/" rel="self" type="application/rss+xml" /><item>
     <title>UIColor的一些扩展</title>
-    <link>https://hugodoit.pages.dev/uicolor-extension/</link>
+    <link>http://localhost:63858/uicolor-extension/</link>
     <pubDate>Thu, 02 Feb 2023 09:28:52 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>https://hugodoit.pages.dev/uicolor-extension/</guid>
+    </author><guid>http://localhost:63858/uicolor-extension/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>UIColor的一些功能扩展,获取属性值以及初始化等方法]]></description>

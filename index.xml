@@ -1,80 +1,80 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>刻舟求鉴</title>
-        <link>https://hugodoit.pages.dev/</link>
+        <link>http://localhost:63858/</link>
         <description>Hugo DoIt 主题官方文档</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (andy90s)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Jul 2024 09:48:52 &#43;0800</lastBuildDate>
-            <atom:link href="https://hugodoit.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Jul 2024 23:51:09 &#43;0800</lastBuildDate>
+            <atom:link href="http://localhost:63858/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Hugo常用指令</title>
+    <link>http://localhost:63858/hugo-command/</link>
+    <pubDate>Fri, 26 Jul 2024 23:51:09 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://localhost:63858/hugo-command/</guid>
+    <description><![CDATA[一些Hugo常用指令]]></description>
+</item><item>
     <title>Swiftformat</title>
-    <link>https://hugodoit.pages.dev/swiftformat/</link>
+    <link>http://localhost:63858/swiftformat/</link>
     <pubDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>https://hugodoit.pages.dev/swiftformat/</guid>
+                </author><guid>http://localhost:63858/swiftformat/</guid>
     <description><![CDATA[1 SwiftFormatSwiftFormat 是一个用于格式化 Swift 代码的工具。它可以帮助开发者自动整理和规范 Swift 代码的格式，使代码更加整洁和一致，从而提高代码的可读性和可维护性。Swif]]></description>
 </item><item>
     <title>项目使用 Swift Package Manager</title>
-    <link>https://hugodoit.pages.dev/spm/</link>
+    <link>http://localhost:63858/spm/</link>
     <pubDate>Mon, 22 Jul 2024 17:57:59 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>https://hugodoit.pages.dev/spm/</guid>
+                </author><guid>http://localhost:63858/spm/</guid>
     <description><![CDATA[1 Swift Package Manager优势: 项目使用spm的方式,主工程文件不会有冲突 依赖管理更加方便 越来越新的swift相关的库不再支持cocoapods,]]></description>
 </item><item>
     <title>记录一次申请苹果开发者邓白氏</title>
-    <link>https://hugodoit.pages.dev/duns/</link>
+    <link>http://localhost:63858/duns/</link>
     <pubDate>Fri, 19 Jul 2024 11:50:21 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>https://hugodoit.pages.dev/duns/</guid>
+                </author><guid>http://localhost:63858/duns/</guid>
     <description><![CDATA[1 准备 苹果账号 技巧 这里多一嘴,一般一个人只能申请一个开发者账号,如果多个账号验证审核不过,需要人工客服给你过审核 资料准备 公司英文名称 公司地址]]></description>
 </item><item>
     <title>Android Studio 快捷键(MAC)</title>
-    <link>https://hugodoit.pages.dev/android-studio-shortcut/</link>
+    <link>http://localhost:63858/android-studio-shortcut/</link>
     <pubDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>https://hugodoit.pages.dev/android-studio-shortcut/</guid>
+                </author><guid>http://localhost:63858/android-studio-shortcut/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Xcode运行真机卡住,Xcode崩溃</title>
-    <link>https://hugodoit.pages.dev/xcode_mobile/</link>
+    <link>http://localhost:63858/xcode_mobile/</link>
     <pubDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>https://hugodoit.pages.dev/xcode_mobile/</guid>
+                </author><guid>http://localhost:63858/xcode_mobile/</guid>
     <description><![CDATA[1 环境 当前环境 Xcode Version 15.4 (15F31d) MacOS 14.5 (23F79) iPhone XS iOS 17.5.1 (21F90) 2 问题 Bug 同一个设备,在Xcode中显示两个,名字相同 点击任意一个运行真机,卡住,然后Xcode崩溃 3 解]]></description>
 </item><item>
     <title>Clash</title>
-    <link>https://hugodoit.pages.dev/clash/</link>
+    <link>http://localhost:63858/clash/</link>
     <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>https://hugodoit.pages.dev/clash/</guid>
+                </author><guid>http://localhost:63858/clash/</guid>
     <description><![CDATA[1 Clash Clash 不用多介绍 【Clash】]]></description>
 </item><item>
     <title>AndroidStudio 代理设置提示报错 You have JVM property https.proxyHost set to &#39;127.0.0.1&#39;</title>
-    <link>https://hugodoit.pages.dev/androidstudio-proxy/</link>
+    <link>http://localhost:63858/androidstudio-proxy/</link>
     <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>https://hugodoit.pages.dev/androidstudio-proxy/</guid>
+    </author><guid>http://localhost:63858/androidstudio-proxy/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Interview Algorithm</title>
-    <link>https://hugodoit.pages.dev/interview-algorithm/</link>
+    <link>http://localhost:63858/interview-algorithm/</link>
     <pubDate>Sun, 31 Mar 2024 15:47:35 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>https://hugodoit.pages.dev/interview-algorithm/</guid>
+    </author><guid>http://localhost:63858/interview-algorithm/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MAC Terminal 443</title>
-    <link>https://hugodoit.pages.dev/terminal-443/</link>
+    <link>http://localhost:63858/terminal-443/</link>
     <pubDate>Wed, 31 Jan 2024 17:23:53 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>https://hugodoit.pages.dev/terminal-443/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>iOS面试题-Swift</title>
-    <link>https://hugodoit.pages.dev/ios-interview-swift/</link>
-    <pubDate>Mon, 25 Dec 2023 11:50:21 &#43;0800</pubDate><author>
-        <name>andy90s</name>
-    </author><guid>https://hugodoit.pages.dev/ios-interview-swift/</guid>
+    </author><guid>http://localhost:63858/terminal-443/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

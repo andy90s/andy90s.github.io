@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Xcode14 - 标签 - 刻舟求鉴</title>
-        <link>https://hugodoit.pages.dev/tags/xcode14/</link>
+        <link>http://localhost:63858/tags/xcode14/</link>
         <description>Xcode14 - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (andy90s)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</lastBuildDate><atom:link href="https://hugodoit.pages.dev/tags/xcode14/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</lastBuildDate><atom:link href="http://localhost:63858/tags/xcode14/" rel="self" type="application/rss+xml" /><item>
     <title>Xcode14.3问题记录</title>
-    <link>https://hugodoit.pages.dev/xocde14.3-error/</link>
+    <link>http://localhost:63858/xocde14.3-error/</link>
     <pubDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>https://hugodoit.pages.dev/xocde14.3-error/</guid>
+    </author><guid>http://localhost:63858/xocde14.3-error/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>]]></description>

@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Xcode - 标签 - 刻舟求鉴</title>
-        <link>https://hugodoit.pages.dev/tags/xcode/</link>
+        <link>http://localhost:63858/tags/xcode/</link>
         <description>Xcode - 标签 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (andy90s)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</lastBuildDate><atom:link href="https://hugodoit.pages.dev/tags/xcode/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</lastBuildDate><atom:link href="http://localhost:63858/tags/xcode/" rel="self" type="application/rss+xml" /><item>
     <title>Xcode运行真机卡住,Xcode崩溃</title>
-    <link>https://hugodoit.pages.dev/xcode_mobile/</link>
+    <link>http://localhost:63858/xcode_mobile/</link>
     <pubDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>https://hugodoit.pages.dev/xcode_mobile/</guid>
+                </author><guid>http://localhost:63858/xcode_mobile/</guid>
     <description><![CDATA[1 环境 当前环境 Xcode Version 15.4 (15F31d) MacOS 14.5 (23F79) iPhone XS iOS 17.5.1 (21F90) 2 问题 Bug 同一个设备,在Xcode中显示两个,名字相同 点击任意一个运行真机,卡住,然后Xcode崩溃 3 解]]></description>
 </item><item>
     <title>Xcode相关问题记录</title>
-    <link>https://hugodoit.pages.dev/xcode-question/</link>
+    <link>http://localhost:63858/xcode-question/</link>
     <pubDate>Tue, 17 Jan 2023 13:41:49 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>https://hugodoit.pages.dev/xcode-question/</guid>
+    </author><guid>http://localhost:63858/xcode-question/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
             </div>主要记录Xcode使用遇到的一些问题]]></description>

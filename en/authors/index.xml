@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Authors - Author - 刻舟求鉴</title>
-        <link>https://hugodoit.pages.dev/en/authors/</link>
+        <link>http://localhost:63858/en/authors/</link>
         <description>Authors - Author - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>liangbing90990@gmail.com (andy90s)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://hugodoit.pages.dev/en/authors/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="http://localhost:63858/en/authors/" rel="self" type="application/rss+xml" /></channel>
 </rss>
