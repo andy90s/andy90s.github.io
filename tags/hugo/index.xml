@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Hugo - 标签 - 刻舟求鉴</title>
-        <link>http://xhliang.com/tags/hugo/</link>
+        <link>http://localhost:54666/tags/hugo/</link>
         <description>Hugo - 标签 - 刻舟求鉴</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Fri, 02 Dec 2022 11:48:52 &#43;0800</lastBuildDate><atom:link href="http://xhliang.com/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (anyd90s)</managingEditor>
+            <webMaster>liangbing90990@gmail.com (anyd90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 02 Dec 2022 11:48:52 &#43;0800</lastBuildDate><atom:link href="http://localhost:54666/tags/hugo/" rel="self" type="application/rss+xml" /><item>
     <title>Hugo常见问题</title>
-    <link>http://xhliang.com/hugo/</link>
+    <link>http://localhost:54666/hugo/</link>
     <pubDate>Fri, 02 Dec 2022 11:48:52 &#43;0800</pubDate><author>
-        <name>XianHua Liang</name>
-    </author><guid>http://xhliang.com/hugo/</guid>
+        <name>anyd90s</name>
+    </author><guid>http://localhost:54666/hugo/</guid>
     <description><![CDATA[Hugo 文章通用配置,gitalk评论设置]]></description>
 </item><item>
     <title>常用markdown语法(hugo)</title>
-    <link>http://xhliang.com/markdown/</link>
+    <link>http://localhost:54666/markdown/</link>
     <pubDate>Wed, 30 Nov 2022 19:50:01 &#43;0800</pubDate><author>
-        <name>XianHua Liang</name>
-    </author><guid>http://xhliang.com/markdown/</guid>
+        <name>anyd90s</name>
+    </author><guid>http://localhost:54666/markdown/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>常用markdown语法(hugo+loveit主题)]]></description>

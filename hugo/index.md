@@ -88,7 +88,7 @@ hugo server # 启动本地服务 不包含草稿
 [跳转到文章目录]({{</* relref "../other/hugo常见问题.md#文章目录" */>}})
 ```
 效果:
-[跳转到文章目录]({{<relref "../doc/hugo.md#文章目录">}})
+[跳转到文章目录]({{<relref "index.zh-cn.md#文章目录">}})
 
 ## gitalk评论设置
 ### `github`生成application auth 

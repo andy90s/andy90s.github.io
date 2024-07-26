@@ -7,7 +7,8 @@
 ## UIKit
 ### UITableView
 
-[【UITableView使用记录】]({{<relref "../ios/uitableview.md" >}})
+
+[【UITableView使用记录】]({{<relref "./index.zh-cn.md" >}})
 
 ## Foundation
 

@@ -1,78 +1,450 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>所有文章 - 刻舟求鉴</title>
-        <link>http://xhliang.com/posts/</link>
+        <link>http://localhost:54666/posts/</link>
         <description>所有文章 | 刻舟求鉴</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Wed, 24 Jul 2024 10:24:01 &#43;0800</lastBuildDate><atom:link href="http://xhliang.com/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Swiftformat</title>
-    <link>http://xhliang.com/swiftformat/</link>
-    <pubDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</pubDate><author>
-                    <name>andy90s</name>
-                </author><guid>http://xhliang.com/swiftformat/</guid>
-    <description><![CDATA[SwiftFormatSwiftFormat 是一个用于格式化 Swift 代码的工具。它可以帮助开发者自动整理和规范 Swift 代码的格式，使代码更加整洁和一致，从而提高代码的可读性和可维护性。Swift]]></description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (anyd90s)</managingEditor>
+            <webMaster>liangbing90990@gmail.com (anyd90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Jul 2024 09:48:52 &#43;0800</lastBuildDate><atom:link href="http://localhost:54666/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Git常见问题汇总</title>
+    <link>http://localhost:54666/git/</link>
+    <pubDate>Wed, 30 Nov 2022 18:58:31 &#43;0800</pubDate><author>
+        <name>anyd90s</name>
+    </author><guid>http://localhost:54666/git/</guid>
+    <description><![CDATA[git github问题记录]]></description>
 </item><item>
-    <title>项目使用 Swift Package Manager</title>
-    <link>http://xhliang.com/spm/</link>
-    <pubDate>Mon, 22 Jul 2024 17:57:59 &#43;0800</pubDate><author>
-                    <name>andy90s</name>
-                </author><guid>http://xhliang.com/spm/</guid>
-    <description><![CDATA[Swift Package Manager优势: 项目使用spm的方式,主工程文件不会有冲突 依赖管理更加方便 越来越新的swift相关的库不再支持cocoapods,只]]></description>
+    <title>常用markdown语法(hugo)</title>
+    <link>http://localhost:54666/markdown/</link>
+    <pubDate>Wed, 30 Nov 2022 19:50:01 &#43;0800</pubDate><author>
+        <name>anyd90s</name>
+    </author><guid>http://localhost:54666/markdown/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>常用markdown语法(hugo+loveit主题)]]></description>
 </item><item>
-    <title>记录一次申请苹果开发者邓白氏</title>
-    <link>http://xhliang.com/duns/</link>
-    <pubDate>Fri, 19 Jul 2024 11:50:21 &#43;0800</pubDate><author>
-                    <name>andy90s</name>
-                </author><guid>http://xhliang.com/duns/</guid>
-    <description><![CDATA[准备 苹果账号 技巧 这里多一嘴,一般一个人只能申请一个开发者账号,如果多个账号验证审核不过,需要人工客服给你过审核 资料准备 公司英文名称 公司地址 营]]></description>
+    <title>代码提交规范</title>
+    <link>http://localhost:54666/git-submit/</link>
+    <pubDate>Thu, 01 Dec 2022 13:28:21 &#43;0800</pubDate><author>
+        <name>anyd90s</name>
+    </author><guid>http://localhost:54666/git-submit/</guid>
+    <description><![CDATA[提交信息由 `Header`+`Body`+`Footer`组成]]></description>
 </item><item>
-    <title>Android Studio 快捷键(MAC)</title>
-    <link>http://xhliang.com/android-studio-shortcut/</link>
-    <pubDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</pubDate><author>
-                    <name>andy90s</name>
-                </author><guid>http://xhliang.com/android-studio-shortcut/</guid>
+    <title>Hugo常见问题</title>
+    <link>http://localhost:54666/hugo/</link>
+    <pubDate>Fri, 02 Dec 2022 11:48:52 &#43;0800</pubDate><author>
+        <name>anyd90s</name>
+    </author><guid>http://localhost:54666/hugo/</guid>
+    <description><![CDATA[Hugo 文章通用配置,gitalk评论设置]]></description>
+</item><item>
+    <title>时间日期</title>
+    <link>http://localhost:54666/ios-datetime/</link>
+    <pubDate>Mon, 05 Dec 2022 14:56:04 &#43;0800</pubDate><author>
+        <name>anyd90s</name>
+    </author><guid>http://localhost:54666/ios-datetime/</guid>
+    <description><![CDATA[Date格式化输出]]></description>
+</item><item>
+    <title>Cocoapods安装</title>
+    <link>http://localhost:54666/install-cocoapods/</link>
+    <pubDate>Fri, 30 Dec 2022 11:51:30 &#43;0800</pubDate><author>
+        <name>anyd90s</name>
+    </author><guid>http://localhost:54666/install-cocoapods/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>Cocoapods安装]]></description>
+</item><item>
+    <title>UITableView使用记录</title>
+    <link>http://localhost:54666/uitableview/</link>
+    <pubDate>Fri, 06 Jan 2023 11:20:37 &#43;0800</pubDate><author>
+        <name>anyd90s</name>
+    </author><guid>http://localhost:54666/uitableview/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>UITableView使过程中遇到的一些问题记录]]></description>
+</item><item>
+    <title>iOS开源三方库汇总记录</title>
+    <link>http://localhost:54666/third-party/</link>
+    <pubDate>Sat, 14 Jan 2023 13:12:34 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/third-party/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian3.jpg" referrerpolicy="no-referrer">
+            </div>平时在开发中遇到需求或是在社区中发现了一些优秀且实用的iOS相关开源库]]></description>
+</item><item>
+    <title>iOS开发笔记汇总</title>
+    <link>http://localhost:54666/ios/</link>
+    <pubDate>Sat, 14 Jan 2023 14:48:36 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/ios/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian1.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>Xcode相关问题记录</title>
+    <link>http://localhost:54666/xcode-question/</link>
+    <pubDate>Tue, 17 Jan 2023 13:41:49 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/xcode-question/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
+            </div>主要记录Xcode使用遇到的一些问题]]></description>
+</item><item>
+    <title>Telegram-iOS编译打包</title>
+    <link>http://localhost:54666/telegram/</link>
+    <pubDate>Sat, 28 Jan 2023 13:24:56 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/telegram/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>Telegram开源iOS端代码编译学习记录]]></description>
+</item><item>
+    <title>iOS中的只读属性</title>
+    <link>http://localhost:54666/swift-readonly/</link>
+    <pubDate>Wed, 01 Feb 2023 09:21:27 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/swift-readonly/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian.jpg" referrerpolicy="no-referrer">
+            </div>Swift中的只读属性,像OC一样隐藏set方法]]></description>
+</item><item>
+    <title>UIColor的一些扩展</title>
+    <link>http://localhost:54666/uicolor-extension/</link>
+    <pubDate>Thu, 02 Feb 2023 09:28:52 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/uicolor-extension/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>UIColor的一些功能扩展,获取属性值以及初始化等方法]]></description>
+</item><item>
+    <title>工具</title>
+    <link>http://localhost:54666/tools/</link>
+    <pubDate>Wed, 15 Feb 2023 09:23:33 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/tools/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Xcode运行真机卡住,Xcode崩溃</title>
-    <link>http://xhliang.com/xcode_mobile/</link>
-    <pubDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</pubDate><author>
-                    <name>andy90s</name>
-                </author><guid>http://xhliang.com/xcode_mobile/</guid>
-    <description><![CDATA[环境 当前环境 Xcode Version 15.4 (15F31d) MacOS 14.5 (23F79) iPhone XS iOS 17.5.1 (21F90) 问题 Bug 同一个设备,在Xcode中显示两个,名字相同 点击任意一个运行真机,卡住,然后Xcode崩溃 解决 打开]]></description>
-</item><item>
-    <title>Clash</title>
-    <link>http://xhliang.com/clash/</link>
-    <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
-                    <name>andy90s</name>
-                </author><guid>http://xhliang.com/clash/</guid>
-    <description><![CDATA[Clash Clash 不用多介绍 【Clash】]]></description>
-</item><item>
-    <title>AndroidStudio 代理设置提示报错 You have JVM property https.proxyHost set to &#39;127.0.0.1&#39;</title>
-    <link>http://xhliang.com/androidstudio-proxy/</link>
-    <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
+    <title>String的一些扩展</title>
+    <link>http://localhost:54666/string-extension/</link>
+    <pubDate>Tue, 21 Feb 2023 15:11:44 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://xhliang.com/androidstudio-proxy/</guid>
+    </author><guid>http://localhost:54666/string-extension/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Interview Algorithm</title>
-    <link>http://xhliang.com/interview-algorithm/</link>
-    <pubDate>Sun, 31 Mar 2024 15:47:35 &#43;0800</pubDate><author>
+    <title>MAC工作环境</title>
+    <link>http://localhost:54666/mac-environment/</link>
+    <pubDate>Thu, 16 Mar 2023 21:13:23 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://xhliang.com/interview-algorithm/</guid>
+    </author><guid>http://localhost:54666/mac-environment/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>Xcode14.3问题记录</title>
+    <link>http://localhost:54666/xocde14.3-error/</link>
+    <pubDate>Mon, 03 Apr 2023 14:20:55 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/xocde14.3-error/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>AI生产力工具</title>
+    <link>http://localhost:54666/ai/</link>
+    <pubDate>Fri, 14 Apr 2023 09:26:33 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/ai/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>收集一些AI生产力工具，方便自己和大家使用。]]></description>
+</item><item>
+    <title>iOS录音功能</title>
+    <link>http://localhost:54666/ios-recorder/</link>
+    <pubDate>Sun, 23 Apr 2023 09:29:14 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/ios-recorder/</guid>
+    <description><![CDATA[iOS原生API录音功能]]></description>
+</item><item>
+    <title>Uni开发遇到的一些问题汇总</title>
+    <link>http://localhost:54666/uniapp-question/</link>
+    <pubDate>Mon, 08 May 2023 09:58:31 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/uniapp-question/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian2.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>v-show在微信小程序中不生效</title>
+    <link>http://localhost:54666/uniapp-v-show/</link>
+    <pubDate>Mon, 08 May 2023 10:23:24 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/uniapp-v-show/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian3.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>Uni页面撑满整个view</title>
+    <link>http://localhost:54666/uniapp-full-view/</link>
+    <pubDate>Mon, 08 May 2023 13:45:46 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/uniapp-full-view/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian1.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>异步函数调用this找不到方法</title>
+    <link>http://localhost:54666/uniapp-this/</link>
+    <pubDate>Wed, 10 May 2023 16:29:56 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/uniapp-this/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>MAC Terminal 443</title>
-    <link>http://xhliang.com/terminal-443/</link>
-    <pubDate>Wed, 31 Jan 2024 17:23:53 &#43;0800</pubDate><author>
+    <title>退到后台通知引起的崩溃</title>
+    <link>http://localhost:54666/background-crash/</link>
+    <pubDate>Wed, 17 May 2023 21:40:52 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://xhliang.com/terminal-443/</guid>
+    </author><guid>http://localhost:54666/background-crash/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Uni Popup组件底部安全区域问题</title>
+    <link>http://localhost:54666/uni-popup-safearea/</link>
+    <pubDate>Thu, 18 May 2023 15:43:20 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/uni-popup-safearea/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Uni Popup等弹出组件滑动穿透问题</title>
+    <link>http://localhost:54666/uni-popup-sliding-penetration/</link>
+    <pubDate>Thu, 18 May 2023 16:44:37 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/uni-popup-sliding-penetration/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Text组件显示链接文本超出组件</title>
+    <link>http://localhost:54666/text-word-break/</link>
+    <pubDate>Wed, 31 May 2023 13:16:40 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/text-word-break/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian1.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>Fastlane打包</title>
+    <link>http://localhost:54666/fastlane-package/</link>
+    <pubDate>Tue, 04 Jul 2023 09:16:24 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/fastlane-package/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>Mac安装MySQL及简单使用</title>
+    <link>http://localhost:54666/install-mysql/</link>
+    <pubDate>Tue, 11 Jul 2023 17:30:23 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/install-mysql/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
+            </div>MySQL是一种流行的关系型数据库管理系统，本文将介绍如何在Mac上安装MySQL并创建数据库和表格。]]></description>
+</item><item>
+    <title>Xcode运行项目报错</title>
+    <link>http://localhost:54666/xcode-error/</link>
+    <pubDate>Wed, 12 Jul 2023 19:30:20 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/xcode-error/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Mac电脑安装Docker</title>
+    <link>http://localhost:54666/install-docker/</link>
+    <pubDate>Tue, 08 Aug 2023 14:09:34 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/install-docker/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Whistle抓包工具</title>
+    <link>http://localhost:54666/whistle/</link>
+    <pubDate>Thu, 14 Sep 2023 10:31:22 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/whistle/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Django项目交互环境</title>
+    <link>http://localhost:54666/django-interactive-environment/</link>
+    <pubDate>Mon, 18 Sep 2023 15:51:34 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/django-interactive-environment/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>UICollectionView</title>
+    <link>http://localhost:54666/uicollectionview/</link>
+    <pubDate>Fri, 13 Oct 2023 14:42:52 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/uicollectionview/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Mac版Chrome浏览器关闭左右滑动</title>
+    <link>http://localhost:54666/chrome-overscoll/</link>
+    <pubDate>Mon, 23 Oct 2023 10:08:43 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/chrome-overscoll/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>底部弹框简单实现</title>
+    <link>http://localhost:54666/popup-slide/</link>
+    <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/popup-slide/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>下载ipa</title>
+    <link>http://localhost:54666/download-ipa/</link>
+    <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/download-ipa/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>获取当前显示的ViewController</title>
+    <link>http://localhost:54666/top-viewcontroller/</link>
+    <pubDate>Mon, 30 Oct 2023 10:58:12 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/top-viewcontroller/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>keyWindow</title>
+    <link>http://localhost:54666/keywindow/</link>
+    <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/keywindow/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>UIDevice</title>
+    <link>http://localhost:54666/uidevice/</link>
+    <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/uidevice/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Flutter运行问题</title>
+    <link>http://localhost:54666/flutter-running-error/</link>
+    <pubDate>Tue, 31 Oct 2023 10:12:39 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/flutter-running-error/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>iOS面试题-OC</title>
+    <link>http://localhost:54666/ios-interview/</link>
+    <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/ios-interview/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>vscode snippets对于markdown不生效</title>
+    <link>http://localhost:54666/vscode-snippets/</link>
+    <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/vscode-snippets/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>iOS面试题-Swift</title>
-    <link>http://xhliang.com/ios-interview-swift/</link>
+    <link>http://localhost:54666/ios-interview-swift/</link>
     <pubDate>Mon, 25 Dec 2023 11:50:21 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://xhliang.com/ios-interview-swift/</guid>
+    </author><guid>http://localhost:54666/ios-interview-swift/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Assembly Instruction</title>
+    <link>http://localhost:54666/assembly-instruction/</link>
+    <pubDate>Fri, 26 Jan 2024 21:05:08 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/assembly-instruction/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MAC Terminal 443</title>
+    <link>http://localhost:54666/terminal-443/</link>
+    <pubDate>Wed, 31 Jan 2024 17:23:53 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/terminal-443/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Interview Algorithm</title>
+    <link>http://localhost:54666/interview-algorithm/</link>
+    <pubDate>Sun, 31 Mar 2024 15:47:35 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/interview-algorithm/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>AndroidStudio 代理设置提示报错 You have JVM property https.proxyHost set to &#39;127.0.0.1&#39;</title>
+    <link>http://localhost:54666/androidstudio-proxy/</link>
+    <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>http://localhost:54666/androidstudio-proxy/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Clash</title>
+    <link>http://localhost:54666/clash/</link>
+    <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://localhost:54666/clash/</guid>
+    <description><![CDATA[1 Clash Clash 不用多介绍 【Clash】]]></description>
+</item><item>
+    <title>Xcode运行真机卡住,Xcode崩溃</title>
+    <link>http://localhost:54666/xcode_mobile/</link>
+    <pubDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://localhost:54666/xcode_mobile/</guid>
+    <description><![CDATA[1 环境 当前环境 Xcode Version 15.4 (15F31d) MacOS 14.5 (23F79) iPhone XS iOS 17.5.1 (21F90) 2 问题 Bug 同一个设备,在Xcode中显示两个,名字相同 点击任意一个运行真机,卡住,然后Xcode崩溃 3 解]]></description>
+</item><item>
+    <title>Android Studio 快捷键(MAC)</title>
+    <link>http://localhost:54666/android-studio-shortcut/</link>
+    <pubDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://localhost:54666/android-studio-shortcut/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Swiftgen 自动化管理本地化文本资源文件</title>
+    <link>http://localhost:54666/swiftgen/</link>
+    <pubDate>Sat, 13 Jul 2024 13:07:28 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://localhost:54666/swiftgen/</guid>
+    <description><![CDATA[1 前言SwiftGen 是一个强大的工具，可以生成静态类型的资源访问代码，包括本地化字符串。 它可以扫描你的 Localizable.strings 文件，并生成一个 Swift 文件，提供类型安]]></description>
+</item><item>
+    <title>Android Interview</title>
+    <link>http://localhost:54666/android-interview/</link>
+    <pubDate>Mon, 15 Jul 2024 17:15:29 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://localhost:54666/android-interview/</guid>
+    <description><![CDATA[1 抽象类与接口的区别？抽象类和接口都是为了规范子类的行为，但是它们之间有很大的区别。 抽象类和接口是面向对象编程中的两个重要概念，它们都可以用]]></description>
+</item><item>
+    <title>记录一次申请苹果开发者邓白氏</title>
+    <link>http://localhost:54666/duns/</link>
+    <pubDate>Fri, 19 Jul 2024 11:50:21 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://localhost:54666/duns/</guid>
+    <description><![CDATA[1 准备 苹果账号 技巧 这里多一嘴,一般一个人只能申请一个开发者账号,如果多个账号验证审核不过,需要人工客服给你过审核 资料准备 公司英文名称 公司地址]]></description>
+</item><item>
+    <title>项目使用 Swift Package Manager</title>
+    <link>http://localhost:54666/spm/</link>
+    <pubDate>Mon, 22 Jul 2024 17:57:59 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://localhost:54666/spm/</guid>
+    <description><![CDATA[1 Swift Package Manager优势: 项目使用spm的方式,主工程文件不会有冲突 依赖管理更加方便 越来越新的swift相关的库不再支持cocoapods,]]></description>
+</item><item>
+    <title>Swiftformat</title>
+    <link>http://localhost:54666/swiftformat/</link>
+    <pubDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://localhost:54666/swiftformat/</guid>
+    <description><![CDATA[1 SwiftFormatSwiftFormat 是一个用于格式化 Swift 代码的工具。它可以帮助开发者自动整理和规范 Swift 代码的格式，使代码更加整洁和一致，从而提高代码的可读性和可维护性。Swif]]></description>
+</item><item>
+    <title>Testimage</title>
+    <link>http://localhost:54666/testimage/</link>
+    <pubDate>Wed, 24 Jul 2024 10:24:01 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://localhost:54666/testimage/</guid>
+    <description><![CDATA[Lighthouse (image) ]]></description>
+</item><item>
+    <title>The Composable Architecture</title>
+    <link>http://localhost:54666/tca/</link>
+    <pubDate>Fri, 26 Jul 2024 09:48:52 &#43;0800</pubDate><author>
+                    <name>andy90s</name>
+                </author><guid>http://localhost:54666/tca/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

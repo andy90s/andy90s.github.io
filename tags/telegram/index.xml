@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Telegram - 标签 - 刻舟求鉴</title>
-        <link>http://xhliang.com/tags/telegram/</link>
+        <link>http://localhost:54666/tags/telegram/</link>
         <description>Telegram - 标签 - 刻舟求鉴</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sat, 28 Jan 2023 13:24:56 &#43;0800</lastBuildDate><atom:link href="http://xhliang.com/tags/telegram/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (anyd90s)</managingEditor>
+            <webMaster>liangbing90990@gmail.com (anyd90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 28 Jan 2023 13:24:56 &#43;0800</lastBuildDate><atom:link href="http://localhost:54666/tags/telegram/" rel="self" type="application/rss+xml" /><item>
     <title>Telegram-iOS编译打包</title>
-    <link>http://xhliang.com/telegram/</link>
+    <link>http://localhost:54666/telegram/</link>
     <pubDate>Sat, 28 Jan 2023 13:24:56 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://xhliang.com/telegram/</guid>
+    </author><guid>http://localhost:54666/telegram/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>Telegram开源iOS端代码编译学习记录]]></description>

@@ -1,0 +1,25 @@
+{
+    "version" : "https://jsonfeed.org/version/1.1",
+    "title" : "刻舟求鉴",
+    "description": "The official documentation for the Hugo DoIt theme",
+    "home_page_url" : "http://localhost:54666/",
+    "feed_url" : "http://localhost:54666/en/index.feed",
+    "icon" : "http://localhost:54666/apple-touch-icon.png",
+    "favicon" : "http://localhost:54666/favicon.ico",
+    "author" : {
+        "name" : "anyd90s",
+        "url": "https://github.com/anyd90s",
+        "avatar": "http://localhost:54666/images/avatar.webp"
+    },
+    "items" : [
+    {
+        "title" : "The Composable Architecture",
+        "date_published" : "2024-07-26T09:40:12+08:00",
+        "date_modified" : "2024-07-26T09:40:12+08:00",
+        "id" : "http://localhost:54666/en/tca/",
+        "url" : "http://localhost:54666/en/tca/",
+        "content_html" : "",
+        "language": "en"
+    }
+    ]
+}

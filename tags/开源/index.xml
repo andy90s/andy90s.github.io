@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>开源 - 标签 - 刻舟求鉴</title>
-        <link>http://xhliang.com/tags/%E5%BC%80%E6%BA%90/</link>
+        <link>http://localhost:54666/tags/%E5%BC%80%E6%BA%90/</link>
         <description>开源 - 标签 - 刻舟求鉴</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gamil.com (XianHua Liang)</managingEditor>
-            <webMaster>liangbing90990@gamil.com (XianHua Liang)</webMaster><lastBuildDate>Sat, 14 Jan 2023 13:12:34 &#43;0800</lastBuildDate><atom:link href="http://xhliang.com/tags/%E5%BC%80%E6%BA%90/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (anyd90s)</managingEditor>
+            <webMaster>liangbing90990@gmail.com (anyd90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 14 Jan 2023 13:12:34 &#43;0800</lastBuildDate><atom:link href="http://localhost:54666/tags/%E5%BC%80%E6%BA%90/" rel="self" type="application/rss+xml" /><item>
     <title>iOS开源三方库汇总记录</title>
-    <link>http://xhliang.com/third-party/</link>
+    <link>http://localhost:54666/third-party/</link>
     <pubDate>Sat, 14 Jan 2023 13:12:34 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://xhliang.com/third-party/</guid>
+    </author><guid>http://localhost:54666/third-party/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian3.jpg" referrerpolicy="no-referrer">
             </div>平时在开发中遇到需求或是在社区中发现了一些优秀且实用的iOS相关开源库]]></description>
