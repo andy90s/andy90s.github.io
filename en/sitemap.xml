@@ -2,75 +2,57 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:54666/en/authors/andy90s/</loc><lastmod>2024-07-26T17:59:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/en/posts/</loc><lastmod>2024-07-26T17:59:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="http://localhost:54666/authors/andy90s/"
+                        href="https://hugodoit.pages.dev/posts/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="http://localhost:54666/en/authors/andy90s/"
+                    href="https://hugodoit.pages.dev/en/posts/"
                     /></url><url>
-            <loc>http://localhost:54666/en/authors/</loc><lastmod>2024-07-26T17:59:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/en/</loc><lastmod>2024-07-26T17:59:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="http://localhost:54666/authors/"
+                        href="https://hugodoit.pages.dev/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="http://localhost:54666/en/authors/"
+                    href="https://hugodoit.pages.dev/en/"
                     /></url><url>
-            <loc>http://localhost:54666/en/posts/</loc><lastmod>2024-07-26T17:59:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/en/authors/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="http://localhost:54666/posts/"
+                        href="https://hugodoit.pages.dev/authors/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="http://localhost:54666/en/posts/"
+                    href="https://hugodoit.pages.dev/en/authors/"
                     /></url><url>
-            <loc>http://localhost:54666/en/tca/</loc><lastmod>2024-07-26T17:59:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/en/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="http://localhost:54666/tca/"
+                        href="https://hugodoit.pages.dev/categories/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="http://localhost:54666/en/tca/"
+                    href="https://hugodoit.pages.dev/en/categories/"
                     /></url><url>
-            <loc>http://localhost:54666/en/</loc><lastmod>2024-07-26T17:59:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/en/series/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="http://localhost:54666/"
+                        href="https://hugodoit.pages.dev/series/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="http://localhost:54666/en/"
+                    href="https://hugodoit.pages.dev/en/series/"
                     /></url><url>
-            <loc>http://localhost:54666/en/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/en/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="http://localhost:54666/categories/"
+                        href="https://hugodoit.pages.dev/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="http://localhost:54666/en/categories/"
-                    /></url><url>
-            <loc>http://localhost:54666/en/series/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="http://localhost:54666/series/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="http://localhost:54666/en/series/"
-                    /></url><url>
-            <loc>http://localhost:54666/en/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="http://localhost:54666/tags/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="http://localhost:54666/en/tags/"
+                    href="https://hugodoit.pages.dev/en/tags/"
                     /></url></urlset>

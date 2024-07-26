@@ -1,78 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - 标签 - 刻舟求鉴</title>
-        <link>http://localhost:54666/tags/</link>
+        <link>https://hugodoit.pages.dev/tags/</link>
         <description>Tags - 标签 - 刻舟求鉴</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (anyd90s)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (anyd90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</lastBuildDate><atom:link href="http://localhost:54666/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (andy90s)</managingEditor>
+            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</lastBuildDate><atom:link href="https://hugodoit.pages.dev/tags/" rel="self" type="application/rss+xml" /><item>
     <title>IOS</title>
-    <link>http://localhost:54666/tags/ios/</link>
+    <link>https://hugodoit.pages.dev/tags/ios/</link>
     <pubDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/tags/ios/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/tags/ios/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Android</title>
-    <link>http://localhost:54666/tags/android/</link>
+    <link>https://hugodoit.pages.dev/tags/android/</link>
     <pubDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/tags/android/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/tags/android/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>AndroidStudio</title>
-    <link>http://localhost:54666/tags/androidstudio/</link>
+    <link>https://hugodoit.pages.dev/tags/androidstudio/</link>
     <pubDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/tags/androidstudio/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/tags/androidstudio/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Xcode</title>
-    <link>http://localhost:54666/tags/xcode/</link>
+    <link>https://hugodoit.pages.dev/tags/xcode/</link>
     <pubDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/tags/xcode/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/tags/xcode/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Tools</title>
-    <link>http://localhost:54666/tags/tools/</link>
+    <link>https://hugodoit.pages.dev/tags/tools/</link>
     <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/tags/tools/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>汇编指令</title>
-    <link>http://localhost:54666/tags/%E6%B1%87%E7%BC%96%E6%8C%87%E4%BB%A4/</link>
-    <pubDate>Fri, 26 Jan 2024 21:05:08 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/tags/%E6%B1%87%E7%BC%96%E6%8C%87%E4%BB%A4/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/tags/tools/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Markdown</title>
-    <link>http://localhost:54666/tags/markdown/</link>
+    <link>https://hugodoit.pages.dev/tags/markdown/</link>
     <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/tags/markdown/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/tags/markdown/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Vscode</title>
-    <link>http://localhost:54666/tags/vscode/</link>
+    <link>https://hugodoit.pages.dev/tags/vscode/</link>
     <pubDate>Sat, 09 Dec 2023 20:26:55 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/tags/vscode/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/tags/vscode/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Flutter</title>
-    <link>http://localhost:54666/tags/flutter/</link>
+    <link>https://hugodoit.pages.dev/tags/flutter/</link>
     <pubDate>Tue, 31 Oct 2023 10:12:39 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/tags/flutter/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/tags/flutter/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Ipa</title>
-    <link>http://localhost:54666/tags/ipa/</link>
+    <link>https://hugodoit.pages.dev/tags/ipa/</link>
     <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/tags/ipa/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/tags/ipa/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>网站</title>
+    <link>https://hugodoit.pages.dev/tags/%E7%BD%91%E7%AB%99/</link>
+    <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate><author>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/tags/%E7%BD%91%E7%AB%99/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

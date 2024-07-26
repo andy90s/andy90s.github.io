@@ -58,4 +58,4 @@ Disallow: /
 User-agent: *
 Allow: /
 
-Sitemap: http://localhost:54666/sitemap.xml
+Sitemap: https://hugodoit.pages.dev/sitemap.xml

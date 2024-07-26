@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>http://localhost:54666/zh-cn/sitemap.xml</loc>
+    <loc>https://hugodoit.pages.dev/zh-cn/sitemap.xml</loc>
     
       <lastmod>2024-07-26T17:59:12+08:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>http://localhost:54666/en/sitemap.xml</loc>
+    <loc>https://hugodoit.pages.dev/en/sitemap.xml</loc>
     
       <lastmod>2024-07-26T17:59:12+08:00</lastmod>
     

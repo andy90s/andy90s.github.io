@@ -1,15 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>All Posts - 刻舟求鉴</title>
-        <link>http://localhost:54666/en/posts/</link>
+        <link>https://hugodoit.pages.dev/en/posts/</link>
         <description>All Posts | 刻舟求鉴</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>liangbing90990@gmail.com (anyd90s)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (anyd90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Jul 2024 09:40:12 &#43;0800</lastBuildDate><atom:link href="http://localhost:54666/en/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>The Composable Architecture</title>
-    <link>http://localhost:54666/en/tca/</link>
-    <pubDate>Fri, 26 Jul 2024 09:40:12 &#43;0800</pubDate><author>
-                    <name>andy90s</name>
-                </author><guid>http://localhost:54666/en/tca/</guid>
-    <description><![CDATA[]]></description>
-</item></channel>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>liangbing90990@gmail.com (andy90s)</managingEditor>
+            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Jul 2024 09:40:12 &#43;0800</lastBuildDate><atom:link href="https://hugodoit.pages.dev/en/posts/" rel="self" type="application/rss+xml" /></channel>
 </rss>

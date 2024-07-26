@@ -1,36 +1,36 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Series - 系列 - 刻舟求鉴</title>
-        <link>http://localhost:54666/series/</link>
+        <link>https://hugodoit.pages.dev/series/</link>
         <description>Series - 系列 - 刻舟求鉴</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (anyd90s)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (anyd90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</lastBuildDate><atom:link href="http://localhost:54666/series/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (andy90s)</managingEditor>
+            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</lastBuildDate><atom:link href="https://hugodoit.pages.dev/series/" rel="self" type="application/rss+xml" /><item>
     <title>IOS开发好用工具</title>
-    <link>http://localhost:54666/series/ios%E5%BC%80%E5%8F%91%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7/</link>
+    <link>https://hugodoit.pages.dev/series/ios%E5%BC%80%E5%8F%91%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7/</link>
     <pubDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/series/ios%E5%BC%80%E5%8F%91%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/series/ios%E5%BC%80%E5%8F%91%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>AndroidStudio记录</title>
-    <link>http://localhost:54666/series/androidstudio%E8%AE%B0%E5%BD%95/</link>
+    <link>https://hugodoit.pages.dev/series/androidstudio%E8%AE%B0%E5%BD%95/</link>
     <pubDate>Tue, 09 Jul 2024 17:32:55 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/series/androidstudio%E8%AE%B0%E5%BD%95/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/series/androidstudio%E8%AE%B0%E5%BD%95/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Xcode常见问题</title>
-    <link>http://localhost:54666/series/xcode%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+    <link>https://hugodoit.pages.dev/series/xcode%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
     <pubDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/series/xcode%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/series/xcode%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MacOS好用工具软件</title>
-    <link>http://localhost:54666/series/macos%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</link>
+    <link>https://hugodoit.pages.dev/series/macos%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</link>
     <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/series/macos%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</guid>
+        <name>andy90s</name>
+    </author><guid>https://hugodoit.pages.dev/series/macos%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

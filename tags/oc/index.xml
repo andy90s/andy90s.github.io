@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>OC - 标签 - 刻舟求鉴</title>
-        <link>http://localhost:54666/tags/oc/</link>
+        <link>https://hugodoit.pages.dev/tags/oc/</link>
         <description>OC - 标签 - 刻舟求鉴</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (anyd90s)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (anyd90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 01 Feb 2023 09:21:27 &#43;0800</lastBuildDate><atom:link href="http://localhost:54666/tags/oc/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (andy90s)</managingEditor>
+            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 01 Feb 2023 09:21:27 &#43;0800</lastBuildDate><atom:link href="https://hugodoit.pages.dev/tags/oc/" rel="self" type="application/rss+xml" /><item>
     <title>iOS中的只读属性</title>
-    <link>http://localhost:54666/swift-readonly/</link>
+    <link>https://hugodoit.pages.dev/swift-readonly/</link>
     <pubDate>Wed, 01 Feb 2023 09:21:27 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:54666/swift-readonly/</guid>
+    </author><guid>https://hugodoit.pages.dev/swift-readonly/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian.jpg" referrerpolicy="no-referrer">
             </div>Swift中的只读属性,像OC一样隐藏set方法]]></description>

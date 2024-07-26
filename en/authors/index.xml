@@ -1,15 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Authors - Author - 刻舟求鉴</title>
-        <link>http://localhost:54666/en/authors/</link>
+        <link>https://hugodoit.pages.dev/en/authors/</link>
         <description>Authors - Author - 刻舟求鉴</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>liangbing90990@gmail.com (anyd90s)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (anyd90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Jul 2024 09:40:12 &#43;0800</lastBuildDate><atom:link href="http://localhost:54666/en/authors/" rel="self" type="application/rss+xml" /><item>
-    <title>Andy90s</title>
-    <link>http://localhost:54666/en/authors/andy90s/</link>
-    <pubDate>Fri, 26 Jul 2024 09:40:12 &#43;0800</pubDate><author>
-        <name>anyd90s</name>
-    </author><guid>http://localhost:54666/en/authors/andy90s/</guid>
-    <description><![CDATA[]]></description>
-</item></channel>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>liangbing90990@gmail.com (andy90s)</managingEditor>
+            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://hugodoit.pages.dev/en/authors/" rel="self" type="application/rss+xml" /></channel>
 </rss>
