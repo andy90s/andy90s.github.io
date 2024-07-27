@@ -2,57 +2,57 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:63858/en/posts/</loc><lastmod>2024-07-26T17:59:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/en/posts/</loc><lastmod>2024-07-26T17:59:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="http://localhost:63858/posts/"
+                        href="https://hugodoit.pages.dev/posts/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="http://localhost:63858/en/posts/"
+                    href="https://hugodoit.pages.dev/en/posts/"
                     /></url><url>
-            <loc>http://localhost:63858/en/</loc><lastmod>2024-07-26T17:59:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/en/</loc><lastmod>2024-07-26T17:59:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="http://localhost:63858/"
+                        href="https://hugodoit.pages.dev/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="http://localhost:63858/en/"
+                    href="https://hugodoit.pages.dev/en/"
                     /></url><url>
-            <loc>http://localhost:63858/en/authors/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/en/authors/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="http://localhost:63858/authors/"
+                        href="https://hugodoit.pages.dev/authors/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="http://localhost:63858/en/authors/"
+                    href="https://hugodoit.pages.dev/en/authors/"
                     /></url><url>
-            <loc>http://localhost:63858/en/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/en/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="http://localhost:63858/categories/"
+                        href="https://hugodoit.pages.dev/categories/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="http://localhost:63858/en/categories/"
+                    href="https://hugodoit.pages.dev/en/categories/"
                     /></url><url>
-            <loc>http://localhost:63858/en/series/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/en/series/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="http://localhost:63858/series/"
+                        href="https://hugodoit.pages.dev/series/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="http://localhost:63858/en/series/"
+                    href="https://hugodoit.pages.dev/en/series/"
                     /></url><url>
-            <loc>http://localhost:63858/en/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/en/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="http://localhost:63858/tags/"
+                        href="https://hugodoit.pages.dev/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="http://localhost:63858/en/tags/"
+                    href="https://hugodoit.pages.dev/en/tags/"
                     /></url></urlset>

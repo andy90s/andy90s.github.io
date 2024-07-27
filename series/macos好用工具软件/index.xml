@@ -1,43 +1,43 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>MacOS好用工具软件 - 系列 - 刻舟求鉴</title>
-        <link>http://localhost:63858/series/macos%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</link>
+        <link>https://hugodoit.pages.dev/series/macos%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</link>
         <description>MacOS好用工具软件 - 系列 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (andy90s)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</lastBuildDate><atom:link href="http://localhost:63858/series/macos%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</lastBuildDate><atom:link href="https://hugodoit.pages.dev/series/macos%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/" rel="self" type="application/rss+xml" /><item>
     <title>Clash</title>
-    <link>http://localhost:63858/clash/</link>
+    <link>https://hugodoit.pages.dev/clash/</link>
     <pubDate>Thu, 04 Jul 2024 23:37:27 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>http://localhost:63858/clash/</guid>
+                </author><guid>https://hugodoit.pages.dev/clash/</guid>
     <description><![CDATA[1 Clash Clash 不用多介绍 【Clash】]]></description>
 </item><item>
     <title>下载ipa</title>
-    <link>http://localhost:63858/download-ipa/</link>
+    <link>https://hugodoit.pages.dev/download-ipa/</link>
     <pubDate>Fri, 27 Oct 2023 12:30:58 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:63858/download-ipa/</guid>
+    </author><guid>https://hugodoit.pages.dev/download-ipa/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Whistle抓包工具</title>
-    <link>http://localhost:63858/whistle/</link>
+    <link>https://hugodoit.pages.dev/whistle/</link>
     <pubDate>Thu, 14 Sep 2023 10:31:22 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:63858/whistle/</guid>
+    </author><guid>https://hugodoit.pages.dev/whistle/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Mac电脑安装Docker</title>
-    <link>http://localhost:63858/install-docker/</link>
+    <link>https://hugodoit.pages.dev/install-docker/</link>
     <pubDate>Tue, 08 Aug 2023 14:09:34 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:63858/install-docker/</guid>
+    </author><guid>https://hugodoit.pages.dev/install-docker/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Mac安装MySQL及简单使用</title>
-    <link>http://localhost:63858/install-mysql/</link>
+    <link>https://hugodoit.pages.dev/install-mysql/</link>
     <pubDate>Tue, 11 Jul 2023 17:30:23 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:63858/install-mysql/</guid>
+    </author><guid>https://hugodoit.pages.dev/install-mysql/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/fengmian4.jpg" referrerpolicy="no-referrer">
             </div>MySQL是一种流行的关系型数据库管理系统，本文将介绍如何在Mac上安装MySQL并创建数据库和表格。]]></description>

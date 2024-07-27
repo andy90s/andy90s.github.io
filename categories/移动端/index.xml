@@ -1,78 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>移动端 - 分类 - 刻舟求鉴</title>
-        <link>http://localhost:63858/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link>
+        <link>https://hugodoit.pages.dev/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link>
         <description>移动端 - 分类 - 刻舟求鉴</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>liangbing90990@gmail.com (andy90s)</managingEditor>
-            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</lastBuildDate><atom:link href="http://localhost:63858/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>liangbing90990@gmail.com (andy90s)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</lastBuildDate><atom:link href="https://hugodoit.pages.dev/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
     <title>Swiftformat</title>
-    <link>http://localhost:63858/swiftformat/</link>
+    <link>https://hugodoit.pages.dev/swiftformat/</link>
     <pubDate>Tue, 23 Jul 2024 11:50:11 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>http://localhost:63858/swiftformat/</guid>
+                </author><guid>https://hugodoit.pages.dev/swiftformat/</guid>
     <description><![CDATA[1 SwiftFormatSwiftFormat 是一个用于格式化 Swift 代码的工具。它可以帮助开发者自动整理和规范 Swift 代码的格式，使代码更加整洁和一致，从而提高代码的可读性和可维护性。Swif]]></description>
 </item><item>
     <title>记录一次申请苹果开发者邓白氏</title>
-    <link>http://localhost:63858/duns/</link>
+    <link>https://hugodoit.pages.dev/duns/</link>
     <pubDate>Fri, 19 Jul 2024 11:50:21 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>http://localhost:63858/duns/</guid>
+                </author><guid>https://hugodoit.pages.dev/duns/</guid>
     <description><![CDATA[1 准备 苹果账号 技巧 这里多一嘴,一般一个人只能申请一个开发者账号,如果多个账号验证审核不过,需要人工客服给你过审核 资料准备 公司英文名称 公司地址]]></description>
 </item><item>
     <title>Xcode运行真机卡住,Xcode崩溃</title>
-    <link>http://localhost:63858/xcode_mobile/</link>
+    <link>https://hugodoit.pages.dev/xcode_mobile/</link>
     <pubDate>Fri, 05 Jul 2024 11:28:25 &#43;0800</pubDate><author>
                     <name>andy90s</name>
-                </author><guid>http://localhost:63858/xcode_mobile/</guid>
+                </author><guid>https://hugodoit.pages.dev/xcode_mobile/</guid>
     <description><![CDATA[1 环境 当前环境 Xcode Version 15.4 (15F31d) MacOS 14.5 (23F79) iPhone XS iOS 17.5.1 (21F90) 2 问题 Bug 同一个设备,在Xcode中显示两个,名字相同 点击任意一个运行真机,卡住,然后Xcode崩溃 3 解]]></description>
 </item><item>
     <title>AndroidStudio 代理设置提示报错 You have JVM property https.proxyHost set to &#39;127.0.0.1&#39;</title>
-    <link>http://localhost:63858/androidstudio-proxy/</link>
+    <link>https://hugodoit.pages.dev/androidstudio-proxy/</link>
     <pubDate>Sun, 23 Jun 2024 10:27:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:63858/androidstudio-proxy/</guid>
+    </author><guid>https://hugodoit.pages.dev/androidstudio-proxy/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>iOS面试题-OC</title>
-    <link>http://localhost:63858/ios-interview/</link>
+    <link>https://hugodoit.pages.dev/ios-interview/</link>
     <pubDate>Wed, 01 Nov 2023 09:55:35 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:63858/ios-interview/</guid>
+    </author><guid>https://hugodoit.pages.dev/ios-interview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Flutter运行问题</title>
-    <link>http://localhost:63858/flutter-running-error/</link>
+    <link>https://hugodoit.pages.dev/flutter-running-error/</link>
     <pubDate>Tue, 31 Oct 2023 10:12:39 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:63858/flutter-running-error/</guid>
+    </author><guid>https://hugodoit.pages.dev/flutter-running-error/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>UIDevice</title>
-    <link>http://localhost:63858/uidevice/</link>
+    <link>https://hugodoit.pages.dev/uidevice/</link>
     <pubDate>Mon, 30 Oct 2023 17:29:49 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:63858/uidevice/</guid>
+    </author><guid>https://hugodoit.pages.dev/uidevice/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>keyWindow</title>
-    <link>http://localhost:63858/keywindow/</link>
+    <link>https://hugodoit.pages.dev/keywindow/</link>
     <pubDate>Mon, 30 Oct 2023 11:28:57 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:63858/keywindow/</guid>
+    </author><guid>https://hugodoit.pages.dev/keywindow/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>获取当前显示的ViewController</title>
-    <link>http://localhost:63858/top-viewcontroller/</link>
+    <link>https://hugodoit.pages.dev/top-viewcontroller/</link>
     <pubDate>Mon, 30 Oct 2023 10:58:12 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:63858/top-viewcontroller/</guid>
+    </author><guid>https://hugodoit.pages.dev/top-viewcontroller/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>底部弹框简单实现</title>
-    <link>http://localhost:63858/popup-slide/</link>
+    <link>https://hugodoit.pages.dev/popup-slide/</link>
     <pubDate>Wed, 25 Oct 2023 14:38:56 &#43;0800</pubDate><author>
         <name>andy90s</name>
-    </author><guid>http://localhost:63858/popup-slide/</guid>
+    </author><guid>https://hugodoit.pages.dev/popup-slide/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
